@@ -1,0 +1,75 @@
+<chapter id="Introduction">
+  <title>Introduction</title>
+
+  <section id="Purpose">
+    <title>Purpose</title>
+    <para>
+      To give a detailed description of the Vorpal Voting System to include all functions and requirements specified by Morgantown University and its representatives. These representatives include the University Provost, student groups and their advisor, the student body representative(s), Admissions and Records, and the Office of Information Technology (OIT). This document is also intended to give a clear and concise summary of all communication between Vorpal Longsword +1 (known herein as the developer) and all Morgantown University Representatives (known herein as the stakeholders) which pertains to the required functions and uses of the Vorpal Voting System.
+    </para>
+  </section>
+
+  <section id="Scope">
+    <title>Scope</title>
+    <para>
+The stakeholders have determined they require all elections and polls that apply to the student body to be handled and maintained through an interactive online system. The developer has created the Vorpal Voting System (VVS) as a solution to this software need. 
+    </para>
+    <para>
+     The VVS will allow university student groups to create and manage their own elections and polls online. The VVS will also allow all eligible students to vote in elections and polls online. Students will be able to access the VVS through their University’s Web Portal that is already in place. All results and statistical data resulting from elections and polls will be maintained by the VVS for 7 years. The VVS will interface directly with Admissions and Records databases to create its own database of all eligible student voters which, once created, will be accessible independent of the Admission and Records databases. Finally, the VVS will conform to all general election standards unless otherwise specified within. The VVS will be used strictly for election and polling purposes only. The VVS will not be used in any manner which provides support or facilitates election campaigning. It will also not be used to host elections that only apply to University faculty or administrators.
+    </para>
+    <para>
+Once the VVS is installed and operational it will drastically improve the timeliness and efficiency of student oriented elections and polls. The system should encourage and increase voter participation by making it easier for students to vote. Students will be able to vote from any computer with an internet connection. Results will be available immediately following the close of any election and statistical data will be available for use by the stakeholders. 
+    </para>
+    <para>
+It is the goal of the developer to create a system that has a user friendly interface and meets all of the requirements and functionality requested by the stakeholders.
+    </para>
+  </section>
+
+  <section id="DefinitionsandAbbreviations">
+    <title>Definititions and Abbreviations</title>
+    <para>
+MU, Morgantown University.      
+    </para>
+    <para>
+VVS Vorpal Voting System, the interactive online system that will be used for elections and polls by the stakeholders.
+    </para>
+    <para>
+Developer Vorpal Longsword +1, the company that will create and install the VVS. The developer is also responsible for training University personnel in the use and maintenance of the VVS.
+    </para>
+    <para>
+Administrator,  a person with elevated privileges compared to general users.  They have access to the "behind the curtain" functionality of the Vorpal Voting System. Also referred to as "super users".
+    </para>
+    <para>
+PA Poll Administrator, a person who has access to poll creation and results within the VVS.
+    </para>
+    <para>
+SDF Student Database File, a list of all students and their personal information that will be used by the VVS to determine whether a student is eligible to vote in a particular election or poll. The SDF will be populated primarily by the VSS interfacing with Admissions and Records, but VVS administrators will also be able to add, delete, or modify entries in the SDF.
+    </para>
+    <para>
+Stakeholders, All of the Morgantown University Representatives mentioned in section 1.1 of this document
+    </para>
+    <para>
+SV Student Voter, a registered student of Morgantown University that is eligible to participate in a particular election or poll.
+    </para>
+    <para>
+VVSA Vorpal Voting System Administrator, a person who has access to all the functions of the VVS and is responsible for maintaining the system and assigning PAs as needed by Morgantown University
+    </para>
+  </section>
+
+  <section id="References">
+    <title>References</title>
+    <para>
+IEEE Std 830-1998 IEEE Recommended Practice for Software Requirements Specifications –Description
+    </para>
+    <para>
+Pressman, Rodger. Software Engineering: A Practitioner’s Approach. 6th Edition. New York. McGraw Hill, 2005.
+    </para>
+  </section>
+
+  <section id="Overview">
+    <title>Overview</title>
+    <para>
+The rest of this document will focus on the design process and the functionality of the VVS. The document will be used by both the developer and stakeholders to ensure that the needs of the stakeholder are being met while the VVS is under development. Hardware and interfaces with other systems will be explained. The methods and procedures the developer will use to produce the VVS will be discussed in detail. All functions of the system will be listed with a brief explanation. Detailed explanation of functionality will be discussed in future documentation. A description of possible users and their level of technical proficiency as relating to the use of the system will be covered. Constraints of the system will be discussed and finally a brief risk assessment and evaluation of assumptions and dependencies will be included.
+    </para>
+  </section>
+
+</chapter>

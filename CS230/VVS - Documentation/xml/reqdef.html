@@ -1,0 +1,1113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Vorpal Voting System</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"></HEAD
+><BODY
+CLASS="book"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="BOOK"
+><A
+NAME="AEN1"
+></A
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="title"
+><A
+NAME="AEN1"
+>Vorpal Voting System</A
+></H1
+><H2
+CLASS="subtitle"
+>Requirements Definition</H2
+><H3
+CLASS="author"
+><A
+NAME="AEN6"
+></A
+>Timothy Shaggy Bielawa</H3
+><H3
+CLASS="author"
+><A
+NAME="AEN11"
+></A
+>Andrew Butcher</H3
+><H3
+CLASS="author"
+><A
+NAME="AEN15"
+></A
+>Ben Carpenter</H3
+><H3
+CLASS="author"
+><A
+NAME="AEN19"
+></A
+>Jonathan Connell</H3
+><H3
+CLASS="author"
+><A
+NAME="AEN23"
+></A
+>Joshua Justice</H3
+><HR></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Table of Contents</B
+></DT
+><DT
+>1. <A
+HREF="#Introduction"
+>Introduction</A
+></DT
+><DD
+><DL
+><DT
+>1.1. <A
+HREF="#Purpose"
+>Purpose</A
+></DT
+><DT
+>1.2. <A
+HREF="#Scope"
+>Scope</A
+></DT
+><DT
+>1.3. <A
+HREF="#DefinitionsandAbbreviations"
+>Definititions and Abbreviations</A
+></DT
+><DT
+>1.4. <A
+HREF="#References"
+>References</A
+></DT
+><DT
+>1.5. <A
+HREF="#Overview"
+>Overview</A
+></DT
+></DL
+></DD
+><DT
+>2. <A
+HREF="#General Description"
+>General Description</A
+></DT
+><DD
+><DL
+><DT
+>2.1. <A
+HREF="#Perspective"
+>Perspective</A
+></DT
+><DD
+><DL
+><DT
+>2.1.1. <A
+HREF="#Context Diagram"
+>Context Diagram</A
+></DT
+><DT
+>2.1.2. <A
+HREF="#Use Case Diagram"
+>Use Case Diagram</A
+></DT
+></DL
+></DD
+><DT
+>2.2. <A
+HREF="#System Evolution"
+>System Evolution</A
+></DT
+><DT
+>2.3. <A
+HREF="#Product Functions"
+>Product Functions</A
+></DT
+><DD
+><DL
+><DT
+>2.3.1. <A
+HREF="#AEN79"
+>General Functions</A
+></DT
+><DT
+>2.3.2. <A
+HREF="#AEN87"
+>Student Voting Functions</A
+></DT
+><DT
+>2.3.3. <A
+HREF="#AEN98"
+>Administrator Poll Creation Functions</A
+></DT
+><DT
+>2.3.4. <A
+HREF="#AEN115"
+>Results and Statistical Viewing Functions</A
+></DT
+><DT
+>2.3.5. <A
+HREF="#AEN123"
+>Administrative Functions</A
+></DT
+></DL
+></DD
+><DT
+>2.4. <A
+HREF="#User Characteristics"
+>User Characteristics</A
+></DT
+><DD
+><DL
+><DT
+>2.4.1. <A
+HREF="#AEN167"
+>Student Body (SV)</A
+></DT
+><DT
+>2.4.2. <A
+HREF="#AEN170"
+>Student Organization Representatives or Officials (PA)</A
+></DT
+><DT
+>2.4.3. <A
+HREF="#AEN173"
+>Faculty Advisor (VVSA)</A
+></DT
+><DT
+>2.4.4. <A
+HREF="#AEN176"
+>University Provost (VVSA)</A
+></DT
+><DT
+>2.4.5. <A
+HREF="#AEN179"
+>University IT</A
+></DT
+></DL
+></DD
+><DT
+>2.5. <A
+HREF="#General Constraints"
+>General Constraints</A
+></DT
+><DD
+><DL
+><DT
+>2.5.1. <A
+HREF="#Regulatory Policies"
+>Regulatory Policies</A
+></DT
+><DT
+>2.5.2. <A
+HREF="#Hardware Limitations"
+>Hardware Limitations</A
+></DT
+><DT
+>2.5.3. <A
+HREF="#Interfaces to Other Applications"
+>Interfaces to other Applications</A
+></DT
+><DT
+>2.5.4. <A
+HREF="#Parallel Operations"
+>Parallel Operations</A
+></DT
+><DT
+>2.5.5. <A
+HREF="#Language Specifications"
+>Language Specifications</A
+></DT
+><DT
+>2.5.6. <A
+HREF="#Reliability Requirements"
+>Reliability Requirements</A
+></DT
+></DL
+></DD
+><DT
+>2.6. <A
+HREF="#Assumptions and Dependencies"
+>Assumptions and Dependencies</A
+></DT
+></DL
+></DD
+></DL
+></DIV
+><DIV
+CLASS="chapter"
+><HR><H1
+><A
+NAME="Introduction"
+></A
+>Chapter 1. Introduction</H1
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="Purpose"
+>1.1. Purpose</A
+></H2
+><P
+>&#13;      To give a detailed description of the Vorpal Voting System to include all functions and requirements specified by Morgantown University and its representatives. These representatives include the University Provost, student groups and their advisor, the student body representative(s), Admissions and Records, and the Office of Information Technology (OIT). This document is also intended to give a clear and concise summary of all communication between Vorpal Longsword +1 (known herein as the developer) and all Morgantown University Representatives (known herein as the stakeholders) which pertains to the required functions and uses of the Vorpal Voting System.
+    </P
+></DIV
+><DIV
+CLASS="section"
+><HR><H2
+CLASS="section"
+><A
+NAME="Scope"
+>1.2. Scope</A
+></H2
+><P
+>&#13;The stakeholders have determined they require all elections and polls that apply to the student body to be handled and maintained through an interactive online system. The developer has created the Vorpal Voting System (VVS) as a solution to this software need. 
+    </P
+><P
+>&#13;     The VVS will allow university student groups to create and manage their own elections and polls online. The VVS will also allow all eligible students to vote in elections and polls online. Students will be able to access the VVS through their University’s Web Portal that is already in place. All results and statistical data resulting from elections and polls will be maintained by the VVS for 7 years. The VVS will interface directly with Admissions and Records databases to create its own database of all eligible student voters which, once created, will be accessible independent of the Admission and Records databases. Finally, the VVS will conform to all general election standards unless otherwise specified within. The VVS will be used strictly for election and polling purposes only. The VVS will not be used in any manner which provides support or facilitates election campaigning. It will also not be used to host elections that only apply to University faculty or administrators.
+    </P
+><P
+>&#13;Once the VVS is installed and operational it will drastically improve the timeliness and efficiency of student oriented elections and polls. The system should encourage and increase voter participation by making it easier for students to vote. Students will be able to vote from any computer with an internet connection. Results will be available immediately following the close of any election and statistical data will be available for use by the stakeholders. 
+    </P
+><P
+>&#13;It is the goal of the developer to create a system that has a user friendly interface and meets all of the requirements and functionality requested by the stakeholders.
+    </P
+></DIV
+><DIV
+CLASS="section"
+><HR><H2
+CLASS="section"
+><A
+NAME="DefinitionsandAbbreviations"
+>1.3. Definititions and Abbreviations</A
+></H2
+><P
+>&#13;MU, Morgantown University.      
+    </P
+><P
+>&#13;VVS Vorpal Voting System, the interactive online system that will be used for elections and polls by the stakeholders.
+    </P
+><P
+>&#13;Developer Vorpal Longsword +1, the company that will create and install the VVS. The developer is also responsible for training University personnel in the use and maintenance of the VVS.
+    </P
+><P
+>&#13;Administrator,  a person with elevated privileges compared to general users.  They have access to the "behind the curtain" functionality of the Vorpal Voting System. Also referred to as "super users".
+    </P
+><P
+>&#13;PA Poll Administrator, a person who has access to poll creation and results within the VVS.
+    </P
+><P
+>&#13;SDF Student Database File, a list of all students and their personal information that will be used by the VVS to determine whether a student is eligible to vote in a particular election or poll. The SDF will be populated primarily by the VSS interfacing with Admissions and Records, but VVS administrators will also be able to add, delete, or modify entries in the SDF.
+    </P
+><P
+>&#13;Stakeholders, All of the Morgantown University Representatives mentioned in section 1.1 of this document
+    </P
+><P
+>&#13;SV Student Voter, a registered student of Morgantown University that is eligible to participate in a particular election or poll.
+    </P
+><P
+>&#13;VVSA Vorpal Voting System Administrator, a person who has access to all the functions of the VVS and is responsible for maintaining the system and assigning PAs as needed by Morgantown University
+    </P
+></DIV
+><DIV
+CLASS="section"
+><HR><H2
+CLASS="section"
+><A
+NAME="References"
+>1.4. References</A
+></H2
+><P
+>&#13;IEEE Std 830-1998 IEEE Recommended Practice for Software Requirements Specifications –Description
+    </P
+><P
+>&#13;Pressman, Rodger. Software Engineering: A Practitioner’s Approach. 6th Edition. New York. McGraw Hill, 2005.
+    </P
+></DIV
+><DIV
+CLASS="section"
+><HR><H2
+CLASS="section"
+><A
+NAME="Overview"
+>1.5. Overview</A
+></H2
+><P
+>&#13;The rest of this document will focus on the design process and the functionality of the VVS. The document will be used by both the developer and stakeholders to ensure that the needs of the stakeholder are being met while the VVS is under development. Hardware and interfaces with other systems will be explained. The methods and procedures the developer will use to produce the VVS will be discussed in detail. All functions of the system will be listed with a brief explanation. Detailed explanation of functionality will be discussed in future documentation. A description of possible users and their level of technical proficiency as relating to the use of the system will be covered. Constraints of the system will be discussed and finally a brief risk assessment and evaluation of assumptions and dependencies will be included.
+    </P
+></DIV
+></DIV
+><DIV
+CLASS="chapter"
+><HR><H1
+><A
+NAME="General Description"
+></A
+>Chapter 2. General Description</H1
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="Perspective"
+>2.1. Perspective</A
+></H2
+><P
+>&#13;      The Vorpal Voting System will serve as a polling system to be
+      utilized by students of MU. The VVS will integrate with the
+      current web based infrastructure maintained by Morgantown
+      University.  That being said, VVS will be available via the
+      world wide web through the already existing Morgantown
+      University web portal.  Students of MU will log into the VVS
+      using their credentials assigned by from the university, which
+      are on record with the campus admission and records office.
+      While the VVS will incorporate with the campus web portal, it
+      will be hosted externally on Vorpal Longsword servers and will
+      communicate with campus IT to authenticate or verify the status
+      of users.
+    </P
+><P
+>&#13;      The system will be modular enough to house any type of poll;
+      Examples include student government elections to campus cafe
+      evaluation.  Dynamically, administrators of the system will be
+      able to create polls which include an array of options.  Once
+      the polls have taken place, statistical results will be sent to
+      users and detailed statistics will be available to certain
+      users.
+    </P
+><P
+>&#13;      The basis of the system lies in the roles of users which will be
+      provided by the system.  This includes the actual student users
+      (SV's), student organization and government officials (PA's),
+      faculty advisors / university provost (VVSA's).  Certain
+      privileges will are provided depending on the user in question.
+      The privileges are detailed in the diagrams included in this
+      section.  It is assumed that the privileges available to the SV
+      are available to the PA, which are in turn available to the VVSA
+      with slight variation.
+    </P
+><DIV
+CLASS="section"
+><HR><H3
+CLASS="section"
+><A
+NAME="Context Diagram"
+>2.1.1. Context Diagram</A
+></H3
+><DIV
+CLASS="mediaobject"
+><P
+><IMG
+SRC="CD_VVS.jpg"></P
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><HR><H3
+CLASS="section"
+><A
+NAME="Use Case Diagram"
+>2.1.2. Use Case Diagram</A
+></H3
+><DIV
+CLASS="mediaobject"
+><P
+><IMG
+SRC="UseCaseDiagram.jpg"></P
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><HR><H2
+CLASS="section"
+><A
+NAME="System Evolution"
+>2.2. System Evolution</A
+></H2
+><P
+>&#13;      This is the system evolution section.
+    </P
+></DIV
+><DIV
+CLASS="section"
+><HR><H2
+CLASS="section"
+><A
+NAME="Product Functions"
+>2.3. Product Functions</A
+></H2
+><P
+>&#13;      This is the product functions section.
+    </P
+><DIV
+CLASS="section"
+><HR><H3
+CLASS="section"
+><A
+NAME="AEN79"
+>2.3.1. General Functions</A
+></H3
+><DIV
+CLASS="section"
+><H4
+CLASS="section"
+><A
+NAME="AEN81"
+>2.3.1.1. Login</A
+></H4
+><P
+>&#13;	    Allows a user to login to the VVS and verifies their credentials.
+	</P
+></DIV
+><DIV
+CLASS="section"
+><HR><H4
+CLASS="section"
+><A
+NAME="AEN84"
+>2.3.1.2. Logout</A
+></H4
+><P
+>&#13;	    Logs the user out of the VVS.
+	</P
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><HR><H3
+CLASS="section"
+><A
+NAME="AEN87"
+>2.3.2. Student Voting Functions</A
+></H3
+><DIV
+CLASS="section"
+><H4
+CLASS="section"
+><A
+NAME="AEN89"
+>2.3.2.1. Poll_display_available</A
+></H4
+><P
+>&#13;	    Displays a list of all polls in which an SV is eligible to cast a vote.
+	</P
+></DIV
+><DIV
+CLASS="section"
+><HR><H4
+CLASS="section"
+><A
+NAME="AEN92"
+>2.3.2.2. Poll_select_to_vote</A
+></H4
+><P
+>&#13;	    Selects the poll for which an SV wants to vote.
+	</P
+></DIV
+><DIV
+CLASS="section"
+><HR><H4
+CLASS="section"
+><A
+NAME="AEN95"
+>2.3.2.3. Vote</A
+></H4
+><P
+>&#13;	    Allows the SV to cast a vote.
+	</P
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><HR><H3
+CLASS="section"
+><A
+NAME="AEN98"
+>2.3.3. Administrator Poll Creation Functions</A
+></H3
+><DIV
+CLASS="section"
+><H4
+CLASS="section"
+><A
+NAME="AEN100"
+>2.3.3.1. Ballot_create</A
+></H4
+><P
+>&#13;	    Allows the PA to create a new custom ballot or to load a previously saved ballot template.
+	</P
+></DIV
+><DIV
+CLASS="section"
+><HR><H4
+CLASS="section"
+><A
+NAME="AEN103"
+>2.3.3.2. Ballot_delete</A
+></H4
+><P
+>&#13;	    Allows the PA to delete a ballot if it has not yet been confirmed.
+	</P
+></DIV
+><DIV
+CLASS="section"
+><HR><H4
+CLASS="section"
+><A
+NAME="AEN106"
+>2.3.3.3. Ballot_modify</A
+></H4
+><P
+>&#13;	    Allows the PA to modify a ballot if it has not yet been confirmed.
+	</P
+></DIV
+><DIV
+CLASS="section"
+><HR><H4
+CLASS="section"
+><A
+NAME="AEN109"
+>2.3.3.4. Ballot_save_changes</A
+></H4
+><P
+>&#13;	    Saves all changes that have been made to a ballot.
+	</P
+></DIV
+><DIV
+CLASS="section"
+><HR><H4
+CLASS="section"
+><A
+NAME="AEN112"
+>2.3.3.5. Ballot_confirm</A
+></H4
+><P
+>&#13;	    Shows all ballot information and allows the PA to cancel, modify or confirm. Once confirm is selected, no more changes may be made to the ballot.
+	</P
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><HR><H3
+CLASS="section"
+><A
+NAME="AEN115"
+>2.3.4. Results and Statistical Viewing Functions</A
+></H3
+><DIV
+CLASS="section"
+><H4
+CLASS="section"
+><A
+NAME="AEN117"
+>2.3.4.1. Result_statistic_select_report</A
+></H4
+><P
+>&#13;	    Allows user to select the type of report they want to see.
+	</P
+></DIV
+><DIV
+CLASS="section"
+><HR><H4
+CLASS="section"
+><A
+NAME="AEN120"
+>2.3.4.2. Result_statistic_select_poll</A
+></H4
+><P
+>&#13;	    Allows the user to select the poll(s) they wish to see in a report.
+	</P
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><HR><H3
+CLASS="section"
+><A
+NAME="AEN123"
+>2.3.5. Administrative Functions</A
+></H3
+><DIV
+CLASS="section"
+><H4
+CLASS="section"
+><A
+NAME="AEN125"
+>2.3.5.1. Administrative_database_sync</A
+></H4
+><P
+>&#13;	    The VVS connects with the Admissions and Records student information database and updates the VVS SDF with any changes. Makes appropriate changes to voter groups.
+	</P
+></DIV
+><DIV
+CLASS="section"
+><HR><H4
+CLASS="section"
+><A
+NAME="AEN128"
+>2.3.5.2. Administrative_database_add_voter</A
+></H4
+><P
+>&#13;	    Allows a VVS Administrator to add a SV to the VVS SDF.
+	</P
+></DIV
+><DIV
+CLASS="section"
+><HR><H4
+CLASS="section"
+><A
+NAME="AEN131"
+>2.3.5.3. Administrative_database_delete_voter</A
+></H4
+><P
+>&#13;	    Allows a VVS Administrator to delete a SV to the VVS SDF. Makes appropriate changes to voter groups.
+	</P
+></DIV
+><DIV
+CLASS="section"
+><HR><H4
+CLASS="section"
+><A
+NAME="AEN134"
+>2.3.5.4. Administrative_database_modify_voter</A
+></H4
+><P
+>&#13;	    Allows a VVS Administrator to modify a SV’s information in the VVS SDF.
+	</P
+></DIV
+><DIV
+CLASS="section"
+><HR><H4
+CLASS="section"
+><A
+NAME="AEN137"
+>2.3.5.5. Administrative_poll_administrator_create</A
+></H4
+><P
+>&#13;	    Allows a VVS Administrator to create a new PA and set their usage privileges.
+	</P
+></DIV
+><DIV
+CLASS="section"
+><HR><H4
+CLASS="section"
+><A
+NAME="AEN140"
+>2.3.5.6. Administrative_poll_administrator_delete</A
+></H4
+><P
+>&#13;	    Allows a VVS Administrator to delete a PA.
+	</P
+></DIV
+><DIV
+CLASS="section"
+><HR><H4
+CLASS="section"
+><A
+NAME="AEN143"
+>2.3.5.7. Administrative_poll_administrator_modify</A
+></H4
+><P
+>&#13;	    Allows a VVS Administrator to modify a PA’s information or usage privileges.
+	</P
+></DIV
+><DIV
+CLASS="section"
+><HR><H4
+CLASS="section"
+><A
+NAME="AEN146"
+>2.3.5.8. Administrator_poll_template_create</A
+></H4
+><P
+>&#13;	    Allows a VVS Administrator to create a ballot template that can be used by PA’s when they create a ballot.
+	</P
+></DIV
+><DIV
+CLASS="section"
+><HR><H4
+CLASS="section"
+><A
+NAME="AEN149"
+>2.3.5.9. Administrator_poll_template_delete</A
+></H4
+><P
+>&#13;	    Allows a VVS Administrator to delete a ballot template.
+	</P
+></DIV
+><DIV
+CLASS="section"
+><HR><H4
+CLASS="section"
+><A
+NAME="AEN152"
+>2.3.5.10. Administrative_poll_template_modify</A
+></H4
+><P
+>&#13;	    Allows a VVS Administrator to modify a ballot template.
+	</P
+></DIV
+><DIV
+CLASS="section"
+><HR><H4
+CLASS="section"
+><A
+NAME="AEN155"
+>2.3.5.11. Administrative_voter_group_create</A
+></H4
+><P
+>&#13;	    Allows a VVS Administrator to create a new voter group by selecting SV’s and/or selecting previously saved voter groups.
+	</P
+></DIV
+><DIV
+CLASS="section"
+><HR><H4
+CLASS="section"
+><A
+NAME="AEN158"
+>2.3.5.12. Administrative_voter_group_delete</A
+></H4
+><P
+>&#13;	    Allows a VVS Administrator to delete a voter group.
+	</P
+></DIV
+><DIV
+CLASS="section"
+><HR><H4
+CLASS="section"
+><A
+NAME="AEN161"
+>2.3.5.13. Administrative_voter_group_modify</A
+></H4
+><P
+>&#13;	    Allows a VVS Administrator to modify the members of a voter group.
+	</P
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><HR><H2
+CLASS="section"
+><A
+NAME="User Characteristics"
+>2.4. User Characteristics</A
+></H2
+><P
+>&#13;      The following are users within Morgantown University as
+      specified by the scope of the VVS.
+    </P
+><DIV
+CLASS="section"
+><HR><H3
+CLASS="section"
+><A
+NAME="AEN167"
+>2.4.1. Student Body (SV)</A
+></H3
+><P
+>&#13;	College level students with minimal understanding of
+	university systems and technical knowledge. Students log into
+	the system and place their votes.  When polls end, they get an
+	email notification if they participated in the poll.  Will be
+	the main users of the system.
+      </P
+></DIV
+><DIV
+CLASS="section"
+><HR><H3
+CLASS="section"
+><A
+NAME="AEN170"
+>2.4.2. Student Organization Representatives or Officials (PA)</A
+></H3
+><P
+>&#13;	College students/leaders who will be the main administrators
+	of the system. They have the final say on the visual layout
+	"look and feel" of the individual polls created.  PA's get
+	access to detailed statistical breakdowns of the polls they
+	create, with respect to anonymous voter demographics.  These
+	users also appear as students when it comes to actually voting
+	within the system, but have access to "behind the stage"
+	functionality. Limited access and technical knowledge to
+	school systems.
+      </P
+></DIV
+><DIV
+CLASS="section"
+><HR><H3
+CLASS="section"
+><A
+NAME="AEN173"
+>2.4.3. Faculty Advisor (VVSA)</A
+></H3
+><P
+>&#13;	Professors or professionals employed by the university to
+	cooperate with student government and organizations which may
+	possess a low level of technical knowledge.  These users will
+	be responsible for creating and removing student PA's to the
+	voting system.
+      </P
+></DIV
+><DIV
+CLASS="section"
+><HR><H3
+CLASS="section"
+><A
+NAME="AEN176"
+>2.4.4. University Provost (VVSA)</A
+></H3
+><P
+>&#13;	Individual in charge of creating VVSA's, that is specifying
+	other faculty members which are capable of working with
+	student organizations and government to administer for the
+	system.  These users may possess minimal technical knowledge.
+      </P
+></DIV
+><DIV
+CLASS="section"
+><HR><H3
+CLASS="section"
+><A
+NAME="AEN179"
+>2.4.5. University IT</A
+></H3
+><P
+>&#13;	University employees who manage the servers, databases,
+	etc. High levels of technical understanding. Will work
+	closely with in order to verify students records
+	(cooperating with Admissions and Records) and to work in
+	concert with the already evident campus web portal.
+      </P
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><HR><H2
+CLASS="section"
+><A
+NAME="General Constraints"
+>2.5. General Constraints</A
+></H2
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="Regulatory Policies"
+>2.5.1. Regulatory Policies</A
+></H3
+><P
+>&#13;	Data collected by the VVS from SVs shall remain anonymous at
+	all times. Polling results collected by the VVS will only be
+	released after the lifetime of a poll has passed and a PA has
+	selected to release the results. Released data will only be
+	displayed through units of percentages, e.g.: percentage of
+	voters who selected each poll option.
+      </P
+><P
+>&#13;	To maintain poll data integrity, only student voters whose
+	identity and voting elegability has been confirmed by the VVS
+	with the VVS database on a pollwise status, as well as with
+	the Admissions and Records database by means of the Campus IT
+	systems will be granted access to any given poll.
+      </P
+></DIV
+><DIV
+CLASS="section"
+><HR><H3
+CLASS="section"
+><A
+NAME="Hardware Limitations"
+>2.5.2. Hardware Limitations</A
+></H3
+><P
+>&#13;	The VVS will run on the hardware that has been approved by the
+	Campus IT department. The minimal hardware requirements of the
+	interface by which SVs interact with the VVS will be an
+	internet enabled laptop or desktop. The SV interface will run
+	on all student authorized internet accessable computers that
+	Morgantown University maintains. The SV interface to the VVS
+	will require a dial up modem internet connection speed or
+	greater.
+      </P
+></DIV
+><DIV
+CLASS="section"
+><HR><H3
+CLASS="section"
+><A
+NAME="Interfaces to Other Applications"
+>2.5.3. Interfaces to other Applications</A
+></H3
+><P
+>&#13;	The VVS will communicate with the Campus IT computer systems
+	through an encrypted connection protocol.
+      </P
+></DIV
+><DIV
+CLASS="section"
+><HR><H3
+CLASS="section"
+><A
+NAME="Parallel Operations"
+>2.5.4. Parallel Operations</A
+></H3
+><P
+>&#13;	The user authentication process depends on other system taks
+	completing before it can complete. These systems are said to
+	be working in parallel.
+      </P
+><P
+>&#13;	At the initiation of any new session all individuals
+	attempting to gain access to the VVS will be required to
+	present their authentication credentials over a secured
+	communication channel. When the users supplied credentials
+	have been collected by the VVS a query is made over a secure
+	channel from the VVS through Campus IT which asks if the
+	supplied information matches what Admissions and Records
+	maintains for that user.
+      </P
+><P
+>&#13;	When Campus IT has recieved a response from the Admissions and
+	Records systems the response is relayed back to the VVS. When
+	these communications have been received operation returns to
+	handling the authenticating users session.
+      </P
+><P
+>&#13;	To the authenticating user this appears as one operation,
+	though it is actually multiple processes running concurrently.
+      </P
+></DIV
+><DIV
+CLASS="section"
+><HR><H3
+CLASS="section"
+><A
+NAME="Language Specifications"
+>2.5.5. Language Specifications</A
+></H3
+><P
+>&#13;	The VVS will be available through an English language
+	interface.
+      </P
+></DIV
+><DIV
+CLASS="section"
+><HR><H3
+CLASS="section"
+><A
+NAME="Reliability Requirements"
+>2.5.6. Reliability Requirements</A
+></H3
+><P
+>&#13;	The reliability of the VVS is defined as "always available."
+	This is subject to the availability of the Campus IT Systems.
+	Currently Campus IT Systems are only available from 00:00 on
+	Monday to 23:59 Saturday. Given those limitations the VVS will
+	only be available for use from 00:00 Monday through 23:59
+	Saturday.
+      </P
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><HR><H2
+CLASS="section"
+><A
+NAME="Assumptions and Dependencies"
+>2.6. Assumptions and Dependencies</A
+></H2
+><P
+>&#13;      The following are assumptions and dependencies which are evident
+      in the system:
+    </P
+><P
+></P
+><UL
+><LI
+>The system will be packaged in such a way that it will be
+	deployable on any server with an existing database.
+      </LI
+><LI
+>Students utilizing the system will be able to access the from
+	any computer which has access to the internet.
+      </LI
+><LI
+>The system will provide sufficient training to new users as
+	well as administrators of the system regardless of their
+	technology skill level.
+      </LI
+><LI
+>The system will be available any time the campus web portal is
+	available.  The campus web portal is sometimes down on
+	Sundays, which means that authentication will be reliant on
+	the maintenance of the campus web portal.
+      </LI
+><LI
+>VVS will comply with all conventions relevant to polling.
+      </LI
+><LI
+>Polls will only be accessible within the time frame specified
+	by the administrator.
+      </LI
+><LI
+>Polls will not be available for editing by anyone, regardless
+	of status, during the active poll time period specified by the
+	administrator.
+      </LI
+><LI
+>Statistics will be served depending on the wishes of the poll
+	creator.
+      </LI
+><LI
+>There will be no vulnerabilities in the system where
+	information will be available to outsiders to the system.
+	Users will remain anonymous.
+      </LI
+></UL
+><P
+>&#13;      The following will cover how risks will be assessed in the
+      system:
+    </P
+><P
+></P
+><UL
+><LI
+>Testing will take place in which student
+	organization/government officials, faculty advisors, and the
+	university provost will be involved to ensure the completeness
+	in functionality of the system.
+      </LI
+><LI
+>Students voters will be able to provide their opinions
+	regarding system performance after the initial release of the
+	system.
+      </LI
+><LI
+>Security measures will be in place to ensure the integrity of
+	the system and protect the anonymity of the student users.
+      </LI
+></UL
+></DIV
+></DIV
+></DIV
+></BODY
+></HTML
+>

@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://docbook.org/xml/4.5/docbookx.dtd">
+<book>
+ <title>Vorpal Voting System</title>
+ <bookinfo>
+   <subtitle>Acceptance Test Plan</subtitle>
+   <authorgroup>
+     <author>
+       <personname>
+         <surname>Bielawa</surname>
+         <firstname>Timothy</firstname>
+         <othername>"Shaggy"</othername>
+       </personname>
+     </author>
+     <author>
+       <personname>
+         <surname>Butcher</surname>
+         <firstname>Andrew</firstname>
+       </personname>
+     </author>
+     <author>
+       <personname>
+         <surname>Carpenter</surname>
+         <firstname>Ben</firstname>
+       </personname>
+     </author>
+     <author>
+       <personname>
+         <surname>Connell</surname>
+         <firstname>Jonathan</firstname>
+       </personname>
+     </author>
+     <author>
+       <personname>
+         <surname>Justice</surname>
+         <firstname>Joshua</firstname>
+       </personname>
+     </author>
+   </authorgroup>
+   <revhistory>
+     <revision>
+       <revnumber>0.1</revnumber>
+       <date>2008/11/12</date>
+       <revremark>First Draft</revremark>
+     </revision>
+   </revhistory>
+ </bookinfo>
+
+ <chapter>
+   <title>Acceptance Test Plan Format</title>
+     <para>The following table will be used for the acceptance test
+plan. This table will list all of the expected goals of each function
+described in section 3.1 of the Requirements Specification. For each
+goal, the required inputs and the expected output will be listed.
+These goals we be used to test the VVS. These tests will ensure that
+the product Vorpal Longsword +1 is building is the exact product
+Morgantown University is requisitioning.
+     </para>
+     <informaltable frame='all'>
+     <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+     <colspec colname='c1'/>
+     <colspec colname='c2'/>
+     <colspec colname='c3'/>
+     <thead><row><entry namest="c1" nameend="c3" align="center">Function Name</entry></row>
+            <row><entry namest="c1" nameend="c3" align="center">Function Description</entry></row>
+            <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row>
+     </thead> 
+     <tbody><row><entry></entry><entry></entry><entry></entry></row>
+     </tbody>
+     </tgroup>
+     </informaltable>
+   <section>
+     <title>The Login Function</title>
+       <informaltable frame='all'>
+       <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+       <colspec colname='c1'/>
+       <colspec colname='c2'/>
+       <colspec colname='c3'/>
+       <thead><row><entry namest="c1" nameend="c3" align="center">Login</entry></row>
+              <row><entry namest="c1" nameend="c3" align="center">Allows SV, EO or a VVSA to login to the VVS and verifies their credentials.</entry></row>
+              <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row> 
+       </thead>       
+       <tbody>
+       <row>
+         <entry>Successful login.</entry>
+         <entry>Correct username and password.</entry>
+         <entry>User is redirected to the login screen.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Nonexistent username, any password.</entry>
+         <entry>User redirected to the login screen and "Incorrect Username or Password." error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Correct username, incorrect password.</entry>
+         <entry>User redirected to the login screen and "Incorrect Username or Password." error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Connection Interrupted.</entry>
+         <entry>User is redirected to the login screen and "Connection Interrupted" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Database inaccessible.</entry>
+         <entry>User is redirected to the login screen and "Database currently inaccessible" error message displayed.</entry>
+       </row>
+       </tbody>
+       </tgroup>
+       </informaltable>
+   </section>
+   <section>
+     <title>The Logout Function</title>
+       <informaltable frame='all'>
+       <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+       <colspec colname='c1'/>
+       <colspec colname='c2'/>
+       <colspec colname='c3'/>
+       <thead><row><entry namest="c1" nameend="c3" align="center">Logout</entry></row>
+              <row><entry namest="c1" nameend="c3" align="center">Logs the user out of the VVS.</entry></row>
+              <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row> 
+       </thead>
+       <tbody>
+       <row>
+         <entry>Successful logout.</entry>
+         <entry>Request to logout.</entry>
+         <entry>User logged out, none.</entry>
+       </row>
+       <row>
+         <entry>Success/Failure.</entry>
+         <entry>Request to logout.</entry>
+         <entry>User logged out, none.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Connection Interrupted.</entry>
+         <entry>User is redirected to the VVS main page and "Connection Interrupted" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Database inaccessible.</entry>
+         <entry>"Database currently inaccessible" error message displayed.</entry>
+       </row>
+       </tbody>
+       </tgroup>
+       </informaltable>
+   </section>
+   <section>
+     <title>The System Backup and Restore Function</title>
+       <informaltable frame='all'>
+       <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+       <colspec colname='c1'/>
+       <colspec colname='c2'/>
+       <colspec colname='c3'/>
+       <thead><row><entry namest="c1" nameend="c3" align="center">Backup_restore</entry></row>
+              <row><entry namest="c1" nameend="c3" align="center">Allows a VVSA to backup and restore the VVS.</entry></row>
+              <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row> 
+       </thead>
+       <tbody>
+       <row>
+         <entry>Successful backup/restore.</entry>
+         <entry>EO or VVSA user initiates backup_restore option.</entry>
+         <entry>Menu displayed with backup and restore as choices. If backup is selected, the VVS stores all present data to the specified backup file. If restore is selected, the VVS restores all system data from the specified backup file.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Restore initiated with no backed up data on file.</entry>
+         <entry>"There is no data to restore" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>User is not designated EO or VVSA and initiates backup_restore.</entry>
+         <entry>"You do not have the permissions to do this" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Connection Interrupted.</entry>
+         <entry>User is redirected to the VVS main page and "Connection Interrupted" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Database inaccessible.</entry>
+         <entry>"Database currently inaccessible" error message displayed.</entry>
+       </row>
+       </tbody>
+       </tgroup>
+       </informaltable>
+   </section>
+   <section>
+     <title>The Vote Function</title>
+       <informaltable frame='all'>
+       <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+       <colspec colname='c1'/>
+       <colspec colname='c2'/>
+       <colspec colname='c3'/>
+       <thead><row><entry namest="c1" nameend="c3" align="center">Vote</entry></row>
+              <row><entry namest="c1" nameend="c3" align="center">Allows the SV to cast a vote.</entry></row>
+              <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row> 
+       </thead>
+       <tbody>
+       <row>
+         <entry>Successful vote.</entry>
+         <entry>Valid vote cast by valid SV user.</entry>
+         <entry>Vote tallied and confirmation message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Not a valid SV user.</entry>
+         <entry>"You do not have the permissions to do this" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Ballot no longer exists (closed or deleted).</entry>
+         <entry>"This ballot no longer exists or has been closed" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Connection Interrupted.</entry>
+         <entry>User is redirected to the VVS main page and "Connection Interrupted" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Database inaccessible.</entry>
+         <entry>"Database currently inaccessible" error message displayed.</entry>
+       </row>
+       </tbody>
+       </tgroup>
+       </informaltable>
+   </section>
+   <section>
+     <title>The Ballot Creation Function</title>
+       <informaltable frame='all'>
+       <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+       <colspec colname='c1'/>
+       <colspec colname='c2'/>
+       <colspec colname='c3'/>
+       <thead><row><entry namest="c1" nameend="c3" align="center">Ballot_create</entry></row>
+              <row><entry namest="c1" nameend="c3" align="center">Allows the EO to create a new custom ballot or to load a previously saved ballot template.</entry></row>
+              <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row> 
+       </thead>       
+       <tbody>
+       <row>
+         <entry>Successful ballot created.</entry>
+         <entry>EO user creates valid custom ballot.</entry>
+         <entry>Menu displayed with text boxes for all necessary information and confirmation message displayed.</entry>
+       </row>
+       <row>
+         <entry>Successful ballot created.</entry>
+         <entry>EO user loads valid ballot from templates.</entry>
+         <entry>Confirmation message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Connection Interrupted.</entry>
+         <entry>User is redirected to the VVS main page and "Connection Interrupted" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Database inaccessible.</entry>
+         <entry>"Database currently inaccessible" error message displayed.</entry>
+       </row>
+       </tbody>
+       </tgroup>
+       </informaltable>
+   </section>
+   <section>
+     <title>The Ballot Deletion Function</title>
+       <informaltable frame='all'>
+       <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+       <colspec colname='c1'/>
+       <colspec colname='c2'/>
+       <colspec colname='c3'/>
+       <thead><row><entry namest="c1" nameend="c3" align="center">Ballot_delete</entry></row>
+              <row><entry namest="c1" nameend="c3" align="center">Allows the EO to delete a ballot if it has not yet been confirmed.</entry></row>
+              <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row> 
+       </thead>       
+       <tbody>       
+       <row>
+         <entry>Successful ballot delete.</entry>
+         <entry>EO user selects a valid ballot that is not currently open.</entry>
+         <entry>Ballot is deleted from VVS database and Confirmation message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>No ballot selected, or ballot selected no longer exists.</entry>
+         <entry>"Selected ballot does not exist" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Connection Interrupted.</entry>
+         <entry>User is redirected to the VVS main page and "Connection Interrupted" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Database inaccessible.</entry>
+         <entry>"Database currently inaccessible" error message displayed.</entry>
+       </row>
+       </tbody>
+       </tgroup>
+       </informaltable>
+   </section>
+
+   <section>
+     <title>The Ballot Modification Function</title>
+       <informaltable frame='all'>
+       <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+       <colspec colname='c1'/>
+       <colspec colname='c2'/>
+       <colspec colname='c3'/>
+       <thead><row><entry namest="c1" nameend="c3" align="center">Ballot_modify</entry></row>
+              <row><entry namest="c1" nameend="c3" align="center">Allows the EO to modify a ballot if it has not yet been confirmed.</entry></row>
+              <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row> 
+       </thead>
+       <tbody>       
+       <row>
+         <entry>Successful ballot modify.</entry>
+         <entry>Valid EO user selects a valid ballot and modifies it keeping within predefined parameters.</entry>
+         <entry>Menu displayed with text boxes containing ballot information. Confirmation message then saved after editing.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>User attempts to modify the ballot outside predefined parameters.</entry>
+         <entry>"You cannot perform this action" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>User attempts to modify a ballot that currently is open.</entry>
+         <entry>"You cannot perform this action while the ballot is open" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Connection Interrupted.</entry>
+         <entry>User is redirected to the VVS main page and "Connection Interrupted" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Database inaccessible.</entry>
+         <entry>"Database currently inaccessible" error message displayed.</entry>
+       </row>
+       </tbody>
+       </tgroup>
+       </informaltable>
+   </section>
+   <section>
+     <title>The Ballot Conformation Function</title>
+       <informaltable frame='all'>
+       <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+       <colspec colname='c1'/>
+       <colspec colname='c2'/>
+       <colspec colname='c3'/>
+       <thead><row><entry namest="c1" nameend="c3" align="center">Ballot_confirm</entry></row>
+              <row><entry namest="c1" nameend="c3" align="center">Shows all ballot information and allows the EO to cancel, modify or confirm. Once confirm is selected, no more changes may be made to the ballot.</entry></row>
+              <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row> 
+       </thead>
+       <tbody>       
+       <row>
+         <entry>Successful ballot confirmation.</entry>
+         <entry>Valid PA user and valid ballot.</entry>
+         <entry>All ballot info along with the options to cancel, modify, and confirm the ballot. Ballot then saved.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Invalid user or ballot.</entry>
+         <entry>"Invalid user or ballot" error message.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Connection Interrupted.</entry>
+         <entry>User is redirected to the VVS main page and "Connection Interrupted" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Database inaccessible.</entry>
+         <entry>"Database currently inaccessible" error message displayed.</entry>
+       </row>
+       </tbody>
+       </tgroup>
+       </informaltable>
+   </section>
+   <section>
+     <title>The Election Announcement Function</title>
+       <informaltable frame='all'>
+       <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+       <colspec colname='c1'/>
+       <colspec colname='c2'/>
+       <colspec colname='c3'/>
+       <thead><row><entry namest="c1" nameend="c3" align="center">Election_ announcement</entry></row>
+              <row><entry namest="c1" nameend="c3" align="center">Allows the EO to create an announcement related to a specific poll or election.</entry></row>
+              <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row> 
+       </thead>
+       <tbody>       
+       <row>
+         <entry>Successful announcement.</entry>
+         <entry>Valid user inputs text into the text box.</entry>
+         <entry>All ballot info along with the options to cancel, modify, and confirm the ballot. Ballot then saved.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Invalid user or ballot.</entry>
+         <entry>"You do not have permission to do this" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Announcement by the input name has already been made.</entry>
+         <entry>"This announcement already exists, please rename it" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Connection Interrupted.</entry>
+         <entry>User is redirected to the VVS main page and "Connection Interrupted" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Database inaccessible.</entry>
+         <entry>"Database currently inaccessible" error message displayed.</entry>
+       </row>
+       </tbody>
+       </tgroup>
+       </informaltable>
+   </section>
+
+   <section>
+     <title>The Open Poll Function</title>
+       <informaltable frame='all'>
+       <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+       <colspec colname='c1'/>
+       <colspec colname='c2'/>
+       <colspec colname='c3'/>
+       <thead><row><entry namest="c1" nameend="c3" align="center">Poll_open</entry></row>
+              <row><entry namest="c1" nameend="c3" align="center">Opens the poll to the SVs.</entry></row>
+              <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row> 
+       </thead>
+       <tbody>       
+       <row>
+         <entry>Successful poll opening.</entry>
+         <entry>Valid user selects a valid new poll.</entry>
+         <entry>All ballot info along with the options to cancel, modify, and confirm the ballot. Ballot then saved.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Invalid user or ballot.</entry>
+         <entry>Poll data backed up, poll access restrictions reset, poll reopened, and confirmation message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Selected poll does not exist.</entry>
+         <entry>"Selected poll no longer exists" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Selected poll already open.</entry>
+         <entry>"Selected poll already open" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Connection Interrupted.</entry>
+         <entry>User is redirected to the VVS main page and "Connection Interrupted" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Database inaccessible.</entry>
+         <entry>"Database currently inaccessible" error message displayed.</entry>
+       </row>
+       </tbody>
+       </tgroup>
+       </informaltable>
+   </section>
+   <section>
+     <title>The Close Poll Function</title>
+       <informaltable frame='all'>
+       <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+       <colspec colname='c1'/>
+       <colspec colname='c2'/>
+       <colspec colname='c3'/>
+       <thead><row><entry namest="c1" nameend="c3" align="center">Poll_close</entry></row>
+              <row><entry namest="c1" nameend="c3" align="center">Closes the poll to the SVs.</entry></row>
+              <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row> 
+       </thead>
+       <tbody>       
+       <row>
+         <entry>Successful poll closing.</entry>
+         <entry>Valid user selects a valid new poll.</entry>
+         <entry>All ballot info along with the options to cancel, modify, and confirm the ballot. Ballot then saved.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Invalid user or ballot.</entry>
+         <entry>Poll data backed up, poll access restrictions reset, poll reopened, and confirmation message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Selected poll does not exist.</entry>
+         <entry>"Selected poll no longer exists" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Selected poll already open.</entry>
+         <entry>"Selected poll already open" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Connection Interrupted.</entry>
+         <entry>User is redirected to the VVS main page and "Connection Interrupted" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure</entry>
+         <entry>Database inaccessible.</entry>
+         <entry>"Database currently inaccessible" error message displayed.</entry>
+       </row>
+       </tbody>
+       </tgroup>
+       </informaltable>
+   </section>
+   <section>
+     <title>The Vote Recount Function</title>
+       <informaltable frame='all'>
+       <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+       <colspec colname='c1'/>
+       <colspec colname='c2'/>
+       <colspec colname='c3'/>
+       <thead><row><entry namest="c1" nameend="c3" align="center">Vote_recount</entry></row>
+              <row><entry namest="c1" nameend="c3" align="center">Recounts the votes for the selected poll.</entry></row>
+              <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row> 
+       </thead>
+       <tbody>       
+       <row>
+         <entry>Successful recount.</entry>
+         <entry>User selects to reset the poll.</entry>
+         <entry>All ballot info along with the options to cancel, modify, and confirm the ballot. Ballot then saved.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Invalid user or ballot.</entry>
+         <entry>"The poll cannot be recounted at this time" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Connection Interrupted.</entry>
+         <entry>User is redirected to the VVS main page and "Connection Interrupted" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Database inaccessible.</entry>
+         <entry>"Database currently inaccessible" error message displayed.</entry>
+       </row>
+       </tbody>
+       </tgroup>
+       </informaltable>
+   </section>
+   <section>
+     <title>The Disqualify a Vote Function</title>
+       <informaltable frame='all'>
+       <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+       <colspec colname='c1'/>
+       <colspec colname='c2'/>
+       <colspec colname='c3'/>
+       <thead><row><entry namest="c1" nameend="c3" align="center">Vote_disqualify</entry></row>
+              <row><entry namest="c1" nameend="c3" align="center">Allows an EO or VVSA to disqualify the vote of a selected SV if that SV is deemed ineligible to vote.</entry></row>
+              <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row> 
+       </thead>
+       <tbody>       
+       <row>
+         <entry>Successful disqualify.</entry>
+         <entry>Valid EO user selects a SV user to disqualify.</entry>
+         <entry>All ballot info along with the options to cancel, modify, and confirm the ballot. Ballot then saved.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Invalid user or ballot.</entry>
+         <entry>"You do not have the permission to do this" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Connection Interrupted.</entry>
+         <entry>User is redirected to the VVS main page and "Connection Interrupted" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Database inaccessible.</entry>
+         <entry>"Database currently inaccessible" error message displayed.</entry>
+       </row>
+       </tbody>
+       </tgroup>
+       </informaltable>
+   </section>
+   <section>
+     <title>The Results Report Display Function</title>
+       <informaltable frame='all'>
+       <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+       <colspec colname='c1'/>
+       <colspec colname='c2'/>
+       <colspec colname='c3'/>
+       <thead><row><entry namest="c1" nameend="c3" align="center">Results_display</entry></row>
+              <row><entry namest="c1" nameend="c3" align="center">Displays the results for the selected poll.</entry></row>
+              <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row> 
+		 </thead>
+       <tbody>      
+       <row>
+         <entry>Successful display of results.</entry>
+         <entry>Valid EO or VVSA user selects display results.</entry>
+         <entry>All ballot info along with the options to cancel, modify, and confirm the ballot. Ballot then saved.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Invalid user or ballot.</entry>
+         <entry>"You do not have the permission to do this" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Valid EO or VVSA user selects to display a poll that does not exist or is still running.</entry>
+         <entry>"You cannot display results at this time" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Connection Interrupted.</entry>
+         <entry>User is redirected to the VVS main page and "Connection Interrupted" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Database inaccessible.</entry>
+         <entry>"Database currently inaccessible" error message displayed.</entry>
+       </row>
+       </tbody>
+       </tgroup>
+       </informaltable>
+   </section>
+   <section>
+     <title>The Statistical Report Display Function</title>
+       <informaltable frame='all'>
+       <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+       <colspec colname='c1'/>
+       <colspec colname='c2'/>
+       <colspec colname='c3'/>
+       <thead><row><entry namest="c1" nameend="c3" align="center">Statistics_display</entry></row>
+              <row><entry namest="c1" nameend="c3" align="center">Displays the statistical breakdown for the selected poll.</entry></row>
+              <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row> 
+       </thead>
+       <tbody>       
+       <row>
+         <entry>Successful poll statistics display.</entry>
+         <entry>User selects a poll.</entry>
+         <entry>All ballot info along with the options to cancel, modify, and confirm the ballot. Ballot then saved.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Invalid user or ballot.</entry>
+         <entry>"The selected poll does not exist" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Connection Interrupted.</entry>
+         <entry>User is redirected to the VVS main page and "Connection Interrupted" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Database inaccessible.</entry>
+         <entry>"Database currently inaccessible" error message displayed.</entry>
+       </row>
+       </tbody>
+       </tgroup>
+       </informaltable>
+   </section>
+   <section>
+     <title>The Sync the SDF Function</title>
+       <informaltable frame='all'>
+       <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+       <colspec colname='c1'/>
+       <colspec colname='c2'/>
+       <colspec colname='c3'/>
+       <thead><row><entry namest="c1" nameend="c3" align="center">Administrative_sdf_sync</entry></row>
+              <row><entry namest="c1" nameend="c3" align="center">The VVS connects with the Admissions and Records student information database and updates the VVS SDF with any changes. Makes appropriate changes to voter groups.</entry></row>
+              <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row> 
+       </thead>
+       <tbody>       
+       <row>
+         <entry>Success database sync.</entry>
+         <entry>VVSA user selects sync SDF.</entry>
+         <entry>All ballot info along with the options to cancel, modify, and confirm the ballot. Ballot then saved.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Connection Interrupted.</entry>
+         <entry>User is redirected to the VVS main page and "Connection Interrupted" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Database inaccessible.</entry>
+         <entry>"Database currently inaccessible" error message displayed.</entry>
+       </row>
+       </tbody>
+       </tgroup>
+       </informaltable>
+   </section>
+   <section>
+     <title>The Create an Election Official Function</title>
+       <informaltable frame='all'>
+       <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+       <colspec colname='c1'/>
+       <colspec colname='c2'/>
+       <colspec colname='c3'/>
+       <thead><row><entry namest="c1" nameend="c3" align="center">Administrative_election_official_create</entry></row>
+              <row><entry namest="c1" nameend="c3" align="center">Allows a VVS Administrator to create an EO.</entry></row>
+              <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row> 
+       </thead>
+       <tbody>
+       <row>
+         <entry>Successful EO user created.</entry>
+         <entry>Valid VVSA user selects to create a new EO user.</entry>
+         <entry>All ballot info along with the options to cancel, modify, and confirm the ballot. Ballot then saved.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Invalid user or ballot.</entry>
+         <entry>"You do not have permission to this" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Connection Interrupted.</entry>
+         <entry>User is redirected to the VVS main page and "Connection Interrupted" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Database inaccessible.</entry>
+         <entry>"Database currently inaccessible" error message displayed.</entry>
+       </row>
+       </tbody>
+       </tgroup>
+       </informaltable>
+   </section>
+   <section>
+     <title>The Delete an Election Official Function</title>
+       <informaltable frame='all'>
+       <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+       <colspec colname='c1'/>
+       <colspec colname='c2'/>
+       <colspec colname='c3'/>
+       <thead><row><entry namest="c1" nameend="c3" align="center">Administrative_election_official_delete</entry></row>
+       		  <row><entry namest="c1" nameend="c3" align="center">Allows a VVS Administrator to delete an EO.</entry></row>
+              <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row> 
+       </thead>
+       <tbody>       
+       <row>
+         <entry>Successful EO user deleted.</entry>
+         <entry>Valid VVSA user selects to delete an EO user.</entry>
+         <entry>All ballot info along with the options to cancel, modify, and confirm the ballot. Ballot then saved.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Invalid user or ballot.</entry>
+         <entry>"You do not have permission to this" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>User selects to delete a nonexistent EO user.</entry>
+         <entry>"This user does not exist" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Connection Interrupted.</entry>
+         <entry>User is redirected to the VVS main page and "Connection Interrupted" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Database inaccessible.</entry>
+         <entry>"Database currently inaccessible" error message displayed.</entry>
+       </row>
+       </tbody>
+       </tgroup>
+       </informaltable>
+   </section>
+   <section>
+     <title>The Modify an Election Official's Privileges Function</title>
+       <informaltable frame='all'>
+       <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+       <colspec colname='c1'/>
+       <colspec colname='c2'/>
+       <colspec colname='c3'/>
+       <thead><row><entry namest="c1" nameend="c3" align="center">Administrative_ election_official_modify</entry></row>
+              <row><entry namest="c1" nameend="c3" align="center">Allows a VVS Administrator to modify a EOs usage privileges.</entry></row>
+              <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row> 
+       </thead>
+       <tbody>       
+       <row>
+         <entry>Successful EO user modify.</entry>
+         <entry>Valid VVSA user selects to modify an EO user.</entry>
+         <entry>All ballot info along with the options to cancel, modify, and confirm the ballot. Ballot then saved.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Invalid user or ballot.</entry>
+         <entry>"You do not have permission to this" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>User selects to modify a nonexistent EO user.</entry>
+         <entry>"This user does not exist" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Connection Interrupted.</entry>
+         <entry>User is redirected to the VVS main page and "Connection Interrupted" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Database inaccessible.</entry>
+         <entry>"Database currently inaccessible" error message displayed.</entry>
+       </row>
+       </tbody>
+       </tgroup>
+       </informaltable>
+   </section>
+   <section>
+     <title>The Poll Template Creation Function</title>
+       <informaltable frame='all'>
+       <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+       <colspec colname='c1'/>
+       <colspec colname='c2'/>
+       <colspec colname='c3'/>
+       <thead><row><entry namest="c1" nameend="c3" align="center">Administrative_poll_template_create</entry></row>
+              <row><entry namest="c1" nameend="c3" align="center">Allows a VVS Administrator to create a ballot template that can be used by EOâ€™s when they create a ballot.</entry></row>
+              <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row> 
+       </thead>
+       <tbody>       
+       <row>
+         <entry>Successful poll template created.</entry>
+         <entry>Valid VVSA user selects to create a poll template and enters valid text in text boxes.</entry>
+         <entry>All ballot info along with the options to cancel, modify, and confirm the ballot. Ballot then saved.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Invalid user or ballot.</entry>
+         <entry>"You do not have permission to do this" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Valid VVSA user selects to create a poll template and enters invalid text in text boxes.</entry>
+         <entry>"The entered information is invalid" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Connection Interrupted.</entry>
+         <entry>User is redirected to the VVS main page and "Connection Interrupted" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Database inaccessible.</entry>
+         <entry>"Database currently inaccessible" error message displayed.</entry>
+       </row>
+       </tbody>
+       </tgroup>
+       </informaltable>
+   </section>
+   <section>
+     <title>The Poll Template Deletion Function</title>
+       <informaltable frame='all'>
+       <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+       <colspec colname='c1'/>
+       <colspec colname='c2'/>
+       <colspec colname='c3'/>
+       <thead><row><entry namest="c1" nameend="c3" align="center">Administrative_poll_template_delete</entry></row>
+              <row><entry namest="c1" nameend="c3" align="center">Allows a VVS Administrator to delete a ballot template.</entry></row>
+              <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row> 
+       </thead>
+       <tbody>       
+       <row>
+         <entry>Successful poll template deleted.</entry>
+         <entry>Valid VVSA user selects to delete a poll template.</entry>
+         <entry>All ballot info along with the options to cancel, modify, and confirm the ballot. Ballot then saved.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Invalid user or ballot.</entry>
+         <entry>"You do not have permission to do this" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Valid VVSA user selects to delete a poll template that does not exist.</entry>
+         <entry>"The selected poll template does not exist" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Connection Interrupted.</entry>
+         <entry>User is redirected to the VVS main page and "Connection Interrupted" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Database inaccessible.</entry>
+         <entry>"Database currently inaccessible" error message displayed.</entry>
+       </row>
+       </tbody>
+       </tgroup>
+       </informaltable>
+   </section>
+   <section>
+     <title>The Poll Template Modification Function</title>
+       <informaltable frame='all'>
+       <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+       <colspec colname='c1'/>
+       <colspec colname='c2'/>
+       <colspec colname='c3'/>
+       <thead><row><entry namest="c1" nameend="c3" align="center">Administrative_poll_template_modify</entry></row>
+              <row><entry namest="c1" nameend="c3" align="center">Allows a VVS Administrator to modify a ballot template.</entry></row>
+              <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row> 
+       </thead>
+       <tbody>      
+       <row>
+         <entry>Successful poll template modify.</entry>
+         <entry>Valid VVSA user selects to modify a poll template.</entry>
+         <entry>All ballot info along with the options to cancel, modify, and confirm the ballot. Ballot then saved.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Invalid user or ballot.</entry>
+         <entry>"You do not have permission to do this" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Valid VVSA user selects to modify a poll template that does not exist.</entry>
+         <entry>"The selected poll template does not exist" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Connection Interrupted.</entry>
+         <entry>User is redirected to the VVS main page and "Connection Interrupted" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Database inaccessible.</entry>
+         <entry>"Database currently inaccessible" error message displayed.</entry>
+       </row>
+       </tbody>
+       </tgroup>
+       </informaltable>
+   </section>
+   <section>
+     <title>The Voter Group Creation Function</title>
+       <informaltable frame='all'>
+       <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+       <colspec colname='c1'/>
+       <colspec colname='c2'/>
+       <colspec colname='c3'/>
+       <thead><row><entry namest="c1" nameend="c3" align="center">Administrative_voter_group_create</entry></row>
+              <row><entry namest="c1" nameend="c3" align="center">Allows a VVS Administrator to create a new voter group by selecting SVâ€™s.</entry></row>
+              <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row> 
+       </thead>
+       <tbody>      
+       <row>
+         <entry>Successful SV group created.</entry>
+         <entry>Valid VVSA user selects to create a new SV group, user inputs the name of the group.</entry>
+         <entry>All ballot info along with the options to cancel, modify, and confirm the ballot. Ballot then saved.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Invalid user or ballot.</entry>
+         <entry>"The entered group already exists" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Non-VVSA user selects to create a SV user group.</entry>
+         <entry>"You do not have permission to do this" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Connection Interrupted.</entry>
+         <entry>User is redirected to the VVS main page and "Connection Interrupted" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Database inaccessible.</entry>
+         <entry>"Database currently inaccessible" error message displayed.</entry>
+       </row>
+       </tbody>
+       </tgroup>
+       </informaltable>
+   </section>
+   <section>
+     <title>The Voter Group Deletion Function</title>
+       <informaltable frame='all'>
+       <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+       <colspec colname='c1'/>
+       <colspec colname='c2'/>
+       <colspec colname='c3'/>
+       <thead><row><entry namest="c1" nameend="c3" align="center">Administrative_voter_group_delete</entry></row>
+              <row><entry namest="c1" nameend="c3" align="center">Allows a VVS Administrator to delete a voter group.</entry></row>
+              <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row> 
+       </thead>
+       <tbody>       
+       <row>
+         <entry>Successful SV group deleted.</entry>
+         <entry>Valid VVSA user selects to delete a SV group, user inputs the name of the group.</entry>
+         <entry>All ballot info along with the options to cancel, modify, and confirm the ballot. Ballot then saved.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Invalid user or ballot.</entry>
+         <entry>"The entered group does not exists" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Non-VVSA user selects to delete a SV user group.</entry>
+         <entry>"You do not have permission to do this" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Connection Interrupted.</entry>
+         <entry>User is redirected to the VVS main page and "Connection Interrupted" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Database inaccessible.</entry>
+         <entry>"Database currently inaccessible" error message displayed.</entry>
+       </row>
+       </tbody>
+       </tgroup>
+       </informaltable>
+   </section>
+   <section>
+     <title>The Voter Group Modification Function</title>
+       <informaltable frame='all'>
+       <tgroup cols='3' align='left' colsep='1' rowsep='1'>
+       <colspec colname='c1'/>
+       <colspec colname='c2'/>
+       <colspec colname='c3'/>
+       <thead><row><entry namest="c1" nameend="c3" align="center">Administrative_voter_group_modify</entry></row>
+              <row><entry namest="c1" nameend="c3" align="center">Allows a VVS Administrator to modify the members of a voter group. </entry></row>
+              <row><entry namest="c1" nameend="c1" align="center">Goal</entry><entry namest="c2" nameend="c2" align="center">Input</entry><entry namest="c3" nameend="c3" align="center">Expected Output</entry></row> 
+       </thead>
+       <tbody>       
+       <row>
+         <entry>Successful SV group modify.</entry>
+         <entry>Valid VVSA user selects to modify a SV group, user inputs the name of the group.</entry>
+         <entry>All ballot info along with the options to cancel, modify, and confirm the ballot. Ballot then saved.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Invalid user or ballot.</entry>
+         <entry>"The entered group does not exists" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Non-VVSA user selects to modify a SV user group.</entry>
+         <entry>"You do not have permission to do this" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Connection Interrupted.</entry>
+         <entry>User is redirected to the VVS main page and "Connection Interrupted" error message displayed.</entry>
+       </row>
+       <row>
+         <entry>Failure.</entry>
+         <entry>Database inaccessible.</entry>
+         <entry>"Database currently inaccessible" error message displayed.</entry>
+       </row>
+       </tbody>
+       </tgroup>
+       </informaltable>
+   </section>
+ </chapter>
+</book>
+
+

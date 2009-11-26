@@ -1,0 +1,76 @@
+[02-Dec-2008 17:18:16] PHP Parse error:  syntax error, unexpected T_FOREACH, expecting ',' or ';' in /home/ducksare/public_html/vvs/showOpenPollList.php on line 21
+[02-Dec-2008 17:20:58] PHP Parse error:  syntax error, unexpected T_ECHO, expecting ',' or ';' in /home/ducksare/public_html/vvs/showOpenPollList.php on line 21
+[02-Dec-2008 17:21:17] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting ',' or ';' in /home/ducksare/public_html/vvs/showOpenPollList.php on line 21
+[02-Dec-2008 17:21:41] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting ',' or ';' in /home/ducksare/public_html/vvs/showOpenPollList.php on line 21
+[02-Dec-2008 17:59:06] PHP Parse error:  syntax error, unexpected ')' in /home/ducksare/public_html/vvs/displayPoll.php on line 10
+[02-Dec-2008 17:59:29] PHP Parse error:  syntax error, unexpected ')' in /home/ducksare/public_html/vvs/displayPoll.php on line 10
+[02-Dec-2008 17:59:51] PHP Parse error:  syntax error, unexpected '@', expecting ',' or ';' in /home/ducksare/public_html/vvs/displayPoll.php on line 20
+[02-Dec-2008 18:00:05] PHP Warning:  mysql_fetch_assoc(): supplied argument is not a valid MySQL result resource in /home/ducksare/public_html/vvs/displayPoll.php on line 14
+[02-Dec-2008 18:43:46] PHP Parse error:  syntax error, unexpected T_STRING in /home/ducksare/public_html/vvs/displayPoll.php on line 14
+[02-Dec-2008 18:44:01] PHP Parse error:  syntax error, unexpected T_STRING in /home/ducksare/public_html/vvs/displayPoll.php on line 14
+[02-Dec-2008 18:44:03] PHP Parse error:  syntax error, unexpected T_STRING in /home/ducksare/public_html/vvs/displayPoll.php on line 14
+[02-Dec-2008 18:56:54] PHP Fatal error:  Call to undefined function  getoptions() in /home/ducksare/public_html/vvs/displayPoll.php on line 14
+[02-Dec-2008 18:57:40] PHP Warning:  require_once(getOptions.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/ducksare/public_html/vvs/displayPoll.php on line 5
+[02-Dec-2008 18:57:40] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'getOptions.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/ducksare/public_html/vvs/displayPoll.php on line 5
+[02-Dec-2008 18:58:05] PHP Fatal error:  Call to undefined function  getoptions() in /home/ducksare/public_html/vvs/displayPoll.php on line 14
+[02-Dec-2008 18:59:14] PHP Fatal error:  Call to undefined function  getoptions() in /home/ducksare/public_html/vvs/displayPoll.php on line 14
+[02-Dec-2008 18:59:51] PHP Warning:  Invalid argument supplied for foreach() in /home/ducksare/public_html/vvs/displayPoll.php on line 17
+[02-Dec-2008 19:01:58] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/ducksare/public_html/vvs/functions/auth.php on line 52
+[02-Dec-2008 19:13:12] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ducksare/public_html/vvs/displayPoll.php on line 20
+[02-Dec-2008 19:13:24] PHP Fatal error:  Call to undefined function  mysql__fetch_assoc() in /home/ducksare/public_html/vvs/displayPoll.php on line 14
+[02-Dec-2008 19:14:04] PHP Warning:  mysql_result() [<a href='function.mysql-result'>function.mysql-result</a>]: Bad column offset specified in /home/ducksare/public_html/vvs/functions/auth.php on line 57
+[02-Dec-2008 19:27:44] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home/ducksare/public_html/vvs/displayPoll.php on line 11
+[02-Dec-2008 19:27:44] PHP Parse error:  syntax error, unexpected '`', expecting ']' in /home/ducksare/public_html/vvs/displayPoll.php on line 11
+[02-Dec-2008 19:27:55] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home/ducksare/public_html/vvs/displayPoll.php on line 11
+[02-Dec-2008 19:27:55] PHP Parse error:  syntax error, unexpected '`', expecting ']' in /home/ducksare/public_html/vvs/displayPoll.php on line 11
+[02-Dec-2008 19:28:25] PHP Parse error:  syntax error, unexpected '`', expecting ']' in /home/ducksare/public_html/vvs/displayPoll.php on line 11
+[02-Dec-2008 19:28:46] PHP Parse error:  syntax error, unexpected '"', expecting ']' in /home/ducksare/public_html/vvs/displayPoll.php on line 11
+[02-Dec-2008 19:29:03] PHP Parse error:  syntax error, unexpected T_STRING, expecting ']' in /home/ducksare/public_html/vvs/displayPoll.php on line 15
+[02-Dec-2008 19:29:05] PHP Parse error:  syntax error, unexpected T_STRING, expecting ']' in /home/ducksare/public_html/vvs/displayPoll.php on line 15
+[02-Dec-2008 19:29:37] PHP Parse error:  syntax error, unexpected T_STRING, expecting ']' in /home/ducksare/public_html/vvs/displayPoll.php on line 14
+[02-Dec-2008 19:29:52] PHP Parse error:  syntax error, unexpected T_STRING, expecting ']' in /home/ducksare/public_html/vvs/displayPoll.php on line 14
+[02-Dec-2008 19:40:47] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/ducksare/public_html/vvs/displayPoll.php on line 22
+[02-Dec-2008 19:41:58] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/ducksare/public_html/vvs/displayPoll.php on line 14
+[02-Dec-2008 19:45:29] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ducksare/public_html/vvs/functions/auth.php:58) in /home/ducksare/public_html/vvs/functions/auth.php on line 66
+[02-Dec-2008 19:51:43] PHP Parse error:  syntax error, unexpected T_ECHO, expecting ',' or ';' in /home/ducksare/public_html/vvs/displayPoll.php on line 35
+[02-Dec-2008 19:55:45] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/ducksare/public_html/vvs/functions/getOptions.php on line 3
+[02-Dec-2008 20:28:27] PHP Parse error:  syntax error, unexpected ')' in /home/ducksare/public_html/vvs/submitVote.php on line 13
+[02-Dec-2008 20:29:12] PHP Parse error:  syntax error, unexpected T_STRING in /home/ducksare/public_html/vvs/header.php on line 1
+[02-Dec-2008 20:35:51] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ducksare/public_html/vvs/process.php:19) in /home/ducksare/public_html/vvs/functions/auth.php on line 67
+[02-Dec-2008 20:46:13] PHP Parse error:  syntax error, unexpected '=' in /home/ducksare/public_html/vvs/mainScreen.php on line 14
+[02-Dec-2008 20:53:41] PHP Parse error:  syntax error, unexpected '[' in /home/ducksare/public_html/vvs/submitVote.php on line 16
+[02-Dec-2008 20:53:52] PHP Parse error:  syntax error, unexpected '[' in /home/ducksare/public_html/vvs/submitVote.php on line 16
+[02-Dec-2008 20:54:26] PHP Parse error:  syntax error, unexpected '[', expecting ',' or ';' in /home/ducksare/public_html/vvs/submitVote.php on line 16
+[02-Dec-2008 20:54:45] PHP Parse error:  syntax error, unexpected '[', expecting ',' or ';' in /home/ducksare/public_html/vvs/submitVote.php on line 16
+[02-Dec-2008 20:55:10] PHP Parse error:  syntax error, unexpected '[', expecting ',' or ';' in /home/ducksare/public_html/vvs/submitVote.php on line 16
+[02-Dec-2008 20:55:25] PHP Parse error:  syntax error, unexpected '[', expecting ',' or ';' in /home/ducksare/public_html/vvs/submitVote.php on line 16
+[02-Dec-2008 20:55:45] PHP Parse error:  syntax error, unexpected '[', expecting ',' or ';' in /home/ducksare/public_html/vvs/submitVote.php on line 16
+[02-Dec-2008 20:56:36] PHP Parse error:  syntax error, unexpected '[', expecting ',' or ';' in /home/ducksare/public_html/vvs/submitVote.php on line 16
+[02-Dec-2008 21:04:27] PHP Parse error:  syntax error, unexpected T_ECHO, expecting ',' or ';' in /home/ducksare/public_html/vvs/displayPoll.php on line 34
+[02-Dec-2008 21:16:30] PHP Parse error:  syntax error, unexpected T_IF in /home/ducksare/public_html/vvs/submitVote.php on line 16
+[02-Dec-2008 21:33:07] PHP Fatal error:  Class 'Poll' not found in /home/ducksare/public_html/vvs/process.php on line 37
+[02-Dec-2008 21:33:28] PHP Fatal error:  Call to undefined method Poll::displayoptionsdefinition() in /home/ducksare/public_html/vvs/process.php on line 39
+[02-Dec-2008 21:33:50] PHP Warning:  Missing argument 1 for Poll::displayOptionsDefinition(), called in /home/ducksare/public_html/vvs/process.php on line 39 and defined in /home/ducksare/public_html/vvs/functions/pollFunctions.php on line 28
+[02-Dec-2008 21:35:49] PHP Fatal error:  Call to undefined method Poll::validatebasicpolloptions() in /home/ducksare/public_html/vvs/process.php on line 39
+[02-Dec-2008 22:11:58] PHP Parse error:  syntax error, unexpected '{' in /home/ducksare/public_html/vvs/functions/pollFunctions.php on line 93
+[02-Dec-2008 22:20:47] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'ducksare'@'localhost' (using password: NO) in /home/ducksare/public_html/vvs/functions/pollFunctions.php on line 92
+[02-Dec-2008 22:20:47] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/ducksare/public_html/vvs/functions/pollFunctions.php on line 92
+[02-Dec-2008 22:20:47] PHP Warning:  mysql_result(): supplied argument is not a valid MySQL result resource in /home/ducksare/public_html/vvs/functions/pollFunctions.php on line 93
+[02-Dec-2008 22:21:24] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'ducksare'@'localhost' (using password: NO) in /home/ducksare/public_html/vvs/functions/pollFunctions.php on line 92
+[02-Dec-2008 22:21:24] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/ducksare/public_html/vvs/functions/pollFunctions.php on line 92
+[02-Dec-2008 22:21:24] PHP Warning:  mysql_result(): supplied argument is not a valid MySQL result resource in /home/ducksare/public_html/vvs/functions/pollFunctions.php on line 93
+[02-Dec-2008 22:23:06] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'ducksare'@'localhost' (using password: NO) in /home/ducksare/public_html/vvs/functions/pollFunctions.php on line 76
+[02-Dec-2008 22:23:06] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'ducksare'@'localhost' (using password: NO) in /home/ducksare/public_html/vvs/functions/pollFunctions.php on line 77
+[02-Dec-2008 22:23:06] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/ducksare/public_html/vvs/functions/pollFunctions.php on line 77
+[02-Dec-2008 22:23:06] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'ducksare'@'localhost' (using password: NO) in /home/ducksare/public_html/vvs/functions/pollFunctions.php on line 95
+[02-Dec-2008 22:23:06] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/ducksare/public_html/vvs/functions/pollFunctions.php on line 95
+[02-Dec-2008 22:23:06] PHP Warning:  mysql_result(): supplied argument is not a valid MySQL result resource in /home/ducksare/public_html/vvs/functions/pollFunctions.php on line 96
+[02-Dec-2008 22:48:45] PHP Fatal error:  Call to undefined method Poll::validateEachPolOption() in /home/ducksare/public_html/vvs/process.php on line 47
+[02-Dec-2008 22:48:55] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/ducksare/public_html/vvs/functions/pollFunctions.php on line 90
+[02-Dec-2008 22:48:55] PHP Warning:  array_keys() [<a href='function.array-keys'>function.array-keys</a>]: The first argument should be an array in /home/ducksare/public_html/vvs/functions/pollFunctions.php on line 90
+[02-Dec-2008 23:19:39] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/ducksare/public_html/vvs/functions/getOptions.php on line 3
+[02-Dec-2008 23:19:47] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/ducksare/public_html/vvs/functions/getOptions.php on line 3
+[02-Dec-2008 23:19:50] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/ducksare/public_html/vvs/functions/getOptions.php on line 3
+[02-Dec-2008 23:19:55] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/ducksare/public_html/vvs/functions/getOptions.php on line 3
+[02-Dec-2008 23:21:51] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/ducksare/public_html/vvs/functions/getOptions.php on line 3
+[02-Dec-2008 23:26:26] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/ducksare/public_html/vvs/functions/getOptions.php on line 3

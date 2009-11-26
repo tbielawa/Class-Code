@@ -1,0 +1,47 @@
+<!DOCTYPE book [
+<!ENTITY intro SYSTEM "1.xml">
+<!ENTITY gendesc SYSTEM "2.xml">
+]>
+<book xmlns="http://docbook.org/ns/docbook">
+  <title>Vorpal Voting System</title>
+  <subtitle>Requirements Definition</subtitle>
+  <bookinfo>
+    <authorgroup>
+      <author>
+	<personname>
+	  <surname>Bielawa</surname>
+	  <firstname>Timothy</firstname>
+	  <othername>Shaggy</othername>
+	</personname>
+      </author>
+      <author>
+	<personname>
+	  <surname>Butcher</surname>
+	  <firstname>Andrew</firstname>
+	</personname>
+      </author>
+      <author>
+	<personname>
+	  <surname>Carpenter</surname>
+	  <firstname>Ben</firstname>
+	</personname>
+      </author>
+      <author>
+	<personname>
+	  <surname>Connell</surname>
+	  <firstname>Jonathan</firstname>
+	</personname>
+      </author>
+      <author>
+	<personname>
+	  <surname>Justice</surname>
+	  <firstname>Joshua</firstname>
+	</personname>
+      </author>
+    </authorgroup>
+  </bookinfo>
+
+&intro;
+&gendesc;
+
+</book>

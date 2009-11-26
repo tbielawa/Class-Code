@@ -1,0 +1,40 @@
+#### LIST OF POLLS #####
+# SQL statement to create a table this will recognize
+
+create table polls (  id int(5) unsigned not null auto_increment, name varchar(30) not null, opendate datetime not null, closedate datetime not null, voterstable varchar(35) not null, primary key(id) );
+
+# Which would look like this...
+
+mysql> DESCRIBE `polls`;
++-------------+-----------------+------+-----+---------+----------------+
+| Field       | Type            | Null | Key | Default | Extra          |
++-------------+-----------------+------+-----+---------+----------------+
+| id          | int(5) unsigned | NO   | PRI | NULL    | auto_increment | 
+| name        | varchar(30)     | NO   |     | NULL    |                | 
+| opendate    | datetime        | NO   |     | NULL    |                | 
+| closedate   | datetime        | NO   |     | NULL    |                | 
+| voterstable | varchar(35)     | NO   |     | NULL    |                | 
++-------------+-----------------+------+-----+---------+----------------+
+5 rows in set (0.01 sec)
+
+
+
+#### FILL PEOPLE TABLE ####
+
+mysql> create table people ( id int(10) unsigned not null auto_increment, name varchar(35) not null, age int(3) not null, sex enum('m' ,'f') not null, grade enum('9', '10', '11', '12', 'n') not null default 'n', password varchar(30) not null, email varchar(30) not null, special enum('sv', 'pa', 'vvsa') not null default 'sv', primary key(id) );
+
+
+mysql> describe people;
++----------+------------------------------+------+-----+---------+----------------+
+| Field    | Type                         | Null | Key | Default | Extra          |
++----------+------------------------------+------+-----+---------+----------------+
+| id       | int(10) unsigned             | NO   | PRI | NULL    | auto_increment | 
+| name     | varchar(35)                  | NO   |     | NULL    |                | 
+| age      | int(3)                       | NO   |     | NULL    |                | 
+| sex      | enum('m','f')                | NO   |     | NULL    |                | 
+| grade    | enum('9','10','11','12','n') | NO   |     | n       |                | 
+| password | varchar(30)                  | NO   |     | NULL    |                | 
+| email    | varchar(30)                  | NO   |     | NULL    |                | 
+| special  | enum('sv','pa','vvsa')       | NO   |     | sv      |                | 
++----------+------------------------------+------+-----+---------+----------------+
+8 rows in set (0.00 sec)

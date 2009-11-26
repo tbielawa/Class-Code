@@ -1,0 +1,2622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://docbook.org/xml/4.5/docbookx.dtd">
+<book>
+  <title>Vorpal Voting System</title>
+  <bookinfo>
+    <subtitle>Requirements Specification</subtitle>
+    <authorgroup>
+      <author>
+        <personname>
+          <surname>Bielawa</surname>
+          <firstname>Timothy</firstname>
+          <othername>"Shaggy"</othername>
+        </personname>
+      </author>
+      <author>
+        <personname>
+          <surname>Butcher</surname>
+          <firstname>Andrew</firstname>
+        </personname>
+      </author>
+      <author>
+        <personname>
+          <surname>Carpenter</surname>
+	  <firstname>Ben</firstname>
+	</personname>
+      </author>
+      <author>
+        <personname>
+          <surname>Connell</surname>
+          <firstname>Jonathan</firstname>
+        </personname>
+      </author>
+      <author>
+        <personname>
+          <surname>Justice</surname>
+          <firstname>Joshua</firstname>
+        </personname>
+      </author>
+    </authorgroup>
+    <revhistory>
+      <revision>
+        <revnumber>0.1</revnumber>
+        <date>2008/11/12</date>
+        <revremark>First Draft</revremark>
+      </revision>
+    </revhistory>
+  </bookinfo>
+
+	
+  <chapter>
+    <title>Data Model</title>
+    
+    <section>
+      <title> Class Diagram </title>
+      <mediaobject>
+	<imageobject>
+	  <imagedata fileref="data/ClassDiagram1.jpg" />
+	</imageobject>
+      </mediaobject>
+
+      <mediaobject>
+	<imageobject>
+	  <imagedata fileref="data/ClassDiagram2.jpg" />
+	</imageobject>
+      </mediaobject>
+    </section>
+  </chapter>
+  
+  <chapter>
+    <title>Functional Modeling and Information Flow</title>
+    
+    <section>
+      <title> Sequence Diagram Administration Function </title>
+      <mediaobject>
+	<imageobject>
+          <imagedata fileref="data/sadmnf.jpg" />
+	</imageobject>
+      </mediaobject>
+    </section>
+
+    
+    <section>
+      <title> Sequence Diagram Administration Function </title>
+      <mediaobject>
+	<imageobject>
+          <imagedata fileref="data/sadmnf.jpg" />
+	</imageobject>
+      </mediaobject>
+    </section>
+
+    <section>
+      <title> Sequence Diagram Student Voting </title>
+      <mediaobject>
+	<imageobject>
+          <imagedata fileref="data/svote.jpg" />
+	</imageobject>
+      </mediaobject>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Specific Requirements</title>
+    <section>
+      <title>System Features</title>
+      <para>
+	This section describes hot the transformation of input to
+	output is achieved. The following table of information is
+	given for each of the functions declared in section 2.3 of
+	the Requirements Definition.
+      </para>
+      
+      <informaltable frame='all'>
+	<tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	  <colspec colname='c1'/>
+	  <colspec colname='c2'/>
+	  <thead>
+	    <row>
+	      <entry namest="c1" nameend="c2" align="center">Function Name</entry>
+	    </row>
+	  </thead>
+	  <tbody>
+	    <row>
+	      <entry>Description</entry>
+	      <entry>State the purpose and objective of the function.</entry>
+	    </row>
+	    <row>
+	      <entry>Inputs</entry>
+	      <entry>
+		Listing of all input items (using the naming
+		conventions specified in the data model), any valid
+		ranges know should also be specified.
+	      </entry>
+	    </row>
+	    <row>
+	      <entry>Sources of Inputs</entry>
+	      <entry>How/where/who provides the input items
+	      (external entity or actor).</entry>
+	    </row>
+	    <row>
+	      <entry>Outputs</entry>
+	      <entry>Listing of all output items, both data and
+	      control information.</entry>
+	    </row>
+	    <row>
+	      <entry>Destination of Outputs</entry>
+	      <entry>How/where/who receives the output (external
+	      entity or actor).</entry>
+	    </row>
+	    <row>
+	      <entry>Processing</entry>
+	      <entry>List of processing steps that must be
+	      followed to transform inputs to outputs. Includes
+	      error checking, calculations and validation.</entry>
+	    </row>
+	    <row>
+	      <entry>Requirements</entry>
+	      <entry>Listing of other information (data or system)
+	      which this function will require that is not
+	      directly input. These include data items that must
+	      be retrieved from a data store in response to some
+	      input.</entry>
+	    </row>
+	    <row>
+	      <entry>Pre-conditions</entry>
+	      <entry>What events/control/conditions must exist
+	      upon entry to the function.</entry>
+	    </row>
+	    <row>
+	      <entry>Post-conditions</entry>
+	      <entry>What events/control/conditions take place as
+	      a result of the function.</entry>
+	    </row>
+	    <row>
+	      <entry>Side Effects</entry>
+	      <entry>Listing of any events, which might occur that
+	      are not directly related to output items.</entry>
+	    </row>
+	    <row>
+	      <entry>Responses to Abnormal Behavior</entry>
+	      <entry>The action to be taken should invalid data be received or abnormal processing occur.</entry>
+	    </row>
+	    <row>
+	      <entry>Stability</entry>
+	      <entry>Stable/Volatile: Denotes the stability of the
+	      function. A process is “stable” when it is thought
+	      that the needs it addresses will not change during
+	      the expected It is “volatile” if it is subject to
+	      change.life of the software.</entry>
+	    </row>
+	    <row>
+	      <entry>Necessity</entry>
+	      <entry>Reflection of the “desirability” of the
+	      desired function. “Mandatory”: implies that the
+	      software will not be acceptable without the
+	      feature. “Desirable”: implies that the requirement
+	      would enhance the software but the product would be
+	      acceptable without the feature. “Optional”: implies
+	      a class of functions that may or may not be
+	      worthwhile.</entry>
+	    </row>
+	  </tbody>
+	</tgroup>
+      </informaltable>
+      
+      <section>
+	<title>The Login Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	      <row>
+		<entry namest="c1" nameend="c2" align="center">Login</entry>
+	      </row>
+	    </thead>
+	    <tbody>
+	      <row>
+		<entry>Description</entry>
+		<entry>Allows SV, EO or a VVSA to login to the VVS
+		and verifies their credentials.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry>Username and password.</entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>SV, EO, VVSA.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Destination of Outputs</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>Input username and password. Connect to OIT
+		and verify username and password are
+		correct. Redirect to main page.</entry>
+	      </row>
+	      <row>
+		<entry>Requirements</entry>
+		<entry>OIT database of usernames and passwords.</entry>
+	      </row>
+	      <row>
+		<entry>Pre-conditions</entry>
+		<entry>User must already have a valid username and
+		password.</entry>
+	      </row>
+	      <row>
+		<entry>Post-conditions</entry>
+		<entry>User is logged into the system.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Responses to Abnormal Behavior</entry>
+		<entry>Incorrect login
+		information - user is
+		redirected back to the login screen with an error
+		message saying, <quote>Invalid username/password. Please
+		try again.</quote> User already logged
+		in - the user is redirected to
+		the login screen and an error message is displayed
+		saying, "That user is already logged in."</entry>
+	      </row>
+	      <row>
+		<entry>Stability</entry>
+		<entry>Stable.</entry>
+	      </row>
+	      <row>
+		<entry>Necessity</entry>
+		<entry>Mandatory.</entry>
+	      </row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+      
+      <section>
+	<title>The Logout Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	      <row>
+		<entry namest="c1" nameend="c2" align="center">Logout</entry>
+	      </row>
+	    </thead>
+	    <tbody>
+	      <row>
+		<entry>Description</entry>
+		<entry>Logs the user out of the VVS.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry>User clicks logout.</entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>SV, EO, VVSA.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Destination of Outputs</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>User clicks on logout. The VVS logs the
+		user out of the system and redirects them to the
+		login screen.</entry>
+	      </row>
+	      <row>
+		<entry>Requirements</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Pre-conditions</entry>
+		<entry>User must be logged into the system.</entry>
+	      </row>
+	      <row>
+		<entry>Post-conditions</entry>
+		<entry>User is logged out of the system.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Responses to Abnormal Behavior</entry>
+		<entry>The user is not logged
+		into the system - user is
+		redirected to the login screen and an error
+		message is displayed saying, "You must be logged
+		in to perform that function."</entry>
+	      </row>
+	      <row>
+		<entry>Stability</entry>
+		<entry>Stable.</entry>
+	      </row>
+	      <row>
+		<entry>Necessity</entry>
+	      <entry>Mandatory.</entry></row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+
+      <section>
+	<title>The Logout Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	      <row>
+		<entry namest="c1" nameend="c2" align="center">Logout</entry>
+	      </row>
+	    </thead>
+	    <tbody>
+	      <row>
+		<entry>Description</entry>
+		<entry>Logs the user out of the VVS.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry>User clicks logout.</entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>SV, EO, VVSA.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Destination of Outputs</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>User clicks on logout. The VVS logs the user
+		out of the system and redirects them to the login
+		screen.</entry>
+	      </row>
+	      <row>
+		<entry>Requirements</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+	      <entry>Pre-conditions</entry>
+	      <entry>User must be logged into the system.</entry>
+	      </row>
+	      <row>
+	      <entry>Post-conditions</entry>
+	      <entry>User is logged out of the system.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Responses to Abnormal Behavior</entry>
+		<entry>The user is not logged into
+		the system - user is redirected to
+		the login screen and an error message is displayed
+		saying, "You must be logged in to perform that
+		function."</entry>
+	      </row>
+	      <row>
+		<entry>Stability</entry>
+		<entry>Stable.</entry>
+	      </row>
+	      <row>
+		<entry>Necessity</entry>
+		<entry>Mandatory.</entry>
+	      </row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+
+      <section>
+	<title>The System Backup and Restore Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	      <row>
+		<entry namest="c1" nameend="c2" align="center">Backup_restore</entry>
+	      </row>
+	    </thead>
+	    <tbody>
+	      <row>
+		<entry>Description</entry>
+		<entry>Allows a VVSA to backup and restore the VVS.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry>Backup file.</entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>VVSA.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>Backup file.</entry>
+	      </row>
+	      <row>
+		<entry>Destination of Outputs</entry>
+		<entry>VVSA.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>VVSA clicks backup and restore. A message is
+		displayed with two choices; backup or restore. If
+		backup is selected, the VVS stores all present data to
+		the specified backup file. If restore is selected, the
+		VVS restores all system data from the specified backup
+		file.</entry>
+	      </row>
+	      <row>
+		<entry>Requirements</entry>
+		<entry>VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Pre-conditions</entry>
+		<entry>User must be a VVSA and be logged into the
+		system.</entry>
+	      </row>
+	      <row>
+		<entry>Post-conditions</entry>
+		<entry>System is restored. Backup file is created or updated.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Responses to Abnormal Behavior</entry>
+		<entry>Backup file cannot be
+		found - an error message is
+		displayed saying, "The backup file you selected cannot
+		be found."</entry>
+	      </row>
+	      <row><entry>Stability</entry><entry>Stable.</entry></row>
+	      <row><entry>Necessity</entry><entry>Mandatory.</entry></row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+
+      <section>
+	<title>The Vote Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	      <row>
+		<entry namest="c1" nameend="c2" align="center">Vote</entry>
+	      </row>
+	    </thead>
+	    <tbody>
+	      <row>
+		<entry>Description</entry>
+		<entry>Allows the SV to cast a vote.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry>Ballot or poll selections.</entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>SV.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>A vote.</entry>
+	      </row>
+	      <row>
+	      <entry>Destination of Outputs</entry>
+	      <entry>SV.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>SV checks their selections on the selected
+		ballot or poll. SV clicks vote. A message is displayed
+		saying, "Do you wish to confirm your vote." SV clicks
+		yes. The vote is submitted to the VSS and
+		tabulated. The user is returned to the VVS main
+		screen.</entry>
+	      </row>
+	      <row>
+		<entry>Requirements</entry>
+		<entry>SDF, VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Pre-conditions</entry>
+		<entry>User must be authorized to vote in the
+		election. User must be logged into the system. User
+		cannot have previously voted in this election.</entry>
+	      </row>
+	      <row>
+		<entry>Post-conditions</entry>
+		<entry>A vote is cast.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>The SV can no longer vote in this election.</entry>
+	      </row>
+	      <row>
+		<entry>Responses to Abnormal Behavior</entry>
+		<entry>User tries to vote in an
+		election they are not authorized to vote
+		in - User is redirected to the VVS
+		main screen and an error message is displayed saying,
+		"You are not authorized to vote in that election."
+		User tries to vote in an election
+		they have previously voted in -
+		User is redirected to the VVS main screen and an error
+		message is displayed saying, "You have already voted
+		in that election or poll."</entry></row>
+		<row><entry>Stability</entry><entry>Stable.</entry></row>
+		<row><entry>Necessity</entry><entry>Mandatory.</entry></row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+      
+      <section>
+	<title>The Ballot Creation Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	      <row>
+		<entry namest="c1" nameend="c2" align="center">Ballot_create</entry>
+	      </row>
+	    </thead>
+	    <tbody>
+	      <row>
+	      <entry>Description</entry>
+	      <entry>Allows the EO to create a new custom ballot or to
+	      load a previously saved ballot template.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry>Candidate names, poll choices, descriptions.</entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>EO.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>New ballot.</entry>
+	      </row>
+	      <row>
+		<entry>Destination of Outputs</entry>
+		<entry>EO.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>EO clicks on create new ballot. On the create
+		new ballot screen, the EO inputs all necessary data
+		into the text boxes. The EO clicks save ballot. A
+		message is displayed, "Do you wish to save this
+		ballot." The information is stored in the VVS. The EO
+		is redirected to the VVS main page.</entry>
+	      </row>
+	      <row>
+		<entry>Requirements</entry>
+		<entry>SDF, VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Pre-conditions</entry>
+		<entry>User must be an authorized EO. User must be
+		logged into the VVS. Ballot name can not already be
+		used.</entry>
+	      </row>
+	      <row>
+		<entry>Post-conditions</entry>
+		<entry>A new ballot is created.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>Ballot name can no longer be used.</entry>
+	      </row>
+	      <row>
+		<entry>Responses to Abnormal Behavior</entry>
+		<entry>EO tries to create an empty
+		ballot - an error message is
+		displayed saying, "Ballot is empty. Ballot must
+		contain at least one candidate or option to vote for."
+		EO tries to save a ballot with a name
+		that already exists - An error
+		message is displayed saying, "That ballot name already
+		exists. Please rename your ballot and save."</entry>
+	      </row>
+	      <row>
+		<entry>Stability</entry>
+		<entry>Stable.</entry>
+	      </row>
+	      <row>
+		<entry>Necessity</entry>
+		<entry>Mandatory.</entry>
+	      </row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+
+      <section>
+	<title>The Ballot Deletion Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	      <row>
+		<entry namest="c1" nameend="c2" align="center">Ballot_delete</entry>
+	      </row>
+	    </thead>
+	    <tbody>
+	      <row>
+		<entry>Description</entry>
+		<entry>Allows the EO to delete a ballot if it has not
+		yet been confirmed.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry>Ballot to be deleted.</entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>EO.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+	      <entry>Destination of Outputs</entry>
+	      <entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>EO clicks on delete ballot. A message is
+		displayed saying, "Are you sure you want to delete
+		this ballot?" The EO clicks yes. The ballot is erased
+		from the VVS. The EO is redirected to the VVS main
+		screen.</entry>
+	      </row>
+	      <row>
+	      <entry>Requirements</entry>
+	      <entry>VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Pre-conditions</entry>
+		<entry>User must be an authorized EO. User must be
+		logged into the system. A ballot must be saved in the
+		system. The ballot can not have been confirmed
+		yet.</entry>
+	      </row>
+	      <row>
+		<entry>Post-conditions</entry>
+		<entry>Ballot is deleted from the VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>Ballot is no longer available in the VVS.</entry>
+	      </row>
+	      <row>
+		<entry>Responses to Abnormal Behavior</entry>
+		<entry>EO tries to delete a ballot
+		that is being used in an open poll
+		- An error message is displayed saying, "The poll for
+		that ballot is open and cannot be deleted."</entry>
+	      </row>
+	      <row><entry>Stability</entry><entry>Stable.</entry></row>
+	      <row><entry>Necessity</entry><entry>Mandatory.</entry></row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+
+      <section>
+	<title>The Ballot Modification Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	      <row>
+		<entry namest="c1" nameend="c2" align="center">Ballot_modify</entry>
+	      </row>
+	    </thead>
+	    <tbody>
+	      <row>
+		<entry>Description</entry>
+		<entry>Allows the EO to modify a ballot if it has not
+		yet been confirmed.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry>Ballot to be modified.</entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>EO.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>Ballot.</entry>
+	      </row>
+	      <row>
+		<entry>Destination of Outputs</entry>
+		<entry>EO.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>EO clicks on modify ballot. EO makes desired
+		changes to ballot. EO clicks save ballot. New ballot
+		information is stored in the VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Requirements</entry>
+		<entry>VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Pre-conditions</entry>
+		<entry>User must be an authorized EO. User must be
+		logged into the system. A ballot must be saved in the
+		system. The ballot can not have been confirmed
+		yet.</entry>
+	      </row>
+	      <row>
+		<entry>Post-conditions</entry>
+		<entry>Ballot is modified.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Responses to Abnormal Behavior</entry>
+		<entry>EO tries to delete all ballot
+		information - an error message is
+		displayed saying, "Ballot is empty. Ballot must
+		contain at least one candidate or option to vote for."
+		</entry>
+	      </row>
+	      <row><entry>Stability</entry><entry>Stable.</entry></row>
+	      <row><entry>Necessity</entry><entry>Mandatory.</entry></row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+
+      <section>
+	<title>The Ballot Conformation Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	      <row>
+		<entry namest="c1" nameend="c2" align="center">Ballot_confirm</entry>
+	      </row>
+	    </thead>
+	    <tbody>
+	      <row>
+		<entry>Description</entry>
+		<entry>Shows all ballot information and allows the EO
+		to cancel, modify or confirm. Once confirm is
+		selected, no more changes may be made to the
+		ballot.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry>Ballot to be confirmed.</entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>EO.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Destination of Outputs</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>EO clicks confirm ballot. A message is
+		displayed saying, "Are you sure you wish to confirm
+		this ballot?" EO clicks yes. Ballot is confirmed and
+		no changes may be made.</entry>
+	      </row>
+	      <row>
+		<entry>Requirements</entry>
+		<entry>VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Pre-conditions</entry>
+		<entry>User must be an authorized EO. User must be
+		logged into the system. A ballot must be saved in the
+		system. The ballot can not have been confirmed
+		yet.</entry>
+	      </row>
+	      <row>
+		<entry>Post-conditions</entry>
+		<entry>The ballot is confirmed and the poll may be opened.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>Ballot can no longer be deleted or modified.</entry>
+	      </row>
+	      <row>
+		<entry>Responses to Abnormal
+		Behavior</entry><entry>EO tries to
+		confirm a ballot that has not been saved in the
+		VVS - an error message is displayed
+		saying "A ballot must be saved before it is
+		confirmed. Do you wish to save this ballot?"</entry>
+	      </row>
+	      <row><entry>Stability</entry><entry>Stable.</entry></row>
+	      <row><entry>Necessity</entry><entry>Mandatory.</entry></row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+      
+      <section>
+	<title>The Election Announcement Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	      <row>
+		<entry namest="c1" nameend="c2" align="center">Election_announcement</entry>
+	      </row>
+	    </thead>
+	    <tbody>
+	      <row>
+		<entry>Description</entry>
+		<entry>Allows the EO to create an announcement related to a specific poll or election.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry>Announcement information.</entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>EO.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>Announcement.</entry>
+	      </row>
+	      <row>
+		<entry>Destination of Outputs</entry>
+		<entry>SV.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>EO clicks create announcement. EO types in
+		announcement information. EO clicks save
+		announcement. The announcement is saved in the VVS
+		database and is available to be viewed by SVs.</entry>
+	      </row>
+	      <row>
+		<entry>Requirements</entry>
+		<entry>VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Pre-conditions</entry>
+		<entry>User must be an authorized EO. User must be
+		logged into the system. An announcement with that name
+		can not already exist.</entry>
+	      </row>
+	      <row>
+		<entry>Post-conditions</entry>
+		<entry>Announcement is viewable by SVs.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>That announcement name can no longer be used.</entry>
+	      </row>
+	      <row>
+		<entry>Responses to Abnormal
+		Behavior</entry><entry>EO tries to
+		create an election announcement with a name that
+		already exists in the VVS database
+		- An error message is displayed saying, "That name is
+		already in use. Please rename your election
+		announcement and click save."</entry>
+	      </row>
+	      <row><entry>Stability</entry><entry>Stable.</entry></row>
+	      <row><entry>Necessity</entry><entry>Mandatory.</entry></row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+      
+      <section>
+	<title>The Open Poll Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	      <row>
+		<entry namest="c1" nameend="c2"
+		align="center">Poll_open</entry>
+	      </row>
+	    </thead>
+	    <tbody>
+	      <row>
+		<entry>Description</entry>
+		<entry>Opens the poll to the SVs.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry>Ballot(s).</entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>EO.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>Open election or poll.</entry>
+	      </row>
+	      <row>
+		<entry>Destination of Outputs</entry>
+		<entry>SV.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>EO clicks poll management. EO selects the
+		ballot(s) for the poll they wish to open. EO clicks
+		open poll. A message is displayed saying, "Are you
+		sure you want to open this poll for voting." EO clicks
+		yes. The poll is opened to SVs.</entry>
+	      </row>
+	      <row>
+		<entry>Requirements</entry>
+		<entry>VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Pre-conditions</entry>
+		<entry>User must be an authorized EO. User must be
+		logged into the system. Selected ballot(s) may not
+		already be opened in a different poll.</entry>
+	      </row>
+	      <row>
+		<entry>Post-conditions</entry>
+		<entry>Poll is open for voting by SVs.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>Ballot(s) can no longer be used in another poll.</entry>
+	      </row>
+	      <row>
+		<entry>Responses to Abnormal Behavior</entry>
+		<entry>EO tries to open a poll that
+		contains ballot(s) that are open in another
+		poll - an error message is
+		displayed saying, "The ballot(s) you selected are
+		already opened in another poll. A ballot may not be in
+		more than one open poll." The EO is redirected to the
+		VVS main screen.</entry>
+	      </row>
+	      <row><entry>Stability</entry><entry>Stable.</entry></row>
+	      <row><entry>Necessity</entry><entry>Mandatory.</entry></row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+
+      <section>
+	<title>The Close Poll Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	      <row>
+		<entry namest="c1" nameend="c2" align="center">Poll_close</entry>
+	      </row>
+	    </thead>
+	    <tbody>
+	      <row>
+		<entry>Description</entry>
+		<entry>Closes the poll to the SVs.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry>Poll to be closed.</entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>EO.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>Poll results and statistics.</entry>
+	      </row>
+	      <row>
+		<entry>Destination of Outputs</entry>
+		<entry>EO, VVSA.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>EO clicks on poll management. EO clicks close
+		poll. A message is displayed saying, "Are you sure you
+		wish to close this poll?" EO clicks yes. Poll is
+		closed to SVs. All poll results and statistics are
+		tabulated and stored in the VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Requirements</entry>
+		<entry>VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Pre-conditions</entry>
+		<entry>User must be an authorized EO. User must be
+		logged into the system. Poll must be open.</entry>
+	      </row>
+	      <row>
+		<entry>Post-conditions</entry>
+		<entry>Poll is closed to SVs and all results and
+		statistical information are tabulated.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Responses to Abnormal Behavior</entry>
+		<entry>EO tries to close a poll that
+		is not open - an error message is
+		displayed saying, "That poll is not currently open and
+		cannot be closed."</entry>
+	      </row>
+	      <row><entry>Stability</entry><entry>Stable.</entry></row>
+	      <row><entry>Necessity</entry><entry>Mandatory.</entry></row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+
+      <section>
+	<title>The Vote Recount Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	      <row>
+		<entry namest="c1" nameend="c2" align="center">Vote_recount</entry>
+	      </row>
+	    </thead>
+	    <tbody>
+	      <row>
+		<entry>Description</entry>
+		<entry>Recounts the votes for the selected poll.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry>Poll to be recounted.</entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>EO, VVSA.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>Poll results and statistics.</entry>
+	      </row>
+	      <row>
+		<entry>Destination of Outputs</entry>
+		<entry>EO, VVSA.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>EO or VVSA clicks poll management. EO or VVSA
+		clicks recount vote. The vote for the selected poll is
+		recalculated and the results and statistical data are
+		tabulated and stored in the VVS database.</entry>
+	      </row>
+	      <row>
+	      <entry>Requirements</entry>
+	      <entry>VVS database.</entry></row>
+	      <row>
+		<entry>Pre-conditions</entry>
+		<entry>User must be an authorized EO or VVSA. User
+		must be logged into the system. Poll must have been
+		previously closed.</entry>
+	      </row>
+	      <row>
+		<entry>Post-conditions</entry>
+		<entry>Vote is recounted.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Responses to Abnormal Behavior</entry>
+		<entry>EO or VVSA tries to recount
+		the vote for a poll that has not been
+		closed - an error message is
+		displayed saying, "This poll has not yet been
+		closed. Recounts may only be performed on polls that
+		have been closed."</entry>
+	      </row>
+	      <row><entry>Stability</entry><entry>Stable.</entry></row>
+	      <row><entry>Necessity</entry><entry>Mandatory.</entry></row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+
+      <section>
+	<title>The Disqualify a Vote Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	      <row>
+		<entry namest="c1" nameend="c2" align="center">Vote_disqualify</entry>
+	      </row>
+	    </thead>
+	    <tbody>
+	      <row>
+		<entry>Description</entry>
+		<entry>Allows an EO or VVSA to disqualify the vote of
+		a selected SV if that SV is deemed ineligible to
+		vote.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry>Vote to be disqualified.</entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>EO, VVSA.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>Poll results.</entry>
+	      </row>
+	      <row>
+		<entry>Destination of Outputs</entry>
+		<entry>EO, VVSA.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>EO or VVSA clicks poll management. EO or VVSA
+		clicks disqualify vote. EO or VVSA selected vote they
+		wish to disqualify. A message is displayed saying,
+		"Are you sure you wish to disqualify this vote." EO or
+		VVSA clicks yes. Vote is disqualified and poll results
+		and statistical data are tabulated and stored in the
+		VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Requirements</entry>
+		<entry>SDF, VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Pre-conditions</entry>
+		<entry>User must be an authorized EO or VVSA. User
+		must be logged into the system. Poll must have been
+		previously closed.</entry>
+	      </row>
+	      <row>
+		<entry>Post-conditions</entry>
+		<entry>Selected vote is disqualified. Results and
+		statistical data are tabulated and stored in the VVS
+		database.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>Vote can no longer be disqualified.</entry>
+	      </row>
+	      <row>
+		<entry>Responses to Abnormal Behavior</entry>
+		<entry>EO or VVSA tries to disqualify
+		a vote in a poll that has not been
+		closed - an error message is
+		displayed saying, "A vote cannot be disqualified until
+		after the poll has been closed." EO
+		or VVSA tries to disqualify a vote that has already
+		been disqualified - an error
+		message is displayed saying, "That vote has already
+		been disqualified."</entry>
+	      </row>
+	      <row><entry>Stability</entry><entry>Stable.</entry></row>
+	      <row><entry>Necessity</entry><entry>Mandatory.</entry></row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+
+      <section>
+	<title>The Results Report Display Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	      <row>
+		<entry namest="c1" nameend="c2" align="center">Results_display</entry>
+	      </row>
+	    </thead>
+	    <tbody>
+	      <row>
+		<entry>Description</entry>
+		<entry>Displays the results for the selected poll.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry>Poll.</entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>EO or VVSA.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>Poll results report.</entry>
+	      </row>
+	      <row>
+		<entry>Destination of Outputs</entry>
+		<entry>EO or VVSA.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>EO or VVSA clicks on poll management. EO or
+		VVSA clicks on view results. The results from the
+		selected poll are displayed on the screen.</entry>
+	      </row>
+	      <row>
+		<entry>Requirements</entry>
+		<entry>VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Pre-conditions</entry>
+		<entry>User must be an authorized EO or VVSA. User
+		must be logged into the system. Poll must have been
+		previously closed.</entry>
+	      </row>
+	      <row>
+		<entry>Post-conditions</entry>
+		<entry>Results are displayed.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Responses to Abnormal Behavior</entry>
+		<entry>EO or VVSA tries to view the
+		results of a poll that has not been
+		closed - an error message is
+		displayed saying, "That poll is not yet
+		closed. Results cannot be displayed."</entry>
+	      </row>
+	      <row><entry>Stability</entry><entry>Stable.</entry></row>
+	      <row><entry>Necessity</entry><entry>Mandatory.</entry></row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+
+
+      <section>
+	<title>The Statistical Report Display Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	      <row>
+		<entry namest="c1" nameend="c2" align="center">Statistics_display</entry>
+	      </row>
+	    </thead>
+	    <tbody>
+	      <row>
+		<entry>Description</entry>
+		<entry>Displays the statistical breakdown for the selected poll.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry>Poll.</entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>EO or VVSA.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>Poll statistics report.</entry>
+	      </row>
+	      <row>
+		<entry>Destination of Outputs</entry>
+		<entry>EO or VVSA.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>EO or VVSA clicks on poll management. EO or
+		VVSA clicks on view statistics. The statistics from
+		the selected poll are displayed on the screen.</entry>
+	      </row>
+	      <row>
+		<entry>Requirements</entry>
+		<entry>VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Pre-conditions</entry>
+		<entry>User must be an authorized EO or VVSA. User
+		must be logged into the system. Poll must have been
+		previously closed.</entry>
+	      </row>
+	      <row>
+		<entry>Post-conditions</entry>
+		<entry>Statistical information is displayed.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Responses to Abnormal Behavior</entry>
+		<entry>EO or VVSA tries to view the
+		statistical report of a poll that has not been
+		closed - an error message is
+		displayed saying, "That poll is not yet
+		closed. Statistics cannot be displayed."</entry>
+	      </row>
+	      <row><entry>Stability</entry><entry>Stable.</entry></row>
+	      <row><entry>Necessity</entry><entry>Mandatory.</entry></row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+
+      <section>
+	<title>The Sync the SDF with the Admissions and Records
+	student information database Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	      <row>
+		<entry namest="c1" nameend="c2" align="center">Administrative_sdf_sync</entry>
+	      </row>
+	    </thead>
+	    <tbody>
+	      <row>
+	      <entry>Description</entry>
+	      <entry>The VVS connects with the Admissions and Records
+	      student information database and updates the VVS SDF
+	      with any changes. Makes appropriate changes to voter
+	      groups.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry>SDF.</entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>VVSA.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>SDF.</entry>
+	      </row>
+	      <row>
+		<entry>Destination of Outputs</entry>
+		<entry>VVSA, EO.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>VVSA clicks on sync SDF. The VVS connects to
+		the admissions and records student information
+		database. All changes to student information are
+		updated and stored in the SDF. Any necessary changes
+		to voter groups are made.</entry>
+	      </row>
+	      <row>
+		<entry>Requirements</entry>
+		<entry>Admissions and Records student information
+		database and VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Pre-conditions</entry>
+		<entry>User must be an authorized VVSA. User must be
+		logged into the system. Admissions and Records
+		database must be available.</entry>
+	      </row>
+	      <row>
+		<entry>Post-conditions</entry>
+		<entry>SDF and voter groups are updated.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>A voter group could be emptied.</entry>
+	      </row>
+	      <row>
+		<entry>Responses to Abnormal Behavior</entry>
+		<entry>Admissions and Records student
+		information database is not
+		available - an error message is
+		displayed saying, "The Admissions and Records student
+		information database is not available at this
+		time. Please try again later."</entry>
+	      </row>
+	      <row><entry>Stability</entry><entry>Stable.</entry></row>
+	      <row><entry>Necessity</entry><entry>Mandatory.</entry></row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+      
+      <section>
+	<title>The Create an Election Official Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	      <row>
+		<entry namest="c1" nameend="c2" align="center">Administrative_election_official_create</entry>
+	      </row>
+	    </thead>
+	    <tbody>
+	      <row>
+		<entry>Description</entry>
+		<entry>Allows a VVS Administrator to create a new EO and set their usage privileges.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry></entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>VVSA.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Destination of Outputs</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>VVSA clicks create new Election Official. VVSA
+		enters student id number and clicks make election
+		official. VVSA selects usage privileges. A message is
+		displayed showing all EO information and saying, "Is
+		this information correct?" VVSA clicks yes. SDF file
+		is updated so that the student's information is
+		updated giving them EO privileges.</entry>
+	      </row>
+	      <row>
+		<entry>Requirements</entry>
+		<entry>SDF.</entry>
+	      </row>
+	      <row>
+		<entry>Pre-conditions</entry>
+		<entry>User must be an authorized VVSA. User must be
+		logged into the system. Student id number must exist
+		in the SDF. Student can not already be an EO.</entry>
+	      </row>
+	      <row>
+		<entry>Post-conditions</entry>
+		<entry>Student is now an EO.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>A new EO can no longer be created with this
+		student's id number.</entry>
+	      </row>
+	      <row>
+		<entry>Responses to Abnormal
+		Behavior</entry>
+		<entry>VVSA tries to create an EO
+		who's student id number does not exist in the
+		SDF - an error message is displayed
+		saying, "Student cannot be found. Please reenter
+		student id number." VVSA tries to
+		create an EO who's student id number already has EO
+		privileges - an error messaged is
+		displayed saying, "That student is already an
+		EO."</entry>
+	      </row>
+	      <row><entry>Stability</entry><entry>Stable.</entry></row>
+	      <row><entry>Necessity</entry><entry>Mandatory.</entry></row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+      
+      <section>
+	<title>The Delete an Election Official Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	      <row>
+		<entry namest="c1" nameend="c2" align="center">Administrative_election_official_delete</entry>
+	      </row>
+	    </thead>
+	    <tbody>
+	      <row>
+		<entry>Description</entry>
+		<entry>Allows a VVS Administrator to delete an EO.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry>Student id number.</entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>VVSA.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Destination of Outputs</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>VVSA clicks delete Election Official. VVSA
+		enters student id number and clicks delete. A message
+		is displayed showing all EO information and saying,
+		"Is this information correct?" VVSA clicks yes. SDF
+		file is updated so that the student's information is
+		updated removing EO privileges.</entry>
+	      </row>
+	      <row>
+		<entry>Requirements</entry>
+		<entry>SDF.</entry>
+	      </row>
+	      <row>
+		<entry>Pre-conditions</entry>
+		<entry>User must be an authorized VVSA. User must be
+		logged into the system. Student id number must exist
+		in the SDF. Student must be an EO.</entry>
+	      </row>
+	      <row>
+		<entry>Post-conditions</entry>
+		<entry>Student is now an EO.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Responses to Abnormal Behavior</entry>
+		<entry>VVSA tries to delete an EO
+		who's student id number does not exist in the
+		SDF - an error message is displayed
+		saying, "Student cannot be found. Please reenter
+		student id number." VVSA tries to
+		delete an EO who's student id number does not have EO
+		privileges - an error messaged is
+		displayed saying, "That student is not an EO."</entry>
+	      </row>
+	      <row><entry>Stability</entry><entry>Stable.</entry></row>
+	      <row><entry>Necessity</entry><entry>Mandatory.</entry></row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+      
+      <section>
+	<title>The Modify an Election Official's Privileges Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	    <row>
+	      <entry namest="c1" nameend="c2"
+	      align="center">Administrative_election_official_modify</entry>
+	    </row>
+	    </thead>
+	    <tbody>
+	      <row>
+		<entry>Description</entry>
+		<entry>Allows a VVS Administrator to modify a EOs
+		usage privileges.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry>Student id number.</entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>VVSA.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+	      <entry>Destination of Outputs</entry>
+	      <entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>VVSA clicks modify Election Official. VVSA
+		enters student id number and clicks modify. VVSA
+		selects usage privileges. A message is displayed
+		showing all EO information and saying, "Is this
+		information correct?" VVSA clicks yes. SDF file is
+		updated so that the student's information is updated
+		modifying EO privileges.</entry>
+	      </row>
+	      <row>
+		<entry>Requirements</entry>
+		<entry>SDF.</entry>
+	      </row>
+	      <row>
+	      <entry>Pre-conditions</entry>
+	      <entry>User must be an authorized VVSA. User must be
+	      logged into the system. Student id number must exist in
+	      the SDF. Student must be an EO.</entry>
+	      </row>
+	      <row>
+		<entry>Post-conditions</entry>
+		<entry>EO's privileges have been modified.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Responses to Abnormal Behavior</entry>
+		<entry>VVSA tries to modify an EO
+		who's student id number does not exist in the
+		SDF - an error message is displayed
+		saying, "Student cannot be found. Please reenter
+		student id number." VVSA tries to
+		modify an EO who's student id number does not have EO
+		privileges - an error messaged is
+		displayed saying, "That student is not an
+		EO."</entry>
+	      </row>
+	      <row><entry>Stability</entry><entry>Stable.</entry></row>
+	      <row><entry>Necessity</entry><entry>Mandatory.</entry></row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+      
+      <section>
+	<title>The Poll Template Creation Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	      <row>
+		<entry namest="c1" nameend="c2" align="center">Administrative_poll_template_create</entry>
+	      </row>
+	    </thead>
+	    <tbody>
+	      <row>
+		<entry>Description</entry>
+		<entry>Allows a VVS Administrator to create a ballot
+		template that can be used by EO’s when they create a
+		ballot.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry>Generic poll information.</entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>VVSA.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>Poll template.</entry>
+	      </row>
+	      <row>
+		<entry>Destination of Outputs</entry>
+		<entry>EO.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>VVSA clicks create poll template. VVSA enters
+		poll template information. VVSA clicks save. A message
+		is displayed showing all template information and
+		saying, "Is this information correct?" VVSA clicks
+		yes. Poll template is stored in the VVS
+		database.</entry>
+	      </row>
+	      <row>
+		<entry>Requirements</entry>
+		<entry>VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Pre-conditions</entry>
+		<entry>User must be an authorized VVSA. User must be
+		logged into the system. Poll template name cannot
+		already exist in the VVS database. Poll template
+		cannot be empty.</entry>
+	      </row>
+	      <row>
+		<entry>Post-conditions</entry>
+		<entry>Poll template is created.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>That poll template name can no longer be used.</entry>
+	      </row>
+	      <row>
+		<entry>Responses to Abnormal Behavior</entry>
+		<entry>VVSA tries to create an empty
+		poll template - an error message is
+		displayed saying, "A poll template cannot be
+		empty. You must select at least one option."
+		VVSA tries to create a poll template
+		with a name that already exists in the VVS
+		database - an error message is
+		displayed saying, "That name is already in use. Please
+		rename your poll template and try again."
+		</entry>
+	      </row>
+	    <row><entry>Stability</entry><entry>Stable.</entry></row>
+	    <row><entry>Necessity</entry><entry>Desirable.</entry></row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+      
+      <section>
+	<title>The Poll Template Deletion Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	      <row>
+		<entry namest="c1" nameend="c2"
+		       align="center">Administrative_poll_template_delete</entry>
+	      </row>
+	    </thead>
+	    <tbody>
+	      <row>
+		<entry>Description</entry>
+		<entry>Allows a VVS Administrator to delete a ballot
+		template.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry>Poll template to be deleted.</entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>VVSA.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Destination of Outputs</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>VVSA clicks delete poll template. A message is
+		displayed showing all template information and saying,
+		"Are you sure you want to delete this template" VVSA
+		clicks yes. Poll template is deleted from the VVS
+		database.</entry>
+	      </row>
+	      <row>
+		<entry>Requirements</entry>
+		<entry>VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Pre-conditions</entry>
+		<entry>User must be an authorized VVSA. User must be
+		logged into the system. Poll template name must exist in
+		the VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Post-conditions</entry>
+		<entry>Poll template is deleted.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Responses to Abnormal Behavior</entry>
+		<entry>VVSA tries to delete a poll
+		template with a name that does not exist in the VVS
+		database - an error message is
+		displayed saying, "That poll template does not
+		exist."</entry>
+	      </row>
+	      <row><entry>Stability</entry><entry>Stable.</entry></row>
+	      <row><entry>Necessity</entry><entry>Desirable.</entry></row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+      
+      <section>
+	<title>The Poll Template Modification Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	      <row>
+		<entry namest="c1" nameend="c2" align="center">Administrative_poll_template_modify</entry>
+	      </row>
+	    </thead>
+	    <tbody>
+	      <row>
+		<entry>Description</entry>
+		<entry>Allows a VVS Administrator to modify a ballot
+		template.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry>Poll template.</entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>VVSA.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>Poll template.</entry>
+	      </row>
+	      <row>
+		<entry>Destination of Outputs</entry>
+		<entry>EO.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>VVSA clicks modify poll template. VVSA enters
+		poll template information. VVSA clicks save. A message
+		is displayed showing all template information and
+		saying, "Is this information correct?" VVSA clicks
+		yes. Poll template is stored in the VVS
+		database.</entry>
+	      </row>
+	      <row>
+		<entry>Requirements</entry>
+		<entry>VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Pre-conditions</entry>
+		<entry>User must be an authorized VVSA. User must be
+		logged into the system. Poll template name must already
+		exist in the VVS database. Poll template cannot be
+		empty.</entry>
+	      </row>
+	      <row>
+		<entry>Post-conditions</entry>
+		<entry>Poll template is modified.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Responses to Abnormal Behavior</entry>
+		<entry>VVSA tries to delete all poll
+		template information - an error
+		message is displayed saying, "A poll template cannot be
+		empty. You must select at least one option."
+		VVSA tries to modify a poll template
+		with a name that does not exist in the VVS
+		database - an error message is
+		displayed saying, "That poll template does not
+	      exists."</entry></row>
+	      <row><entry>Stability</entry><entry>Stable.</entry></row>
+	      <row><entry>Necessity</entry><entry>Desirable.</entry></row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+      
+      <section>
+	<title>The Voter Group Creation Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	      <row>
+		<entry namest="c1" nameend="c2"
+		       align="center">Administrative_voter_group_create</entry>
+	      </row>
+	    </thead>
+	    <tbody>
+	      <row>
+		<entry>Description</entry>
+		<entry>Allows a VVS Administrator to create a new voter
+		group by selecting SV’s.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry>SV id numbers.</entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>VVSA.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>Voter group.</entry>
+	      </row>
+	      <row>
+		<entry>Destination of Outputs</entry>
+		<entry>EO.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>VVSA clicks create new voter group. VVSA selects
+		SVs to be in the voter group. VVSA clicks save. The voter
+		group is stored in the VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Requirements</entry>
+		<entry>SDF, VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Pre-conditions</entry>
+		<entry>User must be an authorized VVSA. User must be
+		logged into the system. Voter group name cannot already
+		exist in the VVS database. Voter group cannot be
+		empty.</entry>
+	      </row>
+	      <row>
+		<entry>Post-conditions</entry>
+		<entry>Voter group is created.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>Voter group name can no longer be used.</entry>
+	      </row>
+	      <row>
+		<entry>Responses to Abnormal Behavior</entry>
+		<entry>VVSA tries to create an empty
+		voter group - an error message is
+		displayed saying, "A voter group cannot be empty. Please
+		select at least one SV." VVSA tries to
+		create a voter group with a name that already exists in
+		the VVS database - an error message
+		is displayed saying, "A voter group with that name
+		already exists. Please rename your voter group and try
+		again."</entry>
+	      </row>
+	      <row><entry>Stability</entry><entry>Stable.</entry></row>
+	      <row><entry>Necessity</entry><entry>Desirable.</entry></row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+      
+      <section>
+	<title>The Voter Group Deletion Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	      <row>
+		<entry namest="c1" nameend="c2"
+		       align="center">Administrative_voter_group_delete</entry>
+	      </row>
+	    </thead>
+	    <tbody>
+	      <row>
+		<entry>Description</entry>
+		<entry>Allows a VVS Administrator to delete a voter
+		group.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry>Voter group to be deleted.</entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>VVSA.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Destination of Outputs</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>VVSA clicks delete voter group. VVSA selects
+		voter group to be deleted. VVSA clicks delete. The voter
+		group is deleted from the VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Requirements</entry>
+		<entry>VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Pre-conditions</entry>
+		<entry>User must be an authorized VVSA. User must be
+		logged into the system. Voter group must exist in the
+		VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Post-conditions</entry>
+		<entry>Voter group is deleted.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>Voter group can no longer be used.</entry>
+	      </row>
+	      <row>
+		<entry>Responses to Abnormal Behavior</entry>
+		<entry>VVSA tries to delete a voter
+		group with a name that does not exist in the VVS
+		database - an error message is
+		displayed saying, "Voter group does not exist."</entry>
+	      </row>
+	      <row><entry>Stability</entry><entry>Stable.</entry></row>
+	      <row><entry>Necessity</entry><entry>Desirable.</entry></row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+      
+      <section>
+	<title>The Voter Group Modification Function</title>
+	<informaltable frame='all'>
+	  <tgroup cols='2' align='left' colsep='2' rowsep='2'>
+	    <colspec colname='c1'/>
+	    <colspec colname='c2'/>
+	    <thead>
+	      <row>
+		<entry namest="c1" nameend="c2" align="center">Administrative_voter_group_modify</entry>
+	      </row>
+	    </thead>
+	    <tbody>
+	      <row>
+		<entry>Description</entry>
+		<entry>Allows a VVS Administrator to modify the members
+		of a voter group.</entry>
+	      </row>
+	      <row>
+		<entry>Inputs</entry>
+		<entry>Voter group, SV id numbers.</entry>
+	      </row>
+	      <row>
+		<entry>Sources of Inputs</entry>
+		<entry>VVSA.</entry>
+	      </row>
+	      <row>
+		<entry>Outputs</entry>
+		<entry>Voter group.</entry>
+	      </row>
+	      <row>
+		<entry>Destination of Outputs</entry>
+		<entry>EO.</entry>
+	      </row>
+	      <row>
+		<entry>Processing</entry>
+		<entry>VVSA clicks modify voter group. VVSA
+		selects/deselects SVs to be in the voter group. VVSA
+		clicks save. The voter group is stored in the VVS
+		database.</entry>
+	      </row>
+	      <row>
+		<entry>Requirements</entry>
+		<entry>SDF, VVS database.</entry>
+	      </row>
+	      <row>
+		<entry>Pre-conditions</entry>
+		<entry>User must be an authorized VVSA. User must be
+		logged into the system. Voter group must exist in the
+		VVS database. Voter group cannot be empty.</entry>
+	      </row>
+	      <row>
+		<entry>Post-conditions</entry>
+		<entry>Voter group is modified.</entry>
+	      </row>
+	      <row>
+		<entry>Side Effects</entry>
+		<entry>None.</entry>
+	      </row>
+	      <row>
+		<entry>
+		  Responses to Abnormal
+		  Behavior</entry><entry>VVSA tries to
+		  create an empty voter group - an
+		  error message is displayed saying, "A voter group
+		  cannot be empty. Please select at least one SV."
+		  VVSA tries to create a voter group
+		  with a name that does not exist in the VVS
+		  database - an error message is
+		  displayed saying, "Voter group does not exist."
+		</entry>
+	      </row>
+	      <row>
+		<entry>Stability</entry>
+		<entry>Stable.</entry>
+	      </row>
+	      <row>
+		<entry>Necessity</entry>
+		<entry>Desirable.</entry>
+	      </row>
+	    </tbody>
+	  </tgroup>
+	</informaltable>
+      </section>
+    </section>
+    
+    
+    <section>
+      <title>Non-Functional Requirements</title>
+      
+      <section>
+	<title>Design Constraints</title>
+	
+	<section>
+	  <title>Standard Compliance</title>
+	  
+	  <para>
+	    The VVS will comply with current web standards which have
+	    been put in place by the World Wide Web Consortium (W3C)
+	    in order to preserve the interoperability of the system.
+	    For example, VVS will exhibit the Web Content
+	    Accessibility Guidelines (WCAG) 2.0, which ensure the
+	    accessibility of the system by making the web interface
+	    keyboard accessible, providing enough time for users to
+	    read and use content, and making the content easily
+	    visible/readable.  The system will follow current defacto
+	    standards for PHP as no formal specifications exist and
+	    will conform with the standards of popular web browsers in
+	    order to serve content to a wider audience pool.
+	  </para>
+	</section>
+	
+	<section>
+	  <title>Hardware Limitations</title>
+	  
+	  <para>
+	    Factors that may limit the performance of the system as a
+	    whole are the strain on bandwidth that could result when
+	    many students attempt to use the system concurrently for
+	    large elections involving the entire student body.  In
+	    such a case the load on the poll server could become
+	    stressed, which would result in slowness for users in the
+	    user interface and with output/confirmation from the
+	    system. Also, the system relies that the server's be
+	    dependable and online for the duration of polls.  Loss in
+	    the polling server will result in downtime that could
+	    negatively effect the timeline and outcome of an election.
+	  </para>
+	</section>
+	
+	<section>
+	  <title>External Interface Requirements</title>
+	  
+	  <section>
+	    <title>User Interfaces</title>
+	    
+	    <para>
+	      The user interface for the Vorpal Voting System is
+	      entirely web based.  Users will be met initially with a
+	      login screen which is similar to their current
+	      University web portal.  Once authenticated or logged in
+	      to the system, the user will be presented with a number
+	      of options depending on their level within' the VVS
+	      hierarchy; Student Voters (SVs), Election Officials
+	      (EOs), and the administrators - University Provost or
+	      Faculty Advisors (VVSAs).  The interface will provide
+	      real time functionality to the specific user parties by
+	      displaying menus which will guide their use of the VVS.
+	    </para>
+	    <section>
+	      <title>Student Voter User Interface</title>
+	    	<mediaobject>
+		  <imageobject>
+		    <imagedata fileref="data/svweorr.jpg" />
+		  </imageobject>
+		</mediaobject>
+	    </section>
+	    
+	    <section>
+	      <title>Election Official User Interface</title>
+	      <mediaobject>
+		<imageobject>
+		  <imagedata fileref="data/eoweorr.jpg" />
+		</imageobject>
+	</mediaobject>
+	    </section>
+
+	    <section>
+	      <title>Faculty Advisor User Interface</title>
+	      	<mediaobject>
+		  <imageobject>
+		    <imagedata fileref="data/faweorr.jpg" />
+		  </imageobject>
+		</mediaobject>
+	    </section>	    	    
+	    <section>
+	      <title>Provost User Interface</title>
+	      	<mediaobject>
+		  <imageobject>
+		    <imagedata fileref="data/prweorr.jpg" />
+		  </imageobject>
+		</mediaobject>
+	    </section>
+	  </section>
+	  
+	  <section>
+	    <title>Software Interfaces</title>
+	    
+	    <para>
+	      As the product is web based, no specific operating
+	      system will be required to access the system.  Users
+	      will require an internet browser such as Microsoft
+	      Internet Explorer, Mozilla Firefox, Safari, Opera, or
+	      Netscape Navigator to login and interact with the VVS.
+	    </para>
+	    <para>
+	      The system will be designed entirely for POSIX compliant
+	      operating systems.  See Maintainability.
+	    </para>
+	  </section>
+	  
+	  <section>
+	    <title>Communication Interfaces</title>
+	    
+	    <para>
+	      The primary communication interface of the VVS is the
+	      Hypertext Transer Protocol (HTTP), which is used to
+	      transfer information between the clients and the server.
+	      Security information will be passed in this way in order
+	      to verify the integrity of the system and the
+	      authentication of its users.
+	    </para>
+	    <para>
+	      The common format in which polls and user information is
+	      stored in the backend of the system and the database
+	      will be the only other communication device evident in
+	      the system.
+	    </para>
+	  </section>
+	</section>
+      </section>
+      
+      <section>
+	<title>Quality Attributes</title>
+
+	<para>
+	  To achieve the highest level of quality and availability The
+	  Developers have assessed the system and identified four
+	  catagories of events whose individual impacts would result
+	  in a loss of quality of the system. Furthermore, the
+	  developers have put into place subsystems and procedures
+	  which are independent of each other and designed explicitly
+	  to minimize downtime and maxamize data integrity.
+	</para>
+	
+	<para>
+	  <orderedlist>
+	    <title>
+	      Identified Events
+	    </title>
+	    <listitem>
+	      <para>
+		Power Failures
+	      </para>
+	    </listitem>
+	    <listitem>
+	      <para>
+		Data Corruption
+	      </para>
+	    </listitem>
+	    <listitem>
+	      <para>
+		Security Breach
+	      </para>
+	    </listitem>
+	    <listitem>
+	      <para>
+		Scheduled Maintenance
+		<orderedlist>
+		  <listitem>
+		    <para>System Upgrades</para>
+		  </listitem>
+		  <listitem>
+		    <para>System Optimization</para>
+		  </listitem>
+		  <listitem>
+		    <para>Hardware Upgrades/Maintenance</para>
+		  </listitem>
+		</orderedlist>
+	      </para>
+	    </listitem>
+	  </orderedlist>
+	</para>
+
+	<para>
+	  Methods are described in the four sections following which
+	  together create a net increase in quality, availability, and
+	  integrity of the VVS.
+	</para>
+	
+	<section>
+	  <title>Availability</title>
+	  
+	  <formalpara>
+	    <title>Electricity Quality</title>
+	    <para>
+	      Electricity is supplied to the VVS servers by Morgantown
+	      Electric and cleaned by line conditioners installed for
+	      OITs existing server center. This means less fluxuations
+	      in electricity supplied to the servers. This is
+	      important because high load electrical equipment has on
+	      average a 10% longer lifespan than identical equiptment
+	      under unconditioned lines.
+	    </para>
+	  </formalpara>
+
+	  <formalpara>
+	    <title>Backup Power</title>
+	    <para>
+	      The 10 minutes of reserve electricity already provided
+	      by the backup electrical generators installed at MHS
+	      will be supplimented with an additional two 2000VA
+	      battery backups. The installed battery backups will
+	      provide an estimated 30 to 40 minutes of uptime for the
+	      entire system under a low to mid load. Under peak load
+	      the backup batteries will provide an estimated 10 to 15
+	      minutes of additional uptime. These batteries will each
+	      need to be recycled every four to five years.
+	    </para>
+	  </formalpara>
+
+	  <formalpara>
+	    <title>Data Retention &amp; Recovery</title>
+	    <para>
+	      The VVS is prepared for the unlikely event of
+	      unrecoverable data corruption. In addition to the VVSA
+	      function to manually create a backup of the VVS, all VVS
+	      datastores are <emphasis>automatically</emphasis>
+	      exported in a plain UTF-8 ASCII format file and backed
+	      up to two locations nightly. The first location is the
+	      backup VVS system also located at MU OIT. The second
+	      location is the offsite storage location MU OIT
+	      provides. Backups are retained on a one week rotating
+	      cycle in each location and are stored on redundant disk
+	      arrays.
+	    </para>
+	  </formalpara>
+
+	  <formalpara>
+	    <title>Automatic Hibernation</title>
+	    <para>
+	      If the probability of a complete loss of power becomes
+	      inevitable then the battery backups are configured to
+	      facilitate with data loss prevention. In this system
+	      they will communicate via a direct serial port
+	      connection to the VVS computers and instruct them to
+	      begin performing the safe hibernate procedures. The date
+	      and time of system hibernation is recorded in the system
+	      logs. After restoration of power and a sufficient power
+	      reserve has been replenished the battery backup modules
+	      will signal to the VVS computers to resume
+	      operation. With physical human interaction this process
+	      can be executed on command.
+	    </para>
+	  </formalpara>
+	</section>
+	
+	<section>
+	  <title>Security</title>
+
+	  <para>
+	    The establishment of secure communication channels between
+	    all involved entities is a crucial step in the process of
+	    creating an environment of high integrity. The VVS employs
+	    two different systems of security. By using signed SSL
+	    certificates the first system establishes a secure
+	    communication pathway for intersystem communication. In
+	    the second system SSH keys are emplyed as a means of
+	    limiting remote access to the VVS servers underlying UNIX
+	    operating system.
+	  </para>
+
+	  <formalpara>
+	    <title>SSL Certificates for Intersystem Communication</title>
+
+	    <para>
+	      Student Voters, the VVS Poll Officials, and all other
+	      parties who access the VVS through a web browser, are
+	      able to enjoy the system with confidence that their
+	      interactions are not being listened to, collected by,
+	      intercepted, or otherwise altered by malicious unknown
+	      entities. Similarly the implementation of this secure
+	      communication layer allows a safe transfer of data
+	      between OIT any maintained datastore and the VVS. After
+	      an external user or OIT system has accepted the VVS
+	      certificate their communication becomes privvy to the
+	      same level of encryption that major websites currently
+	      use when collecting credit card information.
+	    </para>
+	  </formalpara>
+
+	  <formalpara>
+	    <title>SSH (DSA/RSA) Keys for OS Level Access</title>
+
+	    <para>
+	      To prevent unauthorized access to the computer systems
+	      which the VVS is installed, one must have previously had
+	      their <emphasis>Public</emphasis> SSH key collected and
+	      stored onto the VVS servers by a VVS poll
+	      official. Then, only when an authenticating user has the
+	      proper passphrase to decrypt and use their
+	      <emphasis>Private</emphasis> SSH key will they be able
+	      to authenticate, and then be granted authorization to
+	      the VVS computer systems.
+	    </para>
+	  </formalpara>
+	  
+	  <formalpara>
+	    <title>Information Segregation</title>
+	    <para>
+	      The further buttress the integrity of the VVS, all
+	      production VVS datastores are kept behind a firewall
+	      configured to deny access to all external entities.
+	    </para>
+	  </formalpara>
+	</section>
+	
+	<section>
+	  <title>Portability</title>
+
+	  <para>
+	    Portability means adhering to recognized standards at all
+	    times. To achieve maximum portability the VVS requires no
+	    proprietary software, or patents. Furthermore the VVS has
+	    no dependencies on any external licensing bodies. A
+	    consistent, portable system has been developed by
+	    implementing the chosen technologies on a UNIX operating
+	    system. The choice of UNIX as a platform is due to the
+	    UNIX operating system family having the highest native
+	    POSIX standards compatability.
+	  </para>
+
+	  <formalpara>
+	    <title>Hardware Architectures</title>
+	    <para>
+	      The choice of the highly POSIX standards compliant UNIX
+	      operating system family as the deployment platform
+	      results in a broad choice of architectures under which
+	      the VVS may be installed. This list includes:
+	      <orderedlist>
+		<listitem>
+		  <para>x86</para>
+		</listitem>
+		<listitem>
+		  <para>AMD64/IA64</para>
+		</listitem>
+		<listitem>
+		  <para>Members of the RISC Family</para>
+		</listitem>
+	      </orderedlist>
+	    </para>
+	  </formalpara>
+
+	  <formalpara>
+	    <title>Software Selections</title>
+	    <para>
+	      The VVS implements a set of Free License Open Source
+	      Software (<acronym>FLOSS</acronym>) Tools and
+	      languages. The choice of FLOSS tools guarantees the
+	      future portability of the VVS by means of the source to
+	      the tools used beingt freely available, modifiable, and
+	      redistributable. Given a sufficiently POSIX compliant
+	      operating system the tools the VVS depends on can be
+	      ported to a new OS, and even a new CPU architecture.
+	    </para>
+	  </formalpara>
+	</section>
+	
+	<section>
+	  <title>Maintainability</title>
+
+	  <para>
+	    Each server in the VVS is aware of the activity and load
+	    of all other servers in the system. Together they balance
+	    the number of incoming connections and jobs between
+	    themselves. All data stored in the VSS database is
+	    replicated across both database servers. These design
+	    decisions create a highly maintainable and scalable system. 
+	  </para>
+
+	  <formalpara>
+	    <title>Maintenance</title>
+	    <para>
+	      The design element of the system which allows for most
+	      ease of maintainability is it's programming to balance
+	      work between itself. Each server added to the system
+	      with the correct basic configuration will spread the
+	      load linearly (up to a certain level) between all
+	      discovered servers. Should individual machines require
+	      maintenance, or require upgrades they can be taken down
+	      systematically without the entire VVS crashing.
+	    </para>
+	  </formalpara>
+	</section>
+      </section>
+      
+      <section>
+	<title>Performance Requirements</title>
+	
+	<para>
+	  how much interactivity will this reasonably be able
+	  to provide? 
+	  /x/ users concurrently?
+	  what happens if too many users are on the system at once?
+	</para>
+
+	<para>
+	  Performance requirements encompass both static and dynamic
+	  requirements.  Static requirements concern, amongst others,
+	  the number of terminals to be connected and the number of
+	  users handled concurrently. Dynamic requirements concern
+	  operational performance of the system, how frequently will
+	  certain functions be called for and how fast should the
+	  system’s reaction be. These requirements should be stated in
+	  measurable terms.
+	</para>
+      </section>
+    </section>
+  </chapter>
+</book>
