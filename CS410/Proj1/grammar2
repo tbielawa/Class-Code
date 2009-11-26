@@ -1,0 +1,111 @@
+# The following is a grammar which generates
+# the langauge used to describe an interactive
+# fiction world and objects.
+#
+# Timothy Bielawa
+# 2009/10/01
+# WVU
+
+
+lower-case	::=
+		"a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" |
+		"j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" |
+		"s" | "t" | "u" | "v" | "w" | "x" | "y" | "z" ;
+
+upper-case	::=
+		"A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" |
+		"J" | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" |
+		"S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z" ;
+
+upper-word	::=
+		upper-case+ ;
+
+string-chars	::=
+		? ASCII characters from 0x20 through 0x7E, excluding 0x22 (the space character) ? ;
+
+string		::=
+		string-chars+ ;
+
+quoted-string	::=
+		'"' string '"' ;
+
+digit		::=
+		"0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+
+space		::= 	" " ;
+
+tab		::=	"\t" ;
+
+nl		::=	"\n";
+
+whsp		::=	( space | tab ) ;
+
+semicolon	::=	";" ;
+
+colon		::=	":" ;
+
+underscore	::=	"_" ;
+
+eq		::=	"=" ;
+
+internal-name	::= underscore ( upper-word underscore )+ ;
+
+# Symbol Definitions
+# Rooms
+begin-roomdef-sym	::= "ROOMDEF" nl+ ;
+exit-sym		::= "EXITDEF" ;
+flag-sym		::= "FLAGDEF" ;
+end-roomdef-sym		::= "ENDROOMDEF" nl+ ;
+
+# Objects
+begin-objdef-sym	::= "OBJDEF" ;
+alias-sym		::= "ALIASDEF" ;
+loc-sym			::= "LOCDEF" ;
+use-sym			::= "USEDEF" ;
+end-objdef-sym		::= "ENDOBJDEF" nl+;
+
+# Shared
+ident-sym		::= "IDENTDEF" ;
+flag-sym		::= "FLAGDEF" ;
+
+# Directions
+north		::= underscore "NORTH" underscore ;
+east		::= underscore "EAST" underscore ;
+south		::= underscore "SOUTH" underscore ;
+west		::= underscore "WEST" underscore ;
+
+direction	::=
+		north
+		| east
+		| south
+		| west ;
+
+# Attribute expressions
+identity-expr 	::= 
+		ident-sym whsp* eq whsp* quoted-string colon internal-name semicolon nl+ ;
+
+exit-expr	::=
+		exit-sym whsp* eq whsp* direction colon internal-name semicolon nl+ ;
+
+flag-expr	::=
+		flag-sym whsp* eq whsp* internal-name colon quoted-string semicolon nl+ ;
+
+alias-expr	::=
+		alias-sym whsp* eq whsp* quoted-string semicolon nl+ ;
+
+loc-expr	::=
+		loc-sym whsp* eq whsp* internal-name semicolon nl+ ;
+
+use-expr	::=
+		use-sym whsp* eq whsp* internal-name nl+ ;
+
+
+
+# Places and Things
+# Rooms
+room-def 	::= 
+		begin-roomdef-sym identity-expr exit-expr+ flag-expr* end-roomdef-sym ;
+
+# Objects
+obj-def		::=
+		begin-objdef-sym identity-expr alias-expr* loc-expr flag-expr* use-expr* end-objdef-sym ;

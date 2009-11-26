@@ -1,0 +1,9 @@
+label y = -1*x + 0 (mb function)
+width 40
+bottom ticks -10 0 10
+left ticks -10 0 10
+range -10 -10 10 10
+-10 10 \
+10 -10 \
+mb -1 0 \
+0 0 \

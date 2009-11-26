@@ -1,0 +1,30 @@
+Tim Bielawa
+HW 5
+Due 2007/10/22
+
+PROBLEM 1
+
+A)
+ HEAD -> [3] -> [9] -> void
+
+B) 
+ [7] -> [9] -> void
+
+PROBLEM 2
+
+public void reverse (Stack stacka)
+{
+	Stack tmpStack
+	while(elements exist in stacka)
+	{
+		tmpStack.push(stackA.pop());
+	}
+
+	stacka = tmpStack;
+}
+
+PROBLEM 3
+
+The result of the pseudo code for problem 4 on page 414 is:
+
+1 4 4

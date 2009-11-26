@@ -1,0 +1,61 @@
+CS111 Fall 2007
+Project 4 - Cruise Ship Manager
+Author: Tim 'Shaggy' Bielawa
+E-Mail: tbielawa@mix.wvu.edu
+
+
+Contents of this File:
+	1) Instructions
+	2) Special Notes
+
+
+(1) Instructions
+---------------------------------------------------------------
+	As you can see there's a lot of files in this package.
+You only need to compile and run two of them. If you want to 
+run the command line version of this program then do this:
+
+$ javac CruiseShipManagerCLI.java
+$ java CruiseShipManager
+
+Using this verson you may notice that when you run some commands
+they don't seem to do anything -- just scroll up. The menu system
+reprints itself each time you run a command so it tends to cover
+up anything that got output.
+
+If you want to run the Graphical version of this program 
+then do this:
+
+$ javac CruiseShipManagerGUI.java
+$ java CruiseShipManagerGUI
+
+I recommend the Graphical version. I spent a lot of time on that :D
+
+
+
+(2) Special Notes
+---------------------------------------------------------------
+	This is a reallllllly complex program. I'm also bored 
+right now so I'm going to explain the structure of this program.
+This is the basic flow.
+
+
+      [CruiseShipManagerGUI]        [CruiseShipManagerCLI]
+       |            |  |                    |
+       |            |  |--------+-----------+
+      \|/          \|/          |
+  [AddACruise] [ShowACruise]    |
+       |            |          \|/
+       +------------+---->[CruiseManager]
+                              |     |
+                    +---------+     +---------+
+                    |                         |
+                   \|/                       \|/
+              [DLinkedList]               [Cruise]
+                    |                      |    |
+                   \|/                     |    +-----+
+            [DLinkedList.Node]            \|/         |
+                                        [List]        |
+                                           |          |
+                                          \|/        \|/
+                                        [Node]   [Passengers]

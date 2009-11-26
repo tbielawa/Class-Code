@@ -1,0 +1,15 @@
+PASSED 1
+PASSED 2
+PASSED 3
+PASSED 4
+FAILED 5, got /home/tbielawa/tmp/5.got
+FAILED 6, got /home/tbielawa/tmp/6.got
+FAILED 7, got /home/tbielawa/tmp/7.got
+FAILED 8, got /home/tbielawa/tmp/8.got
+FAILED 9, got /home/tbielawa/tmp/9.got
+FAILED 10, got /home/tbielawa/tmp/10.got
+PASSED 11
+PASSED 12
+PASSED 13
+PASSED 14
+PASSED 15

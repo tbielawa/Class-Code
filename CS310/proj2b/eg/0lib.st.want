@@ -1,0 +1,29 @@
+
+---| 0lib.st |-----------------------------------------
+
+flintsoneflintsone
+(11 22 33)
+OrderedCollection ('to' 'be' 'or' 'not' 'to' 'be' )
+1:	#Fred isa: Object with: 'name' !
+2:	
+3:	!Fred methods ! 
+4:	name: x      name := x ! 
+5:	name         ^name  ! 
+6:	!
+7:	
+8:	|f|
+9:	f := Fred new name: 'flintsone'.
+10:	f name o.
+11:	f name oo.
+12:	!
+13:	
+14:	#(11 22 33) oo.
+15:	'to be or not to be' asWords oo. 
+16:	!
+17:	
+18:	|i|
+19:	i := 0.
+20:	'eg/0lib.st' fileLinesDo: [:line| 
+21:	   i := i + 1.
+22:		(i s, ':', Character tab s, line ) oo].
+23:	!

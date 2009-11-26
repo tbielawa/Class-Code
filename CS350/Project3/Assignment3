@@ -1,0 +1,2 @@
+Image resizer, as in 2. Implement with ability to specify a target and
+maximum amount of UNIX threads to process the job in.

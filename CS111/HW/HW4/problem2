@@ -1,0 +1,26 @@
+//accesser to the private nodes in the list
+public Node getHead()
+{
+	return head;
+}
+
+public int getSize()
+{
+	return count;
+}
+
+public void append(sLinkedList b)
+{
+	Node tmpNode;
+	tmpNode = head;
+	while(tmpNode.next != void)
+	{
+		tmpNode = tmpNode.next;
+	}
+
+	//now tmpNode should be the last node in the list
+
+	tmpNode.next = b.getHead();
+
+	count += b.getSize();
+}

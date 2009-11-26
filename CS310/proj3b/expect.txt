@@ -1,0 +1,46 @@
+...lets put an "X" in the parens when 
+something has been completed.
+
+(X) 1. a better version of grammar.lisp with a longer grammar for the graph inputs;
+
+    (X) 2. test files eg/graphgrammer.lisp (and other) demonstrating that you can run 
+       some full graph in eg/graphgramer.dat.
+
+(X) 3. same file, grammar.lisp, with the grammar changed so it does handle the above two issues;
+       	    - # There is no new line after each data item. 
+	    - There should be at least two points for each symbol and this is not the case. 
+	      E.g at line 29 of the above, there is a single "+" and "#". 
+
+    (X) 4. test files eg/graphlines.lisp, etc. 
+
+(X) 5. a file checker.lisp, that implements the (recursive walkthrough) checker;
+       - # Flag an error if a RHS non-terminal never appears as the LHS of a rule.
+       - Flag an error if a LHS non-terminal never appears in a RHS 
+
+    (X) 6. test files eg/checker.lisp , etc. 
+
+(X) 7. a file sanity.lisp, that implements the checker;
+    (X) 8. test files eg/sanity.lisp , etc. 
+
+#### END REQUIRED WORK ####
+
+#### BEGIN BONUS STUFF ####
+
+(X) 9. Adjust the grammar to generate science fiction stories of the form described (5 marks)
+       - This will be in a file:
+       "scifi.lisp"
+
+    (X) 10. test files "eg/scifi.lisp" that generates 350 randomly generated files. 
+
+(X) 11. a file, "prob.lisp" that does the above expansions (adding probability) (5 marks)
+
+    (X) 12. test files "eg/prob.lisp" etc
+
+( ) 13. Take the output to test your Smalltalk code. A file "testOut.txt" describing how 
+        you did this task and show some of the output (including a crashed Smalltalk stack dump). 
+	(5 marks)
+
+( ) 14. graph generator in LISP. Code it up and show that you can get "18 PASSED" 
+    from "make scores". (5 marks)
+
+    ( ) 15. test files eg/1.lisp ...eg/10.lisp etc. 

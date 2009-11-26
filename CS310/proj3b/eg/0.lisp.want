@@ -1,0 +1,28 @@
+
+---| 0.lisp |-----------------------------------------
+
+
+#S(GRAPH :LABEL " " :XRANGE 16777215 .. -16777215 :YRANGE 16777215 .. -16777215
+   :H 10 :W 19999
+   :MATRIX
+   #2A((#\Space #\Space #\Space #\Space #\Space #\Space #\Space #\Space #\Space
+        #\Space)
+       (#\Space #\Space #\Space #\Space #\Space #\Space #\Space #\Space #\Space
+        #\Space)
+       (#\Space #\Space #\Space #\Space #\Space #\Space #\Space #\Space #\Space
+        #\Space)
+       (#\Space #\Space #\Space #\Space #\Space #\Space #\Space #\Space #\Space
+        #\Space)
+       (#\Space #\Space #\Space #\Space #\Space #\Space #\Space #\Space #\Space
+        #\Space)
+       (#\Space #\Space #\Space #\Space #\Space #\Space #\Space #\Space #\Space
+        #\Space)
+       (#\Space #\Space #\Space #\Space #\Space #\Space #\Space #\Space #\Space
+        #\Space)
+       (#\Space #\Space #\Space #\Space #\Space #\Space #\Space #\Space #\Space
+        #\Space)
+       (#\Space #\Space #\Space #\Space #\Space #\Space #\Space #\Space #\Space
+        #\Space)
+       (#\Space #\Space #\Space #\Space #\Space #\Space #\Space #\Space #\Space
+        #\Space))
+   :OX 6 :OY 2) 

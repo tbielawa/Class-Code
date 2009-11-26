@@ -1,0 +1,29 @@
+To test Prefix Operations
+
+
+prompt# java testPrefixOps
+	when prompted for a data file, tell it "prefixtest" to use
+	the one I have already prepared. Alternatively, substitute 
+	in any file you've created at this prompt.
+
+To test Postfix Operations
+
+prompt# java testPostfix
+	When prompted for a data file, tell it "postfixtest" to use
+	the one I have already prepared. Alternatively, substitute
+	in any file you've created at this prompt.
+
+
+
+Notes: The program assumes the file you are prompting exists
+	in the curent working directory.
+
+
+
+
+
+Author: Tim Bielawa
+Email: Tim_Bielawa@IEEE.org
+Due Date: 2007/10/26
+Assignment: Stacks, Queues, 
+     Prefix Ops, and Postfix Ops

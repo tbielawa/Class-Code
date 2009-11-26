@@ -1,0 +1,149 @@
+//////////////////////
+// GAWK
+//////////////////////
+
+- patterns, actions
+In AWK programs are structured such that a set of conditions
+are defined. If one of those conditions are met (or not) then
+AWK will do stuff. 
+
+In awk the conditions are actually patterns, and the players 
+in the patterns are substrings on the current line being evaluated. 
+Should some sort of regular expression exist, or a particular
+word or substring on the current line meets some condition then
+awk performs actions. Actions can be a multitude of things:
+Settings variables, printing strings, arithmetic, etc.
+
+- next
+If a pattern was matched then in that patterns action code
+a script can use AWKs NEXT command. If the NEXT command is use
+AWK will stop checking any more patterns if they exist in the 
+section of the script it is in and then start evaluating the next
+line of the input file for matching patterns. Quite similar to using 
+"continue" in loops.
+
+
+- BEGIN
+BEGIN is a special pattern in AWK. Any actions that exist in the
+BEGIN statement are executed before any lines of input are read.
+This makes BEGIN a kind of initializer pattern.
+
+- END
+END is anther special pattern in AWK. After all lines of input have
+been read and possibly had actions run on them the END pattern 
+gets the opportunity to run any actions that need to be done
+to finish the script regardless of the content of any prior line.
+
+
+- regular expressions (^[-+]?([0-9]+[.]?[0-9]*|[.][0-9]+)([eE][-+]?[0-9]+)?$)
+Regular expressions are powerful (sometimes confusing) ways to 
+define, and match, patterns in a string. They are extremely common 
+in the UNIX world.
+
+Explaining the regex above step by step would be very long. In
+summary you can say that it will match most format of numbers.
+
+You can optionally specify the sign of a number,
+put a number in decimal format or integer format,
+choose to put in scientific "e" notation,
+specify the sign of the scientific notation.
+
+For example, you could match:
+
++123321.000003e-3, or +123321.000003e-3, or +123321.000003e3, or 123321.000003,
+or +123321, or 123321.0, or 1, any many other patterns.
+
+
+- GAWK built-ins used by GRAPH: 
+
+- sub(regex, replacement)
+Matches a pattern on the current line, 'regex', and replaces
+it with 'replacement'. Similar in functionality to sed.
+
+- $0
+Automatic Variable representing the entire current line
+
+- $1
+First field on the current line
+
+- NR
+Current line number
+
+- NF
+Number of fields on the current line
+
+- substr(string,position[,length])
+Given pattern 'string', substring returns a substring from 
+'string' starting at 'position'. If the optional argument 'end'
+is not specified then substring returns from 'position' to
+the end of the input string.
+
+- split(string,array,search)
+split() will break 'string' into an array by the string 'search'
+and place it into the specified 'array' variable. Split returns the
+number of items in the array after splitting it.
+
+
+- length(string)
+Returns the length of 'string'
+
+- int 
+Forces a floating point number into an integer.
+
+
+
+//////////////////////
+// GRAPH
+//////////////////////
+
+- expand
+Doesn't do anything unless you haven't used some function
+or syntax which sets the xmin variable. If your xmin isn't set
+expand calls expand1()
+
+- expand1
+Checks your datapoints one-by-one and adjusts the dimensions of the 
+graph so that no datapoints are outside the borders of the graph.
+
+- frame
+draws the frame of the graph into the array
+
+- ticks
+places the tick marks on the bottom and left axis
+
+- label
+places the label below the bottom axis
+
+- data
+Plots all the datapoints. If a plotting symbol was left out
+then it prints a "*" character by default. Nothing is printed
+out at this point, only plotted into the array buffer.
+
+- draw
+Goes from the top of the graph to the bottom, sweeping. If it finds
+a character in the graph at any i,j position then the character is printed.
+If no character exists at that position it prints whitespace.
+
+- xscale
+Scales the x values to fit inside the x min/max values specified
+
+- yscale
+scales the y values to fit inside the y min/max values specified
+
+- plot
+Takes a carteesian coordinate and a character. The character is stored
+as "x,y" in an array. This represents the field of plotted characters
+
+- splot
+places a string, "s", into the array at position x,y 
+character by character.
+
+- saya 
+Not actually used. 
+
+iterates over elements of 'a', 
+splits each iterated element up by the array substring character,
+keeps making the 'str' variable longer,
+prints out some non existant q2 variable, then the currently
+being iterated element of a. then prints out "sort #" and a random
+number from the pipe created by 'com'.

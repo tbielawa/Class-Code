@@ -1,0 +1,6 @@
+Upon initial inspection it seems that clone() would actually create a copy of our list. But further inspection shows that this is not true. From 
+http://java.sun.com/j2se/1.4.2/docs/api/java/lang/Object.html
+
+"Otherwise, this method creates a new instance of the class of this object and initializes all its fields with exactly the contents of the corresponding fields of this object, as if by assignment; the contents of the fields are not themselves cloned. Thus, this method performs a "shallow copy" of this object, not a "deep copy" operation."
+
+Because the fields present in our list class are objects we are not copying over primitive data. Were that the case we would be creating a copy of our list. Because the fields in our class are objects we are copying the address reference values over. This in effect would create a second object referencing the SAME list nodes.

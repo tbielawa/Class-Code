@@ -1,0 +1,17 @@
+[ ! -d "/tmp/$USER" ] && mkdir /tmp/$USER
+Loads="/tmp/$USER/loads"
+
+for i in *.lisp $*
+do
+    echo $i
+done | 
+gawk '/-/ {next}
+          {print "(load \"" $1 "\") "}
+' > $Loads
+
+if   [ "${!#}" = \- ]
+then echo -n '; '; clisp --version | head -1 
+     echo '; Getting there is half defun.'; echo ';'
+     clisp -repl $Loads
+else clisp $Loads
+fi

@@ -1,0 +1,32 @@
+Need to describe locations and objects, etc.
+
+ --> Locations <--
+
+(ROOM
+	(IDENT "Description" "Internal-Name")
+	(LOC ROOMS)
+	(EXITS
+		(DIRECTION "Internal-Name-1" [EGRESS-FUNCTION])
+		...
+		(DIRECTION "Internal-Name-N" [EGRESS-FUNCTION])
+	(FLAGS
+		(FLAG1)
+		...
+		(FLAGN)))
+
+
+ --> Objects <--
+
+(OBJECT
+	(IDENT "Description" "Internal-Name")
+	(ALIASES 
+		 ("Alias 1")
+		 ...
+		 ("Alias N"))
+	(LOC "Internal-Name")
+	(FLAGS
+		(FLAG1)
+		...
+		(FLAGN))
+	(SIZE INT)
+	(USE USE-NAME)) #Name of function when using this object

@@ -1,0 +1,11 @@
+
+(format t "~% This is the standard grammar ~% ~%")
+(dolist (one *sci-prob*)
+  (format t "~a ~%" one))
+(format t "~% This is the expanded grammar ~% ~%")
+(expGram)
+(dolist (one *sci-prob*)
+  (format t "~a ~%" one))
+(format t "~% ~%")
+(setGrammar *sci-prob*)
+(print (generate '?story))

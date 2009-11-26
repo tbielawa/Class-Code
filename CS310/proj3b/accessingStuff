@@ -1,0 +1,11 @@
+CL-USER> (graph-xrange tehgraph)
+1152921504606846975 .. -1152921504606846975                                                                                                                                     
+CL-USER> (range-min (graph-xrange tehgraph))
+1152921504606846975                                                                                                                                                             
+CL-USER> (range-max (graph-xrange tehgraph))
+-1152921504606846975 
+
+
+
+
+^ is how you access values in the graph

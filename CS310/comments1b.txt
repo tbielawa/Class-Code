@@ -1,0 +1,136 @@
+     1	-------------------------------------------------
+     2	aperhins/
+     3	
+     4	nice solution
+     5	
+     6	$1 != "tag" {  print ($0) }
+     7	
+     8	$1 == "tag" {
+     9	    print("tags " $2 " " $3) 
+    10	    for (i=0;i<$4;i++)
+    11	        printf($2 " " i " " $5) 
+    12	}
+    13	
+    14	i could do it a little simpler, but not by much
+    15	
+    16	$1 == "tag" {  print("tags " $2 " " $3) 
+    17	                        for (i=0;i<$4;i++)
+    18	                                 printf($2 " " i " " $5) 
+    19	                        next
+    20	                    } 
+    21	                   {print $0}
+    22	
+    23	-------------------------------------------------
+    24	
+    25	the "next" call here  was not necessary, since it is the catch all that runs every time at the end
+    26	
+    27	$1 == "tag" {
+    28	...
+    29	           next
+    30	      }
+    31	{
+    32	    print $0
+    33	    next
+    34	}
+    35	
+    36	-------------------------------------------------
+    37	
+    38	 what is this line doing  in line 20 of your code?
+    39	
+    40	 $ cat file | gawk graph.awk
+    41	
+    42	-------------------------------------------------
+    43	
+    44	why the empty BEGIN block on line 1,2?
+    45	
+    46	BEGIN {
+    47	}
+    48	
+    49	why the empty END block ?
+    50	
+    51	END {
+    52	}
+    53	
+    54	-------------------------------------------------
+    55	
+    56	i  like the line skipping blanks
+    57	/^[ \t]*#/     { next }
+    58	
+    59	but i would have added another one the jumps over blank lines as well
+    60	/^[ \t]*$/ {next}
+    61	
+    62	good use of regular expressions
+    63	number = "^[-+]?([0-9]+[.]?[0-9]*|[.][0-9]+)" \
+    64	                               "([eE][-+]?[0-9]+)?$"
+    65	
+    66	$1 ~ number && $2 !~ number { print($0) }
+    67	$1 ~ number && $2 ~ number { print($0) }
+    68	
+    69	but this code is not necessary, see below
+    70	  $1 == "bottom" || $1 == "left" || $1 == "tags" || $1 == "range" || $1 == "mb" || $1 == "label" || $1 == "height" || $1 == "width" { print($0) }
+    71	  $1 ~ number && $2 !~ number { print($0) }
+    72	  $1 ~ number && $2 ~ number { print($0) }
+    73	
+    74	-------------------------------------------------
+    75	
+    76	good use of the skip code
+    77	
+    78	 /^[ \t]*#/  { next } # skip comments
+    79	
+    80	 -------------------------------------------------
+    81	
+    82	first thing, you've got a whole bunch of variables that are not part of the pre-processor ( ht.wid,ox,oy). 
+    83	you should not mix up this pre-processor with those concepts
+    84	
+    85	secondly, i'm going to guess how you got to the following solution:
+    86	$1 == "tag" && $1 !~ "tags" 
+    87	
+    88	first your tried
+    89	
+    90	$1 ~ /tag/ 
+    91	
+    92	and then you found that that _also_ matched /tags/, right?
+    93	
+    94	but once you've switched from "~" to "==" you don't need to worry about that. 
+    95	"~" is the pattern matcher while "==" is exact match.
+    96	
+    97	so your above code could be written as 
+    98	
+    99	$1 == "tag" 
+   100	
+   101	-------------------------------------------------
+   102	
+   103	thanks for this line...
+   104	
+   105	 $1 != "tag"
+   106	
+   107	it shows that you know that the default action is "{print $0}'
+   108	
+   109	-------------------------------------------------
+   110	
+   111	BEGIN{}
+   112	$1 != "tag" { print $0 }#prints all other lines
+   113	$1 == "tag" { #If first term is tags
+   114	    place = $2
+   115	    tag = $3
+   116	    times = $4
+   117	    symbol = $5
+   118	    symbol = symbol ? symbol = $5 : symbol = "*"#sets default symbol to * if one is not found
+   119	    print "tags" " " place " " tag
+   120	    for(i=1; i<=times; i++)
+   121	        print place " " i " " symbol#prints off each line
+   122	}
+   123	
+   124	your use of variable names to mark everything is arguably good practice (the
+   125	code maintainer will thank you)
+   126	
+   127	-------------------------------------------------
+   128	
+   129	i like your use of number to test validity
+   130	
+   131	BEGIN{ number = "^[-+]?([0-9]+[.]?[0-9]*|[.][0-9]+)" \
+   132	                                 "([eE][-+]?[0-9]+)?$" }
+   133	$1 == "tag" && y ~ number {
+   134	
+   135	and i would have added something to print an error if not a number
+   136	

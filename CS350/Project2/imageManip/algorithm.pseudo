@@ -1,0 +1,20 @@
+int image[rows*cols]; /* pretend this has been populated with data */
+
+int s = 5; /* we're scaling it down by 5 factor */
+
+int newImage[rows/s][cols/s]; /* uninitialized */
+
+for ( int c = 1; c <= s; c++ )
+{
+	for ( int cb = 0; cb < s; cb++ )
+	{
+		for ( int r = 0; r < s; r++ )
+		{
+			for ( int i = 0; i < s; i++ )
+				sum += image [ c * [ cb * [ r * s^2 ] + i ] ];
+			}
+		}
+	}
+	newImage [ c ][ cb ] = sum/(s^2);
+	sum = 0;
+}
