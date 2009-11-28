@@ -1,0 +1,1475 @@
+------------------------------------------------------------------------
+r1933 | menzies.tim | 2009-11-05 16:13:11 -0500 (Thu, 05 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/commits.txt
+
+commit log
+------------------------------------------------------------------------
+r1932 | menzies.tim | 2009-11-05 16:12:09 -0500 (Thu, 05 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/commits.txt
+
+commit log
+------------------------------------------------------------------------
+r1931 | eliflesher@gmail.com | 2009-11-05 15:29:33 -0500 (Thu, 05 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/main.lisp
+
+Cleaning up loads and writing initial learn for Demo
+------------------------------------------------------------------------
+r1930 | edwaltman | 2009-11-05 15:24:49 -0500 (Thu, 05 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/prism.lisp
+
+PRISM is now typesafe-er.
+------------------------------------------------------------------------
+r1927 | edwaltman | 2009-11-05 15:06:08 -0500 (Thu, 05 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/prism.lisp
+
+PRISM is mostly demo-ready.
+------------------------------------------------------------------------
+r1926 | eliflesher@gmail.com | 2009-11-05 15:00:21 -0500 (Thu, 05 Nov 2009) | 2 lines
+Changed paths:
+   M /branches/20/etc/proj/3/main.lisp
+
+Cleanup and setting up main
+
+------------------------------------------------------------------------
+r1925 | eliflesher@gmail.com | 2009-11-05 14:21:43 -0500 (Thu, 05 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/2b.lisp
+   M /branches/20/etc/proj/3/algos/genic.lisp
+   M /branches/20/etc/proj/3/algos/kmeans.lisp
+   M /branches/20/etc/proj/3/main.lisp
+
+Cleaning up loads and writing initial learn for Demo
+------------------------------------------------------------------------
+r1924 | eliflesher@gmail.com | 2009-11-05 13:58:41 -0500 (Thu, 05 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/2b.lisp
+   M /branches/20/etc/proj/3/algos/binlogging.lisp
+   M /branches/20/etc/proj/3/algos/genic.lisp
+   M /branches/20/etc/proj/3/algos/infogain.lisp
+   M /branches/20/etc/proj/3/algos/kmeans.lisp
+   M /branches/20/etc/proj/3/algos/naivebayes.lisp
+   M /branches/20/etc/proj/3/algos/nbins.lisp
+   M /branches/20/etc/proj/3/algos/nchops.lisp
+   M /branches/20/etc/proj/3/algos/normalize.lisp
+   M /branches/20/etc/proj/3/algos/relief.lisp
+   M /branches/20/etc/proj/3/algos/subsample.lisp
+   M /branches/20/etc/proj/3/algos/twor.lisp
+   M /branches/20/etc/proj/3/lib/loaddeps.lisp
+   M /branches/20/etc/proj/3/main.lisp
+   M /branches/20/etc/proj/3/utils/runtime.lisp
+   M /branches/20/etc/proj/3/utils/suppression.lisp
+   M /branches/20/etc/proj/3/utils/utils.lisp
+
+Cleaning up loads and writing initial learn for Demo
+------------------------------------------------------------------------
+r1923 | timbielawa | 2009-11-05 13:31:33 -0500 (Thu, 05 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/normalize.lisp
+
+pretty logging
+------------------------------------------------------------------------
+r1922 | eliflesher@gmail.com | 2009-11-05 13:28:55 -0500 (Thu, 05 Nov 2009) | 2 lines
+Changed paths:
+   A /branches/20/etc/proj/3/utils/suppression.lisp
+
+Cleanup and setting up main
+
+------------------------------------------------------------------------
+r1921 | eliflesher@gmail.com | 2009-11-05 13:27:14 -0500 (Thu, 05 Nov 2009) | 2 lines
+Changed paths:
+   M /branches/20/etc/proj/3/algos/twor.lisp
+   M /branches/20/etc/proj/3/main.lisp
+   M /branches/20/etc/proj/3/utils/utils.lisp
+
+Cleanup and setting up main
+
+------------------------------------------------------------------------
+r1919 | eliflesher@gmail.com | 2009-11-05 13:19:14 -0500 (Thu, 05 Nov 2009) | 2 lines
+Changed paths:
+   M /branches/20/etc/proj/3/main.lisp
+   M /branches/20/etc/proj/3/utils/utils.lisp
+
+Cleanup and setting up main
+
+------------------------------------------------------------------------
+r1918 | eliflesher@gmail.com | 2009-11-05 13:17:54 -0500 (Thu, 05 Nov 2009) | 2 lines
+Changed paths:
+   M /branches/20/etc/proj/3/algos/2b.lisp
+   M /branches/20/etc/proj/3/utils/utils.lisp
+
+Cleanup and setting up main
+
+------------------------------------------------------------------------
+r1917 | timbielawa | 2009-11-05 13:11:59 -0500 (Thu, 05 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/2b.lisp
+
+naivebayes requires two parameters. my bad. my bad...
+------------------------------------------------------------------------
+r1916 | eliflesher@gmail.com | 2009-11-05 12:53:52 -0500 (Thu, 05 Nov 2009) | 2 lines
+Changed paths:
+   M /branches/20/etc/proj/3/algos/infogain.lisp
+   M /branches/20/etc/proj/3/lib/loaddeps.lisp
+   M /branches/20/etc/proj/3/main.lisp
+   M /branches/20/etc/proj/3/utils/runtime.lisp
+   M /branches/20/etc/proj/3/utils/utils.lisp
+
+Cleanup and setting up main
+
+------------------------------------------------------------------------
+r1915 | edwaltman | 2009-11-05 12:21:28 -0500 (Thu, 05 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/prism.lisp
+
+Removing debugging lines from PRISM.
+------------------------------------------------------------------------
+r1914 | edwaltman | 2009-11-05 12:18:19 -0500 (Thu, 05 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/prism.lisp
+
+PRISM mostly works.
+------------------------------------------------------------------------
+r1911 | eliflesher@gmail.com | 2009-11-05 11:55:36 -0500 (Thu, 05 Nov 2009) | 1 line
+Changed paths:
+   A /branches/20/etc/proj/3/algos/nchops.lisp (from /branches/20/etc/proj/3/algos/normalbins.lisp:1910)
+   D /branches/20/etc/proj/3/algos/normalbins.lisp
+
+Renaming "normal bins" to n-chops
+------------------------------------------------------------------------
+r1902 | timbielawa | 2009-11-05 11:21:25 -0500 (Thu, 05 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/shagsangbox.lisp
+
+load this up and enjoy yourself.
+------------------------------------------------------------------------
+r1900 | timbielawa | 2009-11-05 11:16:27 -0500 (Thu, 05 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/infogain.lisp
+   M /branches/20/etc/proj/3/shagsangbox.lisp
+
+Fixing the problem
+------------------------------------------------------------------------
+r1897 | timbielawa | 2009-11-05 10:21:24 -0500 (Thu, 05 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/infogain.lisp
+
+info gain is done
+------------------------------------------------------------------------
+r1896 | timbielawa | 2009-11-05 10:07:10 -0500 (Thu, 05 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/twor.lisp
+
+typo
+------------------------------------------------------------------------
+r1895 | timbielawa | 2009-11-05 10:06:41 -0500 (Thu, 05 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/infogain.lisp
+   M /branches/20/etc/proj/3/algos/twor.lisp
+
+work work
+------------------------------------------------------------------------
+r1893 | timbielawa | 2009-11-05 08:44:58 -0500 (Thu, 05 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/infogain.lisp
+   M /branches/20/etc/proj/3/shagsangbox.lisp
+
+Almost done
+------------------------------------------------------------------------
+r1892 | eliflesher@gmail.com | 2009-11-05 04:47:58 -0500 (Thu, 05 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/kmeans.lisp
+
+K-means is done.
+------------------------------------------------------------------------
+r1891 | timbielawa | 2009-11-05 03:56:12 -0500 (Thu, 05 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/binlogging.lisp
+   M /branches/20/etc/proj/3/algos/infogain.lisp
+   M /branches/20/etc/proj/3/algos/nbins.lisp
+   A /branches/20/etc/proj/3/shagsangbox.lisp
+
+Adding shaggy sandbox. Fixed binlogging. Fixed Nbins. Clean up infogain
+------------------------------------------------------------------------
+r1889 | eliflesher@gmail.com | 2009-11-05 00:33:12 -0500 (Thu, 05 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/kmeans.lisp
+   A /branches/20/etc/proj/3/utils/runtime.lisp
+
+More progress on k-means and completed timing functions.
+------------------------------------------------------------------------
+r1888 | edwaltman | 2009-11-04 23:08:28 -0500 (Wed, 04 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/prism.lisp
+
+Well, this is going somewhere...
+------------------------------------------------------------------------
+r1886 | edwaltman | 2009-11-04 21:33:38 -0500 (Wed, 04 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/prism.lisp
+
+Adding best-feature finder for a list of features.
+------------------------------------------------------------------------
+r1882 | edwaltman | 2009-11-04 19:34:33 -0500 (Wed, 04 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/prism.lisp
+
+Adding small chunk of useful code to PRISM.
+------------------------------------------------------------------------
+r1866 | timbielawa | 2009-11-04 08:24:03 -0500 (Wed, 04 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/infogain.lisp
+
+Optimization
+------------------------------------------------------------------------
+r1865 | timbielawa | 2009-11-04 08:09:40 -0500 (Wed, 04 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/infogain.lisp
+   M /branches/20/etc/proj/3/algos/twor.lisp
+   M /branches/20/etc/proj/3/utils/utils.lisp
+
+info gain works.
+------------------------------------------------------------------------
+r1858 | eliflesher@gmail.com | 2009-11-04 00:31:59 -0500 (Wed, 04 Nov 2009) | 1 line
+Changed paths:
+   A /branches/20/etc/proj/3/algos/kmeans.lisp
+
+Beginning of k-means
+------------------------------------------------------------------------
+r1857 | edwaltman | 2009-11-04 00:31:44 -0500 (Wed, 04 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/prism.lisp
+
+Committing what I have done at the moment for the night.
+------------------------------------------------------------------------
+r1856 | timbielawa | 2009-11-04 00:31:19 -0500 (Wed, 04 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/infogain.lisp
+
+saving before going home
+------------------------------------------------------------------------
+r1855 | timbielawa | 2009-11-04 00:18:18 -0500 (Wed, 04 Nov 2009) | 2 lines
+Changed paths:
+   A /branches/20/etc/proj/3/algos/infogain.lisp
+
+infogain template
+
+------------------------------------------------------------------------
+r1853 | edwaltman | 2009-11-04 00:14:52 -0500 (Wed, 04 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/prism.lisp
+
+Uploading functions utilized for PRISM.
+------------------------------------------------------------------------
+r1846 | timbielawa | 2009-11-03 22:29:59 -0500 (Tue, 03 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/normalize.lisp
+   M /branches/20/etc/proj/3/algos/twor.lisp
+
+Normalize is complete
+------------------------------------------------------------------------
+r1845 | edwaltman | 2009-11-03 22:00:54 -0500 (Tue, 03 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/normalbins.lisp
+   M /branches/20/etc/proj/3/algos/prism.lisp
+
+Cleaning up files, making normalbins work again.
+------------------------------------------------------------------------
+r1841 | edwaltman | 2009-11-03 19:51:04 -0500 (Tue, 03 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/normalbins.lisp
+
+Normalbins is complete.
+------------------------------------------------------------------------
+r1839 | edwaltman | 2009-11-03 19:42:42 -0500 (Tue, 03 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/normalbins.lisp
+
+Adding bin dectection for normalbins.
+------------------------------------------------------------------------
+r1838 | edwaltman | 2009-11-03 19:22:48 -0500 (Tue, 03 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/normalbins.lisp
+
+Added computation of standard deviation boundaries to normalbins.
+------------------------------------------------------------------------
+r1837 | timbielawa | 2009-11-03 19:21:43 -0500 (Tue, 03 Nov 2009) | 1 line
+Changed paths:
+   A /branches/20/etc/proj/3/algos/2b.lisp
+   A /branches/20/etc/proj/3/algos/normalize.lisp
+
+2b and normalize
+------------------------------------------------------------------------
+r1836 | edwaltman | 2009-11-03 19:17:16 -0500 (Tue, 03 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/normalbins.lisp
+
+Adding standard deviation computation in normalbins.
+------------------------------------------------------------------------
+r1835 | edwaltman | 2009-11-03 19:10:08 -0500 (Tue, 03 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/normalbins.lisp
+
+Making column-mean typesafe.
+------------------------------------------------------------------------
+r1833 | edwaltman | 2009-11-03 18:59:58 -0500 (Tue, 03 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/normalbins.lisp
+
+Column-mean functionality present in normalbins.
+------------------------------------------------------------------------
+r1779 | edwaltman | 2009-11-01 17:53:16 -0500 (Sun, 01 Nov 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/normalbins.lisp
+
+Progress on Normal Binning.
+------------------------------------------------------------------------
+r1731 | edwaltman | 2009-10-28 19:39:11 -0400 (Wed, 28 Oct 2009) | 1 line
+Changed paths:
+   A /branches/20/etc/proj/3/algos/normalbins.lisp
+   A /branches/20/etc/proj/3/algos/prism.lisp
+
+Adding initial files with comments for normal-bins and PRISM.
+------------------------------------------------------------------------
+r1688 | edwaltman | 2009-10-26 16:21:20 -0400 (Mon, 26 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/3/algos/twor.lisp
+
+Moving modifications to project 2 over to project 3.
+------------------------------------------------------------------------
+r1666 | timbielawa | 2009-10-22 03:07:14 -0400 (Thu, 22 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/twor.lisp
+
+rodo
+------------------------------------------------------------------------
+r1662 | edwaltman | 2009-10-21 12:17:41 -0400 (Wed, 21 Oct 2009) | 1 line
+Changed paths:
+   A /branches/20/etc/proj/3
+   A /branches/20/etc/proj/3/algos
+   A /branches/20/etc/proj/3/algos/binlogging.lisp
+   A /branches/20/etc/proj/3/algos/genic.lisp
+   A /branches/20/etc/proj/3/algos/naivebayes.lisp
+   A /branches/20/etc/proj/3/algos/nbins.lisp
+   A /branches/20/etc/proj/3/algos/relief.lisp
+   A /branches/20/etc/proj/3/algos/subsample.lisp
+   A /branches/20/etc/proj/3/algos/twor.lisp
+   A /branches/20/etc/proj/3/d-data
+   A /branches/20/etc/proj/3/d-data/additionalbolts.lisp
+   A /branches/20/etc/proj/3/d-data/boston-housing.lisp
+   A /branches/20/etc/proj/3/d-data/mushroom.lisp
+   A /branches/20/etc/proj/3/d-data/weather.lisp
+   A /branches/20/etc/proj/3/d-data/weathernumerics.lisp
+   A /branches/20/etc/proj/3/documentation
+   A /branches/20/etc/proj/3/lib
+   A /branches/20/etc/proj/3/lib/caution.lisp
+   A /branches/20/etc/proj/3/lib/data.lisp
+   A /branches/20/etc/proj/3/lib/header.lisp
+   A /branches/20/etc/proj/3/lib/lazy.lisp
+   A /branches/20/etc/proj/3/lib/loaddeps.lisp
+   A /branches/20/etc/proj/3/lib/normal.lisp
+   A /branches/20/etc/proj/3/lib/number.lisp
+   A /branches/20/etc/proj/3/lib/structs.lisp
+   A /branches/20/etc/proj/3/lib/table.lisp
+   A /branches/20/etc/proj/3/lib/xindex.lisp
+   A /branches/20/etc/proj/3/main.lisp
+   A /branches/20/etc/proj/3/utils
+   A /branches/20/etc/proj/3/utils/utils.lisp
+
+Adding initial working base for Project 3.  Libraries and dependancies ready, old algorithms still available.
+------------------------------------------------------------------------
+r1661 | edwaltman | 2009-10-21 12:13:24 -0400 (Wed, 21 Oct 2009) | 1 line
+Changed paths:
+   D /branches/20/etc/proj/2/sandbox.lisp
+
+Removing old sandboxes.
+------------------------------------------------------------------------
+r1660 | edwaltman | 2009-10-21 12:12:27 -0400 (Wed, 21 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/genic.lisp
+
+Working GENIC now in it's proper spot.
+------------------------------------------------------------------------
+r1657 | timbielawa | 2009-10-20 20:37:49 -0400 (Tue, 20 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/twor.lisp
+   M /branches/20/etc/proj/2/main.lisp
+
+Last piece of the logic for the classifier and I realize I misunderstood the algorithm...
+------------------------------------------------------------------------
+r1654 | edwaltman | 2009-10-20 17:19:00 -0400 (Tue, 20 Oct 2009) | 1 line
+Changed paths:
+   A /branches/20/etc/proj/2/genic.txt
+   M /branches/20/etc/proj/2/sandbox.lisp
+
+Committing demo-ready material regarding GENIC.
+------------------------------------------------------------------------
+r1653 | edwaltman | 2009-10-20 16:30:24 -0400 (Tue, 20 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/sandbox.lisp
+
+GENIC works as per instruction.
+------------------------------------------------------------------------
+r1652 | menzies.tim | 2009-10-20 16:25:48 -0400 (Tue, 20 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/commits.txt
+
+commit log
+------------------------------------------------------------------------
+r1647 | edwaltman | 2009-10-20 04:34:22 -0400 (Tue, 20 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/sandbox.lisp
+
+Adding stuff for GENIC rewrite.
+------------------------------------------------------------------------
+r1645 | timbielawa | 2009-10-20 00:30:25 -0400 (Tue, 20 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/twor.lisp
+   M /branches/20/etc/proj/2/main.lisp
+
+print to format
+------------------------------------------------------------------------
+r1634 | timbielawa | 2009-10-18 22:46:20 -0400 (Sun, 18 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/twor.lisp
+
+Print pritty or don't print at all
+------------------------------------------------------------------------
+r1633 | timbielawa | 2009-10-18 22:41:01 -0400 (Sun, 18 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/twor.lisp
+
+Commit early, commit often. Do until you get something that works
+------------------------------------------------------------------------
+r1632 | timbielawa | 2009-10-18 22:33:19 -0400 (Sun, 18 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/twor.lisp
+
+Commit early, commit often
+------------------------------------------------------------------------
+r1616 | menzies.tim | 2009-10-15 16:58:03 -0400 (Thu, 15 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/main.lisp
+
+stuff
+------------------------------------------------------------------------
+r1612 | menzies.tim | 2009-10-15 16:24:02 -0400 (Thu, 15 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/commits.txt
+
+commit log
+------------------------------------------------------------------------
+r1611 | timbielawa | 2009-10-15 16:11:22 -0400 (Thu, 15 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/twor.lisp
+
+Don't print out new tables
+------------------------------------------------------------------------
+r1605 | timbielawa | 2009-10-15 15:14:10 -0400 (Thu, 15 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/twor.lisp
+
+pre-processing complete. statistics generated. just need a damn classifier.
+------------------------------------------------------------------------
+r1603 | timbielawa | 2009-10-15 14:41:25 -0400 (Thu, 15 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/twor.lisp
+
+twor preprocessor is one step closer to being finished
+------------------------------------------------------------------------
+r1601 | timbielawa | 2009-10-15 14:10:45 -0400 (Thu, 15 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/twor.lisp
+
+Commit early, commit often
+------------------------------------------------------------------------
+r1599 | timbielawa | 2009-10-15 14:08:43 -0400 (Thu, 15 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/twor.lisp
+
+Commit early, commit often
+------------------------------------------------------------------------
+r1567 | timbielawa | 2009-10-14 23:42:41 -0400 (Wed, 14 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/twor.lisp
+
+Committtttt
+------------------------------------------------------------------------
+r1564 | timbielawa | 2009-10-14 23:17:24 -0400 (Wed, 14 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/twor.lisp
+
+Commit early, commit often
+------------------------------------------------------------------------
+r1192 | timbielawa | 2009-10-08 01:50:26 -0400 (Thu, 08 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/twor.lisp
+
+Saving work on twoR
+------------------------------------------------------------------------
+r1158 | edwaltman | 2009-10-06 17:15:50 -0400 (Tue, 06 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/genic.lisp
+
+Making GENIC a bit more typesafe.
+------------------------------------------------------------------------
+r1147 | eliflesher@gmail.com | 2009-10-06 00:03:14 -0400 (Tue, 06 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/main.lisp
+
+Committing what we have
+------------------------------------------------------------------------
+r1146 | timbielawa | 2009-10-06 00:02:44 -0400 (Tue, 06 Oct 2009) | 2 lines
+Changed paths:
+   M /branches/20/etc/proj/2/algos/twor.lisp
+
+Method to join table columns
+
+------------------------------------------------------------------------
+r1145 | edwaltman | 2009-10-05 23:46:13 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/relief.lisp
+   M /branches/20/etc/proj/2/utils/utils.lisp
+
+Fixed NIL problem.
+------------------------------------------------------------------------
+r1143 | edwaltman | 2009-10-05 22:57:20 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/relief.lisp
+
+ADDRESSING MORE EDGE CASES.
+------------------------------------------------------------------------
+r1140 | edwaltman | 2009-10-05 22:49:14 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/relief.lisp
+
+Okay, maybe this will work.
+------------------------------------------------------------------------
+r1139 | edwaltman | 2009-10-05 22:42:42 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/utils/utils.lisp
+
+...and better null checking.
+------------------------------------------------------------------------
+r1138 | edwaltman | 2009-10-05 22:39:30 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/relief.lisp
+   M /branches/20/etc/proj/2/sandbox.lisp
+   M /branches/20/etc/proj/2/utils/utils.lisp
+
+Adding better boundary checking to RELIEF.
+------------------------------------------------------------------------
+r1137 | eliflesher@gmail.com | 2009-10-05 22:36:05 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/main.lisp
+   M /branches/20/etc/proj/2/utils/utils.lisp
+
+I don't know
+------------------------------------------------------------------------
+r1136 | edwaltman | 2009-10-05 22:02:43 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/relief.lisp
+   M /branches/20/etc/proj/2/sandbox.lisp
+
+Now RELIEF works with just a table input.
+------------------------------------------------------------------------
+r1135 | edwaltman | 2009-10-05 21:58:53 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/relief.lisp
+   M /branches/20/etc/proj/2/sandbox.lisp
+
+RELIEF ENTIRELY WORKS NOW HOLY SHIT.
+------------------------------------------------------------------------
+r1134 | eliflesher@gmail.com | 2009-10-05 21:24:18 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/genic.lisp
+
+Swapping order of optionals to Genic
+------------------------------------------------------------------------
+r1133 | eliflesher@gmail.com | 2009-10-05 21:22:59 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/genic.lisp
+   M /branches/20/etc/proj/2/main.lisp
+   M /branches/20/etc/proj/2/utils/utils.lisp
+
+Committing resolved utils
+------------------------------------------------------------------------
+r1132 | edwaltman | 2009-10-05 21:18:48 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/relief.lisp
+   M /branches/20/etc/proj/2/sandbox.lisp
+   M /branches/20/etc/proj/2/utils/utils.lisp
+
+RELIEF is complete.
+------------------------------------------------------------------------
+r1131 | timbielawa | 2009-10-05 21:10:46 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/twor.lisp
+
+save early. save often
+------------------------------------------------------------------------
+r1130 | eliflesher@gmail.com | 2009-10-05 20:25:12 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/genic.lisp
+
+Swapping order of \&optionals in genic
+------------------------------------------------------------------------
+r1129 | eliflesher@gmail.com | 2009-10-05 19:10:31 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/utils/utils.lisp
+
+Adding testiest-truthiness function
+------------------------------------------------------------------------
+r1128 | eliflesher@gmail.com | 2009-10-05 19:07:52 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/naivebayes.lisp
+
+Really removing print from Naive bayes
+------------------------------------------------------------------------
+r1127 | eliflesher@gmail.com | 2009-10-05 18:41:19 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/naivebayes.lisp
+
+Taking the print out of Naive Bayes
+------------------------------------------------------------------------
+r1126 | eliflesher@gmail.com | 2009-10-05 18:15:18 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/utils/utils.lisp
+
+Reordering functions in utils to avoid warnings
+------------------------------------------------------------------------
+r1125 | eliflesher@gmail.com | 2009-10-05 17:46:55 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/utils/utils.lisp
+
+Updating count-classes - same return - different method
+------------------------------------------------------------------------
+r1124 | edwaltman | 2009-10-05 16:52:52 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/relief.lisp
+   M /branches/20/etc/proj/2/sandbox.lisp
+
+Adding diff-metric finder function for RELIEF.
+------------------------------------------------------------------------
+r1123 | edwaltman | 2009-10-05 16:36:16 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/relief.lisp
+   M /branches/20/etc/proj/2/sandbox.lisp
+
+Adding nearest same-class/diff-class function for RELIEF.
+------------------------------------------------------------------------
+r1120 | edwaltman | 2009-10-05 15:46:56 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/relief.lisp
+   A /branches/20/etc/proj/2/sandbox.lisp
+
+Adding some files so I can work on the laptop instead of the netbook.  Psudocode is at the ready for RELIEF.
+------------------------------------------------------------------------
+r1119 | edwaltman | 2009-10-05 15:30:45 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/relief.lisp
+
+Adding preface to RELIEF.
+------------------------------------------------------------------------
+r1117 | edwaltman | 2009-10-05 13:50:11 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/genic.lisp
+
+Fixing some table-data populating crap.  GENIC/2 is now perfect.
+------------------------------------------------------------------------
+r1115 | eliflesher@gmail.com | 2009-10-05 13:05:07 -0400 (Mon, 05 Oct 2009) | 2 lines
+Changed paths:
+   M /branches/20/etc/proj/2/algos/naivebayes.lisp
+
+Updating naive bayes
+
+------------------------------------------------------------------------
+r1114 | timbielawa | 2009-10-05 03:43:59 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/twor.lisp
+   M /branches/20/etc/proj/2/lib/loaddeps.lisp
+
+Fixing some loading issues
+------------------------------------------------------------------------
+r1111 | timbielawa | 2009-10-05 03:06:24 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/twor.lisp
+   M /branches/20/etc/proj/2/lib/loaddeps.lisp
+   A /branches/20/etc/proj/2/lib/normal.lisp (from /trunk/our/lib/lisp/tricks/normal.lisp:1109)
+   A /branches/20/etc/proj/2/lib/number.lisp (from /trunk/our/lib/lisp/tricks/number.lisp:1109)
+   A /branches/20/etc/proj/2/lib/xindex.lisp (from /branches/20/lib/lisp/table/xindex.lisp:1082)
+   M /branches/20/lib/lisp/table/data.lisp
+   M /branches/20/lib/lisp/table/xindex.lisp
+   M /branches/20/lib/lisp/tricks/hash.lisp
+   M /branches/20/lib/lisp/tricks/macros.lisp
+   M /branches/20/lib/lisp/tricks/normal.lisp
+   M /branches/20/lib/lisp/tricks/random.lisp
+   M /branches/20/lib/lisp/tricks/string.lisp
+
+Making his library non-deftest dependent. Going to tottly use that library.
+------------------------------------------------------------------------
+r1110 | edwaltman | 2009-10-05 03:01:13 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/genic.lisp
+
+GENIC and GENIC2 now return a list of table structures with the clusters represented in each's :all field.
+------------------------------------------------------------------------
+r1109 | eliflesher@gmail.com | 2009-10-05 00:23:47 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/d-data/weather.lisp
+
+Updating weather
+------------------------------------------------------------------------
+r1108 | eliflesher@gmail.com | 2009-10-05 00:21:58 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   A /branches/20/etc/proj/2/d-data/weather.lisp
+
+Adding weather discrete set
+------------------------------------------------------------------------
+r1107 | eliflesher@gmail.com | 2009-10-05 00:20:10 -0400 (Mon, 05 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/naivebayes.lisp
+   M /branches/20/etc/proj/2/utils/utils.lisp
+
+Committing Naive Bayes babysvn updatesvn updatesvn updatesvn updatesvn updatesvn updatesvn updatesvn update
+------------------------------------------------------------------------
+r1106 | edwaltman | 2009-10-04 23:47:27 -0400 (Sun, 04 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/genic.lisp
+
+Making GENIC and GENIC2 both cluster results into proper table formats.
+------------------------------------------------------------------------
+r1104 | timbielawa | 2009-10-04 22:51:53 -0400 (Sun, 04 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/twor.lisp
+
+Most of the oneR part works now. Need to sort through the list structure it returns to start making the rules.
+------------------------------------------------------------------------
+r1103 | edwaltman | 2009-10-04 22:27:20 -0400 (Sun, 04 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/genic.lisp
+
+GENIC2 is complete.
+------------------------------------------------------------------------
+r1102 | edwaltman | 2009-10-04 20:55:48 -0400 (Sun, 04 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/genic.lisp
+
+GENIC is complete.  GENIC2 to come soon.
+------------------------------------------------------------------------
+r1101 | edwaltman | 2009-10-04 18:17:07 -0400 (Sun, 04 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/genic.lisp
+
+Adding GENIC utility functions.
+------------------------------------------------------------------------
+r1100 | timbielawa | 2009-10-04 18:15:08 -0400 (Sun, 04 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/twor.lisp
+
+most of the oneR foundation is laid down. Need to return the calcualted statisticts and account for nil values. Then add the pre-method to form the new pairwise dataset. Need a numerical discretizer
+------------------------------------------------------------------------
+r1097 | timbielawa | 2009-10-04 17:39:21 -0400 (Sun, 04 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/twor.lisp
+
+monster of a defun
+------------------------------------------------------------------------
+r1096 | eliflesher@gmail.com | 2009-10-04 17:39:20 -0400 (Sun, 04 Oct 2009) | 2 lines
+Changed paths:
+   M /branches/20/etc/proj/2/algos/nbins.lisp
+   A /branches/20/etc/proj/2/d-data/boston-housing.lisp
+   M /branches/20/etc/proj/2/utils/utils.lisp
+
+Modifications to nbins, adding boston housing data set and removing a bad comment from utils:
+
+------------------------------------------------------------------------
+r1095 | eliflesher@gmail.com | 2009-10-04 16:50:17 -0400 (Sun, 04 Oct 2009) | 1 line
+Changed paths:
+   D /branches/20/etc/proj/2/documentation/Relief.pdf
+   D /branches/20/etc/proj/2/documentation/TwoR.pdf
+
+Removing pointless symlinks
+------------------------------------------------------------------------
+r1094 | timbielawa | 2009-10-04 14:38:44 -0400 (Sun, 04 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/twor.lisp
+
+Finally got majority class counts. I could dance I'm so happy
+------------------------------------------------------------------------
+r1093 | eliflesher@gmail.com | 2009-10-04 13:33:46 -0400 (Sun, 04 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/main.lisp
+
+Updating main.lisp to load utility function and library
+------------------------------------------------------------------------
+r1092 | eliflesher@gmail.com | 2009-10-04 13:30:40 -0400 (Sun, 04 Oct 2009) | 2 lines
+Changed paths:
+   M /branches/20/etc/proj/2/algos/binlogging.lisp
+   A /branches/20/etc/proj/2/algos/nbins.lisp (from /branches/20/etc/proj/2/algos/nlogging.lisp:1091)
+   D /branches/20/etc/proj/2/algos/nlogging.lisp
+
+Finished n-bins and updated binlogging
+
+------------------------------------------------------------------------
+r1091 | eliflesher@gmail.com | 2009-10-04 13:27:30 -0400 (Sun, 04 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/binlogging.lisp
+   A /branches/20/etc/proj/2/algos/nlogging.lisp (from /branches/20/etc/proj/2/algos/binlogging.lisp:1090)
+
+Creating nlogging from binlogging - this should be easy with my utils
+------------------------------------------------------------------------
+r1090 | timbielawa | 2009-10-04 13:19:47 -0400 (Sun, 04 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/twor.lisp
+   M /branches/20/etc/proj/2/utils/utils.lisp
+
+Fixing my typo in utils. count-uniques should work again. Removing most of my old old. MFL for thinking target classes would be discrete by default.
+------------------------------------------------------------------------
+r1089 | timbielawa | 2009-10-04 05:33:52 -0400 (Sun, 04 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/twor.lisp
+
+got the struct generator, the struct table generator, and a prototype for the main method ready to go.
+------------------------------------------------------------------------
+r1088 | timbielawa | 2009-10-04 03:26:15 -0400 (Sun, 04 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/twor.lisp
+   M /branches/20/etc/proj/2/utils/utils.lisp
+
+Adding more util functions
+------------------------------------------------------------------------
+r1086 | timbielawa | 2009-10-04 01:31:31 -0400 (Sun, 04 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/utils/utils.lisp
+
+Sorry. Adding description and changing var name
+------------------------------------------------------------------------
+r1085 | timbielawa | 2009-10-04 01:29:43 -0400 (Sun, 04 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/utils/utils.lisp
+
+adding rowclass method
+------------------------------------------------------------------------
+r1084 | timbielawa | 2009-10-04 01:12:08 -0400 (Sun, 04 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/utils/utils.lisp
+
+Adding allrows function
+------------------------------------------------------------------------
+r1083 | eliflesher@gmail.com | 2009-10-03 22:47:02 -0400 (Sat, 03 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/utils/utils.lisp
+
+Putting Drew's functions back
+------------------------------------------------------------------------
+r1082 | eliflesher@gmail.com | 2009-10-03 22:44:29 -0400 (Sat, 03 Oct 2009) | 2 lines
+Changed paths:
+   M /branches/20/etc/proj/2/utils/utils.lisp
+
+Correcting utils
+
+------------------------------------------------------------------------
+r1081 | timbielawa | 2009-10-03 22:10:23 -0400 (Sat, 03 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/main.lisp
+
+fix paths and missing right-paren in main.lisp
+------------------------------------------------------------------------
+r1080 | edwaltman | 2009-10-03 21:37:21 -0400 (Sat, 03 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/subsample.lisp
+
+Subsample is completed.
+------------------------------------------------------------------------
+r1079 | edwaltman | 2009-10-03 20:43:10 -0400 (Sat, 03 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/subsample.lisp
+   M /branches/20/etc/proj/2/utils/utils.lisp
+
+Moving utility functions around.
+------------------------------------------------------------------------
+r1078 | edwaltman | 2009-10-03 20:41:28 -0400 (Sat, 03 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/subsample.lisp
+   M /branches/20/etc/proj/2/utils/utils.lisp
+
+Adding more utility functions.
+------------------------------------------------------------------------
+r1077 | eliflesher@gmail.com | 2009-10-03 20:24:51 -0400 (Sat, 03 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/subsample.lisp
+   M /branches/20/etc/proj/2/utils/utils.lisp
+
+Moving Drew's class counter into utils
+------------------------------------------------------------------------
+r1076 | edwaltman | 2009-10-03 20:02:16 -0400 (Sat, 03 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/algos/subsample.lisp
+
+Adding utility functions for subsample.
+------------------------------------------------------------------------
+r1075 | eliflesher@gmail.com | 2009-10-03 19:50:16 -0400 (Sat, 03 Oct 2009) | 1 line
+Changed paths:
+   A /branches/20/etc/proj/2/utils/utils.lisp
+
+Adding functions to run a function over all the features of a data set and one to recieve the classes
+------------------------------------------------------------------------
+r1073 | eliflesher@gmail.com | 2009-10-03 18:35:14 -0400 (Sat, 03 Oct 2009) | 1 line
+Changed paths:
+   A /branches/20/etc/proj/2/utils
+
+Adding utils folder for general functions
+------------------------------------------------------------------------
+r1072 | eliflesher@gmail.com | 2009-10-03 18:34:14 -0400 (Sat, 03 Oct 2009) | 1 line
+Changed paths:
+   A /branches/20/etc/proj/2/algos
+   A /branches/20/etc/proj/2/algos/binlogging.lisp (from /branches/20/etc/proj/2/binlogging.lisp:1071)
+   A /branches/20/etc/proj/2/algos/genic.lisp (from /branches/20/etc/proj/2/genic.lisp:1071)
+   A /branches/20/etc/proj/2/algos/naivebayes.lisp (from /branches/20/etc/proj/2/naivebayes.lisp:1071)
+   A /branches/20/etc/proj/2/algos/relief.lisp (from /branches/20/etc/proj/2/relief.lisp:1071)
+   A /branches/20/etc/proj/2/algos/subsample.lisp (from /branches/20/etc/proj/2/subsample.lisp:1071)
+   A /branches/20/etc/proj/2/algos/twor.lisp (from /branches/20/etc/proj/2/twor.lisp:1071)
+   D /branches/20/etc/proj/2/binlogging.lisp
+   D /branches/20/etc/proj/2/genic.lisp
+   R /branches/20/etc/proj/2/main.lisp
+   D /branches/20/etc/proj/2/naivebayes.lisp
+   D /branches/20/etc/proj/2/relief.lisp
+   D /branches/20/etc/proj/2/subsample.lisp
+   D /branches/20/etc/proj/2/twor.lisp
+
+Mobing the algorithms into a folder for a cleaner layout
+------------------------------------------------------------------------
+r1071 | edwaltman | 2009-10-03 18:20:46 -0400 (Sat, 03 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/lib/data.lisp
+
+Fixing data.lisp, moving some hacks around.
+------------------------------------------------------------------------
+r1070 | edwaltman | 2009-10-03 16:51:04 -0400 (Sat, 03 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/genic.lisp
+   A /branches/20/etc/proj/2/lib
+   A /branches/20/etc/proj/2/lib/caution.lisp
+   A /branches/20/etc/proj/2/lib/data.lisp
+   A /branches/20/etc/proj/2/lib/header.lisp
+   A /branches/20/etc/proj/2/lib/lazy.lisp
+   A /branches/20/etc/proj/2/lib/loaddeps.lisp
+   A /branches/20/etc/proj/2/lib/structs.lisp
+   A /branches/20/etc/proj/2/lib/table.lisp
+   M /branches/20/etc/proj/2/subsample.lisp
+
+Holy crap.  I just took care of the dependancies for working with the datums.  Load loaddeps.lisp to deal with them.
+------------------------------------------------------------------------
+r1068 | eliflesher@gmail.com | 2009-10-03 11:16:51 -0400 (Sat, 03 Oct 2009) | 1 line
+Changed paths:
+   A /branches/20/etc/proj/2/d-data/weathernumerics.lisp
+
+Adding very small data set with numerics and discrete class for training.
+------------------------------------------------------------------------
+r1067 | eliflesher@gmail.com | 2009-10-03 11:12:09 -0400 (Sat, 03 Oct 2009) | 1 line
+Changed paths:
+   A /branches/20/etc/proj/2/d-data/additionalbolts.lisp
+
+Adding very small primarily numeric data set
+------------------------------------------------------------------------
+r1066 | timbielawa | 2009-10-02 22:59:54 -0400 (Fri, 02 Oct 2009) | 1 line
+Changed paths:
+   A /branches/20/etc/proj/2/d-data
+   A /branches/20/etc/proj/2/d-data/mushroom.lisp (from /branches/20/lib/lisp/tests/data/mushroom.lisp:1059)
+
+Found a nice completely discrete data set. Making it easy to find.
+------------------------------------------------------------------------
+r1061 | eliflesher@gmail.com | 2009-10-02 22:28:52 -0400 (Fri, 02 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/binlogging.lisp
+
+Modifications to binlogging
+------------------------------------------------------------------------
+r1060 | eliflesher@gmail.com | 2009-10-02 22:23:10 -0400 (Fri, 02 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/binlogging.lisp
+   M /branches/20/etc/proj/2/genic.lisp
+   M /branches/20/etc/proj/2/naivebayes.lisp
+   M /branches/20/etc/proj/2/relief.lisp
+   M /branches/20/etc/proj/2/subsample.lisp
+   M /branches/20/etc/proj/2/twor.lisp
+
+Modifying function load for better logging
+------------------------------------------------------------------------
+r1059 | eliflesher@gmail.com | 2009-10-02 22:18:23 -0400 (Fri, 02 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/main.lisp
+
+Initial skeleton for learn
+------------------------------------------------------------------------
+r1058 | timbielawa | 2009-10-02 21:27:11 -0400 (Fri, 02 Oct 2009) | 1 line
+Changed paths:
+   A /branches/20/etc/proj/2/documentation/Relief.pdf
+   A /branches/20/etc/proj/2/documentation/TwoR.pdf
+   M /branches/20/etc/proj/2/relief.lisp
+   M /branches/20/etc/proj/2/twor.lisp
+
+Sym links and descriptions in .lisp files
+------------------------------------------------------------------------
+r1057 | eliflesher@gmail.com | 2009-10-02 20:16:17 -0400 (Fri, 02 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/naivebayes.lisp
+
+Adding comments and outline for naive bays
+------------------------------------------------------------------------
+r1056 | eliflesher@gmail.com | 2009-10-02 19:54:02 -0400 (Fri, 02 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/documentation/functions.txt
+
+Updating function.txt TC
+------------------------------------------------------------------------
+r1055 | edwaltman | 2009-10-02 19:27:00 -0400 (Fri, 02 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/binlogging.lisp
+   M /branches/20/etc/proj/2/genic.lisp
+   M /branches/20/etc/proj/2/naivebayes.lisp
+   M /branches/20/etc/proj/2/relief.lisp
+   M /branches/20/etc/proj/2/subsample.lisp
+   M /branches/20/etc/proj/2/twor.lisp
+
+Delegated functions, added some comments.
+------------------------------------------------------------------------
+r1054 | eliflesher@gmail.com | 2009-10-02 18:15:34 -0400 (Fri, 02 Oct 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/2/main.lisp
+
+Modifying main.lisp for file load
+------------------------------------------------------------------------
+r1053 | eliflesher@gmail.com | 2009-10-02 18:13:53 -0400 (Fri, 02 Oct 2009) | 1 line
+Changed paths:
+   A /branches/20/etc/proj/2/main.lisp
+
+Adding main.lisp
+------------------------------------------------------------------------
+r1052 | eliflesher@gmail.com | 2009-10-02 18:07:59 -0400 (Fri, 02 Oct 2009) | 1 line
+Changed paths:
+   D /branches/20/etc/proj/2/95NM-GH-IHW-Develop_twor.pdf
+   D /branches/20/etc/proj/2/97kononenko_relief.pdf
+   A /branches/20/etc/proj/2/binlogging.lisp
+   A /branches/20/etc/proj/2/documentation
+   A /branches/20/etc/proj/2/documentation/95NM-GH-IHW-Develop_twor.pdf (from /branches/20/etc/proj/2/95NM-GH-IHW-Develop_twor.pdf:1050)
+   A /branches/20/etc/proj/2/documentation/97kononenko_relief.pdf (from /branches/20/etc/proj/2/97kononenko_relief.pdf:1050)
+   A /branches/20/etc/proj/2/documentation/functions.txt (from /branches/20/etc/proj/2/functions.txt:1050)
+   A /branches/20/etc/proj/2/documentation/gupta04_genic.pdf (from /branches/20/etc/proj/2/gupta04_genic.pdf:1050)
+   D /branches/20/etc/proj/2/functions.txt
+   A /branches/20/etc/proj/2/genic.lisp
+   D /branches/20/etc/proj/2/gupta04_genic.pdf
+   A /branches/20/etc/proj/2/naivebayes.lisp
+   A /branches/20/etc/proj/2/relief.lisp
+   A /branches/20/etc/proj/2/twor.lisp
+
+Creating empty place holders and reorganizing the documentation into a folder
+------------------------------------------------------------------------
+r1051 | edwaltman | 2009-10-02 18:03:44 -0400 (Fri, 02 Oct 2009) | 1 line
+Changed paths:
+   A /branches/20/etc/proj/2/subsample.lisp
+
+Adding preliminary files for subsample pre-processor, with algorithm comments.
+------------------------------------------------------------------------
+r1036 | edwaltman | 2009-10-01 14:46:22 -0400 (Thu, 01 Oct 2009) | 1 line
+Changed paths:
+   A /branches/20/etc/proj/2
+   A /branches/20/etc/proj/2/95NM-GH-IHW-Develop_twor.pdf
+   A /branches/20/etc/proj/2/97kononenko_relief.pdf
+   A /branches/20/etc/proj/2/functions.txt
+   A /branches/20/etc/proj/2/gupta04_genic.pdf
+
+Adding preliminary information for project 2 related to our functions.
+------------------------------------------------------------------------
+r909 | menzies.tim | 2009-09-17 16:48:26 -0400 (Thu, 17 Sep 2009) | 1 line
+Changed paths:
+   A /branches/20/commits.txt
+
+commit log
+------------------------------------------------------------------------
+r821 | edwaltman | 2009-09-14 23:24:41 -0400 (Mon, 14 Sep 2009) | 1 line
+Changed paths:
+   D /branches/20/etc/proj/ourdeftests.lisp
+
+Doing some housecleaning on extraneous files.
+------------------------------------------------------------------------
+r820 | edwaltman | 2009-09-14 23:20:32 -0400 (Mon, 14 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter4.lisp
+
+Graham's code sucks.  Added lazy evaluation functionality with (delay), no warnings, all 50 deftests completed and passing.
+------------------------------------------------------------------------
+r804 | eliflesher@gmail.com | 2009-09-14 22:49:52 -0400 (Mon, 14 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter4.lisp
+
+Committing test for 4.5 and 4.6 (50 Deftests) I'm outta here BABAYvi chapter4.lisp vi chapter4.lisp ! Woot
+------------------------------------------------------------------------
+r793 | edwaltman | 2009-09-14 22:10:04 -0400 (Mon, 14 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter4.lisp
+
+Figure 4.5's code is bugged in the book, adding stopgap measure that alters no functionality and hushes the interpreter.
+------------------------------------------------------------------------
+r788 | eliflesher@gmail.com | 2009-09-14 21:59:51 -0400 (Mon, 14 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter4.lisp
+
+Committing helper functions for 4.5
+------------------------------------------------------------------------
+r785 | edwaltman | 2009-09-14 21:55:12 -0400 (Mon, 14 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter5.lisp
+
+Added figure 5.2, deftests stand at 48.
+------------------------------------------------------------------------
+r768 | eliflesher@gmail.com | 2009-09-14 21:01:17 -0400 (Mon, 14 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter4.lisp
+
+Deftest for 4.2 (47 deftests)
+------------------------------------------------------------------------
+r765 | eliflesher@gmail.com | 2009-09-14 20:55:49 -0400 (Mon, 14 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter3.lisp
+
+Commiting test for 3.12 (46 Deftests) currently working on 4.2
+------------------------------------------------------------------------
+r731 | edwaltman | 2009-09-14 15:58:00 -0400 (Mon, 14 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter3.lisp
+
+Fixed figure 3.6, defuns need to be declared before using them.
+------------------------------------------------------------------------
+r722 | edwaltman | 2009-09-14 13:26:51 -0400 (Mon, 14 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter3.lisp
+
+Did figure 3.7, deftests at 45 with ONE BROKEN.
+------------------------------------------------------------------------
+r715 | timbielawa | 2009-09-14 00:22:50 -0400 (Mon, 14 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter3.lisp
+
+Adding last deftest to chapter 3. This might cause a conflict. lets hope not
+------------------------------------------------------------------------
+r714 | edwaltman | 2009-09-14 00:16:10 -0400 (Mon, 14 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter10.lisp
+   M /branches/20/etc/proj/1/chapter3.lisp
+   M /branches/20/etc/proj/1/chapter4.lisp
+   M /branches/20/etc/proj/1/chapter5.lisp
+   M /branches/20/etc/proj/1/chapter6.lisp
+   M /branches/20/etc/proj/1/chapter7.lisp
+
+Need to do figures 3.7, 3.12, 4.2, 4.5, 4.6, 5.2, 6.1, and 7.1
+------------------------------------------------------------------------
+r713 | eliflesher@gmail.com | 2009-09-13 23:55:05 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter4.lisp
+
+Adding overly complicated string deftest 4.3 (42 Deftests)
+------------------------------------------------------------------------
+r712 | timbielawa | 2009-09-13 23:54:46 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter3.lisp
+
+Adding Figure 3.6, Run-length encoding. We're at 42 now
+------------------------------------------------------------------------
+r709 | eliflesher@gmail.com | 2009-09-13 23:43:12 -0400 (Sun, 13 Sep 2009) | 2 lines
+Changed paths:
+   M /branches/20/etc/proj/1/chapter4.lisp
+
+
+Adding overcomplicated array deftest 4.1 (41 Deftests)
+------------------------------------------------------------------------
+r708 | timbielawa | 2009-09-13 23:41:26 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter3.lisp
+
+Adding 3.2, equality amongst cons. Puts us at 39
+------------------------------------------------------------------------
+r706 | edwaltman | 2009-09-13 23:39:56 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter5.lisp
+
+Added 5.4 alternative, deftests at 39.
+------------------------------------------------------------------------
+r705 | timbielawa | 2009-09-13 23:34:57 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter2.lisp
+
+Adding 2.11, assignments. We're at 38
+------------------------------------------------------------------------
+r703 | timbielawa | 2009-09-13 23:28:35 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter2.lisp
+
+One more to chapter 2. at 36 now
+------------------------------------------------------------------------
+r702 | edwaltman | 2009-09-13 23:26:48 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter5.lisp
+
+Added 5.4, deftests at 36.
+------------------------------------------------------------------------
+r701 | eliflesher@gmail.com | 2009-09-13 23:22:23 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter3.lisp
+
+Adding Deftest for 3.11
+------------------------------------------------------------------------
+r700 | eliflesher@gmail.com | 2009-09-13 23:15:32 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter3.lisp
+
+Adding Deftest for 3.10 (32 Deftests)
+------------------------------------------------------------------------
+r699 | edwaltman | 2009-09-13 23:15:25 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter5.lisp
+
+Added 5.3, deftests at 32.
+------------------------------------------------------------------------
+r698 | timbielawa | 2009-09-13 23:11:05 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter2.lisp
+
+Adding 2.2 evaluation test. we're at 30
+------------------------------------------------------------------------
+r697 | edwaltman | 2009-09-13 23:10:35 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter5.lisp
+
+Dolist example is 5.1, not 5.2, corrected this.
+------------------------------------------------------------------------
+r696 | eliflesher@gmail.com | 2009-09-13 23:09:39 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter2.lisp
+   M /branches/20/etc/proj/1/chapter3.lisp
+
+Adding Deftests in Chapters 2 and 3 (28 Deftests)
+------------------------------------------------------------------------
+r693 | edwaltman | 2009-09-13 23:00:12 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter5.lisp
+
+Added 5.2, at 28 deftests?
+------------------------------------------------------------------------
+r692 | timbielawa | 2009-09-13 22:59:33 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter10.lisp
+
+adding macro design deftest
+------------------------------------------------------------------------
+r690 | eliflesher@gmail.com | 2009-09-13 22:49:34 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter2.lisp
+
+Adding 2.2 and 2.5 (26 Deftests)
+------------------------------------------------------------------------
+r687 | eliflesher@gmail.com | 2009-09-13 22:41:52 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter2.lisp
+
+Adding 2.13 (23 Deftests)
+------------------------------------------------------------------------
+r685 | timbielawa | 2009-09-13 22:27:58 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter10.lisp
+
+Adding 'utility' macro test
+------------------------------------------------------------------------
+r683 | eliflesher@gmail.com | 2009-09-13 21:40:35 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter2.lisp
+
+Adding 2.7 (21 Deftests)
+------------------------------------------------------------------------
+r681 | eliflesher@gmail.com | 2009-09-13 21:26:00 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter2.lisp
+   M /branches/20/etc/proj/1/chapter4.lisp
+
+Fixing Error in 4.6 and Adding 2.5 (21 Deftests)
+------------------------------------------------------------------------
+r680 | timbielawa | 2009-09-13 21:23:58 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter10.lisp
+
+Made a quicksory deftest
+------------------------------------------------------------------------
+r679 | eliflesher@gmail.com | 2009-09-13 21:07:34 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter4.lisp
+
+Fixing error in 4.5
+------------------------------------------------------------------------
+r678 | timbielawa | 2009-09-13 21:06:48 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter10.lisp
+
+Lifting quick sort from the book
+------------------------------------------------------------------------
+r677 | eliflesher@gmail.com | 2009-09-13 21:05:49 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter4.lisp
+
+Fixing error in 4.5
+------------------------------------------------------------------------
+r676 | edwaltman | 2009-09-13 21:02:24 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter14.lisp
+
+Fixed 14.2, all 17 deftests work presently.
+------------------------------------------------------------------------
+r675 | eliflesher@gmail.com | 2009-09-13 21:02:15 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter4.lisp
+
+Commit 4.5 and 4.6. Deftest count upped to 20, I believe.
+------------------------------------------------------------------------
+r674 | edwaltman | 2009-09-13 20:58:14 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter10.lisp
+   M /branches/20/etc/proj/1/chapter2.lisp
+   M /branches/20/etc/proj/1/chapter3.lisp
+   M /branches/20/etc/proj/1/chapter5.lisp
+   M /branches/20/etc/proj/1/deftest.lisp
+   M /branches/20/etc/proj/1/main.lisp
+
+Fixed some unpatched parens, loading main and doing (tests) now works perfectly.
+------------------------------------------------------------------------
+r673 | timbielawa | 2009-09-13 20:34:00 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter14.lisp
+
+Finished fig 14.2 deftest
+------------------------------------------------------------------------
+r672 | edwaltman | 2009-09-13 20:24:02 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter6.lisp
+
+Removing unneeded comments.
+------------------------------------------------------------------------
+r671 | edwaltman | 2009-09-13 20:23:20 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter6.lisp
+
+Added 6.4, deftests at 17.
+------------------------------------------------------------------------
+r670 | edwaltman | 2009-09-13 20:04:48 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter6.lisp
+
+Added an alternative 6.3, deftests at 16.
+------------------------------------------------------------------------
+r669 | timbielawa | 2009-09-13 19:57:05 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter14.lisp
+
+Fixing description
+------------------------------------------------------------------------
+r668 | edwaltman | 2009-09-13 19:55:50 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter6.lisp
+
+Added 6.3, deftests at 15.
+------------------------------------------------------------------------
+r667 | edwaltman | 2009-09-13 19:31:15 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter4.lisp
+
+Added comment for 4.6 being requried.
+------------------------------------------------------------------------
+r666 | edwaltman | 2009-09-13 19:18:47 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter4.lisp
+
+Added 4.2, deftests at 14.
+------------------------------------------------------------------------
+r665 | timbielawa | 2009-09-13 19:16:31 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   A /branches/20/etc/proj/ourdeftests.lisp (from /branches/20/lib/lisp/tests/ourdeftests.lisp:664)
+   D /branches/20/lib/lisp/tests/ourdeftests.lisp
+
+Putting that in the right place
+------------------------------------------------------------------------
+r664 | timbielawa | 2009-09-13 18:54:52 -0400 (Sun, 13 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/lib/lisp/miner.lisp
+   A /branches/20/lib/lisp/tests/ourdeftests.lisp
+
+Getting started on project1a
+------------------------------------------------------------------------
+r648 | edwaltman | 2009-09-12 16:26:36 -0400 (Sat, 12 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter2.lisp
+   M /branches/20/etc/proj/1/chapter3.lisp
+
+Added 3.3, deftests at 13.
+------------------------------------------------------------------------
+r646 | edwaltman | 2009-09-12 16:01:02 -0400 (Sat, 12 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter2.lisp
+
+Added 2.4, deftests at 12.
+------------------------------------------------------------------------
+r645 | edwaltman | 2009-09-12 15:57:43 -0400 (Sat, 12 Sep 2009) | 1 line
+Changed paths:
+   A /branches/20/etc/proj/1/chapter2.lisp
+
+Added 2.3, deftests at 11.
+------------------------------------------------------------------------
+r643 | edwaltman | 2009-09-12 15:32:05 -0400 (Sat, 12 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter10.lisp
+
+Added 10.3, deftests at 10.
+------------------------------------------------------------------------
+r625 | edwaltman | 2009-09-11 12:48:11 -0400 (Fri, 11 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter10.lisp
+
+Added 10.1, 9 deftests.
+------------------------------------------------------------------------
+r623 | edwaltman | 2009-09-11 12:39:25 -0400 (Fri, 11 Sep 2009) | 1 line
+Changed paths:
+   M /branches/20/etc/proj/1/chapter10.lisp
+   M /branches/20/etc/proj/1/chapter14.lisp
+
+8 deftests.
+------------------------------------------------------------------------
+r606 | edwaltman | 2009-09-10 18:03:12 -0400 (Thu, 10 Sep 2009) | 1 line
+Changed paths:
+   A /branches/20/etc/proj/1/chapter10.lisp
+   A /branches/20/etc/proj/1/chapter14.lisp
+
+Deftest count increased to 7.
+------------------------------------------------------------------------
+r600 | edwaltman | 2009-09-10 15:54:44 -0400 (Thu, 10 Sep 2009) | 1 line
+Changed paths:
+   A /branches/20/etc/proj
+   A /branches/20/etc/proj/1
+   A /branches/20/etc/proj/1/chapter3.lisp
+   A /branches/20/etc/proj/1/chapter4.lisp
+   A /branches/20/etc/proj/1/chapter5.lisp
+   A /branches/20/etc/proj/1/chapter6.lisp
+   A /branches/20/etc/proj/1/chapter7.lisp
+   A /branches/20/etc/proj/1/deftest.lisp
+   A /branches/20/etc/proj/1/main.lisp
+   A /branches/20/etc/proj/1/streamtester.txt
+
+Initial upload of project 1a materials.
+------------------------------------------------------------------------
+r382 | timbielawa | 2009-08-29 21:14:47 -0400 (Sat, 29 Aug 2009) | 1 line
+Changed paths:
+   A /branches/20 (from /trunk/our:381)
+
+Branch 20
+------------------------------------------------------------------------

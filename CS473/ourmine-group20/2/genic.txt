@@ -1,0 +1,39 @@
+GENIC (num-centers, num-initial-points, generation-size)
+
+ (1)
+ c = individual center
+ m = number of initial points
+ n = generation size
+ k = number of centers  (Fixed at 10 in GENIC2, always less than m.)
+
+ (2)
+ Select num-initial-points (m) for initial candidate centers.
+ Give each one a weight of 1.
+
+ (3)
+ For each data point P in the generation:
+
+   Increment count by 1.
+   Find the nearest center (C) to the point (P).
+     Sum the euclidian distances of the columns: sqrt(val1 - val2)^2 or 1/0
+     Move the center:
+       Column = (Weight * Old-Value + P's-Value) / (Weight + 1)
+     Increment that center's weight by 1.
+
+ (4)
+ When generation has been processed, loop over the centers:
+
+   Calculate it's probability of survival: CenterWeight / AllClusterWeights
+   Generate a number between [0,1], if that center's probability of survival
+     is greater than that number, retain it for the next round.
+     If it is less, kill it, replace it with a random point.
+   Set center's weight back to 1.
+
+ (GENIC2)
+ Kill off any centers that are less than maxWeight/2.
+ If you didn't kill any clusters, increase K by 50%.
+
+ Progress to the next generation.
+
+ (5)
+ Group the (M) centers into a final list of (K) centers based on distance.
