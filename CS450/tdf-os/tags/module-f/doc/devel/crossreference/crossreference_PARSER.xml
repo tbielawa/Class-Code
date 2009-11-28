@@ -1,0 +1,73 @@
+<section xmlns="http://docbook.org/ns/docbook" version="5.0">
+  <title><filename>PARSER.C</filename> Functions</title>
+  <indexterm><primary>PARSER.C</primary></indexterm>
+
+  <section>
+    <title>int <function>parse_buffer</function> (char *buffer, char *function, char *args)</title>
+    <para>
+      <indexterm><primary>parse_buffer</primary></indexterm>
+      <itemizedlist>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called</title>
+	    <para>
+	      <itemizedlist>
+                <listitem>
+                  <para>
+                    <function>strlen</function>
+		    <indexterm><primary>strlen</primary></indexterm>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>isgraph</function>
+		    <indexterm><primary>isgraph</primary></indexterm>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>isspace</function>
+		    <indexterm><primary>isspace</primary></indexterm>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>strncpy</function>
+		    <indexterm><primary>strncpy</primary></indexterm>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>printf</function>
+		    <indexterm><primary>printf</primary></indexterm>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>sizeof</function>
+		    <indexterm><primary>sizeof</primary></indexterm>
+                  </para>
+                </listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called By</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para>
+		    <function>shell</function>
+		    <indexterm><primary>shell</primary></indexterm>
+		  </para>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+</section>

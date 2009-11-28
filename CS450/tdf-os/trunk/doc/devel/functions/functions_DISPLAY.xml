@@ -1,0 +1,72 @@
+<section xmlns="http://docbook.org/ns/docbook">
+  <title><filename><indexterm><primary>DISPLAY.C</primary></indexterm></filename>DISPLAY.C Functions</title>
+  <section>
+    <title>int <function>display</function> (char *args)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  int <function>display</function>
+		</funcdef>
+		<paramdef>
+		  char *<parameter>args</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title>
+		    <parameter>OK</parameter> 
+		    <returnvalue>0</returnvalue>
+		  </title>
+		  <para>
+		    Display was run successfully.
+		  </para>
+		</formalpara>
+	      </listitem>
+	      <listitem>
+		<formalpara>
+		  <title>
+		    <returnvalue>&lt;&gt; 0</returnvalue>
+		  </title>
+		  <para>
+		    A return value not equal to 0 indicates failure.
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    The <function>display</function> function calls
+	    <function><indexterm><primary>sys_open_dir</primary></indexterm></function>
+	    with the argument or if no argument is provided using the
+	    current directory. It then loops displaying all of the
+	    files with the .MPX extension using the
+	    <function>sys_get_entry</function> function until it
+	    returns an error indicating that there are no more files
+	    in the directory. <function>sys_close_dir</function> is
+	    called at the end to close the directory opened
+	    previously.
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+</section>

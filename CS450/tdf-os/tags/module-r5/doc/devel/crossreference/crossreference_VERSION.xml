@@ -1,0 +1,39 @@
+<section xmlns="http://docbook.org/ns/docbook">
+  <title><filename>VERSION.C</filename> Function</title>
+  <section>
+    <title>int <function>version</function> (char *args)</title>
+    <para>
+      <indexterm><primary>version</primary></indexterm>
+      <itemizedlist>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para>
+		    None
+		  </para>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called By</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para>
+		    <function>shell</function>
+		  </para>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+</section>

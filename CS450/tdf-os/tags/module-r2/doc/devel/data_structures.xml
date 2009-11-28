@@ -1,0 +1,40 @@
+<chapter id="Data Structures">
+  <title>Data Structures</title>
+  <para>
+    This chapter will outline the data structures that have been created for
+    the project.
+  </para>
+
+  <section id="struct PCB">
+    <title>struct PCB</title>
+    <para>
+      The PCB structure contains the following values:
+      <programlisting>
+        char name[8] - the name of the process (8 characters or less)
+        int pclass - the class of the process (APPLICATION or SYSTEM)
+        int priority - the priority of the process (between -127 and 128)
+        int state - the state of the process (which queue it's in)
+        unsigned char pstack[1024] - the memory stack of the PCB
+        int memsize - the size of the memory space
+        unsigned char *loadaddr - the load address of the memory
+        unsigned char *execaddr - the executing address of the memory
+      </programlisting>
+    </para>
+  </section>
+  
+  <section id="struct PCBDLL">
+    <title>struct PCBDLL</title>
+    <para>
+      The PCBDLL structure is a doubly linked list with a dummy header
+      node. Each PCBDLL is essentially an individual node of the linked
+      list with pointers to the previous and next nodes. The PCBDLL
+      structure contains the following values:
+      <programlisting>
+        struct PCBDLL *prev - the previous element in the list
+        struct PCBDLL *next - the next element in the list
+        PCB *contents - the PCB contents of the current node
+      </programlisting>
+    </para>
+  </section>
+  
+</chapter>

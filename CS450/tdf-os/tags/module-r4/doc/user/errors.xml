@@ -1,0 +1,18 @@
+<section xmlns="http://docbook.org/ns/docbook">
+  <title>Errors</title>
+  <para>
+    <indexterm><primary>errors</primary></indexterm>
+    Here is where you would find descriptions of the kinds of error
+    you could expect.
+  </para>
+
+  <para>
+    If an invalid command is entered, the command will not process.
+    For information on how to correctly use a command, please type
+    "help [command]".
+  </para>
+  
+</section>
+  
+
+

@@ -1,0 +1,23 @@
+<chapter xmlns="http://docbook.org/ns/docbook"
+	 xmlns:xi="http://www.w3.org/2001/XInclude" version="5.0">
+  <title>Functions</title>
+  
+  <xi:include href="functions/functions_DATE.xml"/>
+  <xi:include href="functions/functions_DISPLAY.xml"/>
+  <xi:include href="functions/functions_HELP.xml"/>
+  <xi:include href="functions/functions_HISTORY.xml"/>
+  <xi:include href="functions/functions_LOAD.xml" />
+  <xi:include href="functions/functions_LOADR3.xml" />
+  <xi:include href="functions/functions_LOSYSDIS.xml" />
+  <xi:include href="functions/functions_PARSER.xml"/>
+  <xi:include href="functions/functions_PCBMAKE.xml"/>
+  <xi:include href="functions/functions_PCBMAN.xml"/>
+  <xi:include href="functions/functions_PCBSHOW.xml"/>
+  <xi:include href="functions/functions_PCBUTILS.xml"/>
+  <xi:include href="functions/functions_PCB.xml"/>
+  <xi:include href="functions/functions_SHELL.xml"/>
+  <xi:include href="functions/functions_TDF.xml"/>
+  <xi:include href="functions/functions_TDFDRIVE.xml" />
+  <xi:include href="functions/functions_VERSION.xml"/>
+  
+</chapter>

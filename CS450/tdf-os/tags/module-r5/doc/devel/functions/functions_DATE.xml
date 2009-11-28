@@ -1,0 +1,69 @@
+<section xmlns="http://docbook.org/ns/docbook">
+  <title><filename>DATE.C</filename> Functions</title>
+  <section>
+    <title>int <function>date</function> (char *args)</title>
+    <indexterm><primary>date</primary></indexterm>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  int <function>date</function>
+		</funcdef>
+		<paramdef>
+		  char *<parameter>args</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title>
+		    <parameter>OK</parameter> 
+		    <returnvalue>0</returnvalue>
+		  </title>
+		  <para>
+		    Date was set successfully.
+		  </para>
+		</formalpara>
+	      </listitem>
+	      <listitem>
+		<formalpara>
+		  <title>
+		    <returnvalue>&lt;&gt; 0</returnvalue>
+		  </title>
+		  <para>
+		    A return value not equal to 0 indicates failure.
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    The <function>date</function> makes a call to the MPX
+	    support routine <function>sys_set_date</function> which
+	    is defined in <filename>src/include/MPX_SUPT.H</filename>>. A
+	    pointer to a locally declared struct is passed to
+	    <function>sys_set_date</function>. The fields in that
+	    struct are then modified to represent the current date
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+</section>

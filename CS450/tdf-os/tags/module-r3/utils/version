@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# 6 modules = 1/6 minor numbers each release towards 1.0.0
+# R1 = 0.16.66
+# R2 = 0.33.33
+# R3 = 0.50.00
+# R4 = 0.66.66
+# R5 = 0.83.33
+# R6 = 1.00.00
+
+NUM_VERSION="0.3.33"
+
+VERSTR="tdf-os version: ${NUM_VERSION} $(date +%F) ($(svn info | grep 'Revision' -))"
+
+echo $VERSTR

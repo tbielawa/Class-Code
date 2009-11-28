@@ -1,0 +1,260 @@
+<section xmlns="http://docbook.org/ns/docbook" version="5.0">
+  <title><filename>PCBMAN.C</filename> Functions</title>
+  <indexterm><primary>PCBMAN.C</primary></indexterm>
+
+  <section>
+    <title>int <function>pblock</function> (char *NAME, PCBDLL **PRIORITY_QUEUES)</title>
+    <para>
+      <indexterm><primary>pblock</primary></indexterm>
+      <itemizedlist>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called</title>
+	    <para>
+	      <itemizedlist>
+                <listitem>
+                  <para>
+                    <function>PCB_find</function>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>PCB_remove</function>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>PCB_setup</function>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>PCB_insert</function>
+                  </para>
+                </listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called By</title>
+	    <para>
+	      <itemizedlist>
+                <listitem>
+                  <para>
+                    <function>shell</function>
+                  </para>
+                </listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+  <section>
+    <title>int <function>punblock</function> (char *NAME, PCBDLL **PRIORITY_QUEUES)</title>
+    <para>
+      <indexterm><primary>punblock</primary></indexterm>
+      <itemizedlist>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called</title>
+	    <para>
+	      <itemizedlist>
+                <listitem>
+                  <para>
+                    <function>PCB_find</function>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>PCB_remove</function>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>PCB_setup</function>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>PCB_insert</function>
+                  </para>
+                </listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called By</title>
+	    <para>
+	      <itemizedlist>
+                <listitem>
+                  <para>
+                    <function>shell</function>
+                  </para>
+                </listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+  <section>
+    <title>int <function>psuspend</function> (char *NAME, PCBDLL **PRIORITY_QUEUES)</title>
+    <para>
+      <indexterm><primary>psuspend</primary></indexterm>
+      <itemizedlist>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called</title>
+	    <para>
+	      <itemizedlist>
+                <listitem>
+                  <para>
+                    <function>PCB_find</function>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>PCB_remove</function>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>PCB_setup</function>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>PCB_insert</function>
+                  </para>
+                </listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called By</title>
+	    <para>
+	      <itemizedlist>
+                <listitem>
+                  <para>
+                    <function>shell</function>
+                  </para>
+                </listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+  <section>
+    <title>int <function>presume</function> (char *NAME, PCBDLL **PRIORITY_QUEUES)</title>
+    <para>
+      <indexterm><primary>presume</primary></indexterm>
+      <itemizedlist>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called</title>
+	    <para>
+	      <itemizedlist>
+                <listitem>
+                  <para>
+                    <function>PCB_find</function>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>PCB_remove</function>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>PCB_setup</function>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>PCB_insert</function>
+                  </para>
+                </listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called By</title>
+	    <para>
+	      <itemizedlist>
+                <listitem>
+                  <para>
+                    <function>shell</function>
+                  </para>
+                </listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+      </itemizedlist>
+    </para>
+</section>
+
+  <section>
+    <title>int <function>psetprio</function> (char *ARGSTR, PCBDLL **PRIORITY_QUEUES)</title>
+    <para>
+      <indexterm><primary>psetprio</primary></indexterm>
+      <itemizedlist>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called</title>
+	    <para>
+	      <itemizedlist>
+                <listitem>
+                  <para>
+                    <function>PCB_find</function>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>PCB_remove</function>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>PCB_insert</function>
+                  </para>
+                </listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called By</title>
+	    <para>
+	      <itemizedlist>
+                <listitem>
+                  <para>
+                    <function>shell</function>
+                  </para>
+                </listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+</section>

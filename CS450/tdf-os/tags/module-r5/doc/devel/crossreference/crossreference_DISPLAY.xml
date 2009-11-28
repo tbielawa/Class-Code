@@ -1,0 +1,57 @@
+<section xmlns="http://docbook.org/ns/docbook">
+  <title><filename>DISPLAY.C</filename> Functions</title>
+  <section>
+    <title>int <function>display</function> (char *args)</title>
+    <para>
+      <indexterm><primary>display</primary></indexterm>
+      <itemizedlist>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para>
+		    <function>sys_open_dir</function>
+		    <indexterm><primary>sys_open_dir</primary></indexterm>
+		  </para>
+		</listitem>
+		<listitem>
+		  <para>
+		    <function>sys_close_dir</function>
+		    <indexterm><primary>sys_close_dir</primary></indexterm>
+		  </para>
+		</listitem>
+		<listitem>
+		  <para>
+		    <function>sys_get_entry</function>
+		    <indexterm><primary>sys_get_entry</primary></indexterm>
+		  </para>
+		</listitem>
+		<listitem>
+		  <para>
+		    <function>printf</function>
+		  </para>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called By</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para>
+		    <function>shell</function>
+		  </para>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+</section>

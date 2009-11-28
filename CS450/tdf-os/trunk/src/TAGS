@@ -1,0 +1,441 @@
+
+DATE.C,40
+int date(13,202
+int validDate(73,1737
+
+DISPLAY.C,20
+int display 15,292
+
+HELP.C,15
+int help(6,82
+
+HISTORY.C,47
+int history 12,244
+int append_history 37,578
+
+LOAD.C,73
+extern PCBDLL **PRIORITY_QUEUES;PRIORITY_QUEUES17,304
+int load 19,338
+
+LOADR3.C,75
+extern PCBDLL **PRIORITY_QUEUES;PRIORITY_QUEUES16,269
+int loadr3 18,303
+
+LOSYSDIS.C,593
+extern PCBDLL** PRIORITY_QUEUES;16,306
+unsigned short ss_save;17,340
+unsigned short sp_save;18,365
+unsigned short new_ss;19,390
+unsigned short new_sp;20,414
+extern context *context_p;context_p21,438
+extern params *params_p;params_p22,466
+PCB* l_cop;23,492
+int INT_ERR;24,505
+int l_err;25,519
+unsigned short tmp_stack[tmp_stack26,531
+PCB* cur_proc;28,566
+IOCB *iocb_com;iocb_com29,582
+IOCB *iocb_term;iocb_term30,599
+IOD *iod_current;iod_current31,617
+void dispatch_init(33,638
+void interrupt dispatch(58,1355
+void interrupt sys_call(89,2067
+void IO_scheduler 185,4728
+
+PARSER.C,25
+int parse_buffer(30,870
+
+PCB.C,483
+extern PCBDLL **PRIORITY_QUEUES;PRIORITY_QUEUES15,377
+PCBDLL *PCBDLL_alloc PCBDLL_alloc17,411
+PCBDLL **PCBDLL_creation PCBDLL_creation32,711
+int PCBDLL_print 51,1100
+int PCBDLL_free 98,2331
+PCB *PCB_alloc PCB_alloc108,2471
+PCB *PCB_setup PCB_setup121,2725
+PCB *PCB_find PCB_find155,3423
+int PCB_insert 189,4162
+int PCB_remove 238,5213
+int PCB_free 293,6425
+int PCB_print 308,6683
+PCB* givemeready(348,7622
+PCB* givemerunning(358,7864
+int PCBDLL_freeall 365,8014
+
+PCBMAKE.C,97
+extern PCBDLL **PRIORITY_QUEUES;PRIORITY_QUEUES26,531
+int pcreate(28,567
+int pdelete(94,2425
+
+PCBMAN.C,257
+extern PCBDLL **PRIORITY_QUEUES;PRIORITY_QUEUES25,511
+int pblock(27,547
+int punblock(65,1807
+int psuspend(104,3119
+int presume(143,4444
+int psetprio(182,5652
+int prunning_to_ready(240,7368
+int prunning_exit(252,7561
+int pready_to_running(263,7715
+
+PCBSHOW.C,160
+extern PCBDLL **PRIORITY_QUEUES;PRIORITY_QUEUES25,479
+int pshow(27,513
+int pshowall(48,896
+int pshowrd(65,1455
+int pshowblk(76,1727
+int pshowrng(87,2021
+
+PCBUTILS.C,68
+int validPrio(24,469
+int validState(28,551
+int validClass(32,620
+
+SHELL.C,449
+int SYS_REQ_ERR;31,645
+int CLEAN_BUFFER_ERR;32,663
+int EXIT_PROMPT_LOOP;33,686
+int buffer_size;34,709
+char BUFFER[BUFFER35,727
+char ARGUMENTS[ARGUMENTS36,754
+char PARSED_CMD[PARSED_CMD37,795
+int err;38,825
+char EXIT_STRING[EXIT_STRING39,835
+int PARSER_ERROR;40,857
+int EXIT_CONFIRM;41,876
+void shell(43,897
+void welcome_message(152,4161
+void departing_message(159,4335
+void display_prompt(165,4507
+int exit_confirmation(171,4593
+
+TDF.C,170
+PCBDLL **PRIORITY_QUEUES;PRIORITY_QUEUES18,313
+params *params_p;params_p19,339
+context *context_p;context_p20,357
+char sys_stack[sys_stack21,377
+int main 23,410
+
+TDFDRIVE.C,279
+DCB *dev;dev13,254
+void interrupt (*cur_int_handler)cur_int_handler15,267
+int com_open 17,307
+int com_close 98,3178
+int com_read 138,4184
+int com_write 213,7084
+void interrupt com_interrupt 274,8842
+void com_interrupt_read 308,10073
+void com_interrupt_write 347,11528
+
+TESTCOMR.C,274
+#define BUFLEN 41,964
+#define REPEAT_COUNT 42,983
+#define	WR_TIME_LIMIT 43,1006
+#define RD_TIME_LIMIT 44,1030
+int com_open 50,1165
+int com_close 56,1334
+int com_read 60,1432
+int com_write 66,1615
+void abort_test(72,1755
+void main(76,1781
+void abort_test(213,4689
+
+TESTCOMW.C,239
+#define BUFLEN 41,937
+#define REPEAT_COUNT 42,956
+#define	TIME_LIMIT 43,979
+int com_open 50,1104
+int com_close 56,1273
+int com_read 60,1371
+int com_write 66,1554
+void abort_test(71,1658
+void main(75,1684
+void abort_test(157,3426
+
+TRMDRIVE.C,1380
+typedef unsigned short word;61,1956
+typedef unsigned char byte;62,1985
+typedef struct context 64,2014
+	} context;68,2108
+#define	PIC_CMD	74,2194
+#define PIC_MASK	75,2216
+#define KBD_LEVEL 78,2270
+#define SET	82,2318
+#define RESET	83,2333
+#define	CR	84,2350
+#define	LF	85,2367
+#define BS	86,2384
+#define	ESC	87,2401
+#define DEV_IDLE	90,2443
+#define	DEV_READ	91,2462
+#define DEV_WRITE	92,2481
+#define KBD_INTNUM	95,2541
+#define OPEN_FILE	98,2613
+#define CLOSE_FILE	99,2636
+#define	WRITE_FILE	100,2660
+#define	GET_CHAR	101,2684
+#define WRITE_ONLY	103,2707
+#define MAX_XPOS	105,2732
+#define	MAX_YPOS	106,2752
+union REGS regs;109,2821
+struct SREGS segs;110,2838
+	} dcb_trm 125,3053
+int con_handle;131,3227
+int pendc 134,3283
+void interrupt kbd_ihand(139,3369
+void clear_scr 142,3433
+int goto_xy 143,3456
+void out_char(144,3490
+int trm_open 176,4281
+trm_close(235,5385
+int trm_read 282,6272
+int trm_write 331,7365
+int trm_clear(393,8522
+int trm_gotoxy(422,8900
+void interrupt kbd_ihand(447,9208
+void trm_getc(480,9589
+void clear_scr(585,11364
+int goto_xy(609,11677
+void out_char(652,12328
+	char	chbuf;655,12357
+	int	err;656,12370
+	chbuf 658,12381
+	regs.h.ah ah659,12394
+	regs.x.bx bx660,12426
+	regs.x.cx cx661,12451
+	regs.x.dx dx662,12467
+        segs.ds ds663,12496
+        segs.es es664,12530
+	err 665,12564
+	err 666,12601
+
+VERSION.C,20
+int version 11,174
+
+include/CONTEXT.H,23
+#define CONTEXT_H2,18
+
+include/DATE.H,69
+#define DATE_H2,15
+extern int date(4,31
+extern int validDate(5,56
+
+include/DISPLAY.H,87
+#define DISPLAY_H8,157
+#define DISPLAY_BUFFER_SIZE 10,176
+extern int display(12,209
+
+include/HELP.H,63
+#define HELP_H2,15
+} HELP_OBJ;13,184
+extern int help(15,197
+
+include/HISTORY.H,130
+#define HISTORY_H9,129
+#define HBS 10,147
+#define HIST_LEN 11,163
+extern int history 13,184
+extern int append_history 14,214
+
+include/LOAD.H,45
+#define LOAD_H9,168
+extern int load(11,184
+
+include/LOADR3.H,485
+#define LOAD_H8,148
+extern int load 10,164
+extern PCB *np1,np112,185
+extern PCB *np1, *np2,np212,185
+extern PCB *np1, *np2, *np3,np312,185
+extern PCB *np1, *np2, *np3, *np4,np412,185
+extern PCB *np1, *np2, *np3, *np4, *np5;np512,185
+extern context *npc1,npc113,226
+extern context *npc1, *npc2,npc213,226
+extern context *npc1, *npc2, *npc3,npc313,226
+extern context *npc1, *npc2, *npc3, *npc4,npc413,226
+extern context *npc1, *npc2, *npc3, *npc4, *npc5;npc513,226
+
+include/LOSYSDIS.H,236
+#define LOSYSDIS_H11,201
+struct IOD 13,223
+typedef struct IOD IOD;21,344
+} IOCB;28,450
+extern void interrupt dispatch(30,461
+extern void interrupt sys_call(31,496
+extern void dispatch_init(32,535
+extern void IO_scheduler(33,565
+
+include/PARSER.H,252
+#define PARSER_H9,180
+#define BUFFER_SIZE 12,221
+#define FNAME_SIZE 13,245
+#define PARSER_FAIL_WHITESPACE 17,322
+#define PARSER_FAIL_LONGNAME 18,358
+#define PARSER_WIN_SINGLETON 21,394
+#define PARSER_WIN_HAS_ARGS 22,427
+int parse_buffer(28,522
+
+include/PCB.H,842
+#define PCB_H10,175
+#define TDF_QUEUES 13,221
+#define READY 16,278
+#define BLOCKED 17,294
+#define READYSUSPENDED 18,312
+#define BLOCKEDSUSPENDED 19,337
+#define RUNNING 20,364
+#define APPLICATION 23,413
+#define SYSTEM 24,435
+} PCB;36,657
+struct PCBDLL 38,665
+typedef struct PCBDLL PCBDLL;43,747
+extern PCBDLL *PCBDLL_alloc PCBDLL_alloc45,778
+extern PCBDLL **PCBDLL_creation PCBDLL_creation46,810
+extern int PCBDLL_print 47,851
+extern int PCBDLL_free 48,888
+extern PCB *PCB_alloc PCB_alloc49,924
+extern PCB *PCB_setup PCB_setup50,950
+extern PCB *PCB_find PCB_find51,993
+extern int PCB_insert 52,1025
+extern int PCB_remove 53,1071
+extern int PCB_free 54,1103
+extern int PCB_print 55,1133
+extern PCB *givemeready givemeready56,1164
+extern PCB *givemerunning givemerunning57,1193
+extern int PCBDLL_freeall 58,1224
+
+include/PCBMAKE.H,73
+#define PCBMAKE_H2,18
+extern int pcreate(4,37
+extern int pdelete(5,65
+
+include/PCBMAN.H,257
+#define PCBMAN_H2,17
+extern int pblock(4,35
+extern int punblock(5,62
+extern int psuspend(6,91
+extern int presume(7,120
+extern int psetprio(8,148
+extern int pready_to_running(9,177
+extern int prunning_exit(10,209
+extern int prunning_to_ready(11,237
+
+include/PCBSHOW.H,124
+#define PCBSHOW_H2,18
+extern int pshow(4,37
+extern int pshowall(5,63
+extern int pshowrd(6,86
+extern int pshowblk(7,108
+
+include/PCBUTILS.H,107
+#define PCBUTILS_H2,19
+extern int validPrio(4,39
+extern int validClass(5,66
+extern int validState(6,94
+
+include/PROCS-R3.H,161
+#define PROCS_R3_H2,19
+extern void test1_R3 4,39
+extern void test2_R3 5,64
+extern void test3_R3 6,89
+extern void test4_R3 7,114
+extern void test5_R3 8,139
+
+include/SHELL.H,194
+#define SHELL_H8,143
+extern void shell 11,186
+extern void welcome_message 12,208
+extern void departing_message(13,240
+extern void display_prompt(14,273
+extern int exit_confirmation(15,303
+
+include/TDFDRIVE.H,1192
+#define TDFDRIVE_H3,20
+#define RING_BUFFER_SIZE 5,40
+#define WRITING 7,71
+#define OPEN 8,89
+#define READING 9,104
+#define CLOSED 10,122
+#define BUSY 11,139
+#define ERR_CO_INVALID_FLAG_PNTR 13,155
+#define ERR_CO_INVALID_BAUD 14,193
+#define ERR_CO_PORT_OPEN 15,226
+#define ERR_CC_PORT_NOT_OPEN 16,256
+#define ERR_CR_PORT_NOT_OPEN 17,290
+#define ERR_CR_INVALID_BUFF_ADDR 18,324
+#define ERR_CR_INVALID_COUNT_ADDR 19,362
+#define ERR_CR_DEVICE_BUSY 20,401
+#define ERR_CW_PORT_NOT_OPEN 21,433
+#define ERR_CW_INVALID_BUFF_ADDR-ERR_CW_INVALID_BUFF_ADDR22,467
+#define ERR_CW_INVALID_COUNT_ADDR 23,505
+#define ERR_CW_DEVICE_BUSY 24,544
+#define COM1_INT_ID 26,577
+#define COM1_BASE 27,602
+#define COM1_INT_EN 28,626
+#define COM1_BRD_LSB 29,658
+#define COM1_BRD_MSB 30,689
+#define COM1_INT_ID_REG 31,722
+#define COM1_LC 32,758
+#define COM1_MC 33,786
+#define COM1_LS 34,814
+#define COM1_MS 35,842
+#define PIC_MASK 36,870
+#define PIC_CMD 37,892
+#define EOI 38,913
+} DCB;57,1279
+int com_open 59,1287
+int com_close 60,1315
+int com_read 61,1339
+int com_write 62,1369
+void interrupt com_interrupt 63,1400
+void com_interrupt_read 64,1434
+void com_interrupt_write 65,1463
+
+include/TDF.H,455
+#define TDF_H8,139
+#define TDF_OS_VERSION 13,210
+#define BUFFER_SIZE 16,269
+#define FNAME_SIZE 17,293
+#define SHELL_EXIT_CONFIRM 20,377
+#define SHELL_EXIT_DENY 21,407
+#define SYS_STACK_SIZE 23,435
+typedef unsigned char byte;24,463
+} params;31,579
+} context;37,703
+extern PCBDLL **PRIORITY_QUEUES;PRIORITY_QUEUES39,715
+extern params *params_p;params_p40,748
+extern context *context_p;context_p41,773
+extern char sys_stack[sys_stack42,800
+
+include/TRMDRIVE.H,643
+#define	ERR_TRM_OP_INVEFP	34,795
+#define	ERR_TRM_OP_ALROPN	35,828
+#define ERR_TRM_OP_OPFAIL	36,861
+#define	ERR_TRM_CL_NOTOPN	38,895
+#define ERR_TRM_CL_CLFAIL	39,928
+#define	ERR_TRM_RD_NOTOPN	41,962
+#define ERR_TRM_RD_INVBUF	42,995
+#define	ERR_TRM_RD_INVCNT	43,1028
+#define	ERR_TRM_RD_DVBUSY	44,1061
+#define	ERR_TRM_WR_NOTOPN	46,1095
+#define ERR_TRM_WR_INVBUF	47,1128
+#define	ERR_TRM_WR_INVCNT	48,1161
+#define	ERR_TRM_WR_DVBUSY	49,1194
+#define ERR_TRM_XY_INVPOS	51,1228
+int trm_open 57,1371
+int trm_close 62,1501
+int trm_read 66,1608
+void trm_getc 71,1744
+int trm_write 76,1854
+int trm_clear 82,2022
+int trm_gotoxy 86,2129
+
+include/VERSION.H,71
+#define VERSION_H8,128
+#define VBS 10,147
+extern int version 12,164
+
+include/MPX_SUPT.H,0
+
+PROCS-R3.C,0
+
+MPX_SUPT.C,0

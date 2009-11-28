@@ -1,0 +1,21 @@
+<chapter id ="Overview of MPX">
+  <title>Overview of MPX and TDF-OS</title>
+  <para>
+    TDF-OS is an MPX operating system designed by the Tours de force team
+    in Spring 2009 for the CS 450 Operating Systems course at West Virginia
+    University. Fore more information on TDF, visit
+    http://www.ducksarepeople.com/tdf.
+  </para>
+  <para>
+    Presently, the operating system consists of two components: the shell
+    of the operating system and the process control blocks, as well as their
+    container queues that are associated with them. As the project
+    progresses, other features such as an interupt handler will be implemented
+    into the operating system, and it will run on a serial port emulator.
+  </para>
+  <para>
+    The developer's manual is designed to document the source of the project
+    such that any new developer can read the documentation and be
+    thoroughly informed of how the project is mapped out.
+  </para>
+</chapter>

@@ -1,0 +1,146 @@
+<chapter id="Overview of Source Files and Directories">
+  <title>Overview of Source Files and Directories</title>
+  <para>
+    This chapter is designed to provide an overview of each file and
+    directory of the project. Hopefully, it will provide a good idea of how
+    the source of TDF-OS is layed out.
+  </para>
+ 
+  <itemizedlist>
+
+    <listitem>
+      <formalpara>
+	<title>build</title>
+        <para>
+	  The build directory is reserved for compiled source files of
+	  TDF-OS.
+        </para>
+	</formalpara>
+      </listitem>
+
+    <listitem>
+      <formalpara>
+	<title>doc</title>
+        <para>
+	  The doc directory contains the various XML files for the DocBook
+	  style documentation.
+          <itemizedlist>
+	    <listitem>
+	      devel - contains developer documentation
+	    </listitem>
+	    <listitem>
+	      user - contains the user's manual
+	    </listitem>
+          </itemizedlist>
+        </para>
+	</formalpara>
+      </listitem>
+
+    <listitem>
+      <formalpara>
+	<title>src</title>
+	<para>
+	  The src directory contains all of the C source files as well as the
+	  header files. Each file located in the src directory has a
+	  corresponding header file located in the src/include.
+	  <itemizedlist>
+	    <listitem>
+	      DATE.C - contains the date command for the shell
+	    </listitem>
+	    <listitem>
+	      DISPLAY.C - contains the display command for the shell
+            </listitem>
+            <listitem>
+	      HELP.C - contains the help command for the shell
+            </listitem>
+            <listitem>
+	      HISTORY.C - contains the history command for the shell
+            </listitem>
+            <listitem>
+	      MPX_SUPT.C - Dr. Mooney's support file for MPX
+            </listitem>
+            <listitem>
+	      PARSER.C - parses the input buffer of the shell
+            </listitem>
+            <listitem>
+	      PCB.C - contains all internal structures and functions for PCBs
+            </listitem>
+            <listitem>
+	      PCBMAKE.C - contains pcreate and pdelete shell commands
+            </listitem>
+            <listitem>
+	      PCBMAN.C - contains pblock, presume, punblock, psuspend, and
+	      psetprio shell commands
+            </listitem>
+            <listitem>
+	      PCBSHOW.C - contains pshow, pshowall, pshowrd, and pshowblk
+	      shell commands
+            </listitem>
+            <listitem>
+	      PCBUTILS.C - contains various functions that are useful when
+	      working with PCBs
+            </listitem>
+            <listitem>
+	      SHELL.C - contains the main driver for the TDF shell
+            </listitem>
+            <listitem>
+	      TDF.C - the initializer module
+            </listitem>
+            <listitem>
+	      TDF.CFG - contains compiler information in TurboC
+            </listitem>
+            <listitem>
+	      TDF.PRJ - used to link the project together in TurboC
+            </listitem>
+            <listitem>
+	      VERSION.C - contains the version command in the shell
+            </listitem>
+	  </itemizedlist>
+	</para>
+      </formalpara>
+    </listitem>
+
+    <listitem>
+      <formalpara>
+	<title>target</title>
+        <para>
+          The target directory is reserved for the created executable file.
+	  This is where the operating system is run, and thus some .MPX
+	  files are put there during build time for demonstration.
+        </para>
+	</formalpara>
+      </listitem>
+
+    <listitem>
+      <formalpara>
+	<title>tc</title>
+        <para>
+	  The tc directory is reserved for containing the TurboC compiler, 
+	  which is required for the MPX operating system.
+          <itemizedlist>
+          </itemizedlist>
+        </para>
+	</formalpara>
+      </listitem>
+
+
+    <listitem>
+      <formalpara>
+	<title>utils</title>
+        <para>
+	  The utils directory contains various configuration files for making
+	  the developers' lives easier, including build scripts and 
+	  configration files for DOSBox. These typically should not be
+	  adjusted and do not affect the source at all.
+        </para>
+	</formalpara>
+      </listitem>
+
+  </itemizedlist>
+      <para>
+	Finally, there is the Makefile which will pull the build scripts
+	together for easy development.
+      </para>
+      
+
+</chapter>

@@ -1,0 +1,94 @@
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="HISTORY.C">
+  <title>HISTORY.C</title>
+  <indexterm><primary>history.c</primary></indexterm>
+
+  <section xml:id="Header">
+    <title>Header</title>
+
+    <programlisting>
+      <![CDATA[
+// HISTORY.C
+// Prints out the command history to the user, as well as appends the user's
+// previous commands to the history.
+//
+// tours de force: http://www.ducksarepeople.com/tdf 
+
+#include <stdio.h>
+#include "tdf.h"
+#include "history.h"
+      ]]>
+    </programlisting>
+  </section>
+
+  <section xml:id="history">
+    <title>history()</title>
+    <indexterm><primary>history()</primary></indexterm>
+
+    <indexterm>
+      <primary>history.c</primary>
+      <secondary>history()</secondary>
+    </indexterm>
+
+    <programlisting>
+      <![CDATA[
+int history ( char *args )
+{
+  int err = 0;
+  FILE *hist;
+  char histout[HBS];
+
+  hist = fopen( "C:\\ETC\\HISTORY", "r" );
+
+  if (hist == NULL)
+    {
+      err = 1;
+    }
+  else
+    {
+      while ( !feof( hist ) )
+	{
+	  fgets (histout, HBS, hist );
+	  printf( "%s", histout );
+	}
+      fclose(hist);
+    }
+  
+  return err;
+}
+      ]]>
+    </programlisting>
+  </section>
+
+  <section xml:id="append_history">
+    <title>append_history()</title>
+    <indexterm><primary>append_history()</primary></indexterm>
+
+    <indexterm>
+      <primary>history.c</primary>
+      <secondary>append_history()</secondary>
+    </indexterm>
+
+    <programlisting>
+      <![CDATA[
+int append_history ( char *args )
+{
+  int err = 0;
+  FILE *hist;
+
+  hist = fopen( "C:\\ETC\\HISTORY", "a" );
+  if (hist == NULL)
+    {
+      err = 1;
+    }
+  else
+    {
+      fprintf ( hist, "%s\n", args );
+      fclose(hist);
+    }
+
+  return err;
+}
+      ]]>
+    </programlisting>
+  </section>
+</chapter>

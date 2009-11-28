@@ -1,0 +1,15 @@
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="DATE.H">
+  <title>DATE.H</title>
+  <indexterm><primary>date.h</primary></indexterm>
+  <programlisting>
+    <![CDATA[
+#ifndef DATE_H
+#define DATE_H
+
+extern int date(char *);
+extern int validDate(int, int, int);
+
+#endif
+    ]]>
+  </programlisting>
+</section>

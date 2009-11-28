@@ -1,0 +1,10 @@
+#ifndef PROCS_R3_H
+#define PROCS_R3_H
+
+extern void test1_R3 ();
+extern void test2_R3 ();
+extern void test3_R3 ();
+extern void test4_R3 ();
+extern void test5_R3 ();
+
+#endif

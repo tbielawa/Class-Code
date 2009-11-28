@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Starting DOSBOX from current directory"
+
+cd dosbox
+dosbox -conf tdfdosbox.conf
+cd ..
+
+echo "Leaving DOSBOX"
+
+exit 0

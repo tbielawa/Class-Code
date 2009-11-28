@@ -1,0 +1,24 @@
+           
+        +---------------------------------------+
+        |  TOURS DE FORCE MPX OPERATING SYSTEM  |
+        +---------------------------------------+
+        |   http://code.google.com/p/tdf-os/    |
+        +---------------------------------------+
+
+Group Number: 2
+
+Group Members:
+      - Tim Bielawa	(timbielawa@gmail.com)
+      - Andrew Butcher  (abutcher@afrolegs.com)
+      - Bryant Doss     (bryantdoss@gmail.com)
+      - Jack Dehlin     (jdehlin@gmail.com)
+
+Compiler: Turbo C++ Version 3.0, Copyright 1990, 1992
+
+Development Operating Systems:
+      - Modules 1-4: Ubuntu Linux - 8.04
+      - Modules 5,6: Virtual Windows XP, running on Ubuntu Linux - 8.04
+
+Instructions for running code:
+      - Instructions are contained in the developers documentation
+

@@ -1,0 +1,56 @@
+<chapter xmlns="http://docbook.org/ns/docbook">
+  <title>Introduction to the TDF Operating System</title>
+  <para>
+    Welcome to the tours de force version of the MPX Operating System!
+    This was created for the Operating Systems course (CS 450) at West
+    Virginia University for the Spring 2009 semester. The members of
+    tours de force are Tim Bielawa, Andrew Butcher, Jack Dehlin, and
+    Bryant Doss. The homepage of tours de force may be found at
+    http://www.ducksarepeople.com/tdf.
+    <indexterm><primary>West Virginia University</primary></indexterm>
+    <indexterm><primary>tours de force</primary></indexterm>
+  </para>
+
+  <section>
+    <title>About MPX</title>
+    <para>
+      The MPX <indexterm><primary>MPX</primary></indexterm> Operating
+      System, which is shorthand for MultiProgramming eXecutive, is a
+      project that was created by Malcolm Lane and James Mooney and
+      published in the Project Manual of <citetitle pubwork="book">A
+      Practical Approach to Operating Systems</citetitle>.
+      <indexterm><primary>James Mooney</primary></indexterm>
+      <indexterm><primary>Malcolm Lane</primary></indexterm>
+    </para>
+    <para>
+      MPX is programmed using C, and is designed to simulate low-level
+      functionality, though it will use an underlying MS-DOS
+      installation for hardware abstraction. MPX operates exclusively
+      in the command-line interface, and all commands and operations
+      will have to be called by a shell.
+      <indexterm><primary>MS-DOS</primary></indexterm>
+    </para>
+  </section>
+
+  <section>
+    <title>About the Command Handler</title>
+    <para>
+      The command handler is the first interactive piece of TDF which
+      you as a user will come into contact with. You can recognize
+      when you have reached the command handler by the welcome message
+      showing the current version appearing at the top of your
+      screen. Below the welcome message will be the command prompt
+      waiting for input. What you see will look similar to following.
+      <indexterm><primary>command handler</primary></indexterm>
+    </para>
+
+    <programlisting>
+      Welcome to the Tours de Force System
+      tdf-os version: 0.3.33 2009-02-19 (Revision: 95)
+      
+      <prompt>tdf:$ </prompt>
+    </programlisting>
+  </section>
+
+</chapter>
+

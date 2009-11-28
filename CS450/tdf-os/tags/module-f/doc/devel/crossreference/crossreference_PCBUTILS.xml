@@ -1,0 +1,113 @@
+<section xmlns="http://docbook.org/ns/docbook">
+  <title><filename>PCBUTILS.C</filename> Functions</title>
+  <section>
+    <title>int <function>validPrio</function> (int priority)</title>
+    <para>
+      <indexterm><primary>validPrio</primary></indexterm>
+      <itemizedlist>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called</title>
+	    <para>
+	      <itemizedlist>
+                <listitem>
+                  <para>
+                    <function>None</function>
+                  </para>
+                </listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called By</title>
+	    <para>
+	      <itemizedlist>
+                <listitem>
+                  <para>
+                    <function>None</function>
+                  </para>
+                </listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+  <section>
+    <title>int <function>validState</function> (int state)</title>
+    <para>
+      <indexterm><primary>validState</primary></indexterm>
+      <itemizedlist>
+        <listitem>
+          <formalpara>
+            <title>Functions Called</title>
+            <para>
+              <itemizedlist>
+                <listitem>
+                  <para>
+                    <function>None</function>
+                  </para>
+                </listitem>
+              </itemizedlist>
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Functions Called By</title>
+            <para>
+              <itemizedlist>
+                <listitem>
+                  <para>
+                    <function>None</function>
+                  </para>
+                </listitem>
+              </itemizedlist>
+            </para>
+          </formalpara>
+        </listitem>
+      </itemizedlist>
+    </para>
+  </section>
+  
+  <section>
+    <title>int <function>validClass</function> (int pclass)</title>
+    <para>
+      <indexterm><primary>validClass</primary></indexterm>
+      <itemizedlist>
+        <listitem>
+          <formalpara>
+            <title>Functions Called</title>
+            <para>
+              <itemizedlist>
+                <listitem>
+                  <para>
+                    <function>None</function>
+                  </para>
+                </listitem>
+              </itemizedlist>
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Functions Called By</title>
+            <para>
+              <itemizedlist>
+                <listitem>
+                  <para>
+                    <function>None</function>
+                  </para>
+                </listitem>
+              </itemizedlist>
+            </para>
+          </formalpara>
+        </listitem>
+      </itemizedlist>
+    </para>
+  </section>
+</section>

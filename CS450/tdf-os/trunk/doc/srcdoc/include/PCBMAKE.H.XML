@@ -1,0 +1,15 @@
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="PCBMAKE.H">
+  <title>PCBMAKE.H</title>
+  <indexterm><primary>pcbmake.h</primary></indexterm>
+  <programlisting>
+    <![CDATA[
+#ifndef PCBMAKE_H
+#define PCBMAKE_H
+
+extern int pcreate(char *);
+extern int pdelete(char *);
+
+#endif
+    ]]>
+  </programlisting>
+</section>

@@ -1,0 +1,21 @@
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="PCBMAN.h">
+  <title>PCBMAN.H</title>
+  <indexterm><primary>pcbman.h</primary></indexterm>
+  <programlisting>
+    <![CDATA[
+#ifndef PCBMAN_H
+#define PCBMAN_H
+
+extern int pblock(char *);
+extern int punblock(char *);
+extern int psuspend(char *);
+extern int presume(char *);
+extern int psetprio(char *);
+extern int pready_to_running();
+extern int prunning_exit();
+extern int prunning_to_ready();
+
+#endif
+    ]]>
+  </programlisting>
+</section>

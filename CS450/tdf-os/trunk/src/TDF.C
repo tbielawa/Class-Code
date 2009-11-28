@@ -1,0 +1,96 @@
+
+// tdf.c
+// Program to initialize the MPX operating system
+//
+// tours de force: http://www.ducksarepeople.com/tdf
+
+#include <stdio.h>
+#include "mpx_supt.h"
+#include "pcb.h"
+#include "tdf.h"
+#include "losysdis.h"
+#include "trmdrive.h"
+#include "tdfdrive.h"
+#include "dos.h"
+#include "shell.h"
+#include "load.h"
+#include "pcbshow.h"
+
+PCBDLL **PRIORITY_QUEUES;
+params *params_p;
+context *context_p;
+char sys_stack[SYS_STACK_SIZE];
+extern IOCB *iocb_com;
+extern IOCB *iocb_term;
+IOD *tmp_iod;
+
+int main ( int argc, char *argv[] )
+{
+  // Call sys_init with the created modules
+  int SYS_INIT_ERR;
+  int SHELL_ERR;
+  int DATE_ERR;
+  date_rec* tdf_date;
+  PCB* shell_proc = NULL;
+  context* shell_context = NULL;
+  
+  // Initialize system date
+  DATE_ERR = sys_set_date(tdf_date);
+
+  // Initialize the MPX system here
+  SYS_INIT_ERR = sys_init (MODULE_F);
+
+  // Creating our PCBDLLs
+  PRIORITY_QUEUES = PCBDLL_creation( TDF_QUEUES );
+
+  // Call init functions -- our dispatch_init at this point sets the
+  // interrupt vector, and sets some of our ss and sp stuff to NULL.
+  dispatch_init();
+  
+  // Install SHELL.C as a process
+  // Setup shell process control block and context structures, same way that
+  // LOADR3.C works
+  // Give it the maximum priority and put it in the ready queue.
+  shell_proc = PCB_setup("shell", 128, SYSTEM);
+  shell_context = (context*)shell_proc->pstack_top;
+  shell_context->IP = FP_OFF(&shell);
+  shell_context->CS = FP_SEG(&shell);
+  shell_context->FLAGS = 0x200;
+  shell_context->DS = _DS;
+  shell_context->ES = _ES;
+  PCB_insert(PRIORITY_QUEUES[READY], shell_proc, READY);
+  // NOTE: SHELL may need a higher stack size. Recommended stack size for
+  // SHELL is 4K.
+
+  // Load in the IDLE process, same way that LOAD.C works for R4. Because
+  // LOAD.C places the process in the READYSUSPENDED queue, we need to
+  // resume it.
+  // Give IDLE the lowest priority.
+  load( "-n IDLE -p -127" );
+  presume( "IDLE" );
+  (PCB_find( "IDLE" ))->pclass = SYSTEM;
+
+  // Call the dispatcher, which should execute SHELL.C
+  dispatch();
+
+  // Clean up our IOCB queues
+  while ( iocb_com->head != NULL ) {
+    tmp_iod = iocb_com->head;
+    iocb_com->head = (iocb_com->head)->next;
+    sys_free_mem( tmp_iod );
+  }
+  while ( iocb_term->head != NULL ) {
+    tmp_iod = iocb_term->head;
+    iocb_term->head = (iocb_term->head)->next;
+    sys_free_mem( tmp_iod );
+  }
+  sys_free_mem( iocb_com );
+  sys_free_mem( iocb_term );
+
+  // Close device drivers
+  trm_close();
+  com_close();
+
+  // Fin
+  return 0;
+}

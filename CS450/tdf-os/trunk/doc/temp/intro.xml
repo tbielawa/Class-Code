@@ -1,0 +1,10 @@
+<chapter xmlns="http://docbook.org/ns/docbook">
+  <title>TDF Operating System Temporary commands</title>
+  <para>
+    This document is intended to describe and provide instructions on the
+    use of the current temporary commands available in the tdf-os system.
+    As the project develops these commands will be removed but are 
+    currently necessary.
+  </para>
+</chapter>
+

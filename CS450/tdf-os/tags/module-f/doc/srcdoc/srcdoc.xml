@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book xmlns="http://docbook.org/ns/docbook"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xml:id="SourceDocForTDFOS" version="5.0">
+
+  <info>
+    <title>Source Documentation for the TDF-OS</title>
+    <subtitle>(WVU CS450 - Group 2)</subtitle>
+
+    <authorgroup>
+      <author>
+	<personname>
+	  <surname>Bielawa</surname> <firstname>Tim</firstname>
+	</personname>
+	<email>timbielawa@gmail.com</email>
+	<affiliation>
+	  <orgname>Group 2 (Tours de Force)</orgname>
+	</affiliation>
+      </author>
+
+      <author>
+	<personname>
+	  <surname>Butcher</surname> <firstname>Andrew</firstname>
+	</personname>
+	<email>abutcher@afrolegs.com</email>
+	<affiliation>
+	  <orgname>Group 2 (Tours de Force)</orgname>
+	</affiliation>
+      </author>
+
+      <author>
+	<personname>
+	  <surname>Dehlin</surname> <firstname>Jack</firstname>
+	</personname>
+	<email>jdehlin@gmail.com</email>
+	<affiliation>
+	  <orgname>Group 2 (Tours de Force)</orgname>
+	</affiliation>
+      </author>
+
+      <author>
+	<personname>
+	  <surname>Doss</surname> <firstname>Bryant</firstname>
+	</personname>
+	<email>bryantdoss@gmail.com</email>
+	<affiliation>
+	  <orgname>Group 2 (Tours de Force)</orgname>
+	</affiliation>
+      </author>
+    </authorgroup>
+
+  </info>
+  
+  <xi:include href="DATE.C.XML"/>
+  <xi:include href="DISPLAY.C.XML"/>
+  <xi:include href="HELP.C.XML"/>
+  <xi:include href="HISTORY.C.XML"/>
+  <xi:include href="LOAD.C.XML"/>
+  <xi:include href="LOADR3.C.XML"/>
+  <xi:include href="LOSYSDIS.C.XML"/>
+  <xi:include href="PARSER.C.XML"/>
+  <xi:include href="PCB.C.XML"/>
+  <xi:include href="PCBMAKE.C.XML"/>
+  <xi:include href="PCBMAN.C.XML"/>
+  <xi:include href="PCBSHOW.C.XML"/>
+  <xi:include href="PCBUTILS.C.XML"/>
+  <xi:include href="SHELL.C.XML"/>
+  <xi:include href="TDF.C.XML"/>
+  <xi:include href="TDFDRIVE.C.XML"/>
+  <xi:include href="VERSION.C.XML"/>
+  <xi:include href="headers.xml"/>
+
+  <index/>
+</book>

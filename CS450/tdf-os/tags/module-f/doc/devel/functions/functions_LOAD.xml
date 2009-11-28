@@ -1,0 +1,81 @@
+<section xmlns="http://docbook.org/ns/docbook">
+  <title><filename><indexterm><primary>LOAD.C</primary></indexterm></filename>LOAD.C Functions</title>
+
+  <section>
+    <title>int <function>load</function> (char * argstr)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		 int <function>load</function>
+		</funcdef>
+		<paramdef>
+		  char *<parameter>argstr</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>%ERR</parameter> <returnvalue>0</returnvalue></title>
+		  <para>
+		    The potential process was loaded successfuly.
+		  </para>
+		</formalpara>
+	      </listitem>
+              <listitem>
+                <formalpara>
+                  <title><parameter>%ERR</parameter>
+		  <returnvalue>!0</returnvalue></title>
+                  <para>
+                    There were problems loading your process.  See the
+		    error print out to determine the nature of your error.
+		  </para>
+		</formalpara>
+	      </listitem>
+
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    The <function>load</function> function/command parses an
+	    argument string to determine the name of the process which
+	    is to be loaded and a potential initial priority.  A
+	    possible argument string would be "-n PROCNAME -p 127"
+	    where the -n flag denotes the name of the process and -p,
+	    the priority.  If the argument string is valid, the
+	    <function>load</function> looks in the
+	    <filename>src/procs</filename> directory for an existence
+	    of PROCNAME.MPX; and if it exists begins to load it.  The
+	    file is checked first using
+	    <function>sys_check_program</function>. If it is valid, A
+	    process control block is allocated for the process as well
+	    as a context block.  The stack of the PCB is set to the
+	    location of the MPX files contents.
+	    <function>sys_load_program</function> is called to load
+	    the process from the PCB.  All processes are entered into
+	    the system with a class of APPLICATION and are inserted
+	    into the READY-SUSPENDED queue. (The process must be
+	    unblocked using <function>punblock</function> to dispatch.)
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+
+</section>

@@ -1,0 +1,18 @@
+<chapter xmlns="http://docbook.org/ns/docbook">
+  <title>Functions</title>
+  
+  <xi:include href="functions/functions_DATE.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="functions/functions_DISPLAY.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="functions/functions_HELP.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="functions/functions_HISTORY.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="functions/functions_PARSER.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="functions/functions_PCBMAKE.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="functions/functions_PCBMAN.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="functions/functions_PCBSHOW.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="functions/functions_PCBUTILS.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="functions/functions_PCB.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="functions/functions_SHELL.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="functions/functions_TDF.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="functions/functions_VERSION.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  
+</chapter>

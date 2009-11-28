@@ -1,0 +1,31 @@
+
+<chapter id="Introduction to the TDF Operating System">
+  <title>Introduction to the TDF Operating System</title>
+  <para>
+    Welcome to the tours de force version of the MPX Operating System! This
+    was created for the Operating Systems course (CS 450) at West Virginia
+    University for the Spring 2009 semester. The members of tours de force
+    are Tim Bielawa, Andrew Butcher, Jack Dehlin, and Bryant Doss. The
+    homepage of tours de force may be found at 
+    http://www.ducksarepeople.com/tdf.
+  </para>
+
+  <section id="About MPX">
+    <title>About MPX</title>
+    <para>
+      The MPX Operating System, which is shorthand for MultiProgramming 
+      eXecutive, is a project that was created by Malcolm Lane and James
+      Mooney and published in the Project Manual of 
+      <u>A Practical Approach to Operating Systems</u>. 
+    </para>
+    <para>
+      MPX is programmed using C, and is designed to simulate low-level 
+      functionality, though it will use an underlying MS-DOS installation 
+      for hardware abstraction. MPX operates exclusively in the 
+      command-line interface, and all commands and operations will have
+      to be called by a shell.
+    </para>
+  </section>
+
+</chapter>
+

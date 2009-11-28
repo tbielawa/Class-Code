@@ -1,0 +1,853 @@
+<chapter xmlns="http://docbook.org/ns/docbook"
+	 xmlns:xl="http://www.w3.org/1999/xlink"
+	 xml:id="usr-doc-cmd_detailed" version="5.0">
+
+  <title>Detailed Command Descriptions</title>
+  <para>
+    This chapter will make four aspects of each available command
+    clear to the end user. They are:
+    <itemizedlist>
+      <listitem>
+	<para>
+	  Invocation Syntax
+	</para>
+      </listitem>
+      <listitem>
+        <para>
+	  Usage
+	</para>
+      </listitem>
+      <listitem>
+        <para>
+	  Example of Use: 
+	</para>
+      </listitem>
+      <listitem>
+        <para>
+	  Possible Errors or Error Messages: 
+	</para>
+      </listitem>
+    </itemizedlist>
+  </para>
+
+
+  <section>
+    <title>date</title>
+    <para>
+      <indexterm><primary>date</primary></indexterm>
+      <itemizedlist>
+	<listitem>
+	  <formalpara>
+	    <title>Invocation Syntax</title>
+	    <para>
+	      <orderedlist>
+		<listitem>
+		  <para>
+		    <command>date</command>
+		  </para>
+		</listitem>
+		<listitem>
+		  <para>
+		    <command>date -s YYYYMMDD</command>
+		  </para>
+		</listitem>
+	      </orderedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+	<listitem>
+          <formalpara>
+            <title>Usage</title>
+            <para>
+	      <command>date</command>, when invoked without the
+	      <option>-s</option> option, will display the system
+	      date. When invoked with the <option>-s</option> option
+	      and a date in the <replaceable>YYYMMDD</replaceable>
+	      format, <command>date</command> will adjust the system
+	      date to the specified value.
+	    </para>
+          </formalpara>
+        </listitem>
+	<listitem>
+          <formalpara>
+            <title>Example of Use: </title>
+            <para>
+	      <orderedlist>
+		<listitem>
+		  <para>
+		    <command>date</command> will output the system
+		    date.
+		  </para>
+		</listitem>
+		<listitem>
+		  <para>
+		    <command>date -s 20080520</command> will change
+		    the system date to May 20th, 2008.
+		  </para>
+		</listitem>
+	      </orderedlist>
+	    </para>
+          </formalpara>
+        </listitem>
+	<listitem>
+          <formalpara>
+            <title>Possible Errors or Error Messages: </title>
+            <para>
+	      If the user inputs an invalid date, then the error message
+	      of <computeroutput>Invalid date string.</computeroutput> 
+	      will appear.
+	    </para>
+          </formalpara>
+        </listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+
+  <section>
+    <title>display</title>
+    <para>
+      <indexterm><primary>display</primary></indexterm>
+      <itemizedlist>
+        <listitem>
+          <formalpara>
+            <title>Invocation Syntax: </title>
+            <para>
+	      <orderedlist>
+		<listitem>
+		  <para>
+		    <command>display</command>
+		  </para>
+		</listitem>
+		<listitem>
+		  <para>
+		    <command>display [path]</command>
+		  </para>
+		</listitem>
+	      </orderedlist>
+            </para>
+          </formalpara>
+	</listitem>
+        <listitem>
+          <formalpara>
+            <title>Usage: </title>
+            <para>
+	      When <command>display</command> is ran without any
+	      arguments it displays the files with extension .MXP in
+	      the current working directory and their sizes. If called
+	      with a path argument it will display files with
+	      extension .MXP at the specified location along with
+	      their sizes.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Example of Use: </title>
+            <para>
+	      <orderedlist>
+		<listitem>
+		  <para>
+		    <command>display</command> will list .MPX files in
+		    the current directory.
+		  </para>
+		</listitem>
+		<listitem>
+		  <para>
+		    <command>display</command> <filename
+		    class="directory">temp</filename> will list .MPX
+		    files in the folder <filename
+		    class="directory">temp</filename> relative to the
+		    current directory.
+		  </para>
+		</listitem>
+	      </orderedlist>
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Possible Errors or Error Messages: </title>
+            <para>
+	      If display is run with an invalid or non-existant path
+	      argument an error message of <computeroutput>Invalid
+	      path.</computeroutput> will appear.
+            </para>
+          </formalpara>
+        </listitem>
+      </itemizedlist>
+      </para>
+  </section>
+  
+
+  <section>
+    <title>exit</title>
+    <para>
+      <indexterm><primary>exit</primary></indexterm>
+      <itemizedlist>
+        <listitem>
+          <formalpara>
+            <title>Invocation Syntax: </title>
+            <para>
+	      <itemizedlist>
+		<listitem>
+		  <para>
+		    <command>exit</command>
+		  </para>
+		</listitem>
+	      </itemizedlist>
+            </para>
+          </formalpara>
+	</listitem>
+        <listitem>
+          <formalpara>
+            <title>Usage: </title>
+            <para>
+	      The <command>exit</command> command is used to close
+	      your tdf-os session. Invoking the
+	      <command>exit</command> command will prompt the user for
+	      confirmation that they wish to exit the session. Upon
+	      confirmation the session will close cleanly.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Example of Use: </title>
+            <para>
+	      <command>exit</command>
+	      <computeroutput>Quit?</computeroutput>
+	      <computeroutput>(N/y)</computeroutput> y
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Possible Errors or Error Messages: </title>
+            <para>
+	      No errors expected upon exiting.
+            </para>
+          </formalpara>
+        </listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+
+  <section>
+    <title>help</title>
+    <para>
+      <indexterm><primary>help</primary></indexterm>
+      <itemizedlist>
+        <listitem>
+          <formalpara>
+            <title>Invocation Syntax: </title>
+            <para>
+	      <command>help</command> or
+	      <command>help [command]</command>
+            </para>
+          </formalpara>
+	</listitem>
+        <listitem>
+          <formalpara>
+            <title>Usage: </title>
+            <para>
+	      Running help without any arguments displays the usage of help
+	      and all available commands in the tdf-os system. Running
+	      help with another tdf-os command as an argument will display
+	      usage and syntax information for that command.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Example of Use: </title>
+            <para>
+	      <command>help</command> displays helps usage.
+	      <command>help date</command> displays the usage of the date
+	      command.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Possible Errors or Error Messages: </title>
+            <para>
+	      If the user enters an argument which is not an available
+	      tdf-os command the error message <computeroutput>No help
+	      to be found.</computeroutput> will be displayed
+            </para>
+          </formalpara>
+        </listitem>
+      </itemizedlist>
+      </para>
+    </section>
+
+
+  <section>
+    <title>history</title>
+    <para>
+      <indexterm><primary>history</primary></indexterm>
+      <itemizedlist>
+        <listitem>
+          <formalpara>
+            <title>Invocation Syntax: </title>
+            <para>
+	      <command>history</command>
+            </para>
+          </formalpara>
+	</listitem>
+        <listitem>
+          <formalpara>
+            <title>Usage: </title>
+            <para>
+	      The history command displays all commands previously entered
+	      into tdf-os. It takes no arguments.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Example of Use: </title>
+            <para>
+	      <command>history</command>
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Possible Errors or Error Messages: </title>
+            <para>
+	      There are no foreseeable errors for this command.
+            </para>
+          </formalpara>
+        </listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+
+  <section>
+    <title>load</title>
+    <para>
+      <indexterm><primary>load</primary></indexterm>
+      <itemizedlist>
+        <listitem>
+          <formalpara>
+            <title>Invocation Syntax: </title>
+            <para>
+	      <command>load -n [name] -p [priority]</command>
+            </para>
+          </formalpara>
+	</listitem>
+        <listitem>
+          <formalpara>
+            <title>Usage: </title>
+            <para>
+	      The load command loads a specified MPX process into the 
+	      suspended queue at the given priority. It will return an
+	      error if supplied inproper arguments. The priority must be
+	      within the range of -128 to 127.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Example of Use: </title>
+            <para>
+	      <command>load -n proc1 -p 10</command> will load the process
+	      proc1 into the suspended queue at priority 10.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Possible Errors or Error Messages: </title>
+            <para>
+	      Will error if a process with the given name already exists or
+	      if the priority is out of range.
+            </para>
+          </formalpara>
+        </listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+
+  <section>
+    <title>presume</title>
+    <para>
+      <indexterm><primary>presume</primary></indexterm>
+      <itemizedlist>
+        <listitem>
+          <formalpara>
+            <title>Invocation Syntax: </title>
+            <para>
+	      <command>presume [process_name]</command>
+            </para>
+          </formalpara>
+	  </listitem>
+        <listitem>
+          <formalpara>
+            <title>Usage: </title>
+            <para>
+	      The presume command is used to return a process from the 
+	      suspended state to the ready state. An appropriate error or
+	      success message will be displayed.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Example of Use: </title>
+            <para>
+	      <command>presume test</command> will return the test process
+	      to the ready queue.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Possible Errors or Error Messages: </title>
+            <para>
+	      If the specified process does not exist then the error
+	      <computeroutput>Could not find the specified
+	      process</computeroutput> will be displayed.
+            </para>
+          </formalpara>
+        </listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+
+  <section>
+    <title>prompt</title>
+    <para>
+      <indexterm><primary>prompt</primary></indexterm>
+      <itemizedlist>
+        <listitem>
+          <formalpara>
+            <title>Invocation Syntax: </title>
+            <para>
+	      <command>prompt [prompt_string]</command>
+            </para>
+          </formalpara>
+	  </listitem>
+        <listitem>
+          <formalpara>
+            <title>Usage: </title>
+            <para>
+	      The prompt command is used to modify the string used as
+	      the command prompt. If no argument is provided the prompt
+	      command will set the prompt to nothing which can be
+	      confusing. 
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Example of Use: </title>
+            <para>
+	      <command>prompt :::</command> will set the prompt to three
+	      semi-colons.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Possible Errors or Error Messages: </title>
+            <para>
+	      There are no expected errors with the prompt command.
+            </para>
+          </formalpara>
+        </listitem>
+      </itemizedlist>
+    </para>
+  </section>
+  
+
+  <section>
+    <title>psetprio</title>
+    <para>
+      <indexterm><primary>psetprio</primary></indexterm>
+      <itemizedlist>
+        <listitem>
+          <formalpara>
+            <title>Invocation Syntax: </title>
+            <para>
+	      <command>psetprio -n [pcbname] -p [priority]</command>
+            </para>
+          </formalpara>
+	</listitem>
+        <listitem>
+          <formalpara>
+            <title>Usage: </title>
+            <para>
+	      The psetprio command is used to set the priority of a process.
+	      To set the priority of a process run psetprio with a -n argument
+	      for the name of the process and a -p argument for the priority
+	      to be set for that process. The priority for a process must be
+	      set within the range -128 to 127.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Example of Use: </title>
+            <para>
+	      <command>psetprio -n temp -p 100</command> will set the priority
+	      of the process temp to priority 100.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Possible Errors or Error Messages: </title>
+            <para>
+	      If an invalid process name is given the error <computeroutput>
+	      Could not find specified process</computeroutput> will be
+	      displayed. If a priority outside of the required range is given
+	      the error <computeroutput>Invalid priority</computeroutput> will
+	      be displayed.
+            </para>
+          </formalpara>
+        </listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+
+  <section>
+    <title>pshow</title>
+    <para>
+      <indexterm><primary>pshow</primary></indexterm>
+      <itemizedlist>
+        <listitem>
+          <formalpara>
+            <title>Invocation Syntax: </title>
+            <para>
+	      <command>pshow [pcbname]</command>
+            </para>
+          </formalpara>
+	</listitem>
+        <listitem>
+          <formalpara>
+            <title>Usage: </title>
+            <para>
+	      The pshow command is used to display pertinent information 
+	      for a particular process. Information given when pshow is run
+	      is process name, class, state, and priority. To display the
+	      information about a process run pshow with the name of the 
+	      desired process as the argument. 
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Example of Use: </title>
+            <para>
+	      <command>pshow temp</command> will display information for the 
+	      process 'temp'.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Possible Errors or Error Messages: </title>
+            <para>
+	      If the specified process does not exist the error <computeroutput>
+	      Could not find the specified process</computeroutput> will be 
+	      displayed.
+            </para>
+          </formalpara>
+        </listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+
+  <section>
+    <title>pshowall</title>
+    <para>
+      <indexterm><primary>pshowall</primary></indexterm>
+      <itemizedlist>
+        <listitem>
+          <formalpara>
+            <title>Invocation Syntax: </title>
+            <para>
+	      <command>pshowall</command>
+            </para>
+          </formalpara>
+	</listitem>
+        <listitem>
+          <formalpara>
+            <title>Usage: </title>
+            <para>
+	      The pshowall command displays all current processes regardless
+	      of they current state. The processes are displayed in lists
+	      under their corresponding states along with their current state,
+	      class, and priority. pshowall takes no arguments.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Example of Use: </title>
+            <para>
+	      <command>pshowall</command> will display a table of all processes.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Possible Errors or Error Messages: </title>
+            <para>
+	      There are no expected errors with this command.
+            </para>
+          </formalpara>
+        </listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+
+  <section>
+    <title>pshowblk</title>
+    <para>
+      <indexterm><primary>pshowblk</primary></indexterm>
+      <itemizedlist>
+        <listitem>
+          <formalpara>
+            <title>Invocation Syntax: </title>
+            <para>
+	      <command>pshowblk</command>
+            </para>
+          </formalpara>
+	</listitem>
+        <listitem>
+          <formalpara>
+            <title>Usage: </title>
+            <para>
+	      The pshowblk command is used to show all current processes in
+	      the blocked state. This includes processes both in the blocked
+	      state and those in the blocked-suspended state. The processes
+	      are listed under their current specific state along with their
+	      class, state, and priority. To display all of the currently
+	      blocked processes run pshowblk with no arguments. 
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Example of Use: </title>
+            <para>
+	      <command>pshowblk</command> will diplay all processes with the
+	      state of blocked or blocked-suspended.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Possible Errors or Error Messages: </title>
+            <para>
+	      There are no expected errors for this command.
+            </para>
+          </formalpara>
+        </listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+
+  <section>
+    <title>pshowrd</title>
+    <para>
+      <indexterm><primary>phowrd</primary></indexterm>
+      <itemizedlist>
+        <listitem>
+          <formalpara>
+            <title>Invocation Syntax: </title>
+            <para>
+	      <command>pshowrd</command>
+            </para>
+          </formalpara>
+	</listitem>
+        <listitem>
+          <formalpara>
+            <title>Usage: </title>
+            <para>
+	      The pshowrd command displays all current processes in the ready
+	      state. This includes processes in the ready and ready-suspended
+	      states. The processes are listed under their current specific
+	      states along with their class and priority. The pshowrd command
+	      takes no arguments.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Example of Use: </title>
+            <para>
+	      <command>pshowrd</command> will display all processes in the
+	      ready and ready-suspended states.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Possible Errors or Error Messages: </title>
+            <para>
+	      There are no expected errors with this command. 
+            </para>
+          </formalpara>
+        </listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+
+  <section>
+    <title>psuspend</title>
+    <para>
+      <indexterm><primary>psuspend</primary></indexterm>
+      <itemizedlist>
+        <listitem>
+          <formalpara>
+            <title>Invocation Syntax: </title>
+            <para>
+	      <command>psuspend [process_name]</command>
+            </para>
+          </formalpara>
+	</listitem>
+        <listitem>
+          <formalpara>
+            <title>Usage: </title>
+            <para>
+	      The psuspend command is used to place a process in the suspended
+	      state. If the specified process is already in the blocked state
+	      the psuspend command will place the process in the 
+	      blocked-suspended state. To place a process in the suspended
+	      state run psuspend with the name of the process as the argument.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Example of Use: </title>
+            <para>
+	      <command>psuspend temp</command> will place the process 'temp'
+	      in either the suspended or blocked-suspended state, depending on
+	      it state at the time of invocation.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Possible Errors or Error Messages: </title>
+            <para>
+	      If the specified process does not exist the error message
+	      <computeroutput>Could not find specified process</computeroutput>
+	      will be displayed.
+            </para>
+          </formalpara>
+        </listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+
+  <section>
+    <title>kill</title>
+    <para>
+      <indexterm><primary>kill</primary></indexterm>
+      <itemizedlist>
+        <listitem>
+          <formalpara>
+            <title>Invocation Syntax: </title>
+            <para>
+	      <command>kill [process_name]</command>
+            </para>
+          </formalpara>
+	</listitem>
+        <listitem>
+          <formalpara>
+            <title>Usage: </title>
+            <para>
+	      The kill command is used to completely delete a
+	      process, remove it from all queues and free its
+	      memory. To delete a process run kill with the name of
+	      the intended process as the argument.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Example of Use: </title>
+            <para>
+	      <command>kill temp</command> will delete the process temp. 
+	    </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Possible Errors or Error Messages: </title>
+            <para>
+	      If the user does not provide a process name or if the process
+	      does not exist then an error will be displayed. Also, if the
+	      process specified is a system process, there will be an error.
+            </para>
+          </formalpara>
+        </listitem>
+      </itemizedlist>
+      </para>
+  </section>
+
+
+  <section>
+    <title>version</title>
+    <para>
+      <itemizedlist>
+        <listitem>
+          <formalpara>
+            <title>Invocation Syntax: </title>
+            <para>
+	      <command>version</command>
+	      <indexterm><primary>version</primary></indexterm>
+            </para>
+          </formalpara>
+	</listitem>
+        <listitem>
+          <formalpara>
+            <title>Usage: </title>
+            <para>
+	      Outputs the current version of TDF-OS.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Example of Use: </title>
+            <para>
+	      <command>version</command> will output the version.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Possible Errors or Error Messages: </title>
+            <para>
+	      If the file containing the version information fails to open
+	      for any reason, an error message of 
+	      <computeroutput>Error: version cannot be displayed!
+	      </computeroutput>
+	      will appear on the screen, and the user will return
+	      to the prompt.
+            </para>
+          </formalpara>
+        </listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+</chapter>

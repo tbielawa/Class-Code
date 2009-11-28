@@ -1,0 +1,262 @@
+<section xmlns="http://docbook.org/ns/docbook">
+  <title><filename><indexterm><primary>LOSYSDIS.C</primary></indexterm></filename>LOSYSDIS.C Functions</title>
+  
+  <section>
+  <title>void <function>dispatch_init</function> (void)</title>
+  <itemizedlist>
+    <listitem>
+      <formalpara>
+	<title>Prototype and Parameters</title>
+	<para>
+	  <funcsynopsis>
+	    <funcprototype>
+	      <funcdef>
+		void <function>dispatch_init</function>
+	      </funcdef>
+	      <paramdef>
+		<parameter>void</parameter>
+	      </paramdef>
+	    </funcprototype>
+	  </funcsynopsis>
+	</para>
+      </formalpara>
+    </listitem>
+    <listitem>
+      <formalpara>
+	<title>Return Value(s)</title>
+	<para>
+	  <itemizedlist>
+	    <listitem>
+	      <formalpara>
+		<title><parameter>void</parameter> <returnvalue>none</returnvalue></title>
+		<para>
+		</para>
+	      </formalpara>
+	    </listitem>
+	  </itemizedlist>
+	</para>
+      </formalpara>
+    </listitem>
+    <listitem>
+      <formalpara>
+	<title>Description</title>
+	<para>
+	  <function>dispatch_init</function> takes care of setting up
+	  everything necessary to dispatch processes and handle
+	  context switching within' the TDF system by:
+	  <itemizedlist>
+	    <listitem>
+	    <para>
+	      Setting the interrupt vector of the system to our
+	      own <function>sys_call</function>.
+	    </para>
+	    </listitem>
+	    <listitem>
+	      <para>
+		Initializing a current process (l_cop) and IO control
+		blocks for the com port and terminal.
+	      </para>
+	    </listitem>
+	    <listitem>
+	      <para>
+		Opening the com port and terminal using the functions
+		<function>com_open</function> and
+		<function>trm_open</function> defined in the drivers
+		supplied in <filename>src/TRMDRIVE.C</filename>.
+	      </para>
+	    </listitem>
+	  </itemizedlist>
+	</para>
+      </formalpara>
+    </listitem>
+  </itemizedlist>
+  </section>
+
+  <section>
+    <title>void interrupt <function>dispatch</function> (void)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  void interrupt<function>dispatch</function>
+		</funcdef>
+		<paramdef>
+		  void <parameter>none</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>void</parameter> <returnvalue>none</returnvalue></title>
+		  <para>
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    The function <function>dispatch</function> saves the
+	    current state of the system (system stack and stack
+	    pointer registers), checks for the existence of a READY
+	    process in the READY queue grabbing the head and placing
+	    it in the current process (l_cop).  The l_cop is then
+	    given a state of RUNNING and removed from the READY
+	    queue.  The stack of the l_cop is entered into new system
+	    variables which invoke the process once the function
+	    clears.  If nothing is in the READY queue, the system is
+	    restored control.
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+
+  <section>
+    <title>void interrupt <function>sys_call</function> (void)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		 void interrupt <function>sys_call</function>
+		</funcdef>
+		<paramdef>
+		  void <parameter>none</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>void</parameter> <returnvalue>none</returnvalue></title>
+		  <para>
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    <function>sys_call</function> is invoked whenever a
+	    running process signals an interrupt or there is an IO
+	    event.  First, <function>sys_call</function> gives control
+	    of the system to a temporary stack and then sequentially
+	    checks for an event on the com port, terminal port, or the
+	    current PCB (l_cop).  
+
+	    If an event is activated, <function>sys_call</function>
+	    loops through the com or terminal events until they have
+	    all been dealt with.  In the event of a com port event,
+	    the head of the IO control block list is unblocked which
+	    either requires a READ or WRITE action.  This is dealt
+	    with through the <function>com_read</function> and
+	    <function>com_write</function> functions which read or
+	    write to/from the com buffer.
+
+	    In the event of a terminal port event, the head of the IO
+	    device block is unblocked and requires any of READ, WRITE,
+	    CLEAR, or GOTOXY operations; handled in functions:
+	    <function>trm_read</function>,
+	    <function>trm_write</function>,
+	    <function>trm_clear</function>, or
+	    <function>trm_gotoxy</function>.
+
+	    Lastly, <function>sys_call</function> switches on the
+	    op-code provided from the current running process.  If the
+	    process wishes to exit, it is destroyed entirely.  If the
+	    process is placing itself in an IDLE state, for whatever
+	    reason, the PCB is inserted back into the READY queue and
+	    given a state of READY, so that it can be dispatched once
+	    more. READ, WRITE, CLEAR, and GOTOXY are handled by the
+	    <function>IO_scheduler</function> routine. Dispatch is
+	    called to close us out and grab the next ready process.
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+
+  <section>
+    <title>void <function>IO_scheduler</function> (void)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  void <function>IO_scheduler</function>
+		</funcdef>
+		<paramdef>
+		  void <parameter>none</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>void</parameter> <returnvalue>none</returnvalue></title>
+		  <para>
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    <function>IO_scheduler</function> is called in the event
+	    of an IO device request.  This function sets the PCB in
+	    the current IOD event to the running process (l_cop) and
+	    then switches on the device in question.  IO_scheduler
+	    performs the operation requested on either the terminal or
+	    com port and blocks the current process before returning.
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+
+</section>

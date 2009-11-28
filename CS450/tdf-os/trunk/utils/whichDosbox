@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ -f ~/DOSbox ]; then
+    DOSBOXRUN=~/DOSbox
+else
+    DOSBOXRUN=`which dosbox`
+fi

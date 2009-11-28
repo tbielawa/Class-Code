@@ -1,0 +1,50 @@
+<section xmlns="http://docbook.org/ns/docbook">
+  <title><filename><indexterm><primary>HISTORY.C</primary></indexterm></filename>HISTORY.C Functions</title>
+  <section>
+    <title>int <function>history</function> (char *args)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  <function></function>
+		</funcdef>
+		<paramdef>
+		  <parameter></parameter>
+		  <parameter></parameter>
+		  <parameter></parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><parameter></parameter> <returnvalue></returnvalue></title>
+		  <para>
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+</section>

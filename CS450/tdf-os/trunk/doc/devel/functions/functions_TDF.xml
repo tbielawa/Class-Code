@@ -1,0 +1,67 @@
+<section xmlns="http://docbook.org/ns/docbook">
+  <title><filename><indexterm><primary>TDF.C</primary></indexterm></filename>TDF.C Functions</title>
+  <section>
+    <title>int <function>main</function> (int argc, char *argv[])</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  int <function>main</function>
+		</funcdef>
+		<paramdef>
+		  int <parameter>argc</parameter>
+		  int *<parameter>argv[]</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title>
+		    <parameter>OK</parameter>
+		    <returnvalue>0</returnvalue>
+		  </title>
+		  <para>
+		    The TDF Operating System exited without errors.
+		  </para>
+		</formalpara>
+	      </listitem>
+	      <listitem>
+		<formalpara>
+		  <title>
+		    <returnvalue>&lt;&gt; 0</returnvalue>
+		  </title>
+		  <para>
+		    A return value not equal to 0 is likely not to be
+		    seen. This is because <function>main</function>
+		    represents the single entry and exit point to the
+		    tdf-os.
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    <function>main</function>, everything starts here.
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+</section>

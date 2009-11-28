@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Starting DOSBOX from current directory"
+
+cd utils
+dosbox ../ > RUNDOS.log
+cd ..
+
+echo "Leaving DOSBOX"
+
+exit 0

@@ -1,0 +1,342 @@
+<section xmlns="http://docbook.org/ns/docbook">
+  <title><filename><indexterm><primary>PCBMAN.C</primary></indexterm></filename>PCBMAN.C Functions</title>
+  <section>
+    <title>int <function>pblock</function> (char *name, PCBDLL **PRIORITY_QUEUES)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  int <function>pblock</function>
+		</funcdef>
+		<paramdef>
+		  char *<parameter>NAME</parameter>
+		</paramdef>
+		<paramdef>
+		  PCBDLL **<parameter>PRIORITY_QUEUES</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>PCB_BLOCK_ERR</parameter> <returnvalue>0</returnvalue></title>
+		  <para>
+		    Indicates that the process was successfully placed
+		    in a BLOCKED state.
+		  </para>
+		</formalpara>
+	      </listitem>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>PCB_BLOCK_ERR</parameter> <returnvalue>1</returnvalue></title>
+		  <para>
+		    Indicates that the process wasn't BLOCKED.  The
+		    specified name was incorrect.
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    <function>pblock</function> finds the process control
+	    block specified by the name argument, which must be of at
+	    most eight characters in length, by making use of
+	    <function>PCB_FIND</function>.  Once located, the process
+	    control block in question is removed from its current
+	    queue, regardless of which queue its in and is then placed
+	    in the appropriate BLOCKED queue. (Either BLOCKED or
+	    BLOCKED-SUSPENDED depending)
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+  
+  <section>
+    <title>int <function>presume</function> (char *name, PCBDLL **PRIORITY_QUEUES)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  int <function>presume</function>
+		</funcdef>
+		<paramdef>
+		  char *<parameter>NAME</parameter>
+		</paramdef>
+		<paramdef>
+		  PCBDLL **<parameter>PRIORITY_QUEUES</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>PCB_RESUME_ERR</parameter> <returnvalue>0</returnvalue></title>
+		  <para>
+		    Indicates that the specified process control block
+		    was moved to a READY state.
+		  </para>
+		</formalpara>
+	      </listitem>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>PCB_RESUME_ERR</parameter> <returnvalue>1</returnvalue></title>
+		  <para>
+		    Indicates that that the process control block does
+		    not exist.
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    <function>presume</function> locates the process control
+	    block specified by the name argument, which must be at
+	    most eight character, using <function>PCB_FIND</function>.
+	    Once found, the process control block is removed
+	    completely from its current queue and moved to either
+	    READY or READY-SUSPENDED, depending.
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+  
+  
+  <section>
+    <title>int <function>psetprio</function> (char *name, PCBDLL **PRIORITY_QUEUES)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  int <function>psetprio</function>
+		</funcdef>
+		<paramdef>
+		  char *<parameter>ARGS</parameter>
+		</paramdef>
+		<paramdef>
+		  PCBDLL **<parameter>PRIORITY_QUEUES</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>PCB_PRIORITY_ERR</parameter> <returnvalue>0</returnvalue></title>
+		  <para>
+		    Indicates that the priority of the specified
+		    process control block was successfully modified.
+		  </para>
+		</formalpara>
+	      </listitem>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>PCB_PRIORITY_ERR</parameter> <returnvalue>1</returnvalue></title>
+		  <para>
+		    Indicates that the function failed due to the
+		    process not existing or the priority being
+		    invalid.
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    <function>psetprio</function> reads and tokenizes an arg
+	    string to determine the name of the block in question and
+	    the new priority.  Arguments should be in the form "-n
+	    NAME -p PRIORITY\0".  -n and -p can come in either order.
+	    NAME must be no longer than eight characters and PRIORITY
+	    must be between -127 and +127.  Using PCB_FIND on the name
+	    specified, psetprio modifies the block in memory to
+	    reflect the new priority.
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+  
+  
+  <section>
+    <title>int <function>psuspend</function> (char *name, PCBDLL **PRIORITY_QUEUES)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  int <function>psuspend</function>
+		</funcdef>
+		<paramdef>
+		  char *<parameter>NAME</parameter>
+		</paramdef>
+		<paramdef>
+		PCBDLL **<parameter>PRIORITY_QUEUES</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>PCB_SUSPEND_ERR</parameter> <returnvalue>0</returnvalue></title>
+		  <para>
+		    Indicates that the specified process control block
+		    was successfully suspended.
+		  </para>
+		</formalpara>
+	      </listitem>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>PCB_SUSPEND_ERR</parameter> <returnvalue>1</returnvalue></title>
+		  <para>
+		    Indicates that the specified process control block
+		    does not exist.
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    <function>presume</function> locates the process control
+	    block specified by the name argument, which must be no
+	    more than eight characters in length, using
+	    <function>PCB_FIND</function>.  Once located, psuspend
+	    removes the process from its current queue and places it
+	    in the appropriate suspended queue.  (Either
+	    READY-SUSPENDED, or BLOCKED-SUSPENDED depending)
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+  
+  
+  <section>
+    <title>int <function>punblock</function> (char *name, PCBDLL **PRIORITY_QUEUES)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  int <function>punblock</function>
+		</funcdef>
+		<paramdef>
+		  char *<parameter>NAME</parameter>
+		</paramdef>
+		<paramdef>
+		  PCBDLL **<parameter>PRIORITY_QUEUES</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>PCB_UNBLOCK_ERR</parameter> <returnvalue>0</returnvalue></title>
+		  <para>
+		    Indicates that the specified process control block
+		    was successfully UNBLOCKED.
+		  </para>
+		</formalpara>
+	      </listitem>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>PCB_UNBLOCK_ERR</parameter> <returnvalue>1</returnvalue></title>
+		  <para>
+		    Indicates that the specified process control block
+		    does not exist.
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    <function>punblock</function> locates the process control
+	    block specified by the name argument, which must be at
+	    most eight characters in length, using
+	    <function>PCB_FIND</function>.  Once found,
+	    <function>punblock</function> removes the process from its
+	    current queue and places it in the appropriate queue,
+	    either READY or READY-SUSPENDED.
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+</section>

@@ -1,0 +1,8220 @@
+<?xml version="1.0"?>
+<log>
+<logentry
+   revision="447">
+<author>timbielawa</author>
+<date>2009-05-01T16:08:52.352785Z</date>
+<paths>
+<path
+   kind="dir"
+   copyfrom-path="/trunk"
+   copyfrom-rev="446"
+   action="A">/tags/module-f</path>
+</paths>
+<msg>Tagging FINAL MODULE</msg>
+</logentry>
+<logentry
+   revision="446">
+<author>timbielawa</author>
+<date>2009-05-01T16:07:33.200408Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/utils/build-docs</path>
+</paths>
+<msg>build-docs doesn't make dumb folders anymore</msg>
+</logentry>
+<logentry
+   revision="445">
+<author>bryantdoss</author>
+<date>2009-05-01T12:43:47.402165Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TDF.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/etc/version</path>
+</paths>
+<msg>making idle a system process</msg>
+</logentry>
+<logentry
+   revision="444">
+<author>bryantdoss</author>
+<date>2009-05-01T09:54:22.949742Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/HELP.C</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/user/commands.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/src/etc/version</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/SHELL.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/HELP.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/user/commands-detailed.xml</path>
+</paths>
+<msg>IMPORTANT: changing the terminate command to kill, terminate does not work because it is more than 8 characters</msg>
+</logentry>
+<logentry
+   revision="443">
+<author>bryantdoss</author>
+<date>2009-05-01T09:23:00.137379Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TDF.C.XML</path>
+</paths>
+<msg>update</msg>
+</logentry>
+<logentry
+   revision="442">
+<author>bryantdoss</author>
+<date>2009-05-01T09:18:34.933733Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/PCB.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TDF.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/SHELL.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/HISTORY.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/TDF.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PCBSHOW.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/SHELL.C.XML</path>
+</paths>
+<msg>srcdoc</msg>
+</logentry>
+<logentry
+   revision="441">
+<author>bryantdoss</author>
+<date>2009-05-01T09:05:18.081881Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/PCBSHOW.C</path>
+</paths>
+<msg>dont show the running queue anymore -- let's pretend it dont exist</msg>
+</logentry>
+<logentry
+   revision="440">
+<author>timbielawa</author>
+<date>2009-05-01T09:04:28.234376Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/src/etc/version</path>
+<path
+   kind="file"
+   action="M">/trunk/utils/RUNDOS.log</path>
+</paths>
+<msg>LOL MORE CLEANING AND DOCKING WTF HAX</msg>
+</logentry>
+<logentry
+   revision="439">
+<author>timbielawa</author>
+<date>2009-05-01T09:03:47.055795Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/user/intro.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/developing.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/crossreference/crossreference_DATE.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/user/commands.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/globals.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_LOADR3.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/crossreference/crossreference_LOADR3.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_VERSION.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/user/commands-detailed.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/crossreference/crossreference_LOSYSDIS.xml</path>
+</paths>
+<msg>OH HAI EEEEEEeeeeeeeeeEEEEEEEEEEeeeeeEEEEEEEEEEEEEEEEEEEEEEEEeeeeeeeee UPDATIN 
+UR DOCKS
+
+LOL
+
+hahha...
+
+CAN I SLEEP NOW?</msg>
+</logentry>
+<logentry
+   revision="438">
+<author>bryantdoss</author>
+<date>2009-05-01T09:01:17.885700Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.C</path>
+</paths>
+<msg>deallocate iod and iocbs</msg>
+</logentry>
+<logentry
+   revision="437">
+<author>bryantdoss</author>
+<date>2009-05-01T08:53:24.980041Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/include/TDF.H</path>
+<path
+   kind="file"
+   action="M">/trunk/src/include/PCB.H</path>
+</paths>
+<msg>changing stack size to 4096</msg>
+</logentry>
+<logentry
+   revision="436">
+<author>timbielawa</author>
+<date>2009-05-01T07:06:30.274028Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/user/intro.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/srcdoc.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/developing.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/user/user.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/devel.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/user/commands.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/schemas.xml</path>
+</paths>
+<msg>Updating developer doc</msg>
+</logentry>
+<logentry
+   revision="435">
+<author>timbielawa</author>
+<date>2009-05-01T04:48:35.987924Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/developing.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/devel.xml</path>
+</paths>
+<msg>Made index an appendix</msg>
+</logentry>
+<logentry
+   revision="434">
+<author>timbielawa</author>
+<date>2009-05-01T04:37:55.446368Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/developing.xml</path>
+</paths>
+<msg>Updating developing doc</msg>
+</logentry>
+<logentry
+   revision="433">
+<author>timbielawa</author>
+<date>2009-05-01T04:22:43.172396Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/etc/version</path>
+</paths>
+<msg>OMG NEW VERSION</msg>
+</logentry>
+<logentry
+   revision="432">
+<author>timbielawa</author>
+<date>2009-05-01T04:22:29.473864Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/developing.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/devel.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/utils/build-docs</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/crossreference.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/crossreference/crossreference_LOSYSDIS.xml</path>
+</paths>
+<msg>docs docs</msg>
+</logentry>
+<logentry
+   revision="431">
+<author>jdehlin</author>
+<date>2009-05-01T03:36:45.239717Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/HELP.C.XML</path>
+</paths>
+<msg>srcdoc help.c.xml updated
+</msg>
+</logentry>
+<logentry
+   revision="430">
+<author>jdehlin</author>
+<date>2009-05-01T03:14:58.626407Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/src/HELP.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/etc/version</path>
+</paths>
+<msg>updated HELP.C
+</msg>
+</logentry>
+<logentry
+   revision="429">
+<author>jdehlin</author>
+<date>2009-05-01T03:08:21.335580Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/user/commands.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/user/commands-detailed.xml</path>
+</paths>
+<msg>User docs completely updated
+
+</msg>
+</logentry>
+<logentry
+   revision="428">
+<author>abutcher@afrolegs.com</author>
+<date>2009-05-01T03:01:26.125781Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/file_summary.xml</path>
+</paths>
+<msg>Fixing an err in file_summary</msg>
+</logentry>
+<logentry
+   revision="427">
+<author>abutcher@afrolegs.com</author>
+<date>2009-05-01T02:56:27.446956Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_LOSYSDIS.xml</path>
+</paths>
+<msg>losysdis done</msg>
+</logentry>
+<logentry
+   revision="426">
+<author>bryantdoss</author>
+<date>2009-05-01T02:51:58.532358Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/SHELL.C</path>
+</paths>
+<msg>putting the terminate command in</msg>
+</logentry>
+<logentry
+   revision="425">
+<author>jdehlin</author>
+<date>2009-05-01T02:39:26.327863Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/src/HELP.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/etc/version</path>
+</paths>
+<msg>updated HELP.C
+</msg>
+</logentry>
+<logentry
+   revision="424">
+<author>bryantdoss</author>
+<date>2009-05-01T02:29:21.946962Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.C</path>
+</paths>
+<msg>removing the pshowalls</msg>
+</logentry>
+<logentry
+   revision="423">
+<author>timbielawa</author>
+<date>2009-05-01T02:29:19.105485Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/srcdoc.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/data_structures.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/user/user.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/devel.xml</path>
+</paths>
+<msg>Author group, titleabbrev, missed /programlisting</msg>
+</logentry>
+<logentry
+   revision="422">
+<author>bryantdoss</author>
+<date>2009-05-01T02:24:41.458138Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/SHELL.C</path>
+</paths>
+<msg>uncommenting pdelete, removing hossgive commands</msg>
+</logentry>
+<logentry
+   revision="421">
+<author>bryantdoss</author>
+<date>2009-05-01T02:16:27.204044Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/HISTORY.C</path>
+</paths>
+<msg>fixing history</msg>
+</logentry>
+<logentry
+   revision="420">
+<author>timbielawa</author>
+<date>2009-05-01T02:14:47.965804Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/LOSYSDIS.C.XML</path>
+</paths>
+<msg>All src docs up to date as of r416</msg>
+</logentry>
+<logentry
+   revision="419">
+<author>timbielawa</author>
+<date>2009-05-01T02:11:17.960766Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/PCB.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TDF.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PCBMAN.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/TDF.H.XML</path>
+</paths>
+<msg>updating src</msg>
+</logentry>
+<logentry
+   revision="418">
+<author>abutcher@afrolegs.com</author>
+<date>2009-05-01T01:52:55.762928Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_LOAD.xml</path>
+</paths>
+<msg>load done</msg>
+</logentry>
+<logentry
+   revision="417">
+<author>abutcher@afrolegs.com</author>
+<date>2009-05-01T01:31:49.652268Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_LOADR3.xml</path>
+</paths>
+<msg>LOADR3.C done</msg>
+</logentry>
+<logentry
+   revision="416">
+<author>abutcher@afrolegs.com</author>
+<date>2009-05-01T01:30:41.734870Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_LOADR3.xml</path>
+</paths>
+<msg>LOADR3.C done</msg>
+</logentry>
+<logentry
+   revision="415">
+<author>bryantdoss</author>
+<date>2009-05-01T01:20:52.229536Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/data_structures.xml</path>
+</paths>
+<msg>data structures</msg>
+</logentry>
+<logentry
+   revision="414">
+<author>abutcher@afrolegs.com</author>
+<date>2009-05-01T01:03:11.108493Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_LOAD.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_LOADR3.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_TDFDRIVE.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_LOSYSDIS.xml</path>
+</paths>
+<msg>file structure and some set up for developer functions for the new stuff</msg>
+</logentry>
+<logentry
+   revision="413">
+<author>abutcher@afrolegs.com</author>
+<date>2009-05-01T00:43:12.684587Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/file_summary.xml</path>
+</paths>
+<msg>Updatin' ur file summaryz</msg>
+</logentry>
+<logentry
+   revision="412">
+<author>bryantdoss</author>
+<date>2009-05-01T00:21:49.769308Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/HELP.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/include/SHELL.H</path>
+<path
+   kind="file"
+   action="M">/trunk/src/etc/version</path>
+</paths>
+<msg>adding prompt</msg>
+</logentry>
+<logentry
+   revision="411">
+<author>timbielawa</author>
+<date>2009-04-29T19:06:45.741894Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/crossreference/crossreference_PARSER.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/crossreference/crossreference_PCBMAN.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/crossreference/crossreference_HISTORY.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/crossreference/crossreference_PCBMAKE.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/crossreference/crossreference_PCB.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/crossreference/crossreference_DISPLAY.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/crossreference/crossreference_PCBSHOW.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/crossreference/crossreference_TDFDRIVE.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/crossreference.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/crossreference/crossreference_LOSYSDIS.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/crossreference/crossreference_DATE.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/crossreference/crossreference_TDF.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/crossreference/crossreference_LOAD.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/globals.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/crossreference/crossreference_LOADR3.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/crossreference/crossreference_HELP.xml</path>
+</paths>
+<msg>UPdating your crossreferences</msg>
+</logentry>
+<logentry
+   revision="410">
+<author>bryantdoss</author>
+<date>2009-04-29T17:49:37.798632Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/SHELL.C</path>
+</paths>
+<msg>fixing buffer problem</msg>
+</logentry>
+<logentry
+   revision="409">
+<author>timbielawa</author>
+<date>2009-04-29T10:54:07.439387Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/developing.xml</path>
+</paths>
+<msg>Updating developing part w/ requirements.</msg>
+</logentry>
+<logentry
+   revision="408">
+<author>bryantdoss</author>
+<date>2009-04-29T10:07:18.126914Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+</paths>
+<msg>comments</msg>
+</logentry>
+<logentry
+   revision="407">
+<author>timbielawa</author>
+<date>2009-04-29T10:06:35.168412Z</date>
+<paths>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/devel/functions/functionstemplate.txt"
+   copyfrom-rev="399"
+   action="A">/trunk/doc/devel/functions/functions_TDFDRIVE.xml</path>
+</paths>
+<msg>adding tdfdrive.xml
+</msg>
+</logentry>
+<logentry
+   revision="406">
+<author>timbielawa</author>
+<date>2009-04-29T10:05:29.586320Z</date>
+<paths>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/devel/overview.xml"
+   copyfrom-rev="399"
+   action="A">/trunk/doc/devel/developing.xml</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/devel/crossreference/cftmpl.xml</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/devel/functions/functionstemplate.txt"
+   copyfrom-rev="399"
+   action="A">/trunk/doc/devel/functions/functions_LOAD.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/devel.xml</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/devel/crossreference/diff</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/devel/functions/functionstemplate.txt"
+   copyfrom-rev="399"
+   action="A">/trunk/doc/devel/functions/functions_LOADR3.xml</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/devel/functions/functionstemplate.txt"
+   copyfrom-rev="399"
+   action="A">/trunk/doc/devel/functions/functions_LOSYSDIS.xml</path>
+</paths>
+<msg>Removing crap. adding new templates.</msg>
+</logentry>
+<logentry
+   revision="405">
+<author>bryantdoss</author>
+<date>2009-04-29T09:54:35.098119Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+</paths>
+<msg>fix</msg>
+</logentry>
+<logentry
+   revision="404">
+<author>timbielawa</author>
+<date>2009-04-29T09:49:10.938554Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TDF.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PCBMAN.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PCBMAKE.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/VERSION.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PCBSHOW.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TDFDRIVE.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/SHELL.C.XML</path>
+</paths>
+<msg>minor fixes</msg>
+</logentry>
+<logentry
+   revision="403">
+<author>timbielawa</author>
+<date>2009-04-29T09:32:28.619285Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TDFDRIVE.C.XML</path>
+</paths>
+<msg>Removing the segmentation from tdfdrive</msg>
+</logentry>
+<logentry
+   revision="402">
+<author>timbielawa</author>
+<date>2009-04-29T09:26:34.392905Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PARSER.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PCBMAN.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/HISTORY.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PCBMAKE.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PCB.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/DISPLAY.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PCBSHOW.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/SHELL.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TDFDRIVE.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/LOSYSDIS.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TDF.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/DATE.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/LOAD.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/LOADR3.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PCBUTILS.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/VERSION.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/HELP.C.XML</path>
+</paths>
+<msg>in ur dokuments.. upgrading ur indexes</msg>
+</logentry>
+<logentry
+   revision="401">
+<author>timbielawa</author>
+<date>2009-04-29T08:46:25.771532Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TRMDRIVE.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/srcdoc.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/DISPLAY.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PCBMAN.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TESTCOMR.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/PROCS-R3.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/HISTORY.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PCBMAKE.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TESTCOMW.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/TDF.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/DISPLAY.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TDFDRIVE.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/LOAD.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/LOSYSDIS.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/LOADR3.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TDF.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/DATE.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/MPX_SUPT.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PCBUTILS.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/PCBMAN.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/HELP.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/PCB.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PARSER.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/PCBSHOW.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/TDFDRIVE.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/SHELL.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/LOSYSDIS.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PCB.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PCBSHOW.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/DATE.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/SHELL.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PROCS-R3.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/CONTEXT.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/VERSION.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/PCBUTILS.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/LOAD.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/HELP.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/PARSER.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/LOADR3.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/VERSION.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/HISTORY.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/PCBMAKE.H.XML</path>
+</paths>
+<msg>Added index terms. a LOT of index terms :)</msg>
+</logentry>
+<logentry
+   revision="400">
+<author>timbielawa</author>
+<date>2009-04-29T08:06:17.888832Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/trunk/README</path>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/utils/whichDosbox</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/crossreference/diff</path>
+<path
+   kind="file"
+   action="M">/trunk/utils/mkstats</path>
+<path
+   kind="file"
+   action="M">/trunk/src/etc/version</path>
+</paths>
+<msg>Adding README file</msg>
+</logentry>
+<logentry
+   revision="399">
+<author>timbielawa</author>
+<date>2009-04-29T07:08:35.840654Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/file_summary.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/data_structures.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/crossreference/crossreference_LOAD.xml</path>
+<path
+   kind="file"
+   action="A">/trunk/doc/devel/crossreference/diff</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/crossreference/crossreference_LOADR3.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/crossreference.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/crossreference/crossreference_LOSYSDIS.xml</path>
+</paths>
+<msg>Updating sum doks</msg>
+</logentry>
+<logentry
+   revision="398">
+<author>timbielawa</author>
+<date>2009-04-29T06:04:05.232879Z</date>
+<paths>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/devel/crossreference/crossreference_PARSER.xml"
+   copyfrom-rev="395"
+   action="A">/trunk/doc/devel/crossreference/cftmpl.xml</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/devel/crossreference/crossreference_PARSER.xml"
+   copyfrom-rev="395"
+   action="A">/trunk/doc/devel/crossreference/crossreference_LOAD.xml</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/devel/crossreference/crossreference_PARSER.xml"
+   copyfrom-rev="395"
+   action="A">/trunk/doc/devel/crossreference/crossreference_LOADR3.xml</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/devel/crossreference/crossreference_PARSER.xml"
+   copyfrom-rev="395"
+   action="A">/trunk/doc/devel/crossreference/crossreference_TDFDRIVE.xml</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/devel/crossreference/crossreference_PARSER.xml"
+   copyfrom-rev="395"
+   action="A">/trunk/doc/devel/crossreference/crossreference_LOSYSDIS.xml</path>
+</paths>
+<msg>Adding templates for new crossreference files</msg>
+</logentry>
+<logentry
+   revision="397">
+<author>timbielawa</author>
+<date>2009-04-29T05:20:48.907962Z</date>
+<paths>
+<path
+   kind="dir"
+   action="D">/trunk/doc/test1</path>
+</paths>
+<msg>Removing crap</msg>
+</logentry>
+<logentry
+   revision="396">
+<author>timbielawa</author>
+<date>2009-04-29T05:19:50.768407Z</date>
+<paths>
+<path
+   kind="dir"
+   action="D">/trunk/doc/common</path>
+<path
+   kind="dir"
+   action="D">/trunk/doc/admin</path>
+</paths>
+<msg>Deleting stuff</msg>
+</logentry>
+<logentry
+   revision="395">
+<author>timbielawa</author>
+<date>2009-04-29T05:10:51.233578Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/utils/build-docs</path>
+</paths>
+<msg>Updating docs build util</msg>
+</logentry>
+<logentry
+   revision="394">
+<author>timbielawa</author>
+<date>2009-04-29T05:07:38.455945Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/srcdoc.xml</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/srcdoc.pdf</path>
+<path
+   kind="file"
+   action="A">/trunk/doc/srcdoc/headers.xml</path>
+</paths>
+<msg>Updated docs</msg>
+</logentry>
+<logentry
+   revision="393">
+<author>timbielawa</author>
+<date>2009-04-29T04:47:53.264312Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TRMDRIVE.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/srcdoc.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/DISPLAY.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PCBMAN.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TESTCOMR.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/PROCS-R3.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PCBMAKE.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TESTCOMW.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/srcdoc.pdf</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/TDF.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TDFDRIVE.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/LOAD.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/LOSYSDIS.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/LOADR3.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TDF.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PCBUTILS.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/PCBMAN.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/HELP.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/PCB.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PARSER.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/PCBSHOW.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/TDFDRIVE.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/SHELL.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/LOSYSDIS.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PCBSHOW.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/DATE.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/SHELL.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PROCS-R3.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/CONTEXT.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/VERSION.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/PCBUTILS.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/LOAD.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/HELP.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/PARSER.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/VERSION.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/HISTORY.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/PCBMAKE.H.XML</path>
+</paths>
+<msg>Updatin ur files</msg>
+</logentry>
+<logentry
+   revision="392">
+<author>timbielawa</author>
+<date>2009-04-29T04:41:57.102315Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/PCB.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/PCBSHOW.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/DISPLAY.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/SHELL.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/TDFDRIVE.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/PROCS-R3.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/LOSYSDIS.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/TDF.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/DATE.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/LOAD.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/LOADR3.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/CONTEXT.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/PCBUTILS.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/VERSION.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/HELP.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/PARSER.H.XML</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/schemas.xml"
+   copyfrom-rev="374"
+   action="A">/trunk/doc/srcdoc/include/schemas.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/PCBMAN.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/HISTORY.H.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/include/PCBMAKE.H.XML</path>
+</paths>
+<msg>Updatin ur header files</msg>
+</logentry>
+<logentry
+   revision="391">
+<author>bryantdoss</author>
+<date>2009-04-29T04:25:22.668437Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/etc/version</path>
+</paths>
+<msg>fknalfnajlfnas</msg>
+</logentry>
+<logentry
+   revision="390">
+<author>bryantdoss</author>
+<date>2009-04-29T04:17:00.856355Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+</paths>
+<msg>eeEEEee:</msg>
+</logentry>
+<logentry
+   revision="389">
+<author>timbielawa</author>
+<date>2009-04-29T04:15:43.144963Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/srcdoc.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/MPX_SUPT.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/HISTORY.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/LOADR3.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/srcdoc.pdf</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/VERSION.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/DISPLAY.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TDFDRIVE.C.XML</path>
+</paths>
+<msg>Fixed a lot of files</msg>
+</logentry>
+<logentry
+   revision="388">
+<author>bryantdoss</author>
+<date>2009-04-29T04:04:48.090608Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+</paths>
+<msg>test</msg>
+</logentry>
+<logentry
+   revision="387">
+<author>bryantdoss</author>
+<date>2009-04-29T03:56:07.429461Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+</paths>
+<msg>AAAAA</msg>
+</logentry>
+<logentry
+   revision="386">
+<author>bryantdoss</author>
+<date>2009-04-29T03:52:42.664639Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+</paths>
+<msg>maybe?:</msg>
+</logentry>
+<logentry
+   revision="385">
+<author>timbielawa</author>
+<date>2009-04-29T03:38:15.291946Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TRMDRIVE.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TDF.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TESTCOMR.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PCBMAKE.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/VERSION.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TESTCOMW.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PCBUTILS.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TDFDRIVE.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/SHELL.C.XML</path>
+</paths>
+<msg>FOrmatting like an EEEEEEEEEEeeeeeEEEEEEEEeeeeeeeEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE</msg>
+</logentry>
+<logentry
+   revision="384">
+<author>bryantdoss</author>
+<date>2009-04-29T03:30:00.167769Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+</paths>
+<msg>http://www.youtube.com/watch?v=ysTmUTQ5wZE</msg>
+</logentry>
+<logentry
+   revision="383">
+<author>timbielawa</author>
+<date>2009-04-29T03:14:44.090201Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PARSER.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/DATE.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/MPX_SUPT.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/LOAD.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PCBMAN.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/HISTORY.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PCB.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/LOADR3.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PCBSHOW.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/DISPLAY.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/PROCS-R3.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/HELP.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/LOSYSDIS.C.XML</path>
+</paths>
+<msg>Formatting ur files</msg>
+</logentry>
+<logentry
+   revision="382">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-29T03:07:37.141969Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/src/etc/version</path>
+<path
+   kind="file"
+   action="M">/trunk/src/PCBMAN.C</path>
+</paths>
+<msg>Shell won't idle itself and go back to ready -- wtf is up with that shit</msg>
+</logentry>
+<logentry
+   revision="381">
+<author>timbielawa</author>
+<date>2009-04-29T02:35:21.111590Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/srcdoc.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TRMDRIVE.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/DATE.C.XML</path>
+<path
+   kind="file"
+   action="A">/trunk/doc/srcdoc/srcdoc.pdf</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/VERSION.C.XML</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/srcdoc/TESTCOMW.C.XML</path>
+</paths>
+<msg>General idea of where this is doing</msg>
+</logentry>
+<logentry
+   revision="380">
+<author>bryantdoss</author>
+<date>2009-04-29T02:25:04.781897Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/include/TDF.H</path>
+<path
+   kind="file"
+   action="M">/trunk/src/include/PCB.H</path>
+</paths>
+<msg>biggar sys stack size</msg>
+</logentry>
+<logentry
+   revision="379">
+<author>bryantdoss</author>
+<date>2009-04-29T02:03:43.728599Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.C</path>
+</paths>
+<msg>debug test</msg>
+</logentry>
+<logentry
+   revision="378">
+<author>bryantdoss</author>
+<date>2009-04-29T01:54:23.061824Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+</paths>
+<msg>set event flag to 0 initially</msg>
+</logentry>
+<logentry
+   revision="377">
+<author>bryantdoss</author>
+<date>2009-04-29T01:53:36.115852Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+</paths>
+<msg>initial value for count</msg>
+</logentry>
+<logentry
+   revision="376">
+<author>timbielawa</author>
+<date>2009-04-29T01:48:59.002080Z</date>
+<paths>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/include/PCBMAKE.H</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/TESTCOMR.C"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/TESTCOMR.C.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/TESTCOMR.C</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/HISTORY.C"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/HISTORY.C.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/HISTORY.C</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/DISPLAY.C"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/DISPLAY.C.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/DISPLAY.C</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/TDFDRIVE.C"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/TDFDRIVE.C.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/TDFDRIVE.C</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/LOSYSDIS.C"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/LOSYSDIS.C.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/LOSYSDIS.C</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/include/LOADR3.H"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/include/LOADR3.H.XML</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/TDF.C"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/TDF.C.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/include/LOADR3.H</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/DATE.C"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/DATE.C.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/TDF.C</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/DATE.C</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/MPX_SUPT.C"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/MPX_SUPT.C.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/MPX_SUPT.C</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/include/PCBMAN.H"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/include/PCBMAN.H.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/include/PCBMAN.H</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/include/TDFDRIVE.H"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/include/TDFDRIVE.H.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/include/TDFDRIVE.H</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/include/LOSYSDIS.H"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/include/LOSYSDIS.H.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/include/LOSYSDIS.H</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/PCB.C"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/PCB.C.XML</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/PCBSHOW.C"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/PCBSHOW.C.XML</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/include/DATE.H"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/include/DATE.H.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/PCB.C</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/PCBSHOW.C</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/include/DATE.H</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/include/MPX_SUPT.H"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/include/MPX_SUPT.H.XML</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/PROCS-R3.C"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/PROCS-R3.C.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/include/MPX_SUPT.H</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/PROCS-R3.C</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/include/CONTEXT.H"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/include/CONTEXT.H.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/include/CONTEXT.H</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/LOAD.C"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/LOAD.C.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/LOAD.C</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/include/PARSER.H"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/include/PARSER.H.XML</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/LOADR3.C"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/LOADR3.C.XML</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/VERSION.C"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/VERSION.C.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/include/PARSER.H</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/LOADR3.C</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/VERSION.C</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/include/HISTORY.H"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/include/HISTORY.H.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/include/HISTORY.H</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/TRMDRIVE.C"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/TRMDRIVE.C.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/TRMDRIVE.C</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/include/DISPLAY.H"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/include/DISPLAY.H.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/include/DISPLAY.H</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/PCBMAN.C"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/PCBMAN.C.XML</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/include/PROCS-R3.H"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/include/PROCS-R3.H.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/PCBMAN.C</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/include/PROCS-R3.H</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/PCBMAKE.C"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/PCBMAKE.C.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/PCBMAKE.C</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/TESTCOMW.C"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/TESTCOMW.C.XML</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/include/TDF.H"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/include/TDF.H.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/TESTCOMW.C</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/include/TDF.H</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/include/LOAD.H"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/include/LOAD.H.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/include/LOAD.H</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/include/TRMDRIVE.H"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/include/TRMDRIVE.H.XML</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/PCBUTILS.C"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/PCBUTILS.C.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/include/TRMDRIVE.H</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/PCBUTILS.C</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/HELP.C"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/HELP.C.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/HELP.C</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/include/PCB.H"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/include/PCB.H.XML</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/PARSER.C"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/PARSER.C.XML</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/include/PCBSHOW.H"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/include/PCBSHOW.H.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/include/PCB.H</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/PARSER.C</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/include/PCBSHOW.H</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/include/SHELL.H"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/include/SHELL.H.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/include/SHELL.H</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/SHELL.C"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/SHELL.C.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/SHELL.C</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/include/PCBUTILS.H"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/include/PCBUTILS.H.XML</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/include/VERSION.H"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/include/VERSION.H.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/include/PCBUTILS.H</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/include/VERSION.H</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/include/HELP.H"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/include/HELP.H.XML</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/include/HELP.H</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/srcdoc/include/PCBMAKE.H"
+   copyfrom-rev="371"
+   action="A">/trunk/doc/srcdoc/include/PCBMAKE.H.XML</path>
+</paths>
+<msg>EEeeeeeeeeEEEEEEEEEEEEEEeeeeeeeeeEEEEEEEEEEEEeeeeeeeeEEEEEEEEEEEEEEEEEEEeeeeeeeeeeEEEEEEEEEEEE</msg>
+</logentry>
+<logentry
+   revision="375">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-29T01:48:36.952076Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+</paths>
+<msg>EeeeEEEeee</msg>
+</logentry>
+<logentry
+   revision="374">
+<author>timbielawa</author>
+<date>2009-04-29T01:44:56.743611Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/trunk/doc/srcdoc/srcdoc.xml</path>
+<path
+   kind="file"
+   action="A">/trunk/doc/srcdoc/schemas.xml</path>
+</paths>
+<msg>Adding index</msg>
+</logentry>
+<logentry
+   revision="373">
+<author>timbielawa</author>
+<date>2009-04-29T01:36:11.803205Z</date>
+<paths>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/TDF-R5.PRJ</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/TDF.PRJ</path>
+</paths>
+<msg>Removing stupid taco-c project files.</msg>
+</logentry>
+<logentry
+   revision="372">
+<author>timbielawa</author>
+<date>2009-04-29T01:35:31.394584Z</date>
+<paths>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/TAGS</path>
+<path
+   kind="file"
+   action="D">/trunk/doc/srcdoc/include/TAGS</path>
+</paths>
+<msg>Removing TAGS files</msg>
+</logentry>
+<logentry
+   revision="371">
+<author>timbielawa</author>
+<date>2009-04-29T01:34:55.725800Z</date>
+<paths>
+<path
+   kind="dir"
+   action="D">/trunk/doc/srcdoc/etc</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_TDF.xml</path>
+<path
+   kind="dir"
+   copyfrom-path="/trunk/src"
+   copyfrom-rev="369"
+   action="A">/trunk/doc/srcdoc</path>
+<path
+   kind="dir"
+   action="D">/trunk/doc/srcdoc/procs</path>
+</paths>
+<msg>Making a srcdoc folder</msg>
+</logentry>
+<logentry
+   revision="370">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-29T01:33:40.643976Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+</paths>
+<msg>MAKE MONEYYY</msg>
+</logentry>
+<logentry
+   revision="369">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-29T01:29:50.513071Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+</paths>
+<msg>Modifying our loop conditions</msg>
+</logentry>
+<logentry
+   revision="368">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-29T01:22:24.305987Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/etc/version</path>
+</paths>
+<msg>Changing some mem free's around</msg>
+</logentry>
+<logentry
+   revision="367">
+<author>bryantdoss</author>
+<date>2009-04-29T01:09:06.177107Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/etc/version</path>
+</paths>
+<msg>aaa</msg>
+</logentry>
+<logentry
+   revision="366">
+<author>timbielawa</author>
+<date>2009-04-26T02:25:37.510188Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/file_summary.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/devel.xml</path>
+</paths>
+<msg>Adding COMMANDS</msg>
+</logentry>
+<logentry
+   revision="365">
+<author>timbielawa</author>
+<date>2009-04-26T02:01:43.603844Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/devel.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/utils/build-docs</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/overview.xml</path>
+</paths>
+<msg>Working with common authoring information</msg>
+</logentry>
+<logentry
+   revision="364">
+<author>timbielawa</author>
+<date>2009-04-26T01:43:53.360613Z</date>
+<paths>
+<path
+   kind="dir"
+   action="A">/trunk/doc/common</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/file_summary.xml</path>
+<path
+   kind="file"
+   copyfrom-path="/trunk/doc/devel/schemas.xml"
+   copyfrom-rev="345"
+   action="A">/trunk/doc/common/schemas.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/user/user.xml</path>
+<path
+   kind="file"
+   action="A">/trunk/doc/common/authors.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/devel.xml</path>
+</paths>
+<msg>Adding common authors, hopefully</msg>
+</logentry>
+<logentry
+   revision="363">
+<author>timbielawa</author>
+<date>2009-04-26T00:46:35.551397Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_PARSER.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_DATE.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_PCBMAN.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_HISTORY.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_PCBMAKE.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_PCB.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_VERSION.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_PCBUTILS.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_PCBSHOW.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_DISPLAY.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_SHELL.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_HELP.xml</path>
+</paths>
+<msg>Fixing my fukkup2</msg>
+</logentry>
+<logentry
+   revision="362">
+<author>timbielawa</author>
+<date>2009-04-25T23:38:47.165621Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/file_summary.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/globals.xml</path>
+</paths>
+<msg>Fixing my fukkup</msg>
+</logentry>
+<logentry
+   revision="361">
+<author>bryantdoss</author>
+<date>2009-04-25T23:36:27.150354Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+</paths>
+<msg>fixy</msg>
+</logentry>
+<logentry
+   revision="360">
+<author>bryantdoss</author>
+<date>2009-04-25T23:34:46.692130Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+</paths>
+<msg>clear and gotoxy</msg>
+</logentry>
+<logentry
+   revision="359">
+<author>bryantdoss</author>
+<date>2009-04-25T23:26:05.609601Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+</paths>
+<msg>aaa</msg>
+</logentry>
+<logentry
+   revision="358">
+<author>timbielawa</author>
+<date>2009-04-25T23:19:15.587460Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_PARSER.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/file_summary.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/devel.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_PCBMAN.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_HISTORY.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_PCBMAKE.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_PCB.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_DISPLAY.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_PCBSHOW.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/overview.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_SHELL.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_DATE.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_TDF.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/globals.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_PCBUTILS.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_VERSION.xml</path>
+<path
+   kind="file"
+   action="M">/trunk/doc/devel/functions/functions_HELP.xml</path>
+</paths>
+<msg>Updatin ur docs lol. can has INDEX terms</msg>
+</logentry>
+<logentry
+   revision="357">
+<author>bryantdoss</author>
+<date>2009-04-25T23:12:44.183193Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/PCBMAN.C</path>
+</paths>
+<msg>better?</msg>
+</logentry>
+<logentry
+   revision="356">
+<author>bryantdoss</author>
+<date>2009-04-25T23:09:56.077310Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+</paths>
+<msg>removing printf</msg>
+</logentry>
+<logentry
+   revision="355">
+<author>bryantdoss</author>
+<date>2009-04-25T23:03:17.557959Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+</paths>
+<msg>process in io sched</msg>
+</logentry>
+<logentry
+   revision="354">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-25T22:38:28.226159Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/PCBMAN.C</path>
+</paths>
+<msg>Changing managers to not change running procs</msg>
+</logentry>
+<logentry
+   revision="353">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-25T22:33:02.772028Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/src/etc/version</path>
+</paths>
+<msg>Removing offensive comment</msg>
+</logentry>
+<logentry
+   revision="352">
+<author>bryantdoss</author>
+<date>2009-04-25T22:25:35.389955Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.C</path>
+</paths>
+<msg>trying ter debug</msg>
+</logentry>
+<logentry
+   revision="351">
+<author>bryantdoss</author>
+<date>2009-04-25T22:24:18.302680Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/PCBMAN.C</path>
+</paths>
+<msg>pshowall</msg>
+</logentry>
+<logentry
+   revision="350">
+<author>bryantdoss</author>
+<date>2009-04-25T22:22:17.586701Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/PCBMAN.C</path>
+</paths>
+<msg>magic</msg>
+</logentry>
+<logentry
+   revision="349">
+<author>bryantdoss</author>
+<date>2009-04-25T22:18:19.686138Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/PCBMAN.C</path>
+</paths>
+<msg>better error messages</msg>
+</logentry>
+<logentry
+   revision="348">
+<author>bryantdoss</author>
+<date>2009-04-25T22:16:04.254854Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/PCBMAN.C</path>
+</paths>
+<msg>aaa</msg>
+</logentry>
+<logentry
+   revision="347">
+<author>bryantdoss</author>
+<date>2009-04-25T22:10:55.275770Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/PCBMAN.C</path>
+</paths>
+<msg>oop</msg>
+</logentry>
+<logentry
+   revision="346">
+<author>bryantdoss</author>
+<date>2009-04-25T22:06:40.447268Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/PCBMAN.C</path>
+</paths>
+<msg>we want to be able t block/unblock system procs</msg>
+</logentry>
+<logentry
+   revision="345">
+<author>bryantdoss</author>
+<date>2009-04-25T21:52:58.368693Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/trunk/src/procs/IOCOM25.MPX</path>
+<path
+   kind="file"
+   action="A">/trunk/src/procs/IDLE.MPX</path>
+<path
+   kind="file"
+   action="A">/trunk/src/procs/IOTERM.MPX</path>
+<path
+   kind="file"
+   action="A">/trunk/src/procs/CPUTERM.MPX</path>
+<path
+   kind="file"
+   action="A">/trunk/src/procs/IOTRM25.MPX</path>
+<path
+   kind="file"
+   action="A">/trunk/src/procs/IOMULTI.MPX</path>
+<path
+   kind="dir"
+   action="D">/trunk/src/r6sup</path>
+<path
+   kind="file"
+   action="A">/trunk/src/procs/IOCOM.MPX</path>
+<path
+   kind="file"
+   action="A">/trunk/src/procs/CPUCOM.MPX</path>
+</paths>
+<msg>procslawl</msg>
+</logentry>
+<logentry
+   revision="344">
+<author>timbielawa</author>
+<date>2009-04-25T21:48:18.127609Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/utils/version</path>
+<path
+   kind="file"
+   action="M">/trunk/src/TAGS</path>
+<path
+   kind="file"
+   action="M">/trunk/src/include/TAGS</path>
+</paths>
+<msg>Updating TAGS to make documenting easier. Updating -- OMG NEW VERSION</msg>
+</logentry>
+<logentry
+   revision="343">
+<author>bryantdoss</author>
+<date>2009-04-25T21:44:29.816177Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/include/TDF.H</path>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/include/CONTEXT.H</path>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/include/SHELL.H</path>
+<path
+   kind="file"
+   action="M">/trunk/src/LOAD.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/PCB.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/LOADR3.C</path>
+</paths>
+<msg>lala</msg>
+</logentry>
+<logentry
+   revision="342">
+<author>bryantdoss</author>
+<date>2009-04-25T21:09:29.922914Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/include/TDF.H</path>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/include/SHELL.H</path>
+<path
+   kind="file"
+   action="M">/trunk/src/etc/version</path>
+</paths>
+<msg>including shell, breaking everything else lolol</msg>
+</logentry>
+<logentry
+   revision="341">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-25T21:02:55.499894Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/etc/version</path>
+</paths>
+<msg>Throwing some stuff into dispatch_init()</msg>
+</logentry>
+<logentry
+   revision="340">
+<author>bryantdoss</author>
+<date>2009-04-25T20:58:52.549498Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+</paths>
+<msg>fixing compiler errors in losysdis</msg>
+</logentry>
+<logentry
+   revision="339">
+<author>bryantdoss</author>
+<date>2009-04-25T20:35:12.496357Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/etc/version</path>
+<path
+   kind="file"
+   action="M">/trunk/src/include/LOSYSDIS.H</path>
+</paths>
+<msg>aaaaaaaaaA</msg>
+</logentry>
+<logentry
+   revision="338">
+<author>bryantdoss</author>
+<date>2009-04-17T18:47:12.731358Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/include/LOSYSDIS.H</path>
+</paths>
+<msg>include file</msg>
+</logentry>
+<logentry
+   revision="337">
+<author>bryantdoss</author>
+<date>2009-04-17T18:43:50.646321Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+</paths>
+<msg>update to syscall</msg>
+</logentry>
+<logentry
+   revision="336">
+<author>bryantdoss</author>
+<date>2009-04-17T18:05:27.361334Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.C</path>
+</paths>
+<msg>update tdf.c</msg>
+</logentry>
+<logentry
+   revision="335">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-16T02:25:09.161829Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+</paths>
+<msg>Wrapping up sys_call for terminal and com operations...</msg>
+</logentry>
+<logentry
+   revision="334">
+<author>bryantdoss</author>
+<date>2009-04-16T00:48:20.272147Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/include/LOSYSDIS.H</path>
+</paths>
+<msg>adding iosched func</msg>
+</logentry>
+<logentry
+   revision="333">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-16T00:43:43.519526Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.C</path>
+</paths>
+<msg>Adding context header</msg>
+</logentry>
+<logentry
+   revision="332">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-16T00:28:29.781223Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/PCBMAN.C</path>
+</paths>
+<msg>Making sure you can't change SYSTEM processes with these</msg>
+</logentry>
+<logentry
+   revision="331">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-16T00:21:07.634195Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/SHELL.C</path>
+</paths>
+<msg>Commenting out pblock, punblock, loadr3, dispatch, pcreate, and pdelete</msg>
+</logentry>
+<logentry
+   revision="330">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-16T00:14:11.470164Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.C</path>
+</paths>
+<msg>Modifications for module-r6</msg>
+</logentry>
+<logentry
+   revision="329">
+<author>bryantdoss</author>
+<date>2009-04-15T23:56:45.800906Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/include/LOSYSDIS.H</path>
+</paths>
+<msg>adding iod and iocb structures</msg>
+</logentry>
+<logentry
+   revision="328">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-15T20:51:34.770011Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/trunk/src/r6sup/IOCOM25.TDF</path>
+<path
+   kind="file"
+   action="A">/trunk/src/r6sup/IDLE.TDF</path>
+<path
+   kind="file"
+   action="A">/trunk/src/r6sup/IOTERM.TDF</path>
+<path
+   kind="file"
+   action="A">/trunk/src/r6sup/CPUTERM.TDF</path>
+<path
+   kind="file"
+   action="A">/trunk/src/r6sup/IOTRM25.TDF</path>
+<path
+   kind="file"
+   action="A">/trunk/src/r6sup/IOMULTI.TDF</path>
+<path
+   kind="file"
+   action="A">/trunk/src/TRMDRIVE.C</path>
+<path
+   kind="dir"
+   action="A">/trunk/src/r6sup</path>
+<path
+   kind="file"
+   action="A">/trunk/src/r6sup/IOCOM.TDF</path>
+<path
+   kind="file"
+   action="A">/trunk/src/r6sup/CPUCOM.TDF</path>
+<path
+   kind="file"
+   action="A">/trunk/src/include/TRMDRIVE.H</path>
+</paths>
+<msg>Adding in r6 support software -- I renamed the .MPX binaries .TDF -- Doubt that matters but it may...</msg>
+</logentry>
+<logentry
+   revision="327">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-05T19:03:18.873178Z</date>
+<paths>
+<path
+   kind="dir"
+   copyfrom-path="/trunk"
+   copyfrom-rev="326"
+   action="A">/tags/module-r5</path>
+</paths>
+<msg>Tagging module-r5</msg>
+</logentry>
+<logentry
+   revision="326">
+<author>bryantdoss</author>
+<date>2009-04-03T04:48:22.228764Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>a few updates</msg>
+</logentry>
+<logentry
+   revision="325">
+<author>bryantdoss</author>
+<date>2009-04-03T03:51:42.634356Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>i think i fixed read</msg>
+</logentry>
+<logentry
+   revision="324">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-03T02:56:00.936159Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>000000000FUCK</msg>
+</logentry>
+<logentry
+   revision="323">
+<author>bryantdoss</author>
+<date>2009-04-03T02:52:48.379331Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>?</msg>
+</logentry>
+<logentry
+   revision="322">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-03T02:31:53.505996Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>Oh gawd no more ~'s</msg>
+</logentry>
+<logentry
+   revision="321">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-03T02:25:28.515058Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/include/TDFDRIVE.H</path>
+</paths>
+<msg>turd salaaaaaad</msg>
+</logentry>
+<logentry
+   revision="320">
+<author>bryantdoss</author>
+<date>2009-04-03T02:04:31.390803Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>OMG</msg>
+</logentry>
+<logentry
+   revision="319">
+<author>bryantdoss</author>
+<date>2009-04-03T02:01:47.466021Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>erg</msg>
+</logentry>
+<logentry
+   revision="318">
+<author>bryantdoss</author>
+<date>2009-04-03T01:52:00.483656Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>gheeto revert</msg>
+</logentry>
+<logentry
+   revision="317">
+<author>bryantdoss</author>
+<date>2009-04-03T01:48:39.074431Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/include/TDFDRIVE.H</path>
+</paths>
+<msg>whatev</msg>
+</logentry>
+<logentry
+   revision="316">
+<author>bryantdoss</author>
+<date>2009-04-03T01:47:01.781217Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>gheeto revert</msg>
+</logentry>
+<logentry
+   revision="315">
+<author>bryantdoss</author>
+<date>2009-04-03T01:34:05.806024Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>aaaaaaa</msg>
+</logentry>
+<logentry
+   revision="314">
+<author>bryantdoss</author>
+<date>2009-04-03T01:32:19.902211Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>aaaaaaa</msg>
+</logentry>
+<logentry
+   revision="313">
+<author>bryantdoss</author>
+<date>2009-04-03T01:29:06.978053Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>aaaaaaa</msg>
+</logentry>
+<logentry
+   revision="312">
+<author>bryantdoss</author>
+<date>2009-04-03T01:19:17.376450Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>tit singular</msg>
+</logentry>
+<logentry
+   revision="311">
+<author>bryantdoss</author>
+<date>2009-04-03T01:16:44.434894Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>tit singular</msg>
+</logentry>
+<logentry
+   revision="310">
+<author>bryantdoss</author>
+<date>2009-04-03T01:16:13.467682Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>tit singular</msg>
+</logentry>
+<logentry
+   revision="309">
+<author>bryantdoss</author>
+<date>2009-04-03T01:15:30.464298Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>tit singular</msg>
+</logentry>
+<logentry
+   revision="308">
+<author>bryantdoss</author>
+<date>2009-04-03T01:14:26.062225Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>tit singular</msg>
+</logentry>
+<logentry
+   revision="307">
+<author>bryantdoss</author>
+<date>2009-04-03T01:11:13.765996Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/include/TDFDRIVE.H</path>
+</paths>
+<msg>tit</msg>
+</logentry>
+<logentry
+   revision="306">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-03T00:59:02.139684Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>Even moar shiiit biiiitch</msg>
+</logentry>
+<logentry
+   revision="305">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-03T00:52:58.270032Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>Even moar shiiit</msg>
+</logentry>
+<logentry
+   revision="304">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-03T00:50:41.422484Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>Even moar shiiit</msg>
+</logentry>
+<logentry
+   revision="303">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-03T00:33:28.150669Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>Even moar shiiit</msg>
+</logentry>
+<logentry
+   revision="302">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-03T00:25:42.938063Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>Moar shiiit</msg>
+</logentry>
+<logentry
+   revision="301">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-03T00:21:44.331782Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>Fixing some shiiit</msg>
+</logentry>
+<logentry
+   revision="300">
+<author>bryantdoss</author>
+<date>2009-04-02T23:59:38.771233Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg></msg>
+</logentry>
+<logentry
+   revision="299">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-02T23:51:57.754700Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>com_interrupt_write</msg>
+</logentry>
+<logentry
+   revision="298">
+<author>bryantdoss</author>
+<date>2009-04-02T23:43:06.158593Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>aa</msg>
+</logentry>
+<logentry
+   revision="297">
+<author>bryantdoss</author>
+<date>2009-04-02T23:37:28.888033Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>aa</msg>
+</logentry>
+<logentry
+   revision="296">
+<author>bryantdoss</author>
+<date>2009-04-02T23:35:59.092473Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>FUCK</msg>
+</logentry>
+<logentry
+   revision="295">
+<author>bryantdoss</author>
+<date>2009-04-02T23:19:54.083675Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF-R5.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/src/include/TDFDRIVE.H</path>
+<path
+   kind="file"
+   action="M">/trunk/src/etc/version</path>
+</paths>
+<msg>aaa</msg>
+</logentry>
+<logentry
+   revision="294">
+<author>bryantdoss</author>
+<date>2009-04-02T20:05:50.918144Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF-R5.PRJ</path>
+</paths>
+<msg>putting our libs in</msg>
+</logentry>
+<logentry
+   revision="293">
+<author>bryantdoss</author>
+<date>2009-04-02T07:41:32.477615Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/Makefile</path>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+<path
+   kind="file"
+   action="A">/trunk/utils/buildtdf-r5</path>
+<path
+   kind="file"
+   action="A">/trunk/src/TDF-R5.PRJ</path>
+<path
+   kind="file"
+   action="A">/trunk/utils/tdf-r5build.conf</path>
+<path
+   kind="file"
+   action="A">/trunk/utils/RUNDOS.log</path>
+</paths>
+<msg>make tdf-r5-build should theoretically work</msg>
+</logentry>
+<logentry
+   revision="292">
+<author>bryantdoss</author>
+<date>2009-04-02T06:54:05.159588Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>i love abutters, but dev has much less characters</msg>
+</logentry>
+<logentry
+   revision="291">
+<author>bryantdoss</author>
+<date>2009-04-02T06:52:53.290799Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>read interrupt</msg>
+</logentry>
+<logentry
+   revision="290">
+<author>bryantdoss</author>
+<date>2009-04-02T06:10:31.829066Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>typo</msg>
+</logentry>
+<logentry
+   revision="289">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-02T04:14:23.071895Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/include/TDFDRIVE.H</path>
+</paths>
+<msg>com_write is all set up -- might need some double checking.</msg>
+</logentry>
+<logentry
+   revision="288">
+<author>bryantdoss</author>
+<date>2009-04-02T00:01:41.129697Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>comread done</msg>
+</logentry>
+<logentry
+   revision="287">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-01T23:45:41.928954Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>More com_write</msg>
+</logentry>
+<logentry
+   revision="286">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-01T23:31:25.433206Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>Some stuff for com_write -- not much</msg>
+</logentry>
+<logentry
+   revision="285">
+<author>bryantdoss</author>
+<date>2009-04-01T22:54:07.227426Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>step 1 and 2 in read</msg>
+</logentry>
+<logentry
+   revision="284">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-01T00:39:36.130424Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>Implementation of com_close</msg>
+</logentry>
+<logentry
+   revision="283">
+<author>bryantdoss</author>
+<date>2009-04-01T00:37:11.450777Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>typo</msg>
+</logentry>
+<logentry
+   revision="282">
+<author>bryantdoss</author>
+<date>2009-04-01T00:35:33.170275Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>com_interrupt done</msg>
+</logentry>
+<logentry
+   revision="281">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-01T00:31:19.360852Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/include/TDFDRIVE.H</path>
+</paths>
+<msg>Adding in a place holder for the stored interrupt vector.</msg>
+</logentry>
+<logentry
+   revision="280">
+<author>bryantdoss</author>
+<date>2009-04-01T00:21:39.958929Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/include/TDFDRIVE.H</path>
+</paths>
+<msg>interrupt</msg>
+</logentry>
+<logentry
+   revision="279">
+<author>abutcher@afrolegs.com</author>
+<date>2009-04-01T00:18:56.525125Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>Implemenation of com_open</msg>
+</logentry>
+<logentry
+   revision="278">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-31T23:52:45.386996Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/include/TDFDRIVE.H</path>
+</paths>
+<msg>Adding baud_rate constants</msg>
+</logentry>
+<logentry
+   revision="277">
+<author>bryantdoss</author>
+<date>2009-03-31T23:33:10.067366Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/include/TDFDRIVE.H</path>
+</paths>
+<msg>consts</msg>
+</logentry>
+<logentry
+   revision="276">
+<author>bryantdoss</author>
+<date>2009-03-31T23:24:16.045047Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>notes</msg>
+</logentry>
+<logentry
+   revision="275">
+<author>bryantdoss</author>
+<date>2009-03-31T22:53:21.942724Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDFDRIVE.C</path>
+</paths>
+<msg>upd</msg>
+</logentry>
+<logentry
+   revision="274">
+<author>bryantdoss</author>
+<date>2009-03-31T22:40:10.214534Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/trunk/src/TDFDRIVE.C</path>
+<path
+   kind="file"
+   action="A">/trunk/src/include/TDFDRIVE.H</path>
+</paths>
+<msg>tdfdrive</msg>
+</logentry>
+<logentry
+   revision="273">
+<author>bryantdoss</author>
+<date>2009-03-31T22:03:40.583846Z</date>
+<paths>
+<path
+   kind="file"
+   action="A">/trunk/src/TESTCOMW.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="A">/trunk/src/TESTCOMR.C</path>
+</paths>
+<msg>adding test files</msg>
+</logentry>
+<logentry
+   revision="272">
+<author>timbielawa</author>
+<date>2009-03-16T17:39:05.225966Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/utils/rundos</path>
+</paths>
+<msg>moar goodness for mac ppl</msg>
+</logentry>
+<logentry
+   revision="271">
+<author>timbielawa</author>
+<date>2009-03-16T17:32:26.875969Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/utils/buildtdf</path>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="A">/trunk/utils/whichDosbox</path>
+<path
+   kind="file"
+   action="M">/trunk/utils/runtdf</path>
+<path
+   kind="file"
+   action="M">/trunk/src/etc/version</path>
+</paths>
+<msg>Hax for mac ppl 2</msg>
+</logentry>
+<logentry
+   revision="270">
+<author>timbielawa</author>
+<date>2009-03-16T17:23:25.888018Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/utils/runtdf</path>
+<path
+   kind="file"
+   action="M">/trunk/utils/version</path>
+<path
+   kind="file"
+   action="M">/trunk/src/etc/version</path>
+</paths>
+<msg>lalalalalala</msg>
+</logentry>
+<logentry
+   revision="269">
+<author>timbielawa</author>
+<date>2009-03-16T09:30:15.189071Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/Makefile</path>
+</paths>
+<msg>I Fucking love abutters and bhoss</msg>
+</logentry>
+<logentry
+   revision="268">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-13T02:56:31.725777Z</date>
+<paths>
+<path
+   kind="dir"
+   copyfrom-path="/trunk"
+   copyfrom-rev="267"
+   action="A">/tags/module-r4</path>
+</paths>
+<msg>Tagging module r4</msg>
+</logentry>
+<logentry
+   revision="267">
+<author>bryantdoss</author>
+<date>2009-03-13T02:22:31.162472Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/include/LOAD.H</path>
+<path
+   kind="file"
+   action="M">/trunk/src/LOSYSDIS.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/include/LOADR3.H</path>
+<path
+   kind="file"
+   action="M">/trunk/src/LOAD.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/include/LOSYSDIS.H</path>
+<path
+   kind="file"
+   action="M">/trunk/src/LOADR3.C</path>
+</paths>
+<msg>Can haz some headers</msg>
+</logentry>
+<logentry
+   revision="266">
+<author>bryantdoss</author>
+<date>2009-03-13T02:19:15.283576Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="D">/trunk/src/include/DISPATCH.H</path>
+<path
+   kind="file"
+   action="D">/trunk/src/SYS_CALL.C</path>
+<path
+   kind="file"
+   action="D">/trunk/src/DISPATCH.C</path>
+<path
+   kind="file"
+   action="D">/trunk/src/include/SYS_CALL.H</path>
+</paths>
+<msg>removing dispatch and sys_call</msg>
+</logentry>
+<logentry
+   revision="265">
+<author>bryantdoss</author>
+<date>2009-03-13T02:17:09.741742Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/src/LOAD.C</path>
+</paths>
+<msg>dont load the proc if it already exists</msg>
+</logentry>
+<logentry
+   revision="264">
+<author>bryantdoss</author>
+<date>2009-03-13T02:14:06.542150Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>free the load address</msg>
+</logentry>
+<logentry
+   revision="263">
+<author>bryantdoss</author>
+<date>2009-03-13T02:11:13.209298Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/src/HELP.C</path>
+</paths>
+<msg>updating help</msg>
+</logentry>
+<logentry
+   revision="262">
+<author>bryantdoss</author>
+<date>2009-03-13T01:58:04.868859Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/src/etc/version</path>
+<path
+   kind="file"
+   action="M">/trunk/src/LOAD.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/PCBMAN.C</path>
+</paths>
+<msg>load and dispatch work ahhhhhhhh</msg>
+</logentry>
+<logentry
+   revision="261">
+<author>bryantdoss</author>
+<date>2009-03-12T19:50:58.609624Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.C</path>
+</paths>
+<msg>updating sys init to mod r4</msg>
+</logentry>
+<logentry
+   revision="260">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-12T19:28:32.839108Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/src/etc/version</path>
+<path
+   kind="file"
+   action="M">/trunk/src/LOAD.C</path>
+</paths>
+<msg>Prints that don't help too much</msg>
+</logentry>
+<logentry
+   revision="259">
+<author>bryantdoss</author>
+<date>2009-03-12T18:54:31.547372Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/src/LOAD.C</path>
+</paths>
+<msg>some updates</msg>
+</logentry>
+<logentry
+   revision="258">
+<author>bryantdoss</author>
+<date>2009-03-12T18:51:19.295025Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/src/LOAD.C</path>
+</paths>
+<msg>comments</msg>
+</logentry>
+<logentry
+   revision="257">
+<author>bryantdoss</author>
+<date>2009-03-12T18:46:27.709595Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/src/LOAD.C</path>
+</paths>
+<msg>fixing load err, problem with execution addr i think</msg>
+</logentry>
+<logentry
+   revision="256">
+<author>bryantdoss</author>
+<date>2009-03-12T17:59:57.797100Z</date>
+<paths>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="M">/trunk/src/include/LOAD.H</path>
+<path
+   kind="file"
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind="file"
+   action="M">/trunk/src/etc/version</path>
+<path
+   kind="file"
+   action="M">/trunk/src/LOAD.C</path>
+</paths>
+<msg>load</msg>
+</logentry>
+<logentry
+   revision="255">
+<author>bryantdoss</author>
+<date>2009-03-12T17:19:54.539745Z</date>
+<paths>
+<path
+   kind="file"
+   action="D">/trunk/target/PROC1.MPX</path>
+<path
+   kind="file"
+   action="M">/trunk/Makefile</path>
+<path
+   kind="file"
+   action="D">/trunk/target/PROC2.MPX</path>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="D">/trunk/target/PROC3.MPX</path>
+<path
+   kind="file"
+   action="D">/trunk/target/PROC4.MPX</path>
+<path
+   kind="file"
+   action="D">/trunk/target/PROC5.MPX</path>
+</paths>
+<msg>Updating makfile, taking procs out of target</msg>
+</logentry>
+<logentry
+   revision="254">
+<author>bryantdoss</author>
+<date>2009-03-12T17:17:43.595785Z</date>
+<paths>
+<path
+   kind="dir"
+   action="A">/trunk/src/procs</path>
+<path
+   kind="file"
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind="file"
+   action="A">/trunk/src/procs/PROC1.MPX</path>
+<path
+   kind="file"
+   action="A">/trunk/src/procs/PROC2.MPX</path>
+<path
+   kind="file"
+   action="A">/trunk/src/procs/PROC3.MPX</path>
+<path
+   kind="file"
+   action="A">/trunk/src/procs/PROC4.MPX</path>
+<path
+   kind="file"
+   action="M">/trunk/src/etc/version</path>
+<path
+   kind="file"
+   action="A">/trunk/src/procs/PROC5.MPX</path>
+</paths>
+<msg>Putting them procs in src</msg>
+</logentry>
+<logentry
+   revision="253">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-11T13:55:41.258056Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/LOAD.C</path>
+</paths>
+<msg>Fixing a semicolon and making it return int -- I know its not supposed to but if we want to return error codes it'll have to be integer.</msg>
+</logentry>
+<logentry
+   revision="252">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-11T13:38:53.401879Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/LOSYSDIS.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/LOAD.C</path>
+</paths>
+<msg>Adding some arg parsing to LOAD.C and a header to LOSYSDIS.C</msg>
+</logentry>
+<logentry
+   revision="251">
+<author>timbielawa</author>
+<date>2009-03-11T06:47:06.918983Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/Makefile</path>
+<path
+   kind=""
+   action="A">/trunk/utils/mkstats</path>
+</paths>
+<msg>Make target for stats</msg>
+</logentry>
+<logentry
+   revision="250">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-11T01:32:48.306732Z</date>
+<paths>
+<path
+   kind=""
+   copyfrom-path="/trunk"
+   copyfrom-rev="249"
+   action="A">/tags/module-r3</path>
+</paths>
+<msg>Tagging module-r3</msg>
+</logentry>
+<logentry
+   revision="249">
+<author>bryantdoss</author>
+<date>2009-03-11T00:29:39.367635Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>Changing the way PCB_insert looks at priorities, works even better now</msg>
+</logentry>
+<logentry
+   revision="248">
+<author>bryantdoss</author>
+<date>2009-03-11T00:26:17.880096Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/LOSYSDIS.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/version</path>
+</paths>
+<msg>Cleaning up a few things</msg>
+</logentry>
+<logentry
+   revision="247">
+<author>bryantdoss</author>
+<date>2009-03-11T00:21:40.122687Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/LOSYSDIS.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAN.C</path>
+</paths>
+<msg>Fix minor bug in prunning_exit function, it wasnt removing the PCB from the queue</msg>
+</logentry>
+<logentry
+   revision="246">
+<author>bryantdoss</author>
+<date>2009-03-11T00:11:45.037781Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/LOSYSDIS.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/version</path>
+</paths>
+<msg>Fixing linker error</msg>
+</logentry>
+<logentry
+   revision="245">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-10T23:17:25.976914Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.C</path>
+</paths>
+<msg>Missed that one</msg>
+</logentry>
+<logentry
+   revision="244">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-10T23:12:11.516193Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/LOSYSDIS.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/version</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/LOSYSDIS.H</path>
+</paths>
+<msg>It almost builds -- there are still a few linking errors to correct.</msg>
+</logentry>
+<logentry
+   revision="243">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-10T22:33:39.595004Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/LOSYSDIS.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/version</path>
+</paths>
+<msg>Almost there</msg>
+</logentry>
+<logentry
+   revision="242">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-10T21:51:42.597495Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/include/LOSYSDIS.H</path>
+</paths>
+<msg>Attempted fixings</msg>
+</logentry>
+<logentry
+   revision="241">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-10T21:02:28.487254Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/LOSYSDIS.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/version</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/LOSYSDIS.H</path>
+</paths>
+<msg>Oh wow, I broke it</msg>
+</logentry>
+<logentry
+   revision="240">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-10T20:42:28.976890Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   action="A">/trunk/src/LOSYSDIS.C</path>
+<path
+   kind=""
+   action="A">/trunk/src/include/LOSYSDIS.H</path>
+</paths>
+<msg>Attempting to merge all of these functions into one.</msg>
+</logentry>
+<logentry
+   revision="239">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-10T18:57:33.601996Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/DISPATCH.C</path>
+</paths>
+<msg>Some quick changes to the sys_vec stuff</msg>
+</logentry>
+<logentry
+   revision="238">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-10T17:37:59.100069Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/DISPATCH.C</path>
+</paths>
+<msg>Adding init function for dispatch which is called in TDF.C now.</msg>
+</logentry>
+<logentry
+   revision="237">
+<author>bryantdoss</author>
+<date>2009-03-10T17:36:23.036868Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/SYS_CALL.C</path>
+</paths>
+<msg>makin some intermediate variables in syscall</msg>
+</logentry>
+<logentry
+   revision="236">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-10T17:35:10.398654Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>Removing prints and fixing givemerunning()</msg>
+</logentry>
+<logentry
+   revision="235">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-10T17:11:22.727030Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/version</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>Putting print back in for testing.</msg>
+</logentry>
+<logentry
+   revision="234">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-10T04:21:12.147372Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/DISPATCH.C</path>
+</paths>
+<msg>Removing line from DISPATCH.C</msg>
+</logentry>
+<logentry
+   revision="233">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-10T04:11:13.455386Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+</paths>
+<msg>Reverting SHELL.C</msg>
+</logentry>
+<logentry
+   revision="232">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-10T04:09:24.161321Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/version</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>Think I fixed give me ready... maybe not.  Added the command 'hossgive' to run givemeready()</msg>
+</logentry>
+<logentry
+   revision="231">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-10T03:27:50.315441Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/SYS_CALL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/DISPATCH.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/version</path>
+</paths>
+<msg>Just a little update</msg>
+</logentry>
+<logentry
+   revision="230">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-10T03:15:43.112031Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PARSER.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBMAN.xml</path>
+<path
+   kind=""
+   action="M">/trunk/src/DISPATCH.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>Printfs are the devil</msg>
+</logentry>
+<logentry
+   revision="229">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-09T23:17:47.634244Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/DISPATCH.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/version</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/SHELL.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>Why the fuck do interrupts crash the system -- where's the option for turbo c keywords</msg>
+</logentry>
+<logentry
+   revision="228">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-09T22:33:05.042686Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>Returning NULL in givemeready if no PCB is in the queue...</msg>
+</logentry>
+<logentry
+   revision="227">
+<author>bryantdoss</author>
+<date>2009-03-09T00:47:48.407072Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/etc/version</path>
+<path
+   kind=""
+   action="M">/trunk/src/LOADR3.C</path>
+</paths>
+<msg>change to stacktop</msg>
+</logentry>
+<logentry
+   revision="226">
+<author>jdehlin</author>
+<date>2009-03-09T00:44:33.816208Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/trunk/src/include/LOAD.H</path>
+<path
+   kind=""
+   action="A">/trunk/src/LOAD.C</path>
+</paths>
+<msg>add load.c and load.h
+</msg>
+</logentry>
+<logentry
+   revision="225">
+<author>bryantdoss</author>
+<date>2009-03-09T00:44:08.715419Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/SYS_CALL.C</path>
+</paths>
+<msg>maybe fixing bug in syscall</msg>
+</logentry>
+<logentry
+   revision="224">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-09T00:32:50.725277Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/DISPATCH.C</path>
+</paths>
+<msg>Changing to stack top</msg>
+</logentry>
+<logentry
+   revision="223">
+<author>bryantdoss</author>
+<date>2009-03-09T00:07:17.667782Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.C</path>
+</paths>
+<msg>uncomment jazz</msg>
+</logentry>
+<logentry
+   revision="222">
+<author>bryantdoss</author>
+<date>2009-03-09T00:06:01.963877Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/etc/version</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/SYS_CALL.H</path>
+</paths>
+<msg>killing our brokenz in sys_call.h</msg>
+</logentry>
+<logentry
+   revision="221">
+<author>bryantdoss</author>
+<date>2009-03-09T00:01:56.905048Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/include/PCB.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>can haz stacktop</msg>
+</logentry>
+<logentry
+   revision="220">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-09T00:00:58.349700Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/SYS_CALL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/version</path>
+</paths>
+<msg>Broken sys_call bullshit</msg>
+</logentry>
+<logentry
+   revision="219">
+<author>bryantdoss</author>
+<date>2009-03-08T23:25:23.566464Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/version</path>
+</paths>
+<msg>dispatch command</msg>
+</logentry>
+<logentry
+   revision="218">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-08T23:21:11.817564Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/SYS_CALL.C</path>
+</paths>
+<msg>Adding in the parameter pulling.
+
+</msg>
+</logentry>
+<logentry
+   revision="217">
+<author>bryantdoss</author>
+<date>2009-03-08T23:10:08.801170Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/PCB.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/version</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>PCBDLL_freeall and PCBDLL_free</msg>
+</logentry>
+<logentry
+   revision="216">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-08T22:53:24.516995Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/trunk/target/PROC1.MPX</path>
+<path
+   kind=""
+   action="A">/trunk/target/PROC2.MPX</path>
+<path
+   kind=""
+   action="A">/trunk/target/PROC3.MPX</path>
+<path
+   kind=""
+   action="A">/trunk/target/PROC4.MPX</path>
+<path
+   kind=""
+   action="A">/trunk/target/PROC5.MPX</path>
+</paths>
+<msg>Adding mooney's proc's for module r4</msg>
+</logentry>
+<logentry
+   revision="215">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-08T22:48:51.182946Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAKE.C</path>
+</paths>
+<msg>Updating pdelete for R4 -- changed to not delete SYSTEM class processes as well as to completely deallocate the memory for a deleted PCB</msg>
+</logentry>
+<logentry
+   revision="214">
+<author>bryantdoss</author>
+<date>2009-03-08T22:36:13.591550Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="D">/trunk/src/include/LOAD.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   copyfrom-path="/trunk/src/include/LOAD.H"
+   copyfrom-rev="213"
+   action="A">/trunk/src/include/LOADR3.H</path>
+<path
+   kind=""
+   action="D">/trunk/src/LOAD.C</path>
+<path
+   kind=""
+   copyfrom-path="/trunk/src/LOAD.C"
+   copyfrom-rev="213"
+   action="A">/trunk/src/LOADR3.C</path>
+</paths>
+<msg>changed load to loadr3</msg>
+</logentry>
+<logentry
+   revision="213">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-08T22:25:43.957051Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/DISPATCH.C</path>
+</paths>
+<msg>Added in dispatch -- who fucking knows if it works??</msg>
+</logentry>
+<logentry
+   revision="212">
+<author>bryantdoss</author>
+<date>2009-03-08T22:15:52.629408Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAN.C</path>
+</paths>
+<msg>oopsps</msg>
+</logentry>
+<logentry
+   revision="211">
+<author>bryantdoss</author>
+<date>2009-03-08T22:12:55.899727Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/LOAD.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/CONTEXT.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/LOAD.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/version</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/SHELL.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/PROCS-R3.H</path>
+</paths>
+<msg>we can haz load</msg>
+</logentry>
+<logentry
+   revision="210">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-08T22:12:15.910327Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/DISPATCH.C</path>
+</paths>
+<msg>New version of dispatch -- complete but may be broken, don't understand the stack AT ALL</msg>
+</logentry>
+<logentry
+   revision="209">
+<author>bryantdoss</author>
+<date>2009-03-08T21:16:23.027519Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/include/LOAD.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/LOAD.C</path>
+</paths>
+<msg>we can has moar load.c</msg>
+</logentry>
+<logentry
+   revision="208">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-08T21:15:23.311453Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/include/PCBMAN.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/PCB.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAN.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>Adding in full functionality for prunning_to_ready() prunning_exit() and pready_to_running()</msg>
+</logentry>
+<logentry
+   revision="207">
+<author>timbielawa</author>
+<date>2009-03-08T20:57:50.136295Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TAGS</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAN.C</path>
+</paths>
+<msg>Updatin' tags</msg>
+</logentry>
+<logentry
+   revision="206">
+<author>timbielawa</author>
+<date>2009-03-08T20:50:33.207841Z</date>
+<paths>
+<path
+   kind=""
+   action="D">/trunk/test1</path>
+<path
+   kind=""
+   copyfrom-path="/trunk/test1"
+   copyfrom-rev="205"
+   action="A">/trunk/doc/test1</path>
+</paths>
+<msg>Rearranging stuff jsut to confuse the shit out of you</msg>
+</logentry>
+<logentry
+   revision="205">
+<author>timbielawa</author>
+<date>2009-03-03T06:23:36.199257Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBUTILS.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/SYS_CALL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/PCB.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAN.C</path>
+</paths>
+<msg>Adding stuffs for removing running</msg>
+</logentry>
+<logentry
+   revision="204">
+<author>bryantdoss</author>
+<date>2009-03-03T06:20:19.331035Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/DISPATCH.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/LOAD.C</path>
+</paths>
+<msg>Adding load and dispatch commands in comments</msg>
+</logentry>
+<logentry
+   revision="203">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-03T06:11:43.418765Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/LOAD.C</path>
+</paths>
+<msg>Dumbbb</msg>
+</logentry>
+<logentry
+   revision="202">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-03T06:09:04.051271Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+</paths>
+<msg>Adding another comment block</msg>
+</logentry>
+<logentry
+   revision="201">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-03T06:03:12.548527Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/trunk/src/include/LOAD.H</path>
+<path
+   kind=""
+   action="A">/trunk/src/LOAD.C</path>
+</paths>
+<msg>Loading one process for now.</msg>
+</logentry>
+<logentry
+   revision="200">
+<author>timbielawa</author>
+<date>2009-03-03T06:00:05.535463Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBSHOW.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCBUTILS.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/SYS_CALL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/PCB.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/version</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAN.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAKE.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>Adding your RUNNING stuff</msg>
+</logentry>
+<logentry
+   revision="199">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-03T05:43:01.609750Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+</paths>
+<msg>Adding commented out context.h include for note</msg>
+</logentry>
+<logentry
+   revision="198">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-03T05:39:35.530174Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/DISPATCH.C</path>
+</paths>
+<msg>Mraughh</msg>
+</logentry>
+<logentry
+   revision="197">
+<author>bryantdoss</author>
+<date>2009-03-03T05:28:18.264291Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBSHOW.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/PCBMAN.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/PCBMAKE.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/PCB.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/PCBSHOW.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/SHELL.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAN.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAKE.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>We can now has global PRIORITY_QUEUES</msg>
+</logentry>
+<logentry
+   revision="196">
+<author>timbielawa</author>
+<date>2009-03-03T05:16:12.808148Z</date>
+<paths>
+<path
+   kind=""
+   action="D">/trunk/src/TDF.CFG</path>
+</paths>
+<msg>NOE NEED TDF.CFG</msg>
+</logentry>
+<logentry
+   revision="195">
+<author>timbielawa</author>
+<date>2009-03-03T05:15:31.312896Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/SYS_CALL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/TAGS</path>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.C</path>
+<path
+   kind=""
+   action="A">/trunk/src/include/TAGS</path>
+</paths>
+<msg>Adding sum updated TAGS files</msg>
+</logentry>
+<logentry
+   revision="194">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-03T04:20:04.634293Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/DISPATCH.C</path>
+</paths>
+<msg>More playing</msg>
+</logentry>
+<logentry
+   revision="193">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-03T04:15:37.823352Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/include/PCB.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>Adding a little find me function</msg>
+</logentry>
+<logentry
+   revision="192">
+<author>timbielawa</author>
+<date>2009-03-03T04:01:40.776536Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/SYS_CALL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/CONTEXT.H</path>
+</paths>
+<msg>saving early and often</msg>
+</logentry>
+<logentry
+   revision="191">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-03T03:59:47.266658Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/DISPATCH.C</path>
+</paths>
+<msg>Some updates and notes -- need global PCB stuff and that find function before I can continue</msg>
+</logentry>
+<logentry
+   revision="190">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-03T03:54:49.724802Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/include/CONTEXT.H</path>
+</paths>
+<msg>Removing extern</msg>
+</logentry>
+<logentry
+   revision="189">
+<author>timbielawa</author>
+<date>2009-03-03T03:44:56.385250Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/SYS_CALL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/CONTEXT.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/SYS_CALL.H</path>
+</paths>
+<msg>Adding stuff from old SYS_CALL</msg>
+</logentry>
+<logentry
+   revision="188">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-03T03:40:21.435380Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/trunk/src/include/CONTEXT.H</path>
+</paths>
+<msg>Setting up CONTEXT header file</msg>
+</logentry>
+<logentry
+   revision="187">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-03T03:33:28.023505Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/trunk/src/include/DISPATCH.H</path>
+</paths>
+<msg>Setting up DISPATCH</msg>
+</logentry>
+<logentry
+   revision="186">
+<author>abutcher@afrolegs.com</author>
+<date>2009-03-03T03:30:44.862004Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/trunk/src/DISPATCH.C</path>
+</paths>
+<msg>Setting up DISPATCH.C</msg>
+</logentry>
+<logentry
+   revision="185">
+<author>timbielawa</author>
+<date>2009-03-03T03:17:47.497149Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/SYS_CALL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/SYS_CALL.H</path>
+</paths>
+<msg>Fixin mai sys_call()s</msg>
+</logentry>
+<logentry
+   revision="184">
+<author>timbielawa</author>
+<date>2009-03-03T02:51:36.905506Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/SYS_CALL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/SYS_CALL.H</path>
+</paths>
+<msg>sys_call not sys_req</msg>
+</logentry>
+<logentry
+   revision="183">
+<author>bryantdoss</author>
+<date>2009-03-03T02:48:08.920590Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/trunk/src/include/PROCS-R3.H</path>
+</paths>
+<msg>Adding header file for R3 support</msg>
+</logentry>
+<logentry
+   revision="182">
+<author>bryantdoss</author>
+<date>2009-03-03T02:46:03.233294Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/trunk/src/PROCS-R3.C</path>
+</paths>
+<msg>Adding support file for R3</msg>
+</logentry>
+<logentry
+   revision="181">
+<author>timbielawa</author>
+<date>2009-03-03T02:45:53.384416Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/SYS_CALL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/SYS_CALL.H</path>
+</paths>
+<msg>Prototype</msg>
+</logentry>
+<logentry
+   revision="180">
+<author>timbielawa</author>
+<date>2009-03-03T02:43:25.168642Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/trunk/src/SYS_CALL.C</path>
+<path
+   kind=""
+   action="A">/trunk/src/include/SYS_CALL.H</path>
+</paths>
+<msg>Adding SYS_CALL Files</msg>
+</logentry>
+<logentry
+   revision="179">
+<author>timbielawa</author>
+<date>2009-03-03T01:45:16.998523Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/file_summary.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PARSER.xml</path>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/version</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_DISPLAY.xml</path>
+</paths>
+<msg>Adding 'ls' as a link to display. Feels more like home</msg>
+</logentry>
+<logentry
+   revision="178">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-25T04:33:57.261338Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/trunk/test1</path>
+<path
+   kind=""
+   action="A">/trunk/test1/1-review.html</path>
+<path
+   kind=""
+   action="A">/trunk/test1/2-review.html</path>
+<path
+   kind=""
+   action="A">/trunk/test1/3-review.html</path>
+<path
+   kind=""
+   action="A">/trunk/test1/4-review.html</path>
+<path
+   kind=""
+   action="A">/trunk/test1/5-review.html</path>
+<path
+   kind=""
+   action="A">/trunk/test1/6-review.html</path>
+</paths>
+<msg>My review stuff -- might be wrong in spots or incomplete -- but its a good start</msg>
+</logentry>
+<logentry
+   revision="177">
+<author>timbielawa</author>
+<date>2009-02-25T01:48:49.935198Z</date>
+<paths>
+<path
+   kind=""
+   action="D">/trunk/doc/temp/commands-detailed.xml~</path>
+<path
+   kind=""
+   action="D">/trunk/doc/temp/intro.xml~</path>
+<path
+   kind=""
+   action="D">/trunk/doc/temp/commands.xml~</path>
+<path
+   kind=""
+   action="D">/trunk/doc/temp/temp.xml~</path>
+</paths>
+<msg>Removing emacs GARBAGE</msg>
+</logentry>
+<logentry
+   revision="176">
+<author>bryantdoss</author>
+<date>2009-02-24T19:47:43.946728Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/user/intro.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/user/errors.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/data_structures.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/file_summary.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_DATE.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/globals.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/user/commands-detailed.xml</path>
+</paths>
+<msg>random index</msg>
+</logentry>
+<logentry
+   revision="175">
+<author>jdehlin</author>
+<date>2009-02-24T19:41:23.297511Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/utils/build-docs</path>
+</paths>
+<msg>added temp to build-doc util
+</msg>
+</logentry>
+<logentry
+   revision="174">
+<author>jdehlin</author>
+<date>2009-02-24T19:37:18.509737Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/temp/commands-detailed.xml</path>
+</paths>
+<msg>finished detailed temp commands.
+</msg>
+</logentry>
+<logentry
+   revision="173">
+<author>bryantdoss</author>
+<date>2009-02-24T19:36:18.534254Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_PARSER.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_DATE.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_TDF.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_PCBMAN.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_HISTORY.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_PCBMAKE.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_PCB.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_DISPLAY.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_PCBSHOW.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_PCBUTILS.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_VERSION.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_SHELL.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_HELP.xml</path>
+</paths>
+<msg>random indexterms</msg>
+</logentry>
+<logentry
+   revision="172">
+<author>jdehlin</author>
+<date>2009-02-24T19:26:22.033909Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/trunk/doc/temp/temp.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/temp/commands-detailed.xml~</path>
+<path
+   kind=""
+   action="A">/trunk/doc/temp/intro.xml~</path>
+<path
+   kind=""
+   action="A">/trunk/doc/temp/commands-detailed.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/temp/intro.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_DISPLAY.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/temp/commands.xml~</path>
+<path
+   kind=""
+   action="A">/trunk/doc/temp</path>
+<path
+   kind=""
+   action="A">/trunk/doc/temp/commands.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/temp/schemas.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/temp/temp.xml~</path>
+</paths>
+<msg>fixed typo in devel/functions/display and adding temp docs
+</msg>
+</logentry>
+<logentry
+   revision="171">
+<author>jdehlin</author>
+<date>2009-02-24T19:01:28.324548Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/version</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_DISPLAY.xml</path>
+</paths>
+<msg>Completed Display function in devel docs
+</msg>
+</logentry>
+<logentry
+   revision="170">
+<author>bryantdoss</author>
+<date>2009-02-24T18:53:20.225465Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_PCBMAN.xml</path>
+</paths>
+<msg>pcbman crossref</msg>
+</logentry>
+<logentry
+   revision="169">
+<author>bryantdoss</author>
+<date>2009-02-24T18:45:29.139982Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_PCBSHOW.xml</path>
+</paths>
+<msg>pcbshow crossref</msg>
+</logentry>
+<logentry
+   revision="168">
+<author>bryantdoss</author>
+<date>2009-02-24T18:41:38.922110Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_PCBUTILS.xml</path>
+</paths>
+<msg>pcbutils crossref</msg>
+</logentry>
+<logentry
+   revision="167">
+<author>bryantdoss</author>
+<date>2009-02-24T18:36:09.795421Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_VERSION.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_SHELL.xml</path>
+</paths>
+<msg>shell crossref docs</msg>
+</logentry>
+<logentry
+   revision="166">
+<author>bryantdoss</author>
+<date>2009-02-24T18:27:58.462886Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_VERSION.xml</path>
+</paths>
+<msg>version crossref fix</msg>
+</logentry>
+<logentry
+   revision="165">
+<author>bryantdoss</author>
+<date>2009-02-24T18:24:45.070225Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_VERSION.xml</path>
+</paths>
+<msg>version crossref</msg>
+</logentry>
+<logentry
+   revision="164">
+<author>bryantdoss</author>
+<date>2009-02-24T18:23:23.593818Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_VERSION.xml</path>
+</paths>
+<msg>Adding version function</msg>
+</logentry>
+<logentry
+   revision="163">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-24T15:05:51.106572Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBSHOW.xml</path>
+</paths>
+<msg>Fixing my parameters...</msg>
+</logentry>
+<logentry
+   revision="162">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-24T14:57:31.170243Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBMAKE.xml</path>
+</paths>
+<msg>Fixing my parameters...</msg>
+</logentry>
+<logentry
+   revision="161">
+<author>timbielawa</author>
+<date>2009-02-24T13:53:26.300404Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/Makefile</path>
+<path
+   kind=""
+   action="D">/trunk/doc/pdf</path>
+<path
+   kind=""
+   action="M">/trunk/utils/build-docs</path>
+<path
+   kind=""
+   action="A">/trunk/doc/prepared</path>
+<path
+   kind=""
+   action="D">/trunk/doc/html</path>
+</paths>
+<msg>Updatin ur doc makin ways</msg>
+</logentry>
+<logentry
+   revision="160">
+<author>timbielawa</author>
+<date>2009-02-24T13:32:21.849343Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_PARSER.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_DATE.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_TDF.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBMAN.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_HISTORY.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_PCBMAKE.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_PCB.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCB.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_DISPLAY.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBSHOW.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBUTILS.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_HELP.xml</path>
+</paths>
+<msg>Nuances. Bugs. Perfection is coming. Horay for well formed</msg>
+</logentry>
+<logentry
+   revision="159">
+<author>timbielawa</author>
+<date>2009-02-24T13:02:11.528720Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/globals.xml</path>
+</paths>
+<msg>Make globals look more important</msg>
+</logentry>
+<logentry
+   revision="158">
+<author>timbielawa</author>
+<date>2009-02-24T12:43:20.601914Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_PARSER.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_DATE.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_TDF.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_TDF.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBMAN.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_PCBMAKE.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCB.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBSHOW.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_SHELL.xml</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAKE.C</path>
+</paths>
+<msg>making it really, really fucking well defined</msg>
+</logentry>
+<logentry
+   revision="157">
+<author>timbielawa</author>
+<date>2009-02-24T12:21:11.992823Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBMAN.xml</path>
+</paths>
+<msg>Updating your psetprio range</msg>
+</logentry>
+<logentry
+   revision="156">
+<author>timbielawa</author>
+<date>2009-02-24T12:20:31.409489Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PARSER.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_DATE.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBMAN.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_HISTORY.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBMAKE.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_DISPLAY.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_HELP.xml</path>
+</paths>
+<msg>Updating your function references</msg>
+</logentry>
+<logentry
+   revision="155">
+<author>timbielawa</author>
+<date>2009-02-24T11:45:00.760645Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_TDF.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_HISTORY.xml</path>
+<path
+   kind=""
+   action="M">/trunk/utils/build-docs</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_DISPLAY.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_HELP.xml</path>
+</paths>
+<msg>Updated some cross references. We should have done this sooner</msg>
+</logentry>
+<logentry
+   revision="154">
+<author>timbielawa</author>
+<date>2009-02-24T11:18:20.362137Z</date>
+<paths>
+<path
+   kind=""
+   action="D">/trunk/utils/build-docs-fedora</path>
+<path
+   kind=""
+   copyfrom-path="/trunk/utils/build-docs-fedora"
+   copyfrom-rev="152"
+   action="A">/trunk/utils/build-docs</path>
+</paths>
+<msg>Better name for build file</msg>
+</logentry>
+<logentry
+   revision="153">
+<author>timbielawa</author>
+<date>2009-02-24T11:17:39.175710Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/Makefile</path>
+</paths>
+<msg>Updatin ur doc scripts</msg>
+</logentry>
+<logentry
+   revision="152">
+<author>timbielawa</author>
+<date>2009-02-24T11:17:33.767052Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/utils/build-docs-fedora</path>
+</paths>
+<msg>Updatin ur doc scripts</msg>
+</logentry>
+<logentry
+   revision="151">
+<author>timbielawa</author>
+<date>2009-02-24T10:53:43.658187Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/Makefile</path>
+<path
+   kind=""
+   action="A">/trunk/doc/pdf</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/version</path>
+<path
+   kind=""
+   action="A">/trunk/doc/html</path>
+</paths>
+<msg>Added svn:ignore props on doc/{pdf,html} so we don't see warnings after bulding docs</msg>
+</logentry>
+<logentry
+   revision="150">
+<author>timbielawa</author>
+<date>2009-02-24T10:09:41.636843Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCB.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_VERSION.xml</path>
+</paths>
+<msg>Tweaks and nuances</msg>
+</logentry>
+<logentry
+   revision="149">
+<author>timbielawa</author>
+<date>2009-02-24T10:01:13.467654Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/file_summary.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/globals.xml</path>
+</paths>
+<msg>Nuances</msg>
+</logentry>
+<logentry
+   revision="148">
+<author>timbielawa</author>
+<date>2009-02-24T09:44:54.104285Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/README</path>
+<path
+   kind=""
+   action="A">/trunk/utils/build-docs-fedora</path>
+</paths>
+<msg>Can build dox nao?</msg>
+</logentry>
+<logentry
+   revision="147">
+<author>timbielawa</author>
+<date>2009-02-24T09:38:37.435319Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_TDF.xml</path>
+</paths>
+<msg>namespace r0x</msg>
+</logentry>
+<logentry
+   revision="146">
+<author>timbielawa</author>
+<date>2009-02-24T09:37:18.052704Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/user/intro.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/user/errors.xml</path>
+</paths>
+<msg>Updatin ur docs</msg>
+</logentry>
+<logentry
+   revision="145">
+<author>timbielawa</author>
+<date>2009-02-24T09:32:47.601601Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_HISTORY.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_VERSION.xml</path>
+</paths>
+<msg>EAT YOUR NAMESPACE AND CHOKE ON IT</msg>
+</logentry>
+<logentry
+   revision="144">
+<author>timbielawa</author>
+<date>2009-02-24T09:12:54.203869Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_PARSER.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_TDF.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_PCBMAN.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_HISTORY.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_PCBMAKE.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_PCB.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_PCBSHOW.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_PCBUTILS.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_VERSION.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_SHELL.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_HELP.xml</path>
+</paths>
+<msg>Got crossreferences cleaned up. names spaces correct, tabbing, no more id fields</msg>
+</logentry>
+<logentry
+   revision="143">
+<author>timbielawa</author>
+<date>2009-02-24T09:03:02.703268Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PARSER.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_DATE.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_TDF.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBMAN.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_HISTORY.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBMAKE.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_DISPLAY.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBSHOW.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBUTILS.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_VERSION.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_SHELL.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_HELP.xml</path>
+</paths>
+<msg>Name spaces applied, tabbing retabbified, ids removed</msg>
+</logentry>
+<logentry
+   revision="142">
+<author>timbielawa</author>
+<date>2009-02-24T08:49:01.781132Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functionstemplate.txt</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_DATE.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_TDF.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBMAN.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_HISTORY.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBMAKE.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCB.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_DISPLAY.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBSHOW.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBUTILS.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_VERSION.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_SHELL.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_HELP.xml</path>
+</paths>
+<msg>Fixed PCB</msg>
+</logentry>
+<logentry
+   revision="141">
+<author>timbielawa</author>
+<date>2009-02-24T08:39:41.624339Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/file_summary.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/globals.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/overview.xml</path>
+</paths>
+<msg>Cleaned up base devel docs</msg>
+</logentry>
+<logentry
+   revision="140">
+<author>timbielawa</author>
+<date>2009-02-24T08:35:29.547538Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/user/intro.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/user/commands.xml</path>
+</paths>
+<msg>User Docs should be properly formatted now.</msg>
+</logentry>
+<logentry
+   revision="139">
+<author>timbielawa</author>
+<date>2009-02-24T08:20:03.817297Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/trunk/utils/docbook/README</path>
+<path
+   kind=""
+   action="A">/trunk/utils/docbook</path>
+<path
+   kind=""
+   action="A">/trunk/utils/docbook/docbook.rnc</path>
+<path
+   kind=""
+   action="A">/trunk/utils/docbook/docbookxi.rnc</path>
+<path
+   kind=""
+   action="A">/trunk/utils/docbook/docbook.rng</path>
+<path
+   kind=""
+   action="A">/trunk/utils/docbook/docbookxi.rng</path>
+</paths>
+<msg>thank god we can revert if I fuck this up too</msg>
+</logentry>
+<logentry
+   revision="138">
+<author>timbielawa</author>
+<date>2009-02-24T08:19:39.028787Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/crossreference/schemas.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/functions/schemas.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/file_summary.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PARSER.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/user/user.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/devel.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/user/schemas.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_DISPLAY.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/overview.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/data_structures.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_DATE.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/user/commands.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/globals.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/schemas.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/user/commands-detailed.xml</path>
+</paths>
+<msg>thank god we can revert if I fuck this up</msg>
+</logentry>
+<logentry
+   revision="137">
+<author>timbielawa</author>
+<date>2009-02-24T06:20:52.807969Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PARSER.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_DATE.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/devel.xml</path>
+<path
+   kind=""
+   action="M">/trunk/src/DATE.C</path>
+</paths>
+<msg>Updatin ur functions</msg>
+</logentry>
+<logentry
+   revision="136">
+<author>timbielawa</author>
+<date>2009-02-24T04:35:12.853524Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBSHOW.xml</path>
+</paths>
+<msg>Fixing section typors in pcbshow</msg>
+</logentry>
+<logentry
+   revision="135">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-24T04:34:47.897139Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBMAN.xml</path>
+</paths>
+<msg>Fixing typo</msg>
+</logentry>
+<logentry
+   revision="134">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-24T04:20:49.575175Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBSHOW.xml</path>
+</paths>
+<msg>Fixing some shmutz</msg>
+</logentry>
+<logentry
+   revision="133">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-24T04:19:16.864992Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBMAN.xml</path>
+</paths>
+<msg>Adding some shmutz</msg>
+</logentry>
+<logentry
+   revision="132">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-24T04:13:03.292697Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBMAKE.xml</path>
+</paths>
+<msg>Adding some shmutz</msg>
+</logentry>
+<logentry
+   revision="131">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-24T04:09:30.048545Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBSHOW.xml</path>
+</paths>
+<msg>PCBSHOW docs</msg>
+</logentry>
+<logentry
+   revision="130">
+<author>timbielawa</author>
+<date>2009-02-24T03:59:02.587670Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBMAN.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBMAKE.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBSHOW.xml</path>
+</paths>
+<msg>Updating Various PCB docs with headers</msg>
+</logentry>
+<logentry
+   revision="129">
+<author>timbielawa</author>
+<date>2009-02-24T03:52:52.386725Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_TDF.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_VERSION.xml</path>
+</paths>
+<msg>Addin tdf and version headers</msg>
+</logentry>
+<logentry
+   revision="128">
+<author>timbielawa</author>
+<date>2009-02-24T03:48:42.123749Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_DATE.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_HISTORY.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_DISPLAY.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_HELP.xml</path>
+</paths>
+<msg>Adding your header tags</msg>
+</logentry>
+<logentry
+   revision="127">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-24T03:37:28.581416Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBMAN.xml</path>
+</paths>
+<msg>PCBMAN function docs</msg>
+</logentry>
+<logentry
+   revision="126">
+<author>jdehlin</author>
+<date>2009-02-24T03:25:22.528206Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/version</path>
+<path
+   kind=""
+   action="M">/trunk/doc/user/commands-detailed.xml</path>
+</paths>
+<msg>finished user/command-detailed.xml
+</msg>
+</logentry>
+<logentry
+   revision="125">
+<author>timbielawa</author>
+<date>2009-02-24T03:15:25.704020Z</date>
+<paths>
+<path
+   kind=""
+   action="D">/trunk/doc/devel/functions/functions_PARSER.xml~</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PARSER.xml</path>
+</paths>
+<msg>Added file name wrapper around the parser doc</msg>
+</logentry>
+<logentry
+   revision="124">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-24T02:58:19.675245Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCBMAKE.xml</path>
+</paths>
+<msg>PCBMAKE functin docs</msg>
+</logentry>
+<logentry
+   revision="123">
+<author>bryantdoss</author>
+<date>2009-02-24T02:33:19.424776Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCB.xml</path>
+</paths>
+<msg>Fixing issue 18 -- my bad :(</msg>
+</logentry>
+<logentry
+   revision="122">
+<author>jdehlin</author>
+<date>2009-02-23T23:06:47.785169Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/HELP.C</path>
+<path
+   kind=""
+   action="M">/trunk/doc/user/commands.xml</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/version</path>
+<path
+   kind=""
+   action="M">/trunk/doc/user/commands-detailed.xml</path>
+</paths>
+<msg>Finished commands.xml half way through command-detailed.xml
+</msg>
+</logentry>
+<logentry
+   revision="121">
+<author>jdehlin</author>
+<date>2009-02-23T22:16:02.221995Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/doc/user/commands.xml</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/version</path>
+</paths>
+<msg>user doc commands mostly added
+</msg>
+</logentry>
+<logentry
+   revision="120">
+<author>bryantdoss</author>
+<date>2009-02-23T21:46:47.862817Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/crossreference/crossreference_PCB.xml</path>
+</paths>
+<msg>pcb crossref</msg>
+</logentry>
+<logentry
+   revision="119">
+<author>bryantdoss</author>
+<date>2009-02-23T21:21:30.348768Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions/functions_PCB.xml</path>
+</paths>
+<msg>PCB funcs</msg>
+</logentry>
+<logentry
+   revision="118">
+<author>bryantdoss</author>
+<date>2009-02-23T07:45:58.413208Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/branches/doss/pcb.xml</path>
+</paths>
+<msg>adding a little gem to my branch</msg>
+</logentry>
+<logentry
+   revision="117">
+<author>bryantdoss</author>
+<date>2009-02-23T07:45:38.828834Z</date>
+<paths>
+<path
+   kind=""
+   action="D">/trunk/doc/devel/programmers.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/devel.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/functions/functions_PCBMAN.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/crossreference/crossreference_PCBMAN.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/functions/functions_HISTORY.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/crossreference/crossreference_HISTORY.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/functions/functions_PCBMAKE.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/crossreference/crossreference_PCBMAKE.xml</path>
+<path
+   kind=""
+   action="D">/trunk/doc/devel/pcb.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/functions/functions_DISPLAY.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/crossreference/crossreference_DISPLAY.xml</path>
+<path
+   kind=""
+   action="D">/trunk/doc/devel/shell.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/crossreference</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/functions</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/crossreference/crossreference_TDF.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/functions/functions_DATE.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/functions/functions_TDF.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/crossreference/crossreference_DATE.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/crossreference/crossreference_PCBUTILS.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/functions/functions_PCBUTILS.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/crossreference/crossreference_HELP.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/functions/functions_HELP.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/functions/functions_PARSER.xml~</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/functions/functionstemplate.txt</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/functions/functions_PARSER.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/crossreference/crossreference_PARSER.xml</path>
+<path
+   kind=""
+   action="D">/trunk/doc/devel/parser.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/functions/functions_PCB.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/crossreference/crossreference_PCB.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/functions/functions_PCBSHOW.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/crossreference/crossreference_PCBSHOW.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/crossreference/crossreference_SHELL.xml</path>
+<path
+   kind=""
+   action="D">/trunk/doc/devel/cross_reference.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/functions/functions_SHELL.xml</path>
+<path
+   kind=""
+   copyfrom-path="/trunk/doc/devel/cross_reference.xml"
+   copyfrom-rev="116"
+   action="A">/trunk/doc/devel/crossreference.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/crossreference/crossreference_VERSION.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/functions/functions_VERSION.xml</path>
+</paths>
+<msg>Overhaul of developer docs</msg>
+</logentry>
+<logentry
+   revision="116">
+<author>bryantdoss</author>
+<date>2009-02-23T05:27:33.361727Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/user/intro.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/user/user.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/user/commands-detailed.xml</path>
+</paths>
+<msg>can has index</msg>
+</logentry>
+<logentry
+   revision="115">
+<author>bryantdoss</author>
+<date>2009-02-23T04:06:30.098491Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/user/user.xml</path>
+<path
+   kind=""
+   action="D">/trunk/doc/user/basic.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/user/commands.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/user/commands-detailed.xml</path>
+</paths>
+<msg>user doc templates</msg>
+</logentry>
+<logentry
+   revision="114">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-21T15:25:41.724101Z</date>
+<paths>
+<path
+   kind=""
+   copyfrom-path="/trunk"
+   copyfrom-rev="113"
+   action="A">/tags/module-r2</path>
+</paths>
+<msg>Tagging module r2</msg>
+</logentry>
+<logentry
+   revision="113">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-21T14:12:08.568805Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAKE.C</path>
+</paths>
+<msg>Fixed a problem where pcreate wouldn't make processes with negative priorities.</msg>
+</logentry>
+<logentry
+   revision="112">
+<author>bryantdoss</author>
+<date>2009-02-20T20:01:18.751304Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAN.C</path>
+</paths>
+<msg>fix psetprio bug</msg>
+</logentry>
+<logentry
+   revision="111">
+<author>bryantdoss</author>
+<date>2009-02-20T19:51:41.814629Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.C</path>
+</paths>
+<msg>r2</msg>
+</logentry>
+<logentry
+   revision="110">
+<author>timbielawa</author>
+<date>2009-02-20T19:50:40.638852Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/HELP.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/version</path>
+</paths>
+<msg>Fixin ur help.c</msg>
+</logentry>
+<logentry
+   revision="109">
+<author>timbielawa</author>
+<date>2009-02-20T19:49:06.209233Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/SHELL.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/PARSER.H</path>
+</paths>
+<msg>Fixin ur buffer underflows</msg>
+</logentry>
+<logentry
+   revision="108">
+<author>bryantdoss</author>
+<date>2009-02-20T19:48:33.405274Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/cross_reference.xml</path>
+</paths>
+<msg>give up</msg>
+</logentry>
+<logentry
+   revision="107">
+<author>bryantdoss</author>
+<date>2009-02-20T19:29:13.326871Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/functions.xml</path>
+</paths>
+<msg>func</msg>
+</logentry>
+<logentry
+   revision="106">
+<author>bryantdoss</author>
+<date>2009-02-20T18:11:52.165812Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/programmers.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/functions.xml</path>
+</paths>
+<msg>adding programmer's manual</msg>
+</logentry>
+<logentry
+   revision="105">
+<author>bryantdoss</author>
+<date>2009-02-20T17:51:25.185774Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/data_structures.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/pcb.xml</path>
+</paths>
+<msg>adding data structure xml</msg>
+</logentry>
+<logentry
+   revision="104">
+<author>bryantdoss</author>
+<date>2009-02-20T17:37:27.849859Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/devel.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/globals.xml</path>
+</paths>
+<msg>Developer docs update</msg>
+</logentry>
+<logentry
+   revision="103">
+<author>bryantdoss</author>
+<date>2009-02-20T17:13:00.024810Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/file_summary.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/devel.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/overview.xml</path>
+</paths>
+<msg>adding devel docs chapters</msg>
+</logentry>
+<logentry
+   revision="102">
+<author>bryantdoss</author>
+<date>2009-02-20T07:18:29.202821Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/pcb.xml</path>
+</paths>
+<msg>unsigned</msg>
+</logentry>
+<logentry
+   revision="101">
+<author>bryantdoss</author>
+<date>2009-02-20T07:18:06.426467Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/include/PCB.H</path>
+</paths>
+<msg>unsigned</msg>
+</logentry>
+<logentry
+   revision="100">
+<author>timbielawa</author>
+<date>2009-02-20T07:17:52.379469Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/parser.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/shell.xml</path>
+</paths>
+<msg>DocBooking your documents</msg>
+</logentry>
+<logentry
+   revision="99">
+<author>bryantdoss</author>
+<date>2009-02-20T07:16:15.884382Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/pcb.xml</path>
+</paths>
+<msg>stack doc</msg>
+</logentry>
+<logentry
+   revision="98">
+<author>bryantdoss</author>
+<date>2009-02-20T07:15:45.929926Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/include/PCB.H</path>
+</paths>
+<msg>We can has stack and memory descriptors now i guess</msg>
+</logentry>
+<logentry
+   revision="97">
+<author>timbielawa</author>
+<date>2009-02-20T05:59:10.853217Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/user/intro.xml</path>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/doc/user/user.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/user/commands.xml</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/version</path>
+<path
+   kind=""
+   action="A">/trunk/doc/user/commands-detailed.xml</path>
+</paths>
+<msg>Updatin ur docs</msg>
+</logentry>
+<logentry
+   revision="96">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-20T05:28:39.743337Z</date>
+<paths>
+<path
+   kind=""
+   action="D">/trunk/src/DATE.PRJ</path>
+</paths>
+<msg>Removing date.prj</msg>
+</logentry>
+<logentry
+   revision="95">
+<author>timbielawa</author>
+<date>2009-02-20T04:33:53.369093Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/Makefile</path>
+<path
+   kind=""
+   action="M">/trunk/src/VERSION.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   action="M">/trunk/utils/tdfdosbox.conf</path>
+<path
+   kind=""
+   action="A">/trunk/src/TAGS</path>
+<path
+   kind=""
+   action="A">/trunk/utils/version</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/version</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/SHELL.H</path>
+</paths>
+<msg>Fixin ur versons</msg>
+</logentry>
+<logentry
+   revision="94">
+<author>jdehlin</author>
+<date>2009-02-20T02:21:13.276805Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/HELP.C</path>
+</paths>
+<msg>added new commands to help
+</msg>
+</logentry>
+<logentry
+   revision="93">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-20T00:44:40.681631Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAN.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAKE.C</path>
+</paths>
+<msg>Adding some verbosity to the commands.</msg>
+</logentry>
+<logentry
+   revision="92">
+<author>timbielawa</author>
+<date>2009-02-19T22:32:51.990755Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/user/intro.xml</path>
+</paths>
+<msg>Correctly DocBooking ur book titles</msg>
+</logentry>
+<logentry
+   revision="91">
+<author>timbielawa</author>
+<date>2009-02-19T22:29:35.791987Z</date>
+<paths>
+<path
+   kind=""
+   copyfrom-path="/trunk/doc/devel/parser.html"
+   copyfrom-rev="90"
+   action="A">/trunk/doc/devel/parser.xml</path>
+<path
+   kind=""
+   action="D">/trunk/doc/devel/parser.html</path>
+</paths>
+<msg>renaming ur docs</msg>
+</logentry>
+<logentry
+   revision="90">
+<author>timbielawa</author>
+<date>2009-02-19T22:28:51.969751Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/devel.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/parser.html</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/shell.xml</path>
+</paths>
+<msg>Partitioning ur docs</msg>
+</logentry>
+<logentry
+   revision="89">
+<author>timbielawa</author>
+<date>2009-02-19T22:16:54.691230Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/shell.xml</path>
+</paths>
+<msg>Updatin ur buffer parser docs</msg>
+</logentry>
+<logentry
+   revision="88">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-19T16:26:21.808126Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAKE.C</path>
+</paths>
+<msg>Little helpful prints.
+</msg>
+</logentry>
+<logentry
+   revision="87">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-18T20:29:32.292695Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBSHOW.C</path>
+</paths>
+<msg>Adding some newlines</msg>
+</logentry>
+<logentry
+   revision="86">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-18T20:27:07.635923Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBSHOW.C</path>
+</paths>
+<msg>Adding some descriptive printf's for queues</msg>
+</logentry>
+<logentry
+   revision="85">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-18T17:35:16.080562Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/include/PCB.H</path>
+</paths>
+<msg>Bumping name to 9 chars to include '\0'</msg>
+</logentry>
+<logentry
+   revision="84">
+<author>bryantdoss</author>
+<date>2009-02-18T06:36:52.752522Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/pcb.xml</path>
+</paths>
+<msg>updating docs</msg>
+</logentry>
+<logentry
+   revision="83">
+<author>bryantdoss</author>
+<date>2009-02-18T06:33:07.476056Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>Fixing bug with the last queue</msg>
+</logentry>
+<logentry
+   revision="82">
+<author>bryantdoss</author>
+<date>2009-02-18T05:22:00.609854Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>Fixing if statements</msg>
+</logentry>
+<logentry
+   revision="81">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-18T04:53:47.073576Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAN.C</path>
+</paths>
+<msg>Adding state to insert calls</msg>
+</logentry>
+<logentry
+   revision="80">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-18T04:52:33.673464Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAKE.C</path>
+</paths>
+<msg>Adding state to insert</msg>
+</logentry>
+<logentry
+   revision="79">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-18T04:50:47.681833Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAN.C</path>
+</paths>
+<msg>Adding state to insert calls</msg>
+</logentry>
+<logentry
+   revision="78">
+<author>bryantdoss</author>
+<date>2009-02-18T04:49:54.011841Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/include/PCB.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>Changing PCB_insert to require a 3rd parameter</msg>
+</logentry>
+<logentry
+   revision="77">
+<author>bryantdoss</author>
+<date>2009-02-18T04:42:53.943064Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>Fixin' PCB.C</msg>
+</logentry>
+<logentry
+   revision="76">
+<author>bryantdoss</author>
+<date>2009-02-18T04:30:47.434614Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/include/PCB.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>Changes to PCB, let's make names work</msg>
+</logentry>
+<logentry
+   revision="75">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-18T04:26:03.430273Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/DATE.C</path>
+</paths>
+<msg>month-1, lawl</msg>
+</logentry>
+<logentry
+   revision="74">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-18T04:07:15.908454Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAKE.C</path>
+</paths>
+<msg>Fixing print error.</msg>
+</logentry>
+<logentry
+   revision="73">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-18T04:05:25.253091Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBSHOW.C</path>
+</paths>
+<msg>I'm a retard.</msg>
+</logentry>
+<logentry
+   revision="72">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-18T03:46:55.154659Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAKE.C</path>
+</paths>
+<msg>Removing a newline.</msg>
+</logentry>
+<logentry
+   revision="71">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-18T03:40:14.591461Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAKE.C</path>
+</paths>
+<msg>Fixing print error.</msg>
+</logentry>
+<logentry
+   revision="70">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-18T03:36:57.225791Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAKE.C</path>
+</paths>
+<msg>Removing a newline.</msg>
+</logentry>
+<logentry
+   revision="69">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-18T03:23:10.578239Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/PCBMAN.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAN.C</path>
+</paths>
+<msg>Added PCB functions to the shell, changed psetprio function in PCBMAN.C to accept an argument string instead of an integer... what was I thinking.  Fixed errors related to the aforementioned changes.  Commands are still untested.  Oh gawd.</msg>
+</logentry>
+<logentry
+   revision="68">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-17T18:49:15.187398Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/trunk/src/PCBUTILS.C</path>
+<path
+   kind=""
+   action="A">/trunk/src/include/PCBUTILS.H</path>
+</paths>
+<msg>Place for universal pcb stuff...</msg>
+</logentry>
+<logentry
+   revision="67">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-17T17:44:32.371965Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/include/HELP.H</path>
+</paths>
+<msg>HELP_OBJ structure</msg>
+</logentry>
+<logentry
+   revision="66">
+<author>timbielawa</author>
+<date>2009-02-17T07:06:22.137042Z</date>
+<paths>
+<path
+   kind=""
+   action="D">/trunk/tc/.gitignore</path>
+</paths>
+<msg>Removing stupid old .gitignore file</msg>
+</logentry>
+<logentry
+   revision="65">
+<author>timbielawa</author>
+<date>2009-02-17T05:17:07.136509Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/user/commands.xml</path>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/shell.xml</path>
+</paths>
+<msg>is dat sum docs?</msg>
+</logentry>
+<logentry
+   revision="64">
+<author>bryantdoss</author>
+<date>2009-02-17T05:16:51.547945Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/DISPLAY.C</path>
+</paths>
+<msg>Fixed bug in DISPLAY.C, now works nicely</msg>
+</logentry>
+<logentry
+   revision="63">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-17T05:12:30.933611Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAN.C</path>
+</paths>
+<msg>Wrapping up PCB commands</msg>
+</logentry>
+<logentry
+   revision="62">
+<author>timbielawa</author>
+<date>2009-02-17T05:05:35.805593Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/HELP.C</path>
+</paths>
+<msg>Fixin' ur helps</msg>
+</logentry>
+<logentry
+   revision="61">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-17T05:03:04.330569Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBSHOW.C</path>
+</paths>
+<msg>encoding fix</msg>
+</logentry>
+<logentry
+   revision="60">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-17T04:56:49.952113Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBSHOW.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/DATE.C</path>
+</paths>
+<msg>header comments</msg>
+</logentry>
+<logentry
+   revision="59">
+<author>timbielawa</author>
+<date>2009-02-17T04:56:34.768087Z</date>
+<paths>
+<path
+   kind=""
+   action="D">/trunk/src/SHELL.C.ORIG</path>
+</paths>
+<msg>remove old shell.c</msg>
+</logentry>
+<logentry
+   revision="58">
+<author>timbielawa</author>
+<date>2009-02-17T04:51:44.138860Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/Makefile</path>
+<path
+   kind=""
+   action="M">/trunk/src/DISPLAY.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/VERSION.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/HISTORY.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/DISPLAY.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/VERSION.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/HISTORY.C</path>
+</paths>
+<msg>Incorporating old functions back into SHELL.C</msg>
+</logentry>
+<logentry
+   revision="57">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-17T04:46:30.865970Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+</paths>
+<msg>Adding PCB* files</msg>
+</logentry>
+<logentry
+   revision="56">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-17T04:45:31.795730Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBSHOW.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/PCBMAN.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/PCBMAKE.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/history</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/PCBSHOW.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAN.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAKE.C</path>
+</paths>
+<msg>Pcb commands, still missing punblock, psuspend, and  presume</msg>
+</logentry>
+<logentry
+   revision="55">
+<author>timbielawa</author>
+<date>2009-02-17T04:15:54.212741Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/utils/buildtdf</path>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+</paths>
+<msg>Exiting the shell prompts nao</msg>
+</logentry>
+<logentry
+   revision="54">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-17T04:07:07.008609Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBSHOW.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAN.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAKE.C</path>
+</paths>
+<msg>Fixing some stuff -- still dependent on global PRIORITY_QUEUES atm</msg>
+</logentry>
+<logentry
+   revision="53">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-17T03:51:46.343742Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/DATE.C</path>
+</paths>
+<msg>Fixing a newline</msg>
+</logentry>
+<logentry
+   revision="52">
+<author>timbielawa</author>
+<date>2009-02-17T03:49:01.112373Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/HELP.C</path>
+</paths>
+<msg>tokenptr</msg>
+</logentry>
+<logentry
+   revision="51">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-17T03:47:57.556207Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBSHOW.C</path>
+</paths>
+<msg>all the show functions</msg>
+</logentry>
+<logentry
+   revision="50">
+<author>timbielawa</author>
+<date>2009-02-17T03:47:47.276894Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/Makefile</path>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+</paths>
+<msg>Fixin ur PTRs</msg>
+</logentry>
+<logentry
+   revision="49">
+<author>timbielawa</author>
+<date>2009-02-17T03:43:10.501428Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   action="D">/trunk/src/PARSER.C.ORIG</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/SHELL.H</path>
+</paths>
+<msg>FIXIN UR EXIT CONFIRMS</msg>
+</logentry>
+<logentry
+   revision="48">
+<author>bryantdoss</author>
+<date>2009-02-17T03:37:45.088547Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/pcb.xml</path>
+</paths>
+<msg>doco yay</msg>
+</logentry>
+<logentry
+   revision="47">
+<author>bryantdoss</author>
+<date>2009-02-17T03:33:39.752155Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/include/PCB.H</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>Can has PCB_print</msg>
+</logentry>
+<logentry
+   revision="46">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-17T03:20:34.555226Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/HELP.C</path>
+</paths>
+<msg>framework for new functions</msg>
+</logentry>
+<logentry
+   revision="45">
+<author>bryantdoss</author>
+<date>2009-02-17T03:19:53.830784Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>Making a prettier output for PCDLL_print</msg>
+</logentry>
+<logentry
+   revision="44">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-17T03:11:24.936374Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+</paths>
+<msg>fixing merge err</msg>
+</logentry>
+<logentry
+   revision="43">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-17T03:08:28.244807Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.C</path>
+</paths>
+<msg>subtle changes -- clearing</msg>
+</logentry>
+<logentry
+   revision="42">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-17T03:07:23.428521Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAN.C</path>
+</paths>
+<msg>pblock function, none of this has been checked btw...</msg>
+</logentry>
+<logentry
+   revision="41">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-17T02:41:06.981410Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAN.C</path>
+</paths>
+<msg>psetprio function</msg>
+</logentry>
+<logentry
+   revision="40">
+<author>timbielawa</author>
+<date>2009-02-17T02:38:26.357807Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/PARSER.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/PARSER.H</path>
+</paths>
+<msg>Parser works, switches on exist. Closes: 1</msg>
+</logentry>
+<logentry
+   revision="39">
+<author>bryantdoss</author>
+<date>2009-02-17T02:22:09.994274Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>Fixing my wayward ways in PCB.C, added PCB.C to TDF.PRJ</msg>
+</logentry>
+<logentry
+   revision="38">
+<author>timbielawa</author>
+<date>2009-02-17T02:12:22.951208Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/PARSER.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/PARSER.H</path>
+</paths>
+<msg>FLYING FARTS. The OPTION PARSER WORKS</msg>
+</logentry>
+<logentry
+   revision="37">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-17T01:30:13.076037Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAKE.C</path>
+</paths>
+<msg>pdelete function</msg>
+</logentry>
+<logentry
+   revision="36">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-17T01:15:25.539496Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAKE.C</path>
+</paths>
+<msg>pcreate function</msg>
+</logentry>
+<logentry
+   revision="35">
+<author>timbielawa</author>
+<date>2009-02-17T01:10:06.919992Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/PARSER.C</path>
+</paths>
+<msg>fixed ur parser</msg>
+</logentry>
+<logentry
+   revision="34">
+<author>timbielawa</author>
+<date>2009-02-17T01:05:11.333679Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/utils/buildtdf</path>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/utils/tdfbuild.conf</path>
+<path
+   kind=""
+   action="M">/trunk/src/PARSER.C</path>
+</paths>
+<msg>committin ur files</msg>
+</logentry>
+<logentry
+   revision="33">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-17T00:44:43.164363Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+</paths>
+<msg>Fixing queue declaration.
+
+</msg>
+</logentry>
+<logentry
+   revision="32">
+<author>timbielawa</author>
+<date>2009-02-17T00:20:15.566769Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/history</path>
+<path
+   kind=""
+   action="M">/trunk/src/PARSER.C</path>
+</paths>
+<msg>Fixing unclosed paren in parser</msg>
+</logentry>
+<logentry
+   revision="31">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-17T00:14:43.928759Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+</paths>
+<msg>Adding queue instantiation.
+</msg>
+</logentry>
+<logentry
+   revision="30">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-16T22:55:46.968514Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAKE.C</path>
+</paths>
+<msg>Small changes</msg>
+</logentry>
+<logentry
+   revision="29">
+<author>bryantdoss</author>
+<date>2009-02-15T21:17:51.743986Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/doc/devel/devel.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/pcb.xml</path>
+</paths>
+<msg>Docs for pcb</msg>
+</logentry>
+<logentry
+   revision="28">
+<author>timbielawa</author>
+<date>2009-02-15T15:17:51.186492Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/utils/buildtdf</path>
+<path
+   kind=""
+   action="A">/trunk/src/SHELL.C.ORIG</path>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   action="M">/trunk/utils</path>
+<path
+   kind=""
+   action="M">/trunk/utils/tdfdosbox.conf</path>
+<path
+   kind=""
+   action="M">/trunk/utils/runtdf</path>
+<path
+   kind=""
+   action="A">/trunk/src/PARSER.C.ORIG</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/history</path>
+<path
+   kind=""
+   action="M">/trunk/src/PARSER.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/SHELL.H</path>
+<path
+   kind=""
+   action="M">/trunk/utils/rundos</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/PARSER.H</path>
+</paths>
+<msg>Making your life better</msg>
+</logentry>
+<logentry
+   revision="27">
+<author>bryantdoss</author>
+<date>2009-02-14T17:49:15.706328Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>Removing a debugging printf</msg>
+</logentry>
+<logentry
+   revision="26">
+<author>bryantdoss</author>
+<date>2009-02-14T17:45:14.094242Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/branches/doss/PCBTEST.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/include/PCB.H</path>
+<path
+   kind=""
+   action="A">/branches/doss</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>We can has PCB</msg>
+</logentry>
+<logentry
+   revision="25">
+<author>timbielawa</author>
+<date>2009-02-14T16:15:45.423971Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/Makefile</path>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+</paths>
+<msg>Install works. TIME FOR BUFFER PARSING.</msg>
+</logentry>
+<logentry
+   revision="24">
+<author>timbielawa</author>
+<date>2009-02-13T22:27:24.336722Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/Makefile</path>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/build</path>
+<path
+   kind=""
+   action="M">/trunk</path>
+</paths>
+<msg>Upgradin ur Makefiles</msg>
+</logentry>
+<logentry
+   revision="23">
+<author>timbielawa</author>
+<date>2009-02-13T22:10:31.852139Z</date>
+<paths>
+<path
+   kind=""
+   copyfrom-path="/trunk/utils/runtdf"
+   copyfrom-rev="22"
+   action="A">/trunk/utils/buildtdf</path>
+<path
+   kind=""
+   action="M">/trunk/utils/tdfdosbox.conf</path>
+<path
+   kind=""
+   copyfrom-path="/trunk/utils/tdfdosbox.conf"
+   copyfrom-rev="22"
+   action="A">/trunk/utils/tdfbuild.conf</path>
+<path
+   kind=""
+   action="M">/trunk/utils/runtdf</path>
+<path
+   kind=""
+   action="D">/trunk/utils/update-version</path>
+</paths>
+<msg>Making ur builds work</msg>
+</logentry>
+<logentry
+   revision="22">
+<author>bryantdoss</author>
+<date>2009-02-13T21:02:37.922663Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>Updates to PCB... time to try to compile lol</msg>
+</logentry>
+<logentry
+   revision="21">
+<author>timbielawa</author>
+<date>2009-02-13T11:39:00.081136Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/Makefile</path>
+<path
+   kind=""
+   action="D">/trunk/utils/setup-remotes</path>
+</paths>
+<msg>Adding make targets and removing depricated 'setup-remotes' script</msg>
+</logentry>
+<logentry
+   revision="20">
+<author>timbielawa</author>
+<date>2009-02-13T11:28:16.531400Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/Makefile</path>
+<path
+   kind=""
+   action="M">/trunk/build</path>
+<path
+   kind=""
+   action="M">/trunk</path>
+</paths>
+<msg>svn ignores tweaked</msg>
+</logentry>
+<logentry
+   revision="19">
+<author>timbielawa</author>
+<date>2009-02-13T11:11:41.703265Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/build</path>
+<path
+   kind=""
+   action="A">/trunk/target</path>
+<path
+   kind=""
+   action="M">/trunk/tc</path>
+<path
+   kind=""
+   action="D">/trunk/.svnignore</path>
+</paths>
+<msg>Adding some ignore rules</msg>
+</logentry>
+<logentry
+   revision="18">
+<author>timbielawa</author>
+<date>2009-02-13T11:05:38.155663Z</date>
+<paths>
+<path
+   kind=""
+   action="D">/trunk/README</path>
+<path
+   kind=""
+   action="A">/trunk/.svnignore</path>
+</paths>
+<msg>Adding ignore file</msg>
+</logentry>
+<logentry
+   revision="17">
+<author>jdehlin</author>
+<date>2009-02-13T01:40:21.614505Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/DISPLAY.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/history</path>
+</paths>
+<msg>trying to get display.c to work
+</msg>
+</logentry>
+<logentry
+   revision="16">
+<author>bryantdoss</author>
+<date>2009-02-13T01:29:25.729592Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/trunk/src/include/PCB.H</path>
+</paths>
+<msg>Adding framework for PCB.H</msg>
+</logentry>
+<logentry
+   revision="15">
+<author>bryantdoss</author>
+<date>2009-02-13T01:23:43.409549Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>Added PCB_insert and some stuff for the queues (making a global array of queues as well)</msg>
+</logentry>
+<logentry
+   revision="14">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-13T01:08:23.821310Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCBSHOW.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAN.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/PCBMAKE.C</path>
+</paths>
+<msg>Adding pcb header to each command file.</msg>
+</logentry>
+<logentry
+   revision="13">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-13T01:04:35.550044Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/trunk/src/PCBSHOW.C</path>
+<path
+   kind=""
+   action="A">/trunk/src/include/PCBMAN.H</path>
+<path
+   kind=""
+   action="A">/trunk/src/include/PCBMAKE.H</path>
+<path
+   kind=""
+   action="A">/trunk/src/include/PCBSHOW.H</path>
+<path
+   kind=""
+   action="A">/trunk/src/PCBMAN.C</path>
+<path
+   kind=""
+   action="A">/trunk/src/PCBMAKE.C</path>
+</paths>
+<msg>Adding pcb command framework.  PCBMAKE holds pcreate and pdelete. PCBMAN holds pblock, punblock, psuspend, presume, and psetprio. PCBSHOW holds pshow, pshowall, pshowrd, and pshowblk.</msg>
+</logentry>
+<logentry
+   revision="12">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-13T00:39:07.566083Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/README</path>
+</paths>
+<msg>Clearing out R1 stuff</msg>
+</logentry>
+<logentry
+   revision="11">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-13T00:32:42.647305Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/Makefile</path>
+</paths>
+<msg>Adding #* to cleanup</msg>
+</logentry>
+<logentry
+   revision="10">
+<author>abutcher@afrolegs.com</author>
+<date>2009-02-13T00:25:21.538884Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="M">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   action="A">/trunk/src/HELP.C</path>
+<path
+   kind=""
+   action="M">/trunk/src/etc/history</path>
+<path
+   kind=""
+   action="M">/trunk/src/DATE.C</path>
+<path
+   kind=""
+   action="A">/trunk/src/include/HELP.H</path>
+</paths>
+<msg>Adding help function.  Won't technically work til the shell does but looks complete etc.</msg>
+</logentry>
+<logentry
+   revision="9">
+<author>bryantdoss</author>
+<date>2009-02-13T00:21:06.894200Z</date>
+<paths>
+<path
+   kind=""
+   action="M">/trunk/src/PCB.C</path>
+</paths>
+<msg>More updates for PCB.C, alloc and setup.</msg>
+</logentry>
+<logentry
+   revision="8">
+<author>bryantdoss</author>
+<date>2009-02-13T00:01:04.227105Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/trunk/src/PCB.C</path>
+</paths>
+<msg>Adding first revision of PCB.C for all our PCB needs.</msg>
+</logentry>
+<logentry
+   revision="7">
+<author>timbielawa</author>
+<date>2009-02-12T05:38:10.900758Z</date>
+<paths>
+<path
+   kind=""
+   copyfrom-path="/trunk"
+   copyfrom-rev="6"
+   action="A">/tags/module-r1</path>
+</paths>
+<msg>Codebase snapshot of the first module</msg>
+</logentry>
+<logentry
+   revision="6">
+<author>timbielawa</author>
+<date>2009-02-12T05:32:52.673174Z</date>
+<paths>
+<path
+   kind=""
+   action="D">/trunk/build/.gitignore</path>
+</paths>
+<msg>Removing old .gitignore files</msg>
+</logentry>
+<logentry
+   revision="5">
+<author>timbielawa</author>
+<date>2009-02-12T05:19:34.892101Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/trunk/README</path>
+<path
+   kind=""
+   action="A">/trunk/src/DATE.PRJ</path>
+<path
+   kind=""
+   action="A">/trunk/build</path>
+<path
+   kind=""
+   action="A">/trunk/utils</path>
+<path
+   kind=""
+   action="A">/trunk/src/TDF.CFG</path>
+<path
+   kind=""
+   action="A">/trunk/doc/README</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/devel.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/user/basic.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel</path>
+<path
+   kind=""
+   action="A">/trunk/src/etc/motd</path>
+<path
+   kind=""
+   action="A">/trunk/src/include/SHELL.H</path>
+<path
+   kind=""
+   action="A">/trunk/src/include</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/shell.xml</path>
+<path
+   kind=""
+   action="A">/trunk/utils/rundos</path>
+<path
+   kind=""
+   action="A">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   action="A">/trunk/doc/user</path>
+<path
+   kind=""
+   action="A">/trunk/doc/user/commands.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/admin/DOCS</path>
+<path
+   kind=""
+   action="A">/trunk/src/DATE.C</path>
+<path
+   kind=""
+   action="A">/trunk/src/include/VERSION.H</path>
+<path
+   kind=""
+   action="A">/trunk/src/MPX_SUPT.C</path>
+<path
+   kind=""
+   action="A">/trunk/src</path>
+<path
+   kind=""
+   action="A">/trunk/src/etc/version</path>
+<path
+   kind=""
+   action="A">/trunk/src/VERSION.C</path>
+<path
+   kind=""
+   action="A">/trunk/doc/admin</path>
+<path
+   kind=""
+   action="A">/trunk/doc/user/errors.xml</path>
+<path
+   kind=""
+   action="A">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="A">/trunk/doc/user/user.xml</path>
+<path
+   kind=""
+   action="A">/trunk/src/include/HISTORY.H</path>
+<path
+   kind=""
+   action="A">/trunk/utils/runtdf</path>
+<path
+   kind=""
+   action="A">/trunk/src/etc</path>
+<path
+   kind=""
+   action="A">/trunk/src/etc/history</path>
+<path
+   kind=""
+   action="A">/trunk/build/.gitignore</path>
+<path
+   kind=""
+   action="A">/trunk/src/PARSER.C</path>
+<path
+   kind=""
+   action="A">/trunk/utils/update-version</path>
+<path
+   kind=""
+   action="A">/trunk/src/include/DISPLAY.H</path>
+<path
+   kind=""
+   action="A">/trunk/doc</path>
+<path
+   kind=""
+   action="A">/trunk/tc</path>
+<path
+   kind=""
+   action="A">/trunk/src/HISTORY.C</path>
+<path
+   kind=""
+   action="A">/trunk/tc/.gitignore</path>
+<path
+   kind=""
+   action="A">/trunk/utils/setup-remotes</path>
+<path
+   kind=""
+   action="A">/trunk/src/include/DATE.H</path>
+<path
+   kind=""
+   action="A">/trunk/Makefile</path>
+<path
+   kind=""
+   action="A">/trunk/doc/user/intro.xml</path>
+<path
+   kind=""
+   action="A">/trunk/src/DISPLAY.C</path>
+<path
+   kind=""
+   action="A">/trunk/src/include/TDF.H</path>
+<path
+   kind=""
+   action="A">/trunk/src/include/MPX_SUPT.H</path>
+<path
+   kind=""
+   action="A">/trunk/utils/tdfdosbox.conf</path>
+<path
+   kind=""
+   action="A">/trunk/utils/dosbox.conf</path>
+<path
+   kind=""
+   action="A">/trunk/src/TDF.C</path>
+<path
+   kind=""
+   action="A">/trunk/src/include/PARSER.H</path>
+</paths>
+<msg>Comitting CORRECT branch this time</msg>
+</logentry>
+<logentry
+   revision="4">
+<author>timbielawa</author>
+<date>2009-02-12T05:16:38.312854Z</date>
+<paths>
+<path
+   kind=""
+   action="D">/trunk/Makefile</path>
+<path
+   kind=""
+   action="D">/trunk/README</path>
+<path
+   kind=""
+   action="D">/trunk/build</path>
+<path
+   kind=""
+   action="D">/trunk/utils</path>
+<path
+   kind=""
+   action="D">/trunk/doc</path>
+<path
+   kind=""
+   action="D">/trunk/target</path>
+<path
+   kind=""
+   action="D">/trunk/tc</path>
+<path
+   kind=""
+   action="D">/trunk/src</path>
+</paths>
+<msg>Comitted wrong git branch. rolling....</msg>
+</logentry>
+<logentry
+   revision="3">
+<author>timbielawa</author>
+<date>2009-02-12T04:49:54.919828Z</date>
+<paths>
+<path
+   kind=""
+   action="D">/trunk/build/.gitignore</path>
+<path
+   kind=""
+   action="D">/trunk/tc/.gitignore</path>
+</paths>
+<msg>Removing old git ignore files</msg>
+</logentry>
+<logentry
+   revision="2">
+<author>timbielawa</author>
+<date>2009-02-12T04:22:21.445334Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/trunk/README</path>
+<path
+   kind=""
+   action="A">/trunk/src/DATE.PRJ</path>
+<path
+   kind=""
+   action="A">/trunk/build</path>
+<path
+   kind=""
+   action="A">/trunk/utils</path>
+<path
+   kind=""
+   action="A">/trunk/target/etc</path>
+<path
+   kind=""
+   action="A">/trunk/src/TDF.CFG</path>
+<path
+   kind=""
+   action="A">/trunk/doc/README</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/devel.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/user/basic.xml</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel</path>
+<path
+   kind=""
+   action="A">/trunk/target/etc/motd</path>
+<path
+   kind=""
+   action="A">/trunk/src/include/SHELL.H</path>
+<path
+   kind=""
+   action="A">/trunk/src/include</path>
+<path
+   kind=""
+   action="A">/trunk/doc/devel/shell.xml</path>
+<path
+   kind=""
+   action="A">/trunk/utils/rundos</path>
+<path
+   kind=""
+   action="A">/trunk/src/SHELL.C</path>
+<path
+   kind=""
+   action="A">/trunk/doc/user</path>
+<path
+   kind=""
+   action="A">/trunk/doc/user/commands.xml</path>
+<path
+   kind=""
+   action="A">/trunk/src/DATE.C</path>
+<path
+   kind=""
+   action="A">/trunk/src/include/VERSION.H</path>
+<path
+   kind=""
+   action="A">/trunk/doc/admin/DOCS</path>
+<path
+   kind=""
+   action="A">/trunk/src/MPX_SUPT.C</path>
+<path
+   kind=""
+   action="A">/trunk/src/etc/version</path>
+<path
+   kind=""
+   action="A">/trunk/src</path>
+<path
+   kind=""
+   action="A">/trunk/src/VERSION.C</path>
+<path
+   kind=""
+   action="A">/trunk/doc/admin</path>
+<path
+   kind=""
+   action="A">/trunk/doc/user/errors.xml</path>
+<path
+   kind=""
+   action="A">/trunk/src/TDF.PRJ</path>
+<path
+   kind=""
+   action="A">/trunk/doc/user/user.xml</path>
+<path
+   kind=""
+   action="A">/trunk/src/include/HISTORY.H</path>
+<path
+   kind=""
+   action="A">/trunk/utils/runtdf</path>
+<path
+   kind=""
+   action="A">/trunk/src/etc</path>
+<path
+   kind=""
+   action="A">/trunk/src/etc/history</path>
+<path
+   kind=""
+   action="A">/trunk/build/.gitignore</path>
+<path
+   kind=""
+   action="A">/trunk/utils/update-version</path>
+<path
+   kind=""
+   action="A">/trunk/src/include/DISPLAY.H</path>
+<path
+   kind=""
+   action="A">/trunk/doc</path>
+<path
+   kind=""
+   action="A">/trunk/tc</path>
+<path
+   kind=""
+   action="A">/trunk/src/HISTORY.C</path>
+<path
+   kind=""
+   action="A">/trunk/tc/.gitignore</path>
+<path
+   kind=""
+   action="A">/trunk/utils/setup-remotes</path>
+<path
+   kind=""
+   action="A">/trunk/src/include/TDF.H</path>
+<path
+   kind=""
+   action="A">/trunk/Makefile</path>
+<path
+   kind=""
+   action="A">/trunk/doc/user/intro.xml</path>
+<path
+   kind=""
+   action="A">/trunk/src/DISPLAY.C</path>
+<path
+   kind=""
+   action="A">/trunk/src/include/MPX_SUPT.H</path>
+<path
+   kind=""
+   action="A">/trunk/utils/tdfdosbox.conf</path>
+<path
+   kind=""
+   action="A">/trunk/utils/dosbox.conf</path>
+<path
+   kind=""
+   action="A">/trunk/src/TDF.C</path>
+<path
+   kind=""
+   action="A">/trunk/target</path>
+</paths>
+<msg>First commit... for the third time</msg>
+</logentry>
+<logentry
+   revision="1">
+<date>2009-02-09T22:39:35.161547Z</date>
+<paths>
+<path
+   kind=""
+   action="A">/trunk</path>
+<path
+   kind=""
+   action="A">/branches</path>
+<path
+   kind=""
+   action="A">/tags</path>
+</paths>
+<msg>Initial directory structure.</msg>
+</logentry>
+</log>

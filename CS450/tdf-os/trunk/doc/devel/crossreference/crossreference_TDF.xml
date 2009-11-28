@@ -1,0 +1,87 @@
+<section xmlns="http://docbook.org/ns/docbook" version="5.0">
+  <title><filename>TDF.C</filename> Functions</title>
+  <indexterm><primary>TDF.C</primary></indexterm>
+
+  <section>
+    <title>int <function>main</function> (int argc, char *argv[])</title>
+    <para>
+      <indexterm><primary>main</primary></indexterm>
+      <itemizedlist>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para>sys_set_date</para>
+		  <indexterm><primary>sys_set_date</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para>sys_init</para>
+		  <indexterm><primary>sys_init</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para>PCBDLL_creation</para>
+		  <indexterm><primary>PCBDLL_creation</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para>PCB_setup</para>
+		  <indexterm><primary>PCB_setup</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para>PCB_insert</para>
+		  <indexterm><primary>PCB_insert</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para>dispatch_init</para>
+		  <indexterm><primary>dispatch_init</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para>dispatch</para>
+		  <indexterm><primary>dispatch</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para>FP_OFF</para>
+		  <indexterm><primary>FP_OFF</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para>FP_SEG</para>
+		  <indexterm><primary>FP_SEG</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para>load</para>
+		  <indexterm><primary>load</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para>presume</para>
+		  <indexterm><primary>presume</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para>pshowall</para>
+		  <indexterm><primary>pshowall</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para>trm_close</para>
+		  <indexterm><primary>trm_close</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para>com_close</para>
+		  <indexterm><primary>com_close</primary></indexterm>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called By:</title>
+	    <para>
+	      <function>main</function> is a special function and is
+	      never called by any other function.
+	    </para>
+	  </formalpara>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+</section>

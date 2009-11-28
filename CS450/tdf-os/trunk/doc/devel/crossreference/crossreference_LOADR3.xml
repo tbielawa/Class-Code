@@ -1,0 +1,61 @@
+<section xmlns="http://docbook.org/ns/docbook" version="5.0">
+  <title><filename>LOADR3.C</filename> Functions</title>
+  <indexterm><primary>LOADR3.C</primary></indexterm>
+
+  <section>
+    <title>int <function>loadr3</function> ()</title>
+    <para>
+      <indexterm><primary>loadr3</primary></indexterm>
+      <itemizedlist>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called</title>
+	    <para>
+	      <itemizedlist>
+                <listitem>
+                  <para>
+		    <function>PCB_setup</function>
+		    <indexterm><primary>PCB_setup</primary></indexterm>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>FP_OFF</function>
+		    <indexterm><primary>FP_OFF</primary></indexterm>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>FP_SEG</function>
+		    <indexterm><primary>FP_SEG</primary></indexterm>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>PCB_insert</function>
+		    <indexterm><primary>PCB_insert</primary></indexterm>
+                  </para>
+                </listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called By</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para>
+		    shell
+		    <indexterm><primary>shell</primary></indexterm>
+		  </para>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+</section>

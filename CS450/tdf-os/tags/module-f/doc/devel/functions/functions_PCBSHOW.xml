@@ -1,0 +1,216 @@
+<section xmlns="http://docbook.org/ns/docbook">
+  <title><filename><indexterm><primary>PCBSHOW.C</primary></indexterm></filename>PCBSHOW.C Functions</title>
+  <section>
+    <title>int <function>pshow</function> (char *name, PCBDLL **PRIORITY_QUEUES)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  int <function>pshow</function>
+		</funcdef>
+		<paramdef>
+		  char *<parameter>NAME</parameter>
+		</paramdef>
+		<paramdef>
+		  PCBDLL **<parameter>PRIORITY_QUEUES</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>PCB_SHOW_ERR</parameter> <returnvalue>0</returnvalue></title>
+		  <para>
+		    Indicates successful description of process found
+		    and printed.
+		  </para>
+		</formalpara>
+	      </listitem>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>PCB_SHOW_ERR</parameter> <returnvalue>1</returnvalue></title>
+		  <para>
+		    Indicates that the specified process could not be
+		    found.
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    <function>pshow</function> locates the specified process
+	    using <function>PCB_PRINT</function> on the specified name
+	    argument.
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+  
+  <section>
+    <title>int <function>pshowall</function> (PCBDLL **PRIORITY_QUEUES)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  int <function>pshowall</function>
+		</funcdef>
+		<paramdef>
+		  PCBDLL **<parameter>PRIORITY_QUEUES</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>PCB_SHOWALL_ERR</parameter> <returnvalue>0</returnvalue></title>
+		  <para>
+		    Indicates that the processes were successfully
+		    described and printed.
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    pshowall calls PCBDLL_PRINT on each queue in
+	    PRIORITY_QUEUES (0 -3).
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+  
+  <section>
+    <title>int <function>pshowblk</function> (PCBDLL **PRIORITY_QUEUES)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  int <function>pshowblk</function>
+		</funcdef>
+		<paramdef>
+		  PCBDLL **<parameter>PRIORITY_QUEUES</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>PCB_SHOWBLOCKED_ERR</parameter> <returnvalue>0</returnvalue></title>
+		  <para>
+		    Indicates that the blocked processes were
+		    successfully described and printed.
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    <function>pshowblk</function> calls PCBDLL_PRINT on
+	    PRIORITY_QUEUES[1] and [3] which house blocked processes.
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+  
+  <section>
+    <title>int <function>pshowrd</function> (PCBDLL **PRIORITY_QUEUES)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  int <function>pshowrd</function>
+		</funcdef>
+		<paramdef>
+		  PCBDLL **<parameter>PRIORITY_QUEUES</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>PCB_SHOWREADY_ERR</parameter> <returnvalue>0</returnvalue></title>
+		  <para>
+		    Indicates that all READY processes were completely
+		    described and printed.
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    <function>pshowrd</function> calls PCBDLL_PRINT on
+	    PRIORITY_QUEUES[0] and [2], which are the READY state
+	    queues.
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+</section>

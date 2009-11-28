@@ -1,0 +1,21 @@
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="LOAD.H">
+  <title>LOAD.H</title>
+  <indexterm><primary>load.h</primary></indexterm>
+  <programlisting>
+    <![CDATA[
+
+// LOAD.C
+// Responsible for loading an MPX process and placing it in the SUSPENDED
+// queue.
+//
+// tours de force: http://www.ducksarepeople.com/tdf 
+
+#ifndef LOAD_H
+#define LOAD_H
+
+extern int load(char *);
+
+#endif
+    ]]>
+  </programlisting>
+</section>

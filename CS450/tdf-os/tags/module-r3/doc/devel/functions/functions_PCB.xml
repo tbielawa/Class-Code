@@ -1,0 +1,646 @@
+<section xmlns="http://docbook.org/ns/docbook">
+  <title><filename>PCB.C</filename> Functions</title>
+  <section>
+    <title>PCBDLL *<function>PCBDLL_alloc</function> (void)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  PCBDLL *<function>PCBDLL_alloc</function>
+		</funcdef>
+		<paramdef>
+		  void
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><returnvalue>PCBDLL*</returnvalue></title>
+		  <para>
+		    A pointer to the PCBDLL.
+		  </para>
+		</formalpara>
+	      </listitem>
+	      <listitem>
+		<formalpara>
+		  <title><returnvalue>NULL</returnvalue></title>
+		  <para>
+		    A NULL pointer.
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    Allocates the required memory for a node of the PCB linked
+	    list.
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+  
+  <section>
+    <title>PCBDLL **<function>PCBDLL_creation</function> (int)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  PCBDLL **<function>PCBDLL_creation</function>
+		</funcdef>
+		<paramdef>
+		  int <parameter>numqueues</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><returnvalue>PCBDLL**</returnvalue></title>
+		  <para>
+		    A pointer to the array of PCBDLLs.
+		  </para>
+		</formalpara>
+	      </listitem>
+	      <listitem>
+		<formalpara>
+		  <title><returnvalue>NULL</returnvalue></title>
+		  <para>
+		    A NULL pointer, if creation failed.
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    Allocates a static array of PCBDLLs.
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+  
+  <section>
+    <title>int <function>PCBDLL_print</function> (PCBDLL*)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  int <function>PCBDLL_print</function>
+		</funcdef>
+		<paramdef>
+		  PCBDLL* <parameter>queue</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><returnvalue>0</returnvalue></title>
+		  <para>
+		    Function correctly printed out the PCBDLL.
+		  </para>
+		</formalpara>
+	      </listitem>
+	      <listitem>
+		<formalpara>
+		  <title><returnvalue>1</returnvalue></title>
+		  <para>
+		    Function failed to print out the PCBDLL.
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    Prints out the contents of a specified PCB queue (a
+	    PCBDLL).  Function will iterate through the PCBDLL using
+	    the pointers inside a PCBDLL node.
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+  
+  <section>
+    <title>PCB *<function>PCB_alloc</function> (void)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  PCB *<function>PCB_alloc</function>
+		</funcdef>
+		<paramdef>
+		  void
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><returnvalue>PCB*</returnvalue></title>
+		  <para>
+		    A pointer to the allocated PCB.
+		  </para>
+		</formalpara>
+	      </listitem>
+	      <listitem>
+		<formalpara>
+		  <title><returnvalue>NULL</returnvalue></title>
+		  <para>
+		    A NULL pointer if the allocation failed.
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    Allocates the appropriate memory for a PCB (Process
+	    Control Block).
+	  </para>
+	</formalpara>
+	<para>
+	  The <function>PCB_alloc</function> function allocates the
+	  memory required for a PCB, and then returns a pointer to the
+	  PCB that it has allocated.  The
+	  <function>PCB_alloc</function> function does not alter the
+	  values of the PCB at all. If the memory for the PCB could
+	  not be allocated, then NULL is returned.
+	</para>
+      </listitem>
+    </itemizedlist>
+  </section>
+  
+  <section>
+    <title>PCB *<function>PCB_setup</function> (char*, int, int, PCBDLL**)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  PCB *<function>PCB_setup</function>
+		</funcdef>
+		<paramdef>
+		  char *<parameter>pname</parameter>
+		</paramdef>
+		<paramdef>
+		  int <parameter>ppriority</parameter>
+		</paramdef>
+		<paramdef>
+		  int <parameter>pclass</parameter>
+		</paramdef>
+		<paramdef>
+		  PCBDLL **<parameter>allqueues</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><returnvalue>PCB*</returnvalue></title>
+		  <para>
+		    A pointer to the created PCB.
+		  </para>
+		</formalpara>
+	      </listitem>
+	      <listitem>
+		<formalpara>
+		  <title><returnvalue>NULL</returnvalue></title>
+		  <para>
+		    A NULL pointer if the function failed.
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    Creates and returns a newly created PCB with the defined
+	    attributes.
+	  </para>
+	</formalpara>
+	<para>
+	  First, the function makes some sanity checks to make sure
+	  the parameters are valid (including making sure the name
+	  does not match any other processes that are in any
+	  queue). Next, the function will call PCB_alloc to allocate
+	  the necessary memory. The function will then set the values
+	  of the PCB to the values given by the parameters, and then
+	  return a pointer to the PCB. If the function failed at any
+	  point for any reason, NULL will be returned.
+	</para>
+      </listitem>
+    </itemizedlist>
+  </section>
+  
+  <section>
+    <title>PCB *<function>PCB_find</function> (char*, PCBDLL**)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  PCB *<function>PCB_find</function>
+		</funcdef>
+		<paramdef>
+		  char *<parameter>pname</parameter>
+		</paramdef>
+		<paramdef>
+		  PCBDLL **<parameter>allqueues</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><returnvalue>PCB*</returnvalue></title>
+		  <para>
+		    A pointer to the PCB that was found.
+		  </para>
+		</formalpara>
+	      </listitem>
+	      <listitem>
+		<formalpara>
+		  <title><returnvalue>NULL</returnvalue></title>
+		  <para>
+		    A NULL pointer if the PCB with name pname was not
+		    found in allqueues.
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    Finds the PCB with name pname in all queues and returns a
+	    pointer to it.
+	  </para>
+	</formalpara>
+	<para>
+	  The <function>PCB_find</function> function will search for a process based on its
+	  name in the queues provided. The function will iterate
+	  through the PCBDLLs, whose length is defined globally by
+	  TDF_QUEUES, and follow the pointers in each PCBDLL until it
+	  matches the name. The function will then return a pointer to
+	  be PCB if it is found, otherwise it will return NULL.
+	</para>
+      </listitem>
+    </itemizedlist>
+  </section>
+  
+  <section>
+    <title>int <function>PCB_insert</function> (PCBDLL*, PCB*, int)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  int <function>PCB_insert</function>
+		</funcdef>
+		<paramdef>
+		  PCBDLL *<parameter>queue</parameter>
+		</paramdef>
+		<paramdef>
+		  PCB *<parameter>newproc</parameter>
+		</paramdef>
+		<paramdef>
+		  int <parameter>newstate</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><returnvalue>0</returnvalue></title>
+		  <para>
+		    The PCB newproc was correctly inserted into queue
+		    and the state was correctly updated to newstate
+		  </para>
+		</formalpara>
+	      </listitem>
+	      <listitem>
+		<formalpara>
+		  <title><returnvalue>1</returnvalue></title>
+		  <para>
+		    The function failed to insert newproc into the queue.
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    The function inserts newproc into queue and updates the
+	    state of newproc to newstate.
+	  </para>
+	</formalpara>
+	<para>
+	  First, the function will check to see if the PCB* parameter
+	  is NULL, in which case nothing will be inserted and the
+	  function will return with an error code of 1. Next, a new
+	  PCBDLL (which is really just an element in the linked list)
+	  is allocated to store the new PCB.  The PCBDLL given by the
+	  parameter is then iterated through, and the function will
+	  determine which is the proper position based on the priority
+	  of the PCB. Once determined, <function>PCB_insert</function>
+	  will then update the pointers of the new PCB, and the PCBs
+	  around the new PCB in the queue. Finally, the state of the
+	  PCB will be updated based on the parameter. The function
+	  will then return 0 if this was successful.
+	</para>
+      </listitem>
+    </itemizedlist>
+  </section>
+  
+  <section>
+    <title>int <function>PCB_remove</function> (PCB*, PCBDLL**)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  int <function>PCB_remove</function>
+		</funcdef>
+		<paramdef>
+		  PCB *<parameter>proc</parameter>
+		</paramdef>
+		<paramdef>
+		  PDBDLL **<parameter>allqueues</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><returnvalue>0</returnvalue></title>
+		  <para>
+		    proc was correctly removed from its allqueues.
+		  </para>
+		</formalpara>
+	      </listitem>
+	      <listitem>
+		<formalpara>
+		  <title><returnvalue>1</returnvalue></title>
+		  <para>
+		    proc was not removed from allqueues.
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    Function will remove proc from allqueues and return an
+	    error code.
+	  </para>
+	</formalpara>
+	<para>
+	  The <function>PCB_remove</function> function at first does a
+	  sanity check to make sure the PCB* parameter is not NULL,
+	  otherwise it will return 1. The function will then iterate
+	  through the array of queues, which is of length TDF_QUEUES,
+	  until it finds matches the PCB. If it cannot find the PCB in
+	  the queues, then nothing will be removed and 1 will be
+	  returned. If the PCB is found, then the surrounding pointers
+	  are updated and the PCBDLL which formerly contained the PCB
+	  is deallocated, but the PCB is not deallocated. If
+	  successful, a value of 0 is returned.
+	</para>
+      </listitem>
+    </itemizedlist>
+  </section>
+  
+  <section>
+    <title>int <function>PCB_free</function> (PCB*)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  int <function>PCB_free</function>
+		</funcdef>
+		<paramdef>
+		  PCB *<parameter>proc</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><returnvalue>0</returnvalue></title>
+		  <para>
+		    proc was properly deallocated.
+		  </para>
+		</formalpara>
+	      </listitem>
+	      <listitem>
+		<formalpara>
+		  <title><returnvalue>1</returnvalue></title>
+		  <para>
+		    proc could not be deallocated.
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    Function will deallocate (free) the memory of proc.
+	  </para>
+	  
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+  
+  <section>
+    <title>int <function>PCB_print</function> (PCB*)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  int <function>PCB_print</function>
+		</funcdef>
+		<paramdef>
+		  PCB *<parameter>proc</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><returnvalue>0</returnvalue></title>
+		  <para>
+		    The information of proc was properly displayed.
+		  </para>
+		</formalpara>
+	      </listitem>
+	      <listitem>
+		<formalpara>
+		  <title><returnvalue>1</returnvalue></title>
+		  <para>
+		    The information of proc could not be properly displayed.
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    Function will display the contents of proc to stdout.
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+</section>

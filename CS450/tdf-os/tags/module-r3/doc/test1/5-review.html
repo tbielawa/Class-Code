@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="949.43">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Helvetica; min-height: 16.0px}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1">1. Identify the three major classes of processes that must be distinguished in a<span class="Apple-converted-space"> </span></p>
+<p class="p1">process scheduling strategy. For each class, state two important facts about its<span class="Apple-converted-space"> </span></p>
+<p class="p1">properties or requirements that distinguish it from other classes.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-converted-space">   </span></p>
+<p class="p1">Batch - Batch processes are submitted with good estimates of their expected resources.<span class="Apple-converted-space">  </span>Batch processes are usually large and delays may be accepted.(?)</p>
+<p class="p1">Interactive - Assumed to perform work on behalf of the user.<span class="Apple-converted-space">  </span>Usually have short running times.</p>
+<p class="p1">Real-Time - Designed to interact with external events or objects.<span class="Apple-converted-space">  </span>Resource requirements are generally known.</p>
+<p class="p2"><br></p>
+<p class="p1">2. Explain a possible weakness of each of the following short-term scheduling<span class="Apple-converted-space"> </span></p>
+<p class="p1">strategies for batch processes: (a) First-in, first-out; (b) Shortest job next<span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-converted-space">   </span></p>
+<p class="p1">a. First-in, first-out - All processes are assumed to have equal priority when they may in fact not.</p>
+<p class="p1">b. Shortest job next - Excessively unfair for large jobs which may have a higher priority.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1">3. Explain why the scheduling levels listed below are not normally used for the<span class="Apple-converted-space"> </span></p>
+<p class="p1">indicated categories of processes: (a) Medium-term scheduling for batch<span class="Apple-converted-space"> </span></p>
+<p class="p1">processes; (b) Long-term scheduling for interactive processes; (c) Medium-term<span class="Apple-converted-space"> </span></p>
+<p class="p1">scheduling for real-time processes.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-converted-space">   </span></p>
+<p class="p1">a. Medium-term scheduling for batch processes - Jobs are admitted only when sufficient storage is available to meet their announced needs.<span class="Apple-converted-space">  </span>Short term scheduling is more desirable as there is no need for a consistent pattern of response time.</p>
+<p class="p1">b. Long-term scheduling for interactive processes - Interactive processes generally are short lived and have a high priority as they were called by the user.<span class="Apple-converted-space">  </span>The user isn't going to wait to wait on them.</p>
+<p class="p1">c. Medium-term scheduling for real-time processes - Storage for such a job may not be immediately available, so medium term scheduling would be a bad choice.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1">4. Explain how "processor-bound" processes can be identified in an interactive<span class="Apple-converted-space"> </span></p>
+<p class="p1">system, and why these processes should be distinguished.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-converted-space">   </span></p>
+<p class="p1">Processor bound processes will run for a while before requesting I/O resources.<span class="Apple-converted-space">  </span>Thus, it is reasonable to give more favorable service to I/O bound processes.<span class="Apple-converted-space">  </span>Once a processor bound process has exceeded it's quantum, it is reinserted with a lower priority as it will require longer processor service.</p>
+<p class="p2"><br></p>
+<p class="p1">5. Explain two possible "measures of success" for a scheduling algorithm.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-converted-space">   </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>• <b>waiting time</b>, the time a process spends in a queue waiting for service. In general,<span class="Apple-converted-space"> </span></p>
+<p class="p1">this time should be as low as possible.<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>• <b>queue length</b>, the size of the queue of waiting requests. Queue length must be<span class="Apple-converted-space"> </span></p>
+<p class="p1">kept reasonable to conserve storage.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">6. State five criteria that can be used to select processes for low-level scheduling.<span class="Apple-converted-space"> </span></p>
+<p class="p1">Explain briefly why each is reasonable.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-converted-space">   </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>*<span class="Apple-converted-space">  </span>Response time: the interval of time from the moment a service is requested until the response begins to be received. In time-shared, interactive systems this is a better measure of responsiveness from a user's point of view than turnaround time, since processes may begin to produce output early in their execution.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>* Turnaround time: the interval between the submission of a process and the completion of its execution, including the actual running time, plus the time spent sleeping before being dispatched or while waiting to access various resources. This is the appropriate responsiveness measure for batch production, as well as for time-shared systems that maintain multiple batch queues, sharing CPU time among them.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>* Meeting deadlines: the ability of the OS to meet pre-defined deadlines for job completion. It makes sense only when the minimal execution time of an application can be accurately predicted.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>* Predictability: the ability of the system to ensure that a given task is executed within a certain time interval, and/or to ensure that a certain constant response time is granted within a strict tolerance, no matter what the machine load is.<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>* Throughput: the rate of completion of processes (processes completed per unit time). This is a ``raw'' measure of how much work is performed, since it depends on the execution length of processes, but it's obviously affected by the scheduling policy.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1">7. Identify the three levels of process and job scheduling, and describe briefly the<span class="Apple-converted-space"> </span></p>
+<p class="p1">purpose of each.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-converted-space">   </span></p>
+<p class="p1">Long-term - Control the order in which new processes are admitted.</p>
+<p class="p1">Medium-term - Selecting the set of existing processes that can compete for use of the processor.</p>
+<p class="p1">Short-term - Concerned with establishing the order in which ready processes are to be assigned in turn at the processor and preparing each process for actual execution.</p>
+<p class="p2"><br></p>
+<p class="p1">8. Name two significant differences between batch processes and interactive<span class="Apple-converted-space"> </span></p>
+<p class="p1">processes that affect the low-level scheduling strategy.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1">...</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space"> </span>9. Which of the following scheduling algorithms may cause some processes to wait<span class="Apple-converted-space"> </span></p>
+<p class="p1">indefinitely: FIFO, SJF, HRN, round-robin, LRU.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1">FIFO - Processes have to wait in line.<span class="Apple-converted-space">  </span>If a big one gets to the front, all the others have to wait.</p>
+<p class="p1">SJF - Big jobs have to wait, if short ones keep popping up...</p>
+<p class="p1">HRN - Low response processes (such as interactive user processes) could get left in the dust.</p>
+<p class="p1">round-robin - Processes get a limited quantum of time, and when that quantum runs out, their placed back in the queue to wait.<span class="Apple-converted-space">  </span>If a process was large, it could have to reenter for execution multiple times etc.</p>
+<p class="p1">LRU - Large processes won't get the priority bump since they keep going in and out regardless of how long they've been around?</p>
+<p class="p2"><br></p>
+<p class="p1">10. List three types of hardware support for process scheduling provided by some<span class="Apple-converted-space"> </span></p>
+<p class="p1">processor architectures.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1">Queueing</p>
+<p class="p1">Priorities</p>
+<p class="p1">Context switching</p>
+<p class="p2"><br></p>
+<p class="p1">11. Why does the Windows XP operating system provide exactly 32 scheduling<span class="Apple-converted-space"> </span></p>
+<p class="p1">priority levels? <span class="Apple-converted-space"> </span></p>
+<p class="p3"><span class="Apple-converted-space"> </span></p>
+<p class="p4">32 bits?</p>
+</body>
+</html>

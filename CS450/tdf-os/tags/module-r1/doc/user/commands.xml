@@ -1,0 +1,58 @@
+<chapter id="Commands">
+  <title>Commands</title>
+  <para>
+    This chapter is designed to serve as a reference to the commands that
+    are implemented in the MPX operating system. Similar information may
+    also be obtained through the built-in "help" command. 
+  </para>
+
+  <section id="date">
+    <title>date</title>
+    <para>
+      Displays the date.
+    </para>
+  </section>
+
+  <section id="display">
+    <title>dir</title>
+    <para>
+      Displays the working directory.
+    </para>
+  </section>
+
+  <section id="exit">
+    <title>exit</title>
+    <para>
+      The exit command will terminate the MPX operating system. There are
+      no additional arguments that may be passed to this command. This is
+      the safest way to end your MPX session.
+    </para>
+  </section>
+
+  <section id="help">
+    <title>help</title>
+    <para>
+      The help command will print out a list of commands and a brief
+      description of each. This is a very useful command to those unfamiliar
+      with the system.
+    </para>
+  </section>
+
+  <section id="history">
+    <title>history</title>
+    <para>
+      The history command will print out a list of the user's previous 
+      commands.
+    </para>
+  </section>
+
+  <section id="version">
+    <title>version</title>
+    <para>
+      The version command will print out the current version, including the
+      version number, date of release, and the first several digits of the
+      git commit, which is the source control for tours de force.
+    </para>
+  </section>
+
+</chapter>

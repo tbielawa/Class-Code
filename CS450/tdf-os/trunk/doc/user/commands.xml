@@ -1,0 +1,184 @@
+<chapter xmlns="http://docbook.org/ns/docbook"
+	 xmlns:xl="http://www.w3.org/1999/xlink"
+	 xml:id="usr-doc-cmd_summ" version="5.0">
+
+  <title>Commands Summary</title>
+  <para>
+    This chapter is to serve as a summary of the basic commands that
+    are implemented in the TDF operating system. For a more detailed
+    description of the commands, please refer to the Detailed Commands
+    Information chapter in this manual, or employ the <command
+    linkend="cmd-help">help</command> command in the operating system
+    environment.
+  </para>
+
+  <section xml:id="cmd-date">
+    <title>date</title>
+    <para>
+      Displays the system date.  When given an optional
+      <option>-s</option> option followed by a valid date string in
+      the format <replaceable>YYYYMMDD</replaceable>, the date will be
+      set to the specified date.
+    </para>
+  </section>
+
+  <section xml:id="cmd-display">
+    <title>display</title>
+    <para>
+      Displays the contents of the current working directory, which is
+      all of the files with an extension of <filename>.MPX</filename>.
+      Optionally accepts a relative or absolute directory path to
+      function on.
+    </para>
+  </section>
+
+  <section xml:id="cmd-exit">
+    <title>exit</title>
+    <para>
+      The <command>exit</command> command will terminate the MPX
+      operating system. There are no additional arguments that may be
+      passed to this command. This is the safest way to end your MPX
+      session. You will be prompted for confirmation before you are
+      dropped.
+    </para>
+  </section>
+
+  <section xml:id="cmd-help">
+    <title>help</title>
+    <para>
+      The <command>help</command> command will print out a list of
+      commands and a brief description of each. This is a very useful
+      command to those unfamiliar with the system. For help on a
+      specific command, simply type the name of the command you would
+      like help with as the argument.
+    </para>
+  </section>
+
+  <section xml:id="cmd-history">
+    <title>history</title>
+    <para>
+      The <function>history</function> command will print out a list
+      of the user's previous commands. It accepts no additional
+      options.
+    </para>
+  </section>
+
+  <section xml:id="cmd-load">
+    <title>load</title>
+    <para>
+      The <command>load</command> command loads a specific MPX
+      process into the suspended queue.  The extension of the file is
+      assumed to be ".mpx". Therefor to load
+      <filename>proc1.mpx</filename> into the suspended queue you
+      would run <command>load</command> with
+      <replaceable>proc1</replaceable> as the argument to
+      <option>-n</option> and <option>-p</option> followed by a
+      valid priority level.
+    </para>
+  </section>
+
+  <section xml:id="cmd-presume">
+    <title>presume</title>
+    <para>
+      The <command>presume</command> command returns a process from
+      the suspended state. To return a process from the suspended
+      state to the ready state run <command>presume</command> with the
+      name of the process as the argument.
+    </para>
+  </section>
+
+  <section xml:id="cmd-prompt">
+    <title>prompt</title>
+    <para>
+      The <command>prompt</command> command is used to change the
+      command prompt from the default <prompt>tdf:$</prompt>. To
+      change the look of the command prompt run prompt with the
+      desired prompt as the argument.
+    </para>
+  </section>
+
+  <section xml:id="cmd-psetprio">
+    <title>psetprio</title>
+    <para>
+      The <command>psetprio</command> command is used to set the
+      priority of a process. The priority must be within the -128 to
+      127 or an error will be returned.  To set the priority of a
+      process run <function>psetprio</function> with an argument
+      <option>-n</option> for the name of the process and argument
+      <option>-p</option> for the priority.
+    </para>
+  </section>
+
+  <section xml:id="cmd-pshow">
+    <title>pshow</title>
+    <para>
+      The <function>pshow</function> command displays pertinent
+      information about a particular process. To display information
+      for a process run <function>pshow</function> with the name of
+      the desired process as the argument.
+    </para>
+  </section>
+
+  <section xml:id="cmd-pshowall">
+    <title>pshowall</title>
+    <para>
+      The <function>pshowall</function> command displays information
+      on all of the current processes regardless of their states. To
+      display information on all current processes run
+      <function>pshowall</function> with no arguments.
+    </para>
+  </section>
+
+  <section xml:id="cmd-pshowblk">
+    <title>pshowblk</title>
+    <para>
+      The <function>pshowblk</function> command displays information
+      on all processes currently in the blocked state. To display
+      information on all currently blocked processes run
+      <function>pshowblk</function> with no arguments.
+    </para>
+  </section>
+
+  <section xml:id="cmd-pshowrd">
+    <title>pshowrd</title>
+    <para>
+      The <function>pshowrd</function> command displays information on
+      all processes currently in in the ready state. To display
+      information on all currently ready processes run
+      <function>pshowrd</function> with no arguments.
+    </para>
+  </section>
+
+  <section xml:id="cmd-psuspend">
+    <title>psuspend</title>
+    <para>
+      The <function>psuspend</function> command places a process in
+      the suspended state. To place a process in the suspended state
+      run <function>psuspend</function> with the name of the process
+      as the argument.
+    </para>
+  </section>
+
+  <section xml:id="cmd-kill">
+    <title>kill</title>
+    <para>
+      The <function>kill</function> command is used to completely
+      delete a process, remove it from all queues and free its
+      memory. To delete a process run <function>kill</function>
+      with the name of the intended process as the argument.
+    </para>
+  </section>
+
+  <section xml:id="cmd-version">
+    <title>version</title>
+    <para>
+      The <function>version</function> command will print out the
+      current version, including the version number, date of release,
+      and the first several digits of the
+      subversion<footnote><para><link
+      xl:href="http://subversion.tigris.org/"/></para></footnote>
+      commit, which is the source control for tours de force.
+    </para>
+  </section>
+
+</chapter>

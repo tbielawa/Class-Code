@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# Builds the documentation
+DOC_BASE="doc/prepared"
+XSL=/usr/bin/xsltproc
+
+if [ -f /etc/fedora-release ]; then
+    XSL_LOC=/usr/share/sgml/docbook/xsl-ns-stylesheets-1.74.0/xhtml/docbook.xsl
+else
+    XSL_LOC=/usr/share/xml/docbook/stylesheet/nwalsh/xhtml/docbook.xsl
+fi
+
+mkdir -p ${DOC_BASE}/html
+mkdir -p ${DOC_BASE}/pdf
+
+case ${1} in
+    "pdf" )
+	dblatex -o ${DOC_BASE}/pdf/devel.pdf doc/devel/devel.xml
+	dblatex -o ${DOC_BASE}/pdf/user.pdf doc/user/user.xml
+	dblatex -o ${DOC_BASE}/pdf/temp.pdf doc/temp/temp.xml
+	;;
+
+    "html" )
+	${XSL} --xinclude --output ${DOC_BASE}/html/devel.html $(echo ${XSL_LOC} | sed "s/xhtml/html/" ) doc/devel/devel.xml
+	${XSL} --xinclude --output ${DOC_BASE}/html/user.html $(echo ${XSL_LOC} | sed "s/xhtml/html/" ) doc/user/user.xml
+	${XSL} --xinclude --output ${DOC_BASE}/html/temp.html $(echo ${XSL_LOC} | sed "s/xhtml/html/" ) doc/temp/temp.xml
+	;;
+
+    * )
+	${XSL} --xinclude --output ${DOC_BASE}/html/devel.xhtml ${XSL_LOC} doc/devel/devel.xml
+	${XSL} --xinclude --output ${DOC_BASE}/html/user.xhtml ${XSL_LOC} doc/user/user.xml
+	${XSL} --xinclude --output ${DOC_BASE}/html/temp.xhtml ${XSL_LOC} doc/temp/temp.xml
+	;;
+esac
+
+echo ""
+echo "Done."
+echo "Your docs have been prepared under: ${DOC_BASE}"
+echo ""

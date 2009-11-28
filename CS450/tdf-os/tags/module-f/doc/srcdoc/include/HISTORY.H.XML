@@ -1,0 +1,24 @@
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="HISTORY.H">
+  <title>HISTORY.H</title>
+  <indexterm><primary>history.h</primary></indexterm>
+  <programlisting>
+    <![CDATA[
+
+// HISTORY.H
+// Header file for the history command
+//
+// tours de force: http://www.ducksarepeople.com/tdf
+
+#ifndef HISTORY_H
+
+#define HISTORY_H
+#define HBS 256
+#define HIST_LEN 20
+
+extern int history ( char* );
+extern int append_history ( char* );
+
+#endif
+    ]]>
+  </programlisting>
+</section>

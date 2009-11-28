@@ -1,0 +1,7 @@
+DOSBox version 0.72
+Copyright 2002-2007 DOSBox Team, published under GNU GPL.
+---
+CONFIG:Loading primary settings from config file dosbox.conf
+MIXER:No Sound Mode Selected.
+MIDI:Opened device:none
+CPU:2500 cycles

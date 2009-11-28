@@ -1,0 +1,18 @@
+<chapter xmlns="http://docbook.org/ns/docbook">
+  <title>Cross Reference</title>
+  
+  <xi:include href="crossreference/crossreference_DATE.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="crossreference/crossreference_DISPLAY.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="crossreference/crossreference_HELP.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="crossreference/crossreference_HISTORY.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="crossreference/crossreference_PARSER.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="crossreference/crossreference_PCBMAKE.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="crossreference/crossreference_PCBMAN.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="crossreference/crossreference_PCBSHOW.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="crossreference/crossreference_PCBUTILS.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="crossreference/crossreference_PCB.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="crossreference/crossreference_SHELL.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="crossreference/crossreference_TDF.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="crossreference/crossreference_VERSION.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  
+</chapter>

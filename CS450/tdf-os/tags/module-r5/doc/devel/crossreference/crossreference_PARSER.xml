@@ -1,0 +1,64 @@
+<section xmlns="http://docbook.org/ns/docbook">
+  <title><filename>PARSER.C</filename> Functions</title>
+  <section>
+    <title>int <function>parse_buffer</function> (char *buffer, char *function, char *args)</title>
+    <para>
+      <indexterm><primary>parse_buffer</primary></indexterm>
+      <itemizedlist>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called</title>
+	    <para>
+	      <itemizedlist>
+                <listitem>
+                  <para>
+                    <function>strlen</function>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>isgraph</function>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>isspace</function>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>strncpy</function>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>printf</function>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>sizeof</function>
+                  </para>
+                </listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called By</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para>
+		    <function>shell</function>
+		  </para>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+</section>

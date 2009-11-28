@@ -1,0 +1,13 @@
+#!/bin/bash
+
+. ./utils/whichDosbox
+
+echo "Starting DOSBOX from current directory"
+
+cd utils
+${DOSBOXRUN} ../ > RUNDOS.log
+cd ..
+
+echo "Leaving DOSBOX"
+
+exit 0

@@ -1,0 +1,163 @@
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0">
+  <title>Data Structures</title>
+  <para>
+    This chapter will outline the data structures that have been created for
+    the project.
+  </para>
+
+  <section>
+    <title>struct PCB</title>
+    <para>
+      <indexterm><primary>PCB</primary></indexterm>
+      The PCB structure contains the following values:
+      <programlisting>
+        char name[8] - the name of the process (8 characters or less)
+        int pclass - the class of the process (APPLICATION or SYSTEM)
+        int priority - the priority of the process (between -127 and 128)
+        int state - the state of the process (which queue it's in)
+        unsigned char pstack[1024] - the memory stack of the PCB
+        int memsize - the size of the memory space
+        unsigned char *loadaddr - the load address of the memory
+        unsigned char *execaddr - the executing address of the memory
+      </programlisting>
+    </para>
+  </section>
+  
+  <section>
+    <title>struct PCBDLL</title>
+    <para>
+      <indexterm><primary>PCBDLL</primary></indexterm>
+      The PCBDLL structure is a doubly linked list with a dummy header
+      node. Each PCBDLL is essentially an individual node of the linked
+      list with pointers to the previous and next nodes. The PCBDLL
+      structure contains the following values:
+      <programlisting>
+        struct PCBDLL *prev - the previous element in the list
+        struct PCBDLL *next - the next element in the list
+        PCB *contents - the PCB contents of the current node
+      </programlisting>
+    </para>
+  </section>
+
+  <section>
+    <title>struct params</title>
+    <para>
+      <indexterm><primary>params</primary></indexterm>
+      The params structure is defined in TDF.H and its purpose is to interface
+      parameters between sys_req and the sys_call interrupt. Because sys_call
+      is called without any parameters, but the interrupt must access some
+      parameters that sys_req is called with, the params data structure may
+      be used as an interface. The values of this structure are saved to
+      the stack prior to the interrupt, and therefore may be obtained from
+      the top of the operting process's stack during the interrupt.
+    </para>
+    <para>
+      This structure contains the following values, and may be typically
+      gathered from a sys_req call:
+      <programlisting>
+	int op_code - the operation code
+	int device_id - the device ID
+	byte *buff_addr - the buffer address
+	int *count_addr - the count address
+	</programlisting>
+    </para>
+  </section>
+
+  <section>
+    <title>struct context</title>
+    <para>
+      <indexterm><primary>context</primary></indexterm>
+      The context structure is used to contain the various values of the
+      stack, and because it is a structure it may be conveniently contained
+      in the PCB's stack to be accessed when that PCB is being loaded
+      in the processor or is being placed back in the waiting queues.
+    </para>
+    <para>
+      The context structure contains the following values:
+      <programlisting>
+	unsigned int BP
+	unsigned int DI
+	unsigned int SI
+	unsigned int DS
+	unsigned int ES
+	unsigned int DX
+	unsigned int CX
+	unsigned int BX
+	unsigned int AX
+	unsigned int IP
+	unsigned int CS
+	unsigned int FLAGS
+      </programlisting>
+    </para>
+  </section>
+
+  <section>
+    <title>struct DCB</title>
+    <para>
+      <indexterm><primary>DCB</primary></indexterm>
+      The DCB structure (standing for Device Control Block) is the structure
+      that is used to manage all I/O between a device and the program that
+      is calling it. The DCB in MPX was designed for use with the serial
+      port, and it contains the following values:
+      <programlisting>
+	unsigned char flag - either OPEN or CLOSED
+	int *event_flag - used to show whether or not the device is in use
+	int status - gives the current status of the DCB
+	char *in_buff - the buffer for input
+	int *in_count - a pointer to the count of the input
+	int in_done - shows how much input was read
+	char *out_buff - the buffer for output
+	int *out_count - a pointer to the count of the ouput
+	int out_done - shows how much output was read
+	char ring_buffer[RING_BUFFER_SIZE] - the ring buffer
+	int ring_buffer_in - the pointer to the input of the ring buffer
+	int ring_buffer_out - the pointer to the output of the ring buffer
+	int ring_buffer_count - the count of the ring buffer
+      </programlisting>
+    </para>
+    <para>
+      The DCB handles all data transfer in the form of a ring buffer, and
+      therefore there is one pointer for the input position and one
+      pointer for the output position. Therefore, the buffer is in a
+      circular fashion.
+    </para>
+  </section>
+  
+  <section>
+    <title>struct IOD</title>
+    <para>
+      <indexterm><primary>IOD</primary></indexterm>
+      The IODs (I/O Request Descriptors) in MPX are used to keep track of
+      information in a pending I/O request. It contains the following values:
+      <programlisting>
+	char *name - the name of the PCB the IOD is associated with
+	PCB *pcb - the PCB of with which the IOD is associated with
+	int type - the type of request the IOD contains (READ or WRITE)
+	char *transfer_buffer - a pointer to the buffer for transfer
+	int *count - a pointer to the count of the request
+	struct IOD *next - a pointer for the next IOD in the queue
+      </programlisting>
+    </para>
+  </section>
+
+  <section>
+    <title>struct IOCB</title>
+    <para>
+      <indexterm><primary>IOCB</primary></indexterm>
+      The IOCB (I/O Control Block) is a structure that is used to manage
+      the IODs for each device. Basically, this will maintain a queue of
+      device requests that is in the FIFO fashion. In MPX, both the
+      terminal port and the serial port are given IOCBs.
+    </para>
+    <para>
+      Each IOCB contains the following values:
+      <programlisting>
+	int event flag - the current event flag of the device
+	int count - the number of requests in the IOCB
+	IOD *head - a pointer to the first request in the IOCB
+	IOD *tail - a pointer to the last request in the IOCB
+      </programlisting>
+    </para>
+  </section>
+
+</chapter>

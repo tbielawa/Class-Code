@@ -1,0 +1,11 @@
+Documentation Gets Compiled in here
+
+
+With the correct settings we should have a much better time parsing
+and translating our documents.
+
+On Fedora Core 10 these two statements will compile the HTML version
+of the user and developer documentation from the root directory.
+
+xsltproc --xinclude -o doc/html/user.xhtml /usr/share/sgml/docbook/xsl-ns-stylesheets-1.74.0/xhtml/docbook.xsl doc/user/user.xml 
+xsltproc --xinclude -o doc/html/devel.xhtml /usr/share/sgml/docbook/xsl-ns-stylesheets-1.74.0/xhtml/docbook.xsl doc/devel/devel.xml

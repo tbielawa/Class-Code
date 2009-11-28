@@ -1,0 +1,32 @@
+<chapter id="Cross Reference">
+  <para>
+    The purpose of this chapter is to outline how the functions work together
+    in unison to produce the grand final results.
+  </para>
+
+  <section id="The Shell">
+    SHELL.C serves as the central hub for the program. It calls the following:
+    PCBDLL_creation, parse_buffer, and every single command that is
+    accessible to the user (date, version, history, help, pcreate, pdelete,
+    pblock, punblock, psuspend, presume, psetprio, pshowall, pshow, 
+    pshowblk, pshowrd). The shell is called by main in TDF.C. The
+    exit command is handled internally by the shell.
+  </section>
+
+  <section id="PCBs">
+  <para>
+    There are 11 pcb commands in all, and each one pulls various functions
+    from PCB.C, which handles the internal operations of the PCBs and the
+    PCBDLLs. The internal functions rarely call other internal functions
+    with a few exceptions: PCB_setup calls PCB_find to make sure the
+    given name is unique, and PCBDLL_creation calls PCBDLL_alloc to allocate
+    memory. PCB_setup also calls PCB_alloc to allocate memory.
+  </para>
+
+  <para>
+    
+  </para>
+
+  </section>
+  
+</chapter>

@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd">
+
+<book>
+
+  <bookinfo>
+    <title>MPX Operating System User's Manual</title>
+  </bookinfo>
+
+  <xi:include href="intro.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="basic.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="commands.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+</book>

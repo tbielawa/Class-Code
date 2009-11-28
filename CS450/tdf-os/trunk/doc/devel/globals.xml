@@ -1,0 +1,145 @@
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0">
+  <title>Globals</title>
+  <section>
+    <title>Introduction</title>
+    
+    <para>
+      <indexterm><primary>globals</primary></indexterm>
+      Global constants in TDF-OS are very useful for development if you
+      know what they are. Here are the global constants grouped by their
+      header files, excluding those in <filename
+      class="headerfile">MPX_SUPT.H</filename>
+    </para>
+  </section>
+  
+  <section>
+    <title><filename class="headerfile">SHELL.H</filename></title>
+    <para>
+      <itemizedlist>
+	<listitem>
+	  <para>
+	    <constant><indexterm><primary>BUFFER_SIZE</primary></indexterm></constant>BUFFER_SIZE - integer set
+	    to 256
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    <constant><indexterm><primary>FNAME_SIZE</primary></indexterm></constant>FNAME_SIZE - integer set
+	    to 8
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    <constant><indexterm><primary>SHELL_EXIT_CONFIRM</primary></indexterm></constant>SHELL_EXIT_CONFIRM - integer set to 16
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    <constant><indexterm><primary>SHELL_EXIT_DENY</primary></indexterm></constant>SHELL_EXIT_DENY
+	    - integer set to 32
+	  </para>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+  
+  <section>
+    <title><filename class="headerfile">PARSER.H</filename></title>
+    <para>
+      <itemizedlist>
+	<listitem>
+	  <para>
+	    <constant><indexterm><primary>PARSER_FAIL_WHITESPACE</primary></indexterm></constant>PARSER_FAIL_WHITESPACE - integer set to -200
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    <constant><indexterm><primary>PARSER_FAIL_LONGNAME</primary></indexterm></constant>PARSER_FAIL_LONGNAME - integer to to -201
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    <constant><indexterm><primary>PARSER_WIN_SINGLETON</primary></indexterm></constant>PARSER_WIN_SINGLETON - integer set to 210
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    <constant><indexterm><primary>PARSER_WIN_HAS_ARGS</primary></indexterm></constant>PARSER_WIN_HAS_ARGS - integer set to 211
+	  </para>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+  
+  <section>
+    <title><filename class="headerfile">PCB.H</filename></title>
+    <para>
+      <itemizedlist>
+	<listitem>
+	  <para>
+	    <constant><indexterm><primary>READY</primary></indexterm></constant>READY - integer
+	    set to 0
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    <constant><indexterm><primary>BLOCKED</primary></indexterm></constant>BLOCKED -
+	    integer set to 1
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    <constant><indexterm><primary>READYSUSPENDED</primary></indexterm></constant>READYSUSPENDED -
+	    integer set to 2
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    <constant><indexterm><primary>BLOCKEDSUSPENDED</primary></indexterm></constant>BLOCKEDSUSPENDED
+	    - integer set to 3
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    <constant><indexterm><primary>APPLICATION</primary></indexterm></constant>APPLICATION -
+	    integer set to 0
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    <constant><indexterm><primary>SYSTEM</primary></indexterm></constant>SYSTEM - integer
+	    set to 1
+	  </para>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+  
+  <section>
+    <title><filename class="headerfile">HISTORY.H</filename></title>
+    <para>
+      <itemizedlist>
+	<listitem>
+	  <para>
+	    <constant><indexterm><primary>HIST_LEN</primary></indexterm></constant>HIST_LEN -
+	    integer set to 20
+	  </para>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+  
+  <section>
+    <title><filename class="headerfile">VERSION.H</filename></title>
+    <para>
+      <itemizedlist>
+	<listitem>
+	  <para>
+	    <constant><indexterm><primary>VBS</primary></indexterm></constant>VBS - integer
+	    set to 128
+	  </para>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+</chapter>

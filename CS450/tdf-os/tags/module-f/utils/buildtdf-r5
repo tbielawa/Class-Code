@@ -1,0 +1,26 @@
+#!/bin/bash
+
+echo
+echo "Starting TDF-OS Build Process"
+echo
+dosbox -conf ./utils/tdf-r5build.conf > /dev/null
+echo 
+echo "Build complete, checking work"
+echo 
+if [ -f build/BUILD.LOG ]; then
+    ERRORS=`grep -q "Error " build/BUILD.LOG`
+    if [ ! -z "${ERRORS}" ]; then
+	echo "::: Errors while building TDF ::::"
+	echo "Learn to code n00b"
+	grep --line-number "Error " build/BUILD.LOG
+	echo "Errors are above this line"
+    else
+	cat build/BUILD.LOG
+	echo
+	echo "Everything look good?"
+	echo
+    fi
+else
+    echo "Build process done."
+fi
+exit 0

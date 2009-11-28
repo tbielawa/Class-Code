@@ -1,0 +1,117 @@
+<section xmlns="http://docbook.org/ns/docbook" xml:id="cr_date" version="5.0">
+  <title><filename>DATE.C</filename> Functions</title>
+  <indexterm><primary>date.c</primary></indexterm>
+
+  <section>
+    <title>int <function>date</function> (char *args)</title>
+    <para>
+      <indexterm><primary>date</primary></indexterm>
+      <itemizedlist>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para>
+		    <function>sys_get_date</function>
+		    <indexterm><primary>sys_get_date</primary></indexterm>
+		  </para>
+		</listitem>
+		<listitem>
+		  <para>
+		    <function>sys_set_date</function>
+		    <indexterm><primary>sys_set_date</primary></indexterm>
+		  </para>
+		</listitem>
+		<listitem>
+		  <para>
+		    <function>printf</function>
+		    <indexterm><primary>printf</primary></indexterm>
+		  </para>
+		</listitem>
+		<listitem>
+		  <para>
+		    <function>strtok</function>
+		    <indexterm><primary>strtok</primary></indexterm>
+		  </para>
+		</listitem>
+		<listitem>
+		  <para>
+		    <function>strlen</function>
+		    <indexterm><primary>strlen</primary></indexterm>
+		  </para>
+		</listitem>
+		<listitem>
+		  <para>
+		    <function>strncpy</function>
+		    <indexterm><primary>strncpy</primary></indexterm>
+		  </para>
+		</listitem>
+		<listitem>
+		  <para>
+		    <function>validDate</function>
+		    <indexterm><primary>validDate</primary></indexterm>
+		  </para>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called By</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para>
+		    <function>shell</function>
+		    <indexterm><primary>shell</primary></indexterm>
+		  </para>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+  <section>
+    <title>int <function>validDate</function> (int day, int month, int year)</title>
+    <para>
+      <indexterm><primary>validDate</primary></indexterm>
+      <itemizedlist>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para>
+		    <function>date</function>
+		  </para>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called By</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para>
+		    none
+		  </para>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+</section>

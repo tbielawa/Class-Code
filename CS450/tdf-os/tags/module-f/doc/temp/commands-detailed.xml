@@ -1,0 +1,227 @@
+<chapter xmlns="http://docbook.org/ns/docbook">
+  <title>Detailed Command Descriptions</title>
+  <para>
+    This chapter will make four aspects of each available temporary command
+    clear to the end user. They are:
+    <itemizedlist>
+      <listitem>
+	<para>
+	  Invocation Syntax
+	</para>
+      </listitem>
+      <listitem>
+        <para>
+	  Usage
+	</para>
+      </listitem>
+      <listitem>
+        <para>
+	  Example of Use
+	</para>
+      </listitem>
+      <listitem>
+        <para>
+	  Possible Errors or Error Messages
+	</para>
+      </listitem>
+    </itemizedlist>
+  </para>
+
+
+  <section>
+    <title>pcreate</title>
+    <para>
+      <itemizedlist>
+	<listitem>
+	  <formalpara>
+	    <title>Invocation Syntax</title>
+	    <para>
+	      <command>pcreate [process_name]</command>
+	    </para>
+	  </formalpara>
+	</listitem>
+	<listitem>
+          <formalpara>
+            <title>Usage</title>
+            <para>
+	      The pcreate command is used to create processes. to
+	      create a process run pcreate with a name for the process
+	      as the argument. Once pcreate has been run, if a valid
+	      process name is given, the user must input the priority,
+	      state, and class for the process. The priority must be
+	      in the range -128 to 127. The state must be in the range
+	      0 to 3 indication states ready, blocked,
+	      ready-suspended, and blocked-suspended respectively. The
+	      class must be either a 0 or 1 indicating application or
+	      system process respectively.
+	    </para>
+          </formalpara>
+        </listitem>
+	<listitem>
+          <formalpara>
+            <title>Example of Use</title>
+            <para>
+	      <command>pcreate temp</command> will create a process with the
+	      name temp and then query the user for the priority, state,
+	      and class for that process.
+	    </para>
+          </formalpara>
+        </listitem>
+	<listitem>
+          <formalpara>
+            <title>Possible Errors or Error Messages</title>
+            <para>
+	      If the user does not provide a name for the process or provides
+	      an invalid name an error will be given. Also if the user provides
+	      values for the priority, class, or state out of the accepted 
+	      range an error will be given.
+	    </para>
+          </formalpara>
+        </listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+
+  <section>
+    <title>pdelete</title>
+    <para>
+      <itemizedlist>
+        <listitem>
+          <formalpara>
+            <title>Invocation Syntax</title>
+            <para>
+	      <command>pdelete [process_name]</command>
+            </para>
+          </formalpara>
+	</listitem>
+        <listitem>
+          <formalpara>
+            <title>Usage</title>
+            <para>
+	      The pdelete command is used to completely delete a
+	      process, remove it from all queues and free its
+	      memory. To delete a process run pdelete with the name of
+	      the intended process as the argument.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Example of Use</title>
+            <para>
+	      <command>pdelete temp</command> will delete the process temp. 
+	    </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Possible Errors or Error Messages</title>
+            <para>
+	      If the user does not provide a process name or if the process
+	      does not exist then an error will be displayed.
+            </para>
+          </formalpara>
+        </listitem>
+      </itemizedlist>
+      </para>
+  </section>
+  
+
+  <section>
+    <title>pblock</title>
+    <para>
+      <itemizedlist>
+        <listitem>
+          <formalpara>
+            <title>Invocation Syntax</title>
+            <para>
+	      <command>pblock [process_name]</command>
+            </para>
+          </formalpara>
+	</listitem>
+        <listitem>
+          <formalpara>
+            <title>Usage</title>
+            <para>
+	      The pblock command is used to place a process in the
+	      blocked state.  If the process is in the ready state
+	      when pblock is invoked on it it will be placed in the
+	      blocked state. If the process is in the suspended state
+	      when pblock is run on it it will be placed in the
+	      blocked-suspended state. The place a process in the
+	      blocked or blocked-suspended state run pblock with the
+	      name of the process as the argument.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Example of Use</title>
+            <para>
+	      <command>pblock temp</command> will block the temp process.
+	    </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Possible Errors or Error Messages</title>
+            <para>
+	      If the user does not provide a process name or if the process
+	      does not exist then an error will be displayed.
+            </para>
+          </formalpara>
+        </listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+
+  <section>
+    <title>punblock</title>
+    <para>
+      <itemizedlist>
+        <listitem>
+          <formalpara>
+            <title>Invocation Syntax</title>
+            <para>
+	      <command>punblock [process_name]</command>
+            </para>
+          </formalpara>
+	</listitem>
+        <listitem>
+          <formalpara>
+            <title>Usage</title>
+            <para>
+	      The punblock command is used to remove a process from a
+	      blocked state.  If the process is in the blocked state
+	      when punblock is invoked then it will be returned to the
+	      ready state. If the process is in the blocked-suspended
+	      state when punblock is invoked then it will be placed in
+	      the suspended state. To unblock a process run punblock
+	      with the name of the process as the argument.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Example of Use</title>
+            <para>
+	      <command>punblock temp</command> will unblock the temp process.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Possible Errors or Error Messages</title>
+            <para>
+	      If the user does not provide a process name or if the process
+	      does not exist then an error will be displayed.
+            </para>
+          </formalpara>
+        </listitem>
+      </itemizedlist>
+      </para>
+    </section>
+
+</chapter>

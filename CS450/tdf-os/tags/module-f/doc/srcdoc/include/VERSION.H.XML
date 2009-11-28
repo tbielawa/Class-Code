@@ -1,0 +1,21 @@
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="VERSION.H">
+  <title>VERSION.H</title>
+  <indexterm><primary>version.h</primary></indexterm>
+  <programlisting>
+    <![CDATA[
+// VERSION.H
+// Header file for the version command
+//
+// tours de force: http://www.ducksarepeople.com/tdf
+
+#ifndef VERSION_H
+#define VERSION_H
+
+#define VBS 128
+
+extern int version ( char* );
+
+#endif
+    ]]>
+  </programlisting>
+</section>

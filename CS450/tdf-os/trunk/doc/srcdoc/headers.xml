@@ -1,0 +1,26 @@
+<chapter xmlns="http://docbook.org/ns/docbook"
+	 xmlns:xi="http://www.w3.org/2001/XInclude"
+	 xml:id="HeaderFiles" version="5.0">
+  <title>Header Files</title>
+  
+  <xi:include href="include/CONTEXT.H.XML"/>
+  <xi:include href="include/DATE.H.XML"/>
+  <xi:include href="include/DISPLAY.H.XML"/>
+  <xi:include href="include/HELP.H.XML"/>
+  <xi:include href="include/HISTORY.H.XML"/>
+  <xi:include href="include/LOAD.H.XML"/>
+  <xi:include href="include/LOADR3.H.XML"/>
+  <xi:include href="include/LOSYSDIS.H.XML"/>
+  <xi:include href="include/PARSER.H.XML"/>
+  <xi:include href="include/PCB.H.XML"/>
+  <xi:include href="include/PCBMAKE.H.XML"/>
+  <xi:include href="include/PCBMAN.H.XML"/>
+  <xi:include href="include/PCBSHOW.H.XML"/>
+  <xi:include href="include/PCBUTILS.H.XML"/>
+  <xi:include href="include/PROCS-R3.H.XML"/>
+  <xi:include href="include/SHELL.H.XML"/>
+  <xi:include href="include/TDFDRIVE.H.XML"/>
+  <xi:include href="include/TDF.H.XML"/>
+  <xi:include href="include/VERSION.H.XML"/>
+  
+</chapter>

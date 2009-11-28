@@ -1,0 +1,78 @@
+<section xmlns="http://docbook.org/ns/docbook">
+  <title><filename><indexterm><primary>SHELL.C</primary></indexterm></filename>SHELL.C Functions</title>
+  <section>
+    <title>int <function>shell</function> (void)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  int <function>shell</function>
+		</funcdef>
+		<paramdef>
+		  <parameter>void</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>SHELL_EXIT_GRACEFUL</parameter> <returnvalue>220</returnvalue></title>
+		  <para>
+		    Indicates that shell exited and there were no
+		    complications
+		  </para>
+		</formalpara>
+	      </listitem>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>SHELL_EXIT_STUMBLE</parameter> <returnvalue>-221</returnvalue></title>
+		  <para>
+		    Indicates that shell exited and required extra
+		    steps to leave gracefully.
+		  </para>
+		</formalpara>
+	      </listitem>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>SHELL_EXIT_FAIL</parameter> <returnvalue>-222</returnvalue></title>
+		  <para>
+		    Indicates that shell exited and the exit was not
+		    requested and was not recoverable.
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    This is the driver function of the shell. In this function,
+	    variables passed to other functions will be defined. The actual
+	    processs of the shell is very simple and is represented by this
+	    short block of pseudocode:
+	    <programlisting>
+	      while we are still accepting commands:
+	      read in the buffer
+	      tokenize the buffer into 2 strings: the command and the arguments
+	      find the command in the function table, and run it with the arguments
+	    </programlisting>
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+</section>

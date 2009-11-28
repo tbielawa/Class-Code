@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Give version number (current is `head -n1 ../src/etc/version | \
+     cut -d' ' -f2-3`): "
+read i 
+cat ../src/etc/version >> pete.tmp
+echo "tdf-os: version $i `date +%Y-%m-%d` (`git show | head -n1 | \
+     cut -c8-14`)" > ../src/etc/version
+cat pete.tmp >> ../src/etc/version
+rm pete.tmp
+
+exit 0

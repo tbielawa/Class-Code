@@ -1,0 +1,74 @@
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="TDFDRIVE.H">
+  <title>TDFDRIVE.H</title>
+  <indexterm><primary>tdfdrive.h</primary></indexterm>
+  <programlisting>
+    <![CDATA[
+#ifndef TDFDRIVE_H
+#define TDFDRIVE_H
+
+#define RING_BUFFER_SIZE 1024
+
+#define WRITING 1
+#define OPEN 2
+#define READING 3
+#define CLOSED 4
+#define BUSY 5
+
+#define ERR_CO_INVALID_FLAG_PNTR -101
+#define ERR_CO_INVALID_BAUD -102
+#define ERR_CO_PORT_OPEN -103
+#define ERR_CC_PORT_NOT_OPEN -201
+#define ERR_CR_PORT_NOT_OPEN -301
+#define ERR_CR_INVALID_BUFF_ADDR -302
+#define ERR_CR_INVALID_COUNT_ADDR -303
+#define ERR_CR_DEVICE_BUSY -304
+#define ERR_CW_PORT_NOT_OPEN -401
+#define ERR_CW_INVALID_BUFF_ADDR- 402
+#define ERR_CW_INVALID_COUNT_ADDR -403
+#define ERR_CW_DEVICE_BUSY -404
+
+#define COM1_INT_ID 0x0C
+#define COM1_BASE 0x3F8
+#define COM1_INT_EN COM1_BASE+1
+#define COM1_BRD_LSB COM1_BASE
+#define COM1_BRD_MSB COM1_BASE+1
+#define COM1_INT_ID_REG COM1_BASE+2
+#define COM1_LC COM1_BASE+3
+#define COM1_MC COM1_BASE+4
+#define COM1_LS COM1_BASE+5
+#define COM1_MS COM1_BASE+6
+#define PIC_MASK 0x21
+#define PIC_CMD 0x20
+#define EOI 0x20
+
+//#define baud_rate 1200
+//#define baud_rate_div 115200/baud_rate
+
+typedef struct {
+  unsigned char flag;
+  int *event_flag;
+  int status;
+  char *in_buff;
+  int *in_count;
+  int in_done;
+  char *out_buff;
+  int *out_count;
+  int out_done;
+  char ring_buffer[RING_BUFFER_SIZE];
+  int ring_buffer_in;
+  int ring_buffer_out;
+  int ring_buffer_count;
+} DCB;
+
+int com_open ( int*, int );
+int com_close ( void );
+int com_read ( char*, int* );
+int com_write ( char*, int* );
+void interrupt com_interrupt ( );
+void com_interrupt_read ( );
+void com_interrupt_write ( );
+
+#endif
+    ]]>
+  </programlisting>
+</section>

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+OUTPUT=`mktemp -d`
+LOGFILE=`mktemp`
+svn update && svn log -v --xml > ${LOGFILE} && statsvn -output-dir ${OUTPUT} -exclude "bulid/**;target/**;tc/**;build/;**/src/TAGS*;**/SRC/TDF.PRJ*;utils/docbook/*;**/doc/srcdoc/srcdoc.pdf" -title TDF-OS ${LOGFILE} ./ && scp -r ${OUTPUT}/* ducks:www/tdf/stats

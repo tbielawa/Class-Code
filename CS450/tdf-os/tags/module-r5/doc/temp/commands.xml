@@ -1,0 +1,58 @@
+<chapter xmlns="http://docbook.org/ns/docbook">
+  <title>Commands Summary</title>
+  <para>
+    This chapter is to serve as a summary of the temporary commands that
+    are implemented in the TDF operating system. For a more detailed
+    description of the commands, please refer to the Detailed Commands
+    Information chapter in this manual, or employ the "help" command
+    in the operating system environment.
+  </para>
+
+  <section>
+    <title>pcreate</title>
+    <para>
+      The pcreate command is used to create processes. to create a process
+      run pcreate with a name for the process as the argument. Once pcreate
+      has been run, if a valid process name is given, the user must input
+      the priority, state, and class for the process. The priority must
+      be in the range -128 to 127. The state must be in the range 0 to 3
+      indication states ready, blocked, ready-suspended, and blocked-suspended
+      respectively. The class must be either a 0 or 1 indicating application
+      or system process respectively. 
+    </para>
+  </section>
+
+  <section>
+    <title>pdelete</title>
+    <para>
+      The pdelete command is used to completely delete a process, remove it
+      from all queues and free its memory. To delete a process run pdelete
+      with the name of the intended process as the argument.
+    </para>
+  </section>
+
+  <section>
+    <title>pblock</title>
+    <para>
+      The pblock command is used to place a process in the blocked state.
+      If the process is in the ready state when pblock is invoked on it
+      it will be placed in the blocked state. If the process is in the suspended
+      state when pblock is run on it it will be placed in the blocked-suspended
+      state. The place a process in the blocked or blocked-suspended state
+      run pblock with the name of the process as the argument.
+    </para>
+  </section>
+
+  <section>
+    <title>punblock</title>
+    <para>
+      The punblock command is used to remove a process from a blocked state.
+      If the process is in the blocked state when punblock is invoked then it 
+      will be returned to the ready state. If the process is in the 
+      blocked-suspended state when punblock is invoked then it will be placed
+      in the suspended state. To unblock a process run punblock with the name
+      of the process as the argument.
+    </para>
+  </section>
+
+</chapter>

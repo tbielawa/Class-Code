@@ -1,0 +1,322 @@
+<appendix xmlns="http://docbook.org/ns/docbook"
+	 xml:id="Developing_Overview" 
+	 xmlns:xl="http://www.w3.org/1999/xlink"
+	 version="5.0">
+  
+  <title>Developing Overview</title>
+  <indexterm><primary>Developing</primary></indexterm>
+
+  <section xml:id="dev-intro">
+    <title>Introduction</title>
+    
+    <para>
+      This section describes all the requirements necessary to build,
+      run, and develop the Tours de Force Operating Syste
+      (TDF-OS). Including, how to get a copy of TDF, Unix and Windows
+      build requirements, and how to configure your build environment.
+    </para>
+  </section>
+
+  <section xml:id="dev-how_to_get">
+    <title>How to get TDF</title>
+    <indexterm><primary>Getting It</primary></indexterm>
+    <indexterm><primary>SVN</primary></indexterm>
+    <indexterm><primary>Subversion</primary></indexterm>
+
+    <para>
+      The official TDF homepage is located at <link
+      xl:href="http://code.google.com/p/tdf-os/"/>. Hosted there is
+      our subversion source code repository. It is available for
+      online viewing as well as full code checkout.
+    </para>
+    
+    <formalpara>
+      <title>Getting the code (UNIX)</title>
+
+      <para>
+	<programlisting>
+	  foo@bar[~] $ <command>svn</command> export http://tdf-os.googlecode.com/svn/trunk/ tdf-os
+	</programlisting>
+      </para>
+    </formalpara>
+
+    <formalpara>
+      <title>Getting the code (Windows)</title>
+
+      <para>
+	In Microsoft Windows a user may instead elect to use a program
+	like <link
+	xl:href="http://tortoisesvn.tigris.org/">TortiseSVN</link> to
+	get a copy of the source code.
+      </para>
+    </formalpara>
+  </section>
+
+  <section xml:id="dev-build_requirements">
+    <title>Build Requirements</title>
+    <indexterm><primary>Build Requirements</primary></indexterm>
+    <indexterm><primary>Building</primary></indexterm>
+    <indexterm><primary>Compile</primary></indexterm>
+
+    <para>
+      TDF-OS uses the C keyword <type>interrupt</type> which is unique
+      to the <productname>Turbo C++</productname> compiler. Due to
+      this restriction both UNIX and Microsoft Windows platforms
+      require the <productname>Turbo C++</productname> compiler to
+      build TDF-OS.
+    </para>
+
+    <para>
+      The following two subsections detail all platform specific software.
+    </para>
+
+    <section xml:id="dev-build-unix">
+      <title>UNIX</title>
+
+      <para>
+	The following programs are required to build the TDF Operating
+	System in a UNIX environment.
+      </para>
+
+      <itemizedlist>
+	<listitem>
+	  <para>
+	    <command>Make</command> - While technically optional for
+	    UNIX, it makes greatly simplifies the build process
+	  </para>
+	</listitem>
+	<listitem>
+	  <para>
+	    <productname>DOSBox</productname> <footnote><para>DOSBox
+	    is available free of charge on their website: <link
+	    xl:href="http://www.dosbox.com/"/></para></footnote> -
+	    <productname>Turbo C++</productname> requires a 16bit
+	    MSDOS operating system to run on. On UNIX platforms DOSBox
+	    provides this.
+	  </para>
+	</listitem>
+      </itemizedlist>
+    </section>
+
+    <section xml:id="dev-build-win">
+      <title>Windows</title>
+
+      <para>
+	The TDF-OS does not provide utility
+	<filename>Makefile</filename>s for the Windows patform. All
+	that is required to build and run the TDF-OS on Windows is the
+	<productname>Turbo C++</productname> compiler. Optionally to
+	test the serial driver implemented in module R5 you may choose
+	to use the Null-modem emulator, <link
+	xl:href="http://sourceforge.net/projects/com0com/">com0com</link>
+	to provide a virtual serial port, and <link
+	xl:href="http://www.chiark.greenend.org.uk/~sgtatham/putty/">PuTTY</link>
+	to establish the connection.
+      </para>
+
+    </section>
+  </section>
+
+  <section xml:id="dev-build_configuration">
+    <title>Configuring your Build Environment</title>
+    <indexterm><primary>Configure Build</primary></indexterm>
+    <indexterm><primary>Build Environment</primary></indexterm>
+
+    <section xml:id="dev-buld-config_fsh">
+      <title>Filesystem Hierarchy</title>
+      
+      <para>
+	When unpacking and installing the TDF source package a
+	specific directory hierarchy must be established. On UNIX
+	systems this hierarchy must only represent the present
+	working directory. On a Windows system this must represent
+	the root of the <filename class="partition">C:\</filename>
+	partition.
+      </para>
+
+      <figure xml:id="dev-fsh">
+	<title>Filesystem Hierarchy</title>
+	<programlisting>
+	  <![CDATA[
+		   |-- build
+		   |-- doc
+		   |   |-- devel
+		   |   |   |-- crossreference
+		   |   |   `-- functions
+		   |   |-- prepared
+		   |   |   |-- HTML
+		   |   |   |-- PDF
+		   |   |   `-- XHTML
+		   |   |-- srcdoc
+		   |   |   `-- include
+		   |   |-- temp
+		   |   `-- user
+		   |-- src
+		   |   |-- etc
+		   |   |-- include
+		   |   `-- procs
+		   |-- target
+		   |-- tc
+		   |   |-- TASM
+		   |   |-- TC
+		   |   |   |-- BIN
+		   |   |   |-- DOC
+		   |   |   |-- INCLUDE
+		   |   |   |   `-- SYS
+		   |   |   `-- LIB
+		   |   |-- TD
+		   `-- utils
+	  ]]>
+	</programlisting>
+      </figure>
+
+      <note>
+	<para>
+	  A different filesystem hierarchy may be used provided the
+	  directory paths are changed in the <productname>Turbo
+	  C++</productname> project file
+	  <filename>TDF.PRJ</filename> which is located in the
+	  <filename class="directory">SRC/</filename> directory.
+	</para>
+      </note>
+    </section>
+
+    <section xml:id="dev-conf-settings">
+      <title>Configuration Settings</title>
+
+      <para>
+	The TDF-OS source code from the subversion repository comes
+	with a <productname>Turbo C++</productname> project file
+	already configured to specific requirements of TDF-OS. This
+	file is called <filename>TDF.PRJ</filename> and lives in the
+	<filename class="directory">SRC/</filename> directory.
+      </para>
+
+      <para>
+	By default the paths are configured as follows:
+
+	<variablelist xml:id="dev-config-turboc_paths">
+	  <title>Turbo C++ Directory Paths</title>
+	  <varlistentry>
+	    <term>Include Directories</term>
+	    <listitem>
+	      <para>
+		<filename class="directory">C:\TC\TC\INCLUDE</filename>;
+		<filename class="directory">C:\SRC\INCLUDE</filename>
+	      </para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry>
+	    <term>Library Directories</term>
+	    <listitem>
+	      <para>
+		<filename class="directory">C:\TC\TC\LIB</filename>
+	      </para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry>
+	    <term>Output Directory</term>
+	    <listitem>
+	      <para>
+		<filename class="directory">C:\BUILD</filename>
+	      </para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry>
+	    <term>Source Directories</term>
+	    <listitem>
+	      <para>
+		<filename class="directory">C:\SRC</filename>
+	      </para>
+	    </listitem>
+	  </varlistentry>
+	</variablelist>
+      </para>
+    </section>
+  </section>
+
+  <section xml:id="dev-building">
+    <title>Building</title>
+
+    <para>
+      With the build environment tools installed and configured it
+      now becomes possible to build and run TDF. Instructions for
+      each supported environment are detailed in the following
+      subsections.
+    </para>
+
+    <section xml:id="dev-build-UNIX">
+      <title>Building on UNIX</title>
+
+      <para>
+	Building is simple with GNU <command>make</command> and the
+	configurability of <productname>DOSBox</productname>. A
+	functional <filename>Makefile</filename> is included in the
+	root directory of the source code. Also included are all the
+	custom configuration files required by
+	<productname>DOSBox</productname> to make building and
+	launching TDF a one command procedure.
+      </para>
+      
+      <programlisting>
+	foo@bar[~/tdf-os/] $ make tdf-all
+      </programlisting>
+
+      <para>
+	The above command will launch a shell script from the
+	<filename class="directory">UTILS/</filename> directory
+	which launches <productname>DOSBox</productname>, configures
+	the required environmenal variables, and finally instructs
+	it to launch the <command>TC</command> compiler on the
+	<filename>SRC/TDF.PRJ</filename> project file and to build
+	it.
+      </para>
+
+      <note>
+	<para>
+	  Output from the build sequence is saved into the file
+	  <filename>BUILD.LOG</filename> which is located in the
+	  <filename class="directory">BUILD</filename> directory.
+	</para>
+      </note>
+
+      <para>
+	On a successful build <productname>DOSBox</productname>
+	will launch once again and immediately launch the built TDF
+	executable.
+      </para>
+
+    </section>
+
+    <section xml:id="dev-build-windows">
+      <title>Building on Windows</title>
+
+      <para>
+	Open a command prompt and change directory to the <filename
+	class="directory">C:\</filename> directory. Use the
+	<command>SET</command> command to put the <productname>Turbo
+	C++</productname> related programs into your command
+	path.<footnote><para>SET Command:
+	<link xl:href="http://www.computerhope.com/sethlp.htm"/></para></footnote>
+      </para>
+
+      <para>
+	Launch <productname>Turbo C++</productname> and load the
+	<filename>TDF.PRJ</filename> project file from the
+	<menuchoice><guimenu><accel>P</accel>roject</guimenu>
+	<guimenuitem><accel>O</accel>pen
+	Project</guimenuitem></menuchoice> option.
+      </para>
+      
+      <para>
+	Build the project with the <menuchoice><guimenu>
+	<accel>C</accel>ompile</guimenu>
+	<guimenuitem><accel>B</accel>uild
+	All</guimenuitem></menuchoice> option. When the build finishes
+	TDF can be launched by closing <productname>Turbo
+	C++</productname> and running the TDF binary located at
+	<filename>C:\BUILD\TDF.EXE</filename>
+      </para>
+    </section>
+  </section>
+</appendix>

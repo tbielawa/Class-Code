@@ -1,0 +1,337 @@
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="cr_tdfdrive">
+  <title><filename>TDFDRIVE.C</filename> Functions</title>
+  <indexterm><primary>TDFDRIVE.C</primary></indexterm>
+
+  <section xml:id="cr_tdfdrive_com_open">
+    <title>int <function>com_open</function> (int *eflag_p, int baud_rate)</title>
+    <para>
+      <indexterm><primary>com_open()</primary></indexterm>
+      <itemizedlist>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para><function>malloc</function></para>
+		  <indexterm><primary>malloc</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para><function>getvect</function></para>
+		  <indexterm><primary>getvect</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para><function>setvect</function></para>
+		  <indexterm><primary>setvect</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para><function>outportb</function></para>
+		  <indexterm><primary>outportb</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para><function>inportb</function></para>
+		  <indexterm><primary>inportb</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para><function>enable</function></para>
+		  <indexterm><primary>enable</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para><function>disable</function></para>
+		  <indexterm><primary>disable</primary></indexterm>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called By</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para>
+		    <function></function>
+		  </para>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+  <section xml:id="cr_tdfdrive_com_close">
+    <title>int <function>com_close</function> (void)</title>
+    <para>
+      <indexterm><primary>com_close()</primary></indexterm>
+      <itemizedlist>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para><function>disable</function></para>
+		  <indexterm><primary>disable</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para><function>enable</function></para>
+		  <indexterm><primary>enable</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para><function>inportb</function></para>
+		  <indexterm><primary>inportb</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para><function>outportb</function></para>
+		  <indexterm><primary>outportb</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para><function>setvect</function></para>
+		  <indexterm><primary>setvect</primary></indexterm>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called By</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para>
+		    <function></function>
+		  </para>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+  <section xml:id="cr_tdfdrive_com_read">
+    <title>int <function>com_read</function> (char *buf_p, int *count_p)</title>
+    <para>
+      <indexterm><primary>com_read()</primary></indexterm>
+      <itemizedlist>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para><function>disable</function></para>
+		  <indexterm><primary>disable</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para><function>enable</function></para>
+		  <indexterm><primary>enable</primary></indexterm>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called By</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para>
+		    <function></function>
+		  </para>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+  <section xml:id="cr_tdfdrive_com_write">
+    <title>int <function>com_write</function> (char *buf_p, int *count_p)</title>
+    <para>
+      <indexterm><primary>com_write()</primary></indexterm>
+      <itemizedlist>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para><function>disable</function></para>
+		  <indexterm><primary>disable</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para><function>enable</function></para>
+		  <indexterm><primary>enable</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para><function>inportb</function></para>
+		  <indexterm><primary>inportb</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para><function>outportb</function></para>
+		  <indexterm><primary>outportb</primary></indexterm>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called By</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para>
+		    <function></function>
+		  </para>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+  <section xml:id="cr_tdfdrive_com_interrupt">
+    <title>void <function>com_interrupt</function> (void)</title>
+    <para>
+      <indexterm><primary>com_interrupt()</primary></indexterm>
+      <itemizedlist>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para><function>com_interrupt_write</function></para>
+		  <indexterm><primary>com_interrupt_write</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para><function>com_interrupt_read</function></para>
+		  <indexterm><primary>com_interrupt_read</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para><function>inportb</function></para>
+		  <indexterm><primary>inportb</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para><function>outportb</function></para>
+		  <indexterm><primary>outportb</primary></indexterm>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called By</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para>
+		    <function></function>
+		  </para>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+  <section xml:id="cr_tdfdrive_com_interrupt_read">
+    <title>void <function>com_interrupt_read</function> (void)</title>
+    <para>
+      <indexterm><primary>com_interrupt_read()</primary></indexterm>
+      <itemizedlist>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para><function>inportb</function></para>
+		  <indexterm><primary>inportb</primary></indexterm>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called By</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para>
+		    <function></function>
+		  </para>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+  <section xml:id="cr_tdfdrive_com_interrupt_write">
+    <title>void <function>com_interrupt_write</function> (void)</title>
+    <para>
+      <indexterm><primary>com_interrupt_write()</primary></indexterm>
+      <itemizedlist>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para><function>disable</function></para>
+		  <indexterm><primary>disable</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para><function>enable</function></para>
+		  <indexterm><primary>enable</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para><function>inportb</function></para>
+		  <indexterm><primary>inportb</primary></indexterm>
+		</listitem>
+		<listitem>
+		  <para><function>outportb</function></para>
+		  <indexterm><primary>outportb</primary></indexterm>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called By</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para>
+		    <function></function>
+		  </para>
+		</listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+</section>

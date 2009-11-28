@@ -1,0 +1,13 @@
+#!/bin/bash
+
+. ./utils/whichDosbox
+
+echo "Starting DOSBOX from current directory"
+
+cd target
+ ${DOSBOXRUN} -conf ../utils/tdfdosbox.conf > RUNTDF.log
+cd ..
+
+echo "Leaving DOSBOX"
+
+exit 0

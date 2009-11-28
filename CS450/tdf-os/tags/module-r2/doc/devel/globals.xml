@@ -1,0 +1,64 @@
+<chapter id="Globals">
+  <title>Globals</title>
+  <para>
+    Global constants in TDF-OS are very useful for development if you
+    know what they are. Here are the global constants defined in the header
+    files excluding those in MPX_SUPT.H:
+    <itemizedlist>
+      <listitem>
+	BUFFER_SIZE - integer set to 256 in SHELL.H
+      </listitem>
+      <listitem>
+	FNAME_SIZE - integer set to 8 in SHELL.H
+      </listitem>
+      <listitem>
+	PARSER_FAIL_WHITESPACE - integer set to -200 in PARSER.H
+      </listitem>
+      <listitem>
+	PARSER_FAIL_LONGNAME - integer to to -201 in PARSER.H
+      </listitem>
+      <listitem>
+	PARSER_WIN_SINGLETON - integer set to 210 in PARSER.H
+      </listitem>
+      <listitem>
+	PARSER_WIN_HAS_ARGS - integer set to 211 in PARSER.H
+      </listitem>
+      <listitem>
+	READY - integer set to 0 in PCB.H
+      </listitem>
+      <listitem>
+	BLOCKED - integer set to 1 in PCB.H
+      </listitem>
+      <listitem>
+	READYSUSPENDED - integer set to 2 in PCB.H
+      </listitem>
+      <listitem>
+	BLOKCEDSUSPENDED - integer set to 3 in PCB.H
+      </listitem>
+      <listitem>
+	APPLICATION - integer set to 0 in PCB.H
+      </listitem>
+      <listitem>
+	SYSTEM - integer set to 1 in PCB.H
+      </listitem>
+      <listitem>
+	SHELL_EXIT_CONFIRM - integer set to 16 in SHELL.H
+      </listitem>
+      <listitem>
+	SHELL_EXIT_DENY - integer set to 32 in SHELL.H
+      </listitem>
+      <listitem>
+	HIST_LEN - integer set to 20 in HISTORY.H
+      </listitem>
+      <listitem>
+	VBS - integer set to 128 in VERSION.H
+      </listitem>
+    </itemizedlist>
+  </para>
+
+  <para>
+    There is also a collection of global constants defined in MPX_SUPT.H,
+    which was written by Dr. Mooney (not the TDF team). These may be viewed 
+    at src/include/MPX_SUPT.H.
+  </para>
+</chapter>

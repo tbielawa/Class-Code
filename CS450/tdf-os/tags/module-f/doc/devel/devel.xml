@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book xmlns="http://docbook.org/ns/docbook" 
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xml:id="DevelDocs" version="5.0">
+
+  <info>
+    <title>MPX Operating System Developer Documentation</title>
+    <subtitle>(WVU CS450 - Group 2)</subtitle>
+
+    <authorgroup>
+      <author>
+	<personname>
+	  <surname>Bielawa</surname> <firstname>Tim</firstname>
+	</personname>
+	<email>timbielawa@gmail.com</email>
+	<affiliation>
+	  <orgname>Group 2 (Tours de Force)</orgname>
+	</affiliation>
+      </author>
+
+      <author>
+	<personname>
+	  <surname>Butcher</surname> <firstname>Andrew</firstname>
+	</personname>
+	<email>abutcher@afrolegs.com</email>
+	<affiliation>
+	  <orgname>Group 2 (Tours de Force)</orgname>
+	</affiliation>
+
+      </author>
+
+      <author>
+	<personname>
+	  <surname>Dehlin</surname> <firstname>Jack</firstname>
+	</personname>
+	<email>jdehlin@gmail.com</email>
+	<affiliation>
+	  <orgname>Group 2 (Tours de Force)</orgname>
+	</affiliation>
+
+      </author>
+
+      <author>
+	<personname>
+	  <surname>Doss</surname> <firstname>Bryant</firstname>
+	</personname>
+	<email>bryantdoss@gmail.com</email>
+	<affiliation>
+	  <orgname>Group 2 (Tours de Force)</orgname>
+	</affiliation>
+      </author>
+    </authorgroup>
+  </info>
+
+  <xi:include href="overview.xml"/>
+  <xi:include href="file_summary.xml"/>
+  <xi:include href="functions.xml"/>
+  <xi:include href="data_structures.xml"/>
+  <xi:include href="globals.xml"/>
+  <xi:include href="crossreference.xml"/>
+  
+  <xi:include href="developing.xml"/>
+  <index/>
+
+</book>

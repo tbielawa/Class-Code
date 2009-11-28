@@ -1,0 +1,44 @@
+<chapter id="TDF Operating System Basics">
+  <title>TDF Operating System Basics</title>
+  <para>
+    It is very plain to see that, when initiated, the TDF operating system
+    displays only a command prompt. As there is graphical interface
+    bundled with the operating system, this will be the only way in which
+    commands may be input to the system for processing.
+  </para>
+
+  <para>
+    Inputting commands to be processed is very simple. The following prompt
+    (or something very similar) should be initially displayed on the
+    screen:
+    <programlisting>
+      tdf:$ 
+    </programlisting>
+    At this prompt, you may simply type in the desired command to be
+    processed (for information about the various commands offered in
+    the TDF operating system, simply type "help" or refer to the
+    "Commands" chapter of this manual). To terminate the system, simply
+    type "exit" at the prompt.
+  </para>
+
+  <para>
+    The commands typed into the prompt have certain restrictions as far as
+    formatting goes. For example, all of the commands are case sensitive and
+    must be typed in all lower-case (for example, you cannot process
+    "EXIT", but you may process "exit"). Another restriction is that the
+    commands may not exceed 256 characters in length (not that you'll ever
+    need that much buffer space).
+  </para>
+
+  <para>
+    Some commands implemented in the TDF operating system have arguments
+    that may be passed, such that they will perform more specific processes
+    (for example, date). To pass arguments to these commands, you must
+    specify the flag and, if applicable, the value of the argument. For
+    example, to set the date, the following command may be run:
+    <programlisting>
+      tdf:$ date -s 2009
+    </programlisting>
+  </para>
+
+</chapter>

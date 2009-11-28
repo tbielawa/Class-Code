@@ -1,0 +1,54 @@
+
+
+<chapter id="MPX Shell (SHELL.C)">
+  <title>TDF Shell (SHELL.C)</title>
+  <para>
+    This chapter is used to illustrate the workings of SHELL.C, which is
+    the user interface of TDF's MPX operating system.
+  </para>
+
+  <section id="shell">
+    <title>shell</title>
+    <para>
+      This is the driver function of the shell. In this function, variables
+      passed to other functions will be defined. The actual processs of the
+      shell is very simple and is represented by this short block of
+      pseudocode:
+      <programlisting>
+	while we are still accepting commands:
+	  read in the buffer
+          tokenize the buffer into 2 strings: the command and the arguments
+          find the command in the function table, and run it with the arguments
+      </programlisting>
+    </para>
+  </section>
+
+  <section id="parse_buffer">
+    <title>parse_buffer</title>
+    <para>
+      This function exists for a couple of reasons. First, the buffer must be
+      tokenized into separate strings, one of which contains the name of the
+      function, and the other which contains the arguments passed to the
+      function. Secondly, the shell must be able to handle commands that are
+      not perfectly typed into the user, such as unnecessary leading 
+      whitespaces.
+    </para>
+    <para>
+      Perhaps the best way to illustrate how parse_buffer works is with an
+      example. If the buffer string supplanted by the user is as follows
+      (with each character being represented inside of the brackets):
+      <programlisting>
+	[ ][d][a][t][e][ ][ ][-][s][ ][2][0][0][9][ ][ ][-][h][ ][/0]
+      </programlisting>
+      Then, parse_buffer will tokenize the string into two separate strings,
+      which are:
+      <programlisting>
+	[d][a][t][e][/0]
+	[-][s][ ][2][0][0][9][ ][ ][-][h][ ][/0]
+      </programlisting>
+      Therefore, it will remove the whitespaces before the function name and
+      between the function name and the first argument, but nothing else.
+    </para>
+  </section>
+
+</chapter>

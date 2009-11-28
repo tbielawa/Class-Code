@@ -1,0 +1,69 @@
+// Need to link in PROCS-R3.C
+
+#include <stdio.h>
+#include <dos.h>
+#include "mpx_supt.h"
+#include "pcb.h"
+#include "context.h"
+#include "loadr3.h"
+#include "procs-r3.h"
+
+extern PCBDLL **PRIORITY_QUEUES;
+
+int loadr3 () 
+{
+  PCB *np1, *np2, *np3, *np4, *np5;
+  context *npc1, *npc2, *npc3, *npc4, *npc5;
+
+  // Test 1
+  np1 = PCB_setup("test1", 0, APPLICATION);
+  npc1 = (context *) np1->pstack_top;
+  npc1->IP = FP_OFF(&test1_R3);
+  npc1->CS = FP_SEG(&test1_R3);
+  npc1->FLAGS = 0x200;
+  npc1->DS = _DS;
+  npc1->ES = _ES;
+  PCB_insert (PRIORITY_QUEUES[READY], np1, READY);
+
+  // Test 2
+  np2 = PCB_setup("test2", 0, APPLICATION);
+  npc2 = (context *) np2->pstack_top;
+  npc2->IP = FP_OFF(&test2_R3);
+  npc2->CS = FP_SEG(&test2_R3);
+  npc2->FLAGS = 0x200;
+  npc2->DS = _DS;
+  npc2->ES = _ES;
+  PCB_insert (PRIORITY_QUEUES[READY], np2, READY);
+
+  // Test 3
+  np3 = PCB_setup("test3", 0, APPLICATION);
+  npc3 = (context *) np3->pstack_top;
+  npc3->IP = FP_OFF(&test3_R3);
+  npc3->CS = FP_SEG(&test3_R3);
+  npc3->FLAGS = 0x200;
+  npc3->DS = _DS;
+  npc3->ES = _ES;
+  PCB_insert (PRIORITY_QUEUES[READY], np3, READY);
+
+  // Test 4
+  np4 = PCB_setup("test4", 0, APPLICATION);
+  npc4 = (context *) np4->pstack_top;
+  npc4->IP = FP_OFF(&test4_R3);
+  npc4->CS = FP_SEG(&test4_R3);
+  npc4->FLAGS = 0x200;
+  npc4->DS = _DS;
+  npc4->ES = _ES;
+  PCB_insert (PRIORITY_QUEUES[READY], np4, READY);
+
+  // Test 5 
+  np5 = PCB_setup("test5", 0, APPLICATION);
+  npc5 = (context *) np5->pstack_top;
+  npc5->IP = FP_OFF(&test5_R3);
+  npc5->CS = FP_SEG(&test5_R3);
+  npc5->FLAGS = 0x200;
+  npc5->DS = _DS;
+  npc5->ES = _ES;
+  PCB_insert (PRIORITY_QUEUES[READY], np5, READY);
+  
+  return 0;
+}

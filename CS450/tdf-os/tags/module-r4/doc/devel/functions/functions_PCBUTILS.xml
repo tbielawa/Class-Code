@@ -1,0 +1,140 @@
+<section xmlns="http://docbook.org/ns/docbook">
+  <title><filename>PCBUTILS.C</filename> Functions</title>
+  <section>
+    <title>int <function>validPrio</function> (int priority)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  int <function>validPrio</function>
+		</funcdef>
+		<paramdef>
+		  int <parameter>priority</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><parameter></parameter> <returnvalue></returnvalue></title>
+		  <para>
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+
+  <section>
+    <title>int <function>validState</function> (int state)</title>
+    <itemizedlist>
+      <listitem>
+        <formalpara>
+          <title>Prototype and Parameters</title>
+          <para>
+            <funcsynopsis>
+              <funcprototype>
+                <funcdef>
+                  int <function>validState</function>
+                </funcdef>
+                <paramdef>
+                  int <parameter>state</parameter>
+                </paramdef>
+              </funcprototype>
+            </funcsynopsis>
+          </para>
+        </formalpara>
+      </listitem>
+      <listitem>
+        <formalpara>
+          <title>Return Value(s)</title>
+          <para>
+            <itemizedlist>
+              <listitem>
+                <formalpara>
+                  <title><parameter></parameter> <returnvalue></returnvalue></title>
+                  <para>
+                  </para>
+                </formalpara>
+              </listitem>
+            </itemizedlist>
+          </para>
+        </formalpara>
+      </listitem>
+      <listitem>
+        <formalpara>
+          <title>Description</title>
+          <para>
+          </para>
+        </formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+
+  <section>
+    <title>int <function>validClass</function> (int class)</title>
+    <itemizedlist>
+      <listitem>
+        <formalpara>
+          <title>Prototype and Parameters</title>
+          <para>
+            <funcsynopsis>
+              <funcprototype>
+                <funcdef>
+                  int <function>validClass</function>
+                </funcdef>
+                <paramdef>
+                  int <parameter>class</parameter>
+                </paramdef>
+              </funcprototype>
+            </funcsynopsis>
+          </para>
+        </formalpara>
+      </listitem>
+      <listitem>
+        <formalpara>
+          <title>Return Value(s)</title>
+          <para>
+            <itemizedlist>
+              <listitem>
+                <formalpara>
+                  <title><parameter></parameter> <returnvalue></returnvalue></title>
+                  <para>
+                  </para>
+                </formalpara>
+              </listitem>
+            </itemizedlist>
+          </para>
+        </formalpara>
+      </listitem>
+      <listitem>
+        <formalpara>
+          <title>Description</title>
+          <para>
+          </para>
+        </formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+</section>

@@ -1,0 +1,137 @@
+<section xmlns="http://docbook.org/ns/docbook">
+  <title><filename><indexterm><primary>PCBMAKE.C</primary></indexterm></filename>PCBMAKE.C Functions</title>
+  <section>
+    <title>int <function>pcreate</function> (char *name)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  int <function>pcreate</function>
+		</funcdef>
+		<paramdef>
+		  char *<parameter>NAME</parameter>
+		</paramdef>
+		<paramdef>
+		  PCBDLL **<parameter>PRIORITY_QUEUES</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>PCB_CREATE_ERR</parameter> <returnvalue>0</returnvalue></title>
+		  <para>
+		    Indicates that process creation executed smoothly
+		    and the process in question was inserted into the
+		    appropriate queue.
+		  </para>
+		</formalpara>
+	      </listitem>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>PCB_CREATE_ERR</parameter> <returnvalue>1</returnvalue></title>
+		  <para>
+		    Indicates that process creation failed for some
+		    reason.  See descriptive prints output to shell.
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    This function exists to create a process control block for
+	    the user.  pcreate prompts the user for all of the items
+	    needed to describe a process (priority, state, class,
+	    stack, and memory locations) and terminates on any invalid
+	    inputs.  The NAME argument must be at most eight
+	    characters in length.  The specific queue a process is
+	    placed in is dependent entirely on the state entered by
+	    the user (0 - 3).  See the process control block structure
+	    for a more complete description.
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+  
+  <section>
+    <title>int <function>pdelete</function> (char *name)</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  int <function>pdelete</function>
+		</funcdef>
+		<paramdef>
+		  char *<parameter>NAME</parameter>
+		</paramdef>
+		<paramdef>
+		  PCBDLL **<parameter>PRIORITY_QUEUES</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>PCB_DELETE_ERR</parameter> <returnvalue>0</returnvalue></title>
+		  <para>
+		    Indicates that the process specified was
+		    successfully found and deleted entirely.
+		  </para>
+		</formalpara>
+	      </listitem>
+	      <listitem>
+		<formalpara>
+		  <title><parameter>PCB_DELETE_ERR</parameter> <returnvalue>1</returnvalue></title>
+		  <para>
+		    Indicates that the process could not be deleted.
+		    This could occur if the specified process name did
+		    not exist.
+		  </para>
+		</formalpara>
+	      </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    This function will find and completely deallocate a
+	    process control block based on it's specified name.  A
+	    valid name already exists in memory and has a name of at
+	    most eight characters.
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+</section>

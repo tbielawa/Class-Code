@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="949.43">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">1. Explain in your own words the meaning of the process concept.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1">A process is a task to completed, that is packaged in such a way that processes can be queued and executed in a constant stream.</p>
+<p class="p2"><br></p>
+<p class="p1">2. Give examples of some resources that are (a) serially reusable, (b) reusable and<span class="Apple-converted-space"> </span></p>
+<p class="p1">shareable, and (c) consumable.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1">a. Memory or a printer</p>
+<p class="p1">b. Files</p>
+<p class="p1">c. Blocks of data in a message</p>
+<p class="p2"><br></p>
+<p class="p1">3. Which two resource types are handled in a fundamentally different way from all<span class="Apple-converted-space"> </span></p>
+<p class="p1">others? What is the major difference in handling, and why is it necessary?<span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-converted-space">   </span></p>
+<p class="p1">Serially reusable and consumable.<span class="Apple-converted-space">  </span>Mutual exclusion must exist to prevent processes from accessing resources which are in use by other processes.</p>
+<p class="p2"><br></p>
+<p class="p1">4. How does a typical queue structure used within an operating system differ from<span class="Apple-converted-space"> </span></p>
+<p class="p1">the usual definition of a queue?<span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1">Queue's in an operating system must allow for insertion at any point.</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">5. In the simplified process state diagram of Figure 4-3, explain why there is no<span class="Apple-converted-space"> </span></p>
+<p class="p1">transition from the blocked state to the running state.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-converted-space">   </span></p>
+<p class="p1">If a program is blocked, it is not fit to run.<span class="Apple-converted-space">  </span>Perhaps it requires use of resources which are currently being used by another process.<span class="Apple-converted-space">  </span>A process can run unless it is in the ready state exclusively.</p>
+<p class="p2"><br></p>
+<p class="p1">6. Explain the distinctions among a thread, a lightweight process, and an ordinary<span class="Apple-converted-space"> </span></p>
+<p class="p1">process.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-converted-space">   </span></p>
+<p class="p1">Lightweight processes may be split into multiple threads which can access common data, unlike an Ordinary Process.<span class="Apple-converted-space">  </span>Lightweight processes were also introduced to serve limited system needs, such as a fork operation.<span class="Apple-converted-space">  </span>Threads can be considered subdivisions of an ordinary process.</p>
+<p class="p2"><br></p>
+<p class="p1">7. Identify five explicit operations on processes that an OS might provide in<span class="Apple-converted-space"> </span></p>
+<p class="p1">response to system calls.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-converted-space">   </span></p>
+<p class="p1">Suspend</p>
+<p class="p1">Resume</p>
+<p class="p1">Create<span class="Apple-converted-space"> </span></p>
+<p class="p1">Destroy</p>
+<p class="p1">Execute</p>
+<p class="p2"><br></p>
+<p class="p1">8. Describe the steps performed by a typical OS during dynamic creation of a new<span class="Apple-converted-space"> </span></p>
+<p class="p1">process.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-converted-space">   </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>• Create or allocate a process control block;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>• Allocate initial memory space for program and data;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>• Identify and (usually) load the program to be run;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>• Assign initial attributes and resource limits to the process;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>• Allocate initial resources to the process, if any;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>• Establish the starting state for the process, and setup or complete the PCB.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1">9. Contrast the UNIX fork and exec mechanism with the more common<span class="Apple-converted-space"> </span></p>
+<p class="p1">create_process operation.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1">fork essentially runs the same program as the parent process, but has a different data area.<span class="Apple-converted-space">  </span>The child process then calls exec which loads a new program, completely replacing the old one.</p>
+<p class="p2"><br></p>
+<p class="p1">10.<span class="Apple-converted-space">  </span>Explain why it may not be desirable to destroy all the descendants of a process<span class="Apple-converted-space"> </span></p>
+<p class="p1">when the parent process is destroyed. <span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1">The children processes may have been intended to have longer life cycles than the parent or to serve a purpose after the fact.</p>
+</body>
+</html>

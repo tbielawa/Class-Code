@@ -1,0 +1,12 @@
+These RelaxNG Schemas for DocBook v5.0 were originally downloaded from:
+
+http://docs.oasis-open.org/docbook/rng/5.0/
+
+665cc37015ca797ee36e08ea0584c67b  docbook.rnc
+9825f0abe7de11d28666d6413d9832ae  docbook.rng
+57cd2caa8d90d8cc102e1b8e06bede51  docbookxi.rnc
+0684c74a046ee23219af41eefd34202a  docbookxi.rng
+
+---
+Tim 'Shaggy' Bielawa
+2009/02/24

@@ -1,0 +1,45 @@
+<section xmlns="http://docbook.org/ns/docbook">
+  <title><filename>TDF.C</filename> Functions</title>
+  <section>
+    <title>int <function>main</function> (int argc, char *argv[])</title>
+    <para>
+      <indexterm><primary>main</primary></indexterm>
+      <itemizedlist>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called</title>
+	    <para>
+	      <itemizedlist>
+		<listitem>
+		  <para>
+		    <function>sys_get_date</function>
+		  </para>
+		</listitem>
+                <listitem>
+                  <para>
+                    <function>sys_init</function>
+		    <indexterm><primary>sys_init</primary></indexterm>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <function>shell</function>
+                  </para>
+                </listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called By</title>
+	    <para>
+	      <function>main</function> is a special function and is
+	      never called by any other function.
+	    </para>
+	  </formalpara>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+</section>

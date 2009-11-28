@@ -1,0 +1,56 @@
+#!/bin/bash
+
+# Builds the documentation
+DOC_BASE="doc/prepared"
+XSL=/usr/bin/xsltproc
+TYPES="devel user srcdoc"
+
+if [ -f /etc/fedora-release ]; then
+    XSL_LOC=/usr/share/sgml/docbook/xsl-ns-stylesheets-1.74.0/xhtml/docbook.xsl
+else
+    XSL_LOC=/usr/share/xml/docbook/stylesheet/nwalsh/xhtml/docbook.xsl
+fi
+
+for fmt in "PDF" "HTML" "XHTML"; do
+    echo "Preparing build space (${DOC_BASE}/${fmt})"
+    mkdir -p ${DOC_BASE}/${fmt}
+done
+
+case ${1} in
+    "pdf" )
+	echo ""
+	echo "Building PDFs with most output supressed..."
+
+	for type in ${TYPES}; do
+	    echo ""
+	    echo "  :: Generating: [${type}.pdf]"
+	    echo 
+	    dblatex -o ${DOC_BASE}/PDF/${type}.pdf doc/${type}/${type}.xml 2> /dev/null
+	done
+	;;
+
+    "html" )
+	echo ""
+	echo "Building HTML"
+	for type in ${TYPES}; do
+	    echo ""
+	    echo "  :: Generating: [${type}.html]"
+	    ${XSL} --xinclude --output ${DOC_BASE}/HTML/${type}.html $(echo ${XSL_LOC} | sed "s/xhtml/html/" ) doc/${type}/${type}.xml
+	done
+	;;
+
+    * )
+	echo ""
+	echo "Building XHTML"
+	for type in ${TYPES}; do
+	    echo ""
+	    echo "  :: Generating: [${type}.xhtml]"
+	    ${XSL} --xinclude --output ${DOC_BASE}/XHTML/${type}.xhtml ${XSL_LOC} doc/${type}/${type}.xml
+	done
+	;;
+esac
+
+echo ""
+echo "Done."
+echo "Your docs have been prepared under: ${DOC_BASE}"
+echo ""

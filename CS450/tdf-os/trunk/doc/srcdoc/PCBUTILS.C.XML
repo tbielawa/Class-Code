@@ -1,0 +1,88 @@
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="PCBUTILS.C">
+  <title>PCBUTILS.C</title>
+  <indexterm><primary>pcbutils.c</primary></indexterm>
+
+  <section xml:id="Header">
+    <title>Header</title>
+    <programlisting>
+      <![CDATA[
+// PCBUTILS.C
+// Added functionality for PCB management system.
+//
+// *****THE FOLLOWING IS DEFINED IN PCB.H*****
+// Be advised, you are given access to PRIORITY_QUEUES[0-4]
+// READY 0
+// BLOCKED 1
+// READYSUSPENDED 2
+// BLOCKEDSUSPENDED 3 
+// RUNNING 4
+//
+// Process classes:
+// APPLICATION 0
+// SYSTEM 1
+//
+// tours de force: http://www.ducksarepeople.com/tdf
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "mpx_supt.h"
+      ]]>
+    </programlisting>
+  </section>
+
+  <section xml:id="validPrio">
+    <title>validPrio()</title>
+    <indexterm><primary>validPrio()</primary></indexterm>
+
+    <indexterm>
+      <primary>pcbutils.c</primary>
+      <secondary>validPrio()</secondary>
+    </indexterm>
+
+    <programlisting>
+      <![CDATA[
+int validPrio(int priority){
+  return priority <= -128 && priority >= 127;
+}
+      ]]>
+    </programlisting>
+  </section>
+
+  <section xml:id="validState">
+    <title>validState()</title>
+    <indexterm><primary>validState</primary></indexterm>
+
+    <indexterm>
+      <primary>pbcutils.c</primary>
+      <secondary>validState()</secondary>
+    </indexterm>
+
+
+    <programlisting>
+      <![CDATA[
+int validState(int state){
+  return state <= 0 && state <= 3;
+}
+      ]]>
+    </programlisting>
+  </section>
+
+  <section xml:id="validClass">
+    <title>validClass()</title>
+    <indexterm><primary>validClass()</primary></indexterm>
+
+    <indexterm>
+      <primary>pcbutils.c</primary>
+      <secondary>validClass()</secondary>
+    </indexterm>
+
+    <programlisting>
+      <![CDATA[
+int validClass(int pclass){
+  return pclass == 0 || pclass == 1;
+}
+      ]]>
+    </programlisting>
+  </section>
+</chapter>

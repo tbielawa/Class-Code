@@ -1,0 +1,151 @@
+<section xmlns="http://docbook.org/ns/docbook">
+  <title><filename>PCBSHOW.C</filename> Functions</title>
+  <section>
+    <title>int <function>pshow</function> (char *name, PCBDLL **PRIORITY_QUEUES)</title>
+    <para>
+      <indexterm><primary>pshow</primary></indexterm>
+      <itemizedlist>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called</title>
+	    <para>
+	      <itemizedlist>
+                <listitem>
+                  <para>
+                    <function>PCB_print</function>
+                  </para>
+                </listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+	<listitem>
+	  <formalpara>
+	    <title>Functions Called By</title>
+	    <para>
+	      <itemizedlist>
+                <listitem>
+                  <para>
+                    <function>shell</function>
+                  </para>
+                </listitem>
+	      </itemizedlist>
+	    </para>
+	  </formalpara>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+  <section>
+    <title>int <function>pshowall</function> (char *name, PCBDLL **PRIORITY_QUEUES)</title>
+    <para>
+      <indexterm><primary>pshowall</primary></indexterm>
+      <itemizedlist>
+        <listitem>
+          <formalpara>
+            <title>Functions Called</title>
+            <para>
+              <itemizedlist>
+                <listitem>
+                  <para>
+                    <function>PCBDLL_print</function>
+                  </para>
+                </listitem>
+              </itemizedlist>
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Functions Called By</title>
+            <para>
+              <itemizedlist>
+                <listitem>
+                  <para>
+                    <function>shell</function>
+                  </para>
+                </listitem>
+              </itemizedlist>
+            </para>
+          </formalpara>
+        </listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+  <section>
+    <title>int <function>pshowblk</function> (char *name, PCBDLL **PRIORITY_QUEUES)</title>
+    <para>
+      <indexterm><primary>pshowblk</primary></indexterm>
+      <itemizedlist>
+        <listitem>
+          <formalpara>
+            <title>Functions Called</title>
+            <para>
+              <itemizedlist>
+                <listitem>
+                  <para>
+                    <function>PCBDLL_print</function>
+                  </para>
+                </listitem>
+              </itemizedlist>
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title>Functions Called By</title>
+            <para>
+              <itemizedlist>
+                <listitem>
+                  <para>
+                    <function>shell</function>
+                  </para>
+                </listitem>
+              </itemizedlist>
+            </para>
+          </formalpara>
+        </listitem>
+      </itemizedlist>
+    </para>
+  </section>
+
+ <section>
+   <title>int <function>pshowrd</function> (char *name, PCBDLL **PRIORITY_QUEUES)</title>
+   <para>
+     <indexterm><primary>pshowrd</primary></indexterm>
+     <itemizedlist>
+       <listitem>
+         <formalpara>
+           <title>Functions Called</title>
+           <para>
+             <itemizedlist>
+               <listitem>
+                 <para>
+                   <function>PCBDLL_print</function>
+                 </para>
+               </listitem>
+             </itemizedlist>
+           </para>
+         </formalpara>
+       </listitem>
+       <listitem>
+         <formalpara>
+           <title>Functions Called By</title>
+           <para>
+             <itemizedlist>
+               <listitem>
+                 <para>
+                   <function>shell</function>
+                 </para>
+               </listitem>
+             </itemizedlist>
+           </para>
+         </formalpara>
+       </listitem>
+     </itemizedlist>
+   </para>
+ </section>
+
+</section>

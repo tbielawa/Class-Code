@@ -1,0 +1,13 @@
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="CONTEXT.H">
+  <title>CONTEXT.H</title>
+  <indexterm><primary>context.h</primary></indexterm>
+  <programlisting>
+    <![CDATA[
+#ifndef CONTEXT_H
+#define CONTEXT_H
+
+
+#endif
+    ]]>
+  </programlisting>
+</section>

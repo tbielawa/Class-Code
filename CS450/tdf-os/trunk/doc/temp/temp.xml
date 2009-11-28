@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://docbook.org/xml/4.5/docbookx.dtd">
+
+<book xmlns="http://docbook.org/ns/docbook">
+
+  <info>
+    <title>MPX Operating System Temporary Commands</title>
+  </info>
+
+  <xi:include href="intro.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="commands.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="commands-detailed.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+<index/>
+
+</book>

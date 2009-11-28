@@ -1,0 +1,61 @@
+<section xmlns="http://docbook.org/ns/docbook">
+  <title><filename>VERSION.C</filename> Functions</title>
+  <section>
+    <title>int version ( char *args )</title>
+    <itemizedlist>
+      <listitem>
+	<formalpara>
+	  <title>Prototype and Parameters</title>
+	  <para>
+	    <funcsynopsis>
+	      <funcprototype>
+		<funcdef>
+		  int <function>version</function>
+		</funcdef>
+		<paramdef>
+		  char *<parameter>args</parameter>
+		</paramdef>
+	      </funcprototype>
+	    </funcsynopsis>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Return Value(s)</title>
+	  <para>
+	    <itemizedlist>
+	      <listitem>
+		<formalpara>
+		  <title><returnvalue>0</returnvalue></title>
+		  <para>
+		    The version was opened and displayed successfully.
+		  </para>
+		</formalpara>
+	      </listitem>
+	      <listitem>
+                <formalpara>
+                  <title><returnvalue>1</returnvalue></title>
+                  <para>
+                    The version could not be displayed correctly, most likely
+		    because the version file could not be opened.
+                  </para>
+                </formalpara>
+              </listitem>
+	    </itemizedlist>
+	  </para>
+	</formalpara>
+      </listitem>
+      <listitem>
+	<formalpara>
+	  <title>Description</title>
+	  <para>
+	    version will open the file containing the version number of TDF
+	    OS and display it on the command line. It will then return the
+	    appropriate error code.
+	  </para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+  </section>
+</section>

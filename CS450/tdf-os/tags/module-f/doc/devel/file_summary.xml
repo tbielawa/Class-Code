@@ -1,0 +1,248 @@
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0">
+  <title>Overview of Source Files and Directories</title>
+  <para>
+    <indexterm><primary>file hiearchy</primary></indexterm>
+    This chapter is designed to provide an overview of each file and
+    directory of the project. Hopefully, it will provide a good idea
+    of how the source of TDF-OS is layed out.
+  </para>
+  
+  <itemizedlist>
+    
+    <listitem>
+      <formalpara>
+	<title><filename class="directory">build</filename></title>
+	<para>
+	  The <filename class="directory">build</filename> directory
+	  is reserved for compiled source files of TDF-OS. The
+	  developer scripts maintain the sanity of what happens in
+	  this directory.
+	  <indexterm><primary>build</primary></indexterm>
+	</para>
+      </formalpara>
+    </listitem>
+    
+    <listitem>
+      <formalpara>
+	<title><filename class="directory">doc</filename></title>
+	<para>
+	  <indexterm><primary>doc</primary></indexterm>
+	  <indexterm><primary>XML</primary></indexterm>
+	  <indexterm><primary>DocBook</primary></indexterm>
+
+	  The <filename class="directory">doc</filename> directory
+	  contains the various XML files for the DocBook style
+	  documentation.
+	  <itemizedlist>
+	    <listitem>
+	      <para>
+		<filename class="directory">devel</filename> - contains developer documentation
+	      </para>
+	    </listitem>
+	    <listitem>
+	      <para>
+		<filename class="directory">user</filename> - contains the user's manual
+	      </para>
+	    </listitem>
+	  </itemizedlist>
+	</para>
+      </formalpara>
+    </listitem>
+    
+    <listitem>
+      <formalpara>
+	<title><filename class="directory">src</filename></title>
+	<para>
+	  <indexterm><primary>src</primary></indexterm> The <filename
+	  class="directory">src</filename> directory contains all of
+	  the C source files as well as the header files. Each file
+	  located in the <filename class="directory">src</filename>
+	  directory has a corresponding header file located in the
+	  <filename class="directory">src/include</filename>. The
+	  <filename class="directory">procs</filename> directory
+	  contains process modules provided by Dr. Mooney used to test
+	  the system.  (Viewable with the <command>display</command>
+	  command.)
+	  <itemizedlist>
+	    <listitem>
+	      <para>
+		<filename>DATE.C</filename> - contains the <command>date</command> command for the shell
+	      </para>
+	    </listitem>
+	    <listitem>
+	      <para>
+		<filename>DISPLAY.C</filename> - contains the <command>display</command> command for the shell
+	      </para>
+	    </listitem>
+	    <listitem>
+	      <para>
+		<filename>HELP.C</filename> - contains the <command>help</command> command for the shell
+	      </para>
+	    </listitem>
+	    <listitem>
+	      <para>
+		<filename>HISTORY.C</filename> - contains the <command>history</command> command for the shell
+	      </para>
+	    </listitem>
+            <listitem>
+              <para>
+		<filename>LOAD.C</filename> - contains the <command>load</command> command for shell
+	      </para>
+	    </listitem>
+            <listitem>
+	      <para>
+		<filename>LOADR3.C</filename> - contains the <command>loadr3</command> command for shell
+	      </para>
+	    </listitem>
+	    <listitem>
+	      <para>
+		<filename>LOSYSDIS.C</filename> - contains the <command>dispatch</command> command for shell 
+	      </para>
+	    </listitem>
+	    <listitem>
+	      <para>
+		<filename>MPX_SUPT.C</filename> - Dr. Mooney's support file for MPX
+	      </para>
+	    </listitem>
+	    <listitem>
+	      <para>
+		<filename>PARSER.C</filename> - parses the input buffer of the shell
+	      </para>
+	    </listitem>
+	    <listitem>
+	      <para>
+		<filename>PCB.C</filename> - contains all internal structures and functions for PCBs
+	      </para>
+	    </listitem>
+	    <listitem>
+	      <para>
+		<filename>PCBMAKE.C</filename> - contains <command>pcreate</command> and <command>pdelete</command> shell commands
+	      </para>
+	    </listitem>
+	    <listitem>
+	      <para>
+		<filename>PCBMAN.C</filename> - contains <command>pblock</command>, <command>presume</command>, <command>punblock,</command> <command>psuspend</command>, and <command>psetprio</command> shell commands
+	      </para>
+	    </listitem>
+            <listitem>
+	      <para>
+		<filename>PROCS-R3.C</filename> - Dr. Mooney's support file for process management
+	      </para>
+	    </listitem>
+	    <listitem>
+	      <para>
+		<filename>PCBSHOW.C</filename> - contains <command>pshow</command>, <command>pshowall</command>, <command>pshowrd</command>, and <command>pshowblk</command> shell commands
+	      </para>
+	    </listitem>
+	    <listitem>
+	      <para>
+		<filename>PCBUTILS.C</filename> - contains various functions that are useful when working with PCBs
+	      </para>
+	    </listitem>
+	    <listitem>
+	      <para>
+		<filename>SHELL.C</filename> - contains the main driver for the TDF shell as well as the <command>prompt</command>
+	      </para>
+	    </listitem>
+	    <listitem>
+	      <para>
+		<filename>TDF.C</filename> - the initializer module
+	      </para>
+	    </listitem>
+	    <listitem>
+	      <para>
+		<filename>TDF.CFG</filename> - contains compiler information in TurboC
+	      </para>
+	    </listitem>
+	    <listitem>
+	      <para>
+		<filename>TDF.PRJ</filename> - used to link the project together in TurboC
+	      </para>
+	    </listitem>
+            <listitem>
+	      <para>
+		<filename>TDF-R5.PRJ</filename> - required to link the module R5 project in TurboC for Windows
+	      </para>
+	    </listitem>
+	    <listitem>
+	      <para>
+		<filename>TDFDRIVE.C</filename> - contains all the
+		routines necessary for reading and writing to/from the
+		com port
+	      </para>
+	    </listitem>
+            <listitem>
+	      <para>
+		<filename>TRMDRIVE.C</filename> - Dr. Mooney's support file for the terminal driver (required for module R6)
+	      </para>
+	    </listitem>
+            <listitem>
+	      <para>
+		<filename>TESTCOMR.C</filename> - used in module R5 to create an independent com port read executable
+	      </para>
+	    </listitem>
+            <listitem>
+	      <para>
+		<filename>TESTCOMW.C</filename> - used in module R5 to create an independent com port write executable
+	      </para>
+	    </listitem>
+	    <listitem>
+	      <para>
+		<filename>VERSION.C</filename> - contains the version command in the shell
+	      </para>
+	    </listitem>
+	  </itemizedlist>
+	</para>
+      </formalpara>
+    </listitem>
+    
+    <listitem>
+      <formalpara>
+	<title><filename class="directory">target</filename></title>
+	<para>
+	  <indexterm><primary>target</primary></indexterm>
+	  The target directory is reserved for the created executable
+	  file.  This is where the operating system is run, and thus
+	  some .MPX files are put there during build time for
+	  demonstration.
+	</para>
+      </formalpara>
+    </listitem>
+    
+    <listitem>
+      <formalpara>
+	<title><filename class="directory">tc</filename></title>
+	<para>
+	  <indexterm><primary>tc</primary></indexterm>
+	  The <filename class="directory">tc</filename> directory is
+	  reserved for containing the TurboC compiler, which is
+	  required for the MPX operating system.
+	</para>
+      </formalpara>
+    </listitem>
+    
+    
+    <listitem>
+      <formalpara>
+	<title><filename class="directory">utils</filename></title>
+	<para>
+	  <indexterm><primary>utils</primary></indexterm>
+	  <indexterm><primary>DOSBox</primary></indexterm>
+
+	  The <filename class="directory">utils</filename> directory
+	  contains various configuration files for making the
+	  developer's lives easier, including build scripts and
+	  configration files for DOSBox . These typically should not be
+	  adjusted and do not affect the source at all.
+	</para>
+      </formalpara>
+    </listitem>
+    
+  </itemizedlist>
+  <para>
+    <indexterm><primary>Makefile</primary></indexterm>
+    Finally, there is the <filename>Makefile</filename> which will
+    pull the build scripts together for easy development.
+  </para>
+  
+</chapter>

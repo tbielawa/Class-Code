@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo "Adding common remotes"
+
+GROUP="abutcher bdoss tbielawa jdehlin"
+echo "+--------------------------------+"
+for MEMBER in $GROUP; do
+    echo "Adding to remotes and fetching: $MEMBER"
+    git remote add $MEMBER git://github.com/abutcher/tdf-os.git 2> /dev/null
+    git fetch $MEMBER
+    echo "+--------------------------------+"
+done
+
+echo 
+echo "Remotes now contain:"
+echo 
+
+git remote
+
+echo 
+echo "...done."
+exit 0
